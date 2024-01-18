@@ -1,4 +1,4 @@
-# CIC0004 - Algoritmos e Programação de Computadores (APC)
+# CIC0004 - Algoritmos e Programação de Computadores (APC) - Linguagem C
 
 Códigos-fontes e material didático gerados na disciplina "CIC0004 - Algoritmos e Programação de Computadores", Turma 03, semestre 2023/2 do Departamento de Ciência da Computação da Universidade de Brasília.
 
