@@ -4,15 +4,15 @@ Códigos-fontes e material didático gerados na disciplina "CIC0004 - Algoritmos
 
 ## Autores
 
-Prof. Vinícius R. P. Borges
+Vinícius R. P. Borges
 
-Profa. Aline Barros
+Mayara Chew Marinho
 
 ## Cronograma Previsto de Aulas
 
-Clique [aqui](cic0004_03_cronogramaPrevistoAulas_20232_v4.pdf) para acessar o cronograma previsto de aulas da Turma 03.
+Clique [aqui](cic0004_03_cronogramaPrevistoAulas_20241_v1.pdf) para acessar o cronograma previsto de aulas da Turma 03.
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Última atualização: 01 de novembro de 2023*
+&nbsp;&nbsp;&nbsp;&nbsp; *Última atualização: 21 de dezembro de 2023*
 
 
 ## Conteúdo Programático
@@ -25,7 +25,7 @@ Clique [aqui](cic0004_03_cronogramaPrevistoAulas_20232_v4.pdf) para acessar o cr
    
    1.3. [Sistemas Numéricos](jornada/cic0004_01_sistemasnumericos.pdf)
    
-  
+<!--  
 2. Variáveis, expressões e instruções
 
    2.1. [Exemplos de leitura/escrita de dados em Python](var_exp_inst/README.md)
@@ -165,7 +165,7 @@ Clique [aqui](cic0004_03_cronogramaPrevistoAulas_20232_v4.pdf) para acessar o cr
 
 - [Casos de Teste](projeto/README.md)
 
-<!--
+
 
 9. Dicionários e Listas
 
