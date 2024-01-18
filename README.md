@@ -6,7 +6,7 @@ Códigos-fontes e material didático gerados na disciplina "CIC0004 - Algoritmos
 
 Vinícius R. P. Borges
 
-Mayara Chew Marinho
+Mayara C. Marinho
 
 ## Cronograma Previsto de Aulas
 
