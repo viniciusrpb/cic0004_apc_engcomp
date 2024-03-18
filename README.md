@@ -17,15 +17,7 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cron
 
 ## Conteúdo Programático
 
-1. Introdução aos Sistemas Computacionais
-
-   1.1. [Introdução aos Algoritmos](isc/algoritmos.md)
-   
-   1.2. [Tradução](isc/traducao.md)
-
-   1.3. [Arquitetura de Computadores](isc/oac.md)
-   
-   1.4. [Sistemas Numéricos](jornada/cic0004_t04_sistemasnumericos.pdf)
+1. [Introdução aos Sistemas Computacionais](isc/readme.md)
    
 <!--  
 2. Variáveis, expressões e instruções
