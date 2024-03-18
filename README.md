@@ -18,6 +18,10 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cron
 ## Conteúdo Programático
 
 1. [Introdução aos Sistemas Computacionais](isc/readme.md)
+
+## Referências
+
+[Programação Descomplicada](https://www.andrebackes.com/c-descomplicada)](https://programacaodescomplicada.wordpress.com/indice/linguagem-c/)
    
 <!--  
 2. Variáveis, expressões e instruções
