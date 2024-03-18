@@ -2,7 +2,7 @@
 
 Códigos-fontes e material didático gerados na disciplina "CIC0004 - Algoritmos e Programação de Computadores", Turma 04, semestre 2024/1 do Departamento de Ciência da Computação da Universidade de Brasília.
 
-### Atenção: disciplina ministrada em Linguagem C
+#### Atenção: disciplina ministrada em Linguagem C
 
 
 ## Autores
