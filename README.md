@@ -21,7 +21,7 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cron
 
 ## Referências
 
-[Programação Descomplicada](https://www.andrebackes.com/c-descomplicada)](https://programacaodescomplicada.wordpress.com/indice/linguagem-c/)
+- [Programação Descomplicada](https://programacaodescomplicada.wordpress.com/indice/linguagem-c/)
    
 <!--  
 2. Variáveis, expressões e instruções
