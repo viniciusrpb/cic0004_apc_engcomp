@@ -1,6 +1,6 @@
 # CIC0004 - Algoritmos e Programação de Computadores (APC) - Linguagem C
 
-Códigos-fontes e material didático gerados na disciplina "CIC0004 - Algoritmos e Programação de Computadores", Turma 03, semestre 2023/2 do Departamento de Ciência da Computação da Universidade de Brasília.
+Códigos-fontes e material didático gerados na disciplina "CIC0004 - Algoritmos e Programação de Computadores", Turma 04, semestre 2024/1 do Departamento de Ciência da Computação da Universidade de Brasília.
 
 ## Autores
 
@@ -10,20 +10,22 @@ Mayara C. Marinho
 
 ## Cronograma Previsto de Aulas
 
-Clique [aqui](cic0004_03_cronogramaPrevistoAulas_20241_v1.pdf) para acessar o cronograma previsto de aulas da Turma 03.
+Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cronograma previsto de aulas da Turma 04.
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Última atualização: 21 de dezembro de 2023*
+&nbsp;&nbsp;&nbsp;&nbsp; *Última atualização: 18 de março de 2024*
 
 
 ## Conteúdo Programático
 
 1. Introdução aos Sistemas Computacionais
 
-   1.1. [Introdução a Organização e Arquitetura de Computadores](jornada/intro_arquitetura_computadores.md)
+   1.1. [Introdução aos Algoritmos](isc/algoritmos.md)
    
-   1.2. [Software Básico](jornada/intro_software_basico.md)
+   1.2. [Tradução](isc/traducao.md)
+
+   1.3. [Arquitetura de Computadores](isc/oac.md)
    
-   1.3. [Sistemas Numéricos](jornada/cic0004_01_sistemasnumericos.pdf)
+   1.4. [Sistemas Numéricos](jornada/cic0004_t04_sistemasnumericos.pdf)
    
 <!--  
 2. Variáveis, expressões e instruções
