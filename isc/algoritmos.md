@@ -30,6 +30,10 @@ s <- a+b
 Imprimir(s)
 ```
 
+### Fluxograma
+
+![img](imgs/fluxograma1.png)
+
 ### Algoritmo computacional
 
 
