@@ -13,3 +13,7 @@ CIC0004 - Algoritmos e Programação de Computadores - Turma 04
    1.3. [Arquitetura de Computadores](oac.md)
    
    1.4. [Sistemas Numéricos](cic0004_t04_sistemasnumericos.pdf)
+
+# Código divisibilidade
+
+  1.1. [Código-fonte C: Informa Sim se um inteiro a é divisível por outro inteiro b. Caso contrário, informa Nao](divisibilidade.c)
