@@ -1,30 +1,35 @@
 # Erros de Compilação Comuns (e como resolvê-los)
 
 
-### Uso de operador incorreto: no exemplo abaixo, o uso operador **++** está incorreto, pois ele não requer outra variável. 
+### Uso incorreto de operador
 
-  ```
-      int a,b;
+No exemplo abaixo, o uso operador **++** está incorreto, pois ele não requer outra variável - trata-se de um operador unário.
 
-      a = 1;
-      b = 2;
+```
+  int a,b;
 
-      a++b;
-  ```
+  a = 1;
+  b = 2;
 
-  vai gerar o erro
+  a++b;
+```
+
+isso vai gerar o erro:
 
 ```error: expected ‘;’ before ‘a’```
 
-**Correção**
+Para corrigi-lo, basta remover o ```b``` logo após o ```a++```:
 
   ```
-      int a,b;
+int main(){
+    int a,b;
 
-      a = 1;
-      b = 2;
+    a = 1;
+    b = 2;
 
-      a++;
+    a++;
+    return 0;
+}
 ```
 
 ### Declaração repetida da variável ```a``` mas com diferentes tipos.
