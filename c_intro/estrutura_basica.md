@@ -29,7 +29,7 @@ Para rodar o programa acima, salve-o no formato *.c* como mostrado abaixo, em qu
 nome_do_codigo.c
 ```
 
-Depois, abra o Terminal no Linux no diretório onde se encontra o código-fonte desenvolvido e digite:
+Como a Linguagem C é uma linguagem do tipo compilada, devemos utilizar o compilador  **gcc** (*GNU project C and C++ compiler*) para compilar o código-fonte visando a geração do arquivo executável, que é o programa de computador funcional obtido a partir do código-fonte associado. Para isso, abra o Terminal no Linux no diretório onde se encontra o código-fonte desenvolvido e digite:
 
 ```
 gcc nome_do_codigo.c -o nome_executavel
