@@ -1,9 +1,9 @@
-# Erros de Compilação Comuns
+# Erros de Compilação Comuns (e como resolvê-los)
 
 
 ## Erros de sintaxe
 
-- **Uso de operador incorreto**: no exemplo abaixo, o uso operador **++** está incorreto, pois ele não requer outra variável. 
+#### Uso de operador incorreto: no exemplo abaixo, o uso operador **++** está incorreto, pois ele não requer outra variável. 
 
   ```
       int a,b;
@@ -18,7 +18,7 @@
 
 ```error: expected ‘;’ before ‘a’```
 
-  Correção
+  **Correção**
 
     ```
       int a,b;
@@ -29,7 +29,7 @@
       a++;
   ```
 
-- Declaração repetida da variável ```a``` mas com diferentes tipos.
+#### Declaração repetida da variável ```a``` mas com diferentes tipos.
 
   ```
       int a;
