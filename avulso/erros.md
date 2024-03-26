@@ -18,16 +18,16 @@
 
 ```error: expected ‘;’ before ‘a’```
 
-  **Correção**
+**Correção**
 
-    ```
+  ```
       int a,b;
 
       a = 1;
       b = 2;
 
       a++;
-  ```
+```
 
 #### Declaração repetida da variável ```a``` mas com diferentes tipos.
 
