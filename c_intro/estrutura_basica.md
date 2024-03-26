@@ -37,7 +37,7 @@ Como a Linguagem C é uma linguagem do tipo compilada, devemos utilizar o compil
 gcc nome_do_codigo.c -o nome_executavel
 ```
 
-em que ```nome_executavel``` é o nome do arquivo executável que será gerado após uma compilação bem sucedida, isto é, sem [erros de compilação](../avulsos/erros.md). ```-o``` é uma diretiva (também conhecida como *flag*) para gerar o arquivo executável no comando de compilação. 
+em que ```nome_executavel``` é o nome do arquivo executável que será gerado após uma compilação bem sucedida, isto é, sem [erros de compilação](../avulso/erros.md). ```-o``` é uma diretiva (também conhecida como *flag*) para gerar o arquivo executável no comando de compilação. 
 
 Para rodar o programa acima, digite no Terminal do Linux:
 
