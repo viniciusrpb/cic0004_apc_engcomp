@@ -22,7 +22,7 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cron
 
 1. [Introdução aos Sistemas Computacionais](isc/readme.md)
 
-2. [Primeiros Passos em Linguagem C](c_intro/readme.md)
+2. [Primeiros Passos em Linguagem C](c_intro/README.md)
 
 ## Referências
 
