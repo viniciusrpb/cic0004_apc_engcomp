@@ -72,7 +72,7 @@ em que o caractere especial ```\n``` é responsável por quebrar a linha (ou pul
 Os comentários são sentenças escritas dentro do código-fonte que não são levadas em consideração pelo compilador como sendo comandos, expressões ou instruções válidas. 
 
 - ```/* Comentario */```: denominado comentário em bloco, permite que uma ou várias linhas sejam desconsideradas pelo compilador como sendo código-fonte válido;
-- ``` // ```: conhecido como comentário de linha, 
+- ``` // ```: conhecido como comentário de linha, serve para comentar o código apenas uma **única** linha.
 
 ```
 #include<bits/stdc++.h>
@@ -90,7 +90,7 @@ int main(){
 }
 ```
 
-No contexto educacional, comentários são utilizados como 
+No contexto educacional, comentários são utilizados para descrever em linguagem natural (nosso tradicional português) o que um comando ou um conjunto comandos faz no código-fonte.
 
 ## Imprimindo variáveis
 
