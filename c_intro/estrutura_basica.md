@@ -75,7 +75,7 @@ Os comentários são sentenças escritas dentro do código-fonte que não são l
 - ``` // ```: conhecido como comentário de linha, serve para comentar o código apenas uma **única** linha.
 
 ```
-#include<bits/stdc++.h>
+#include<stdio.h>
 
 int main(){
 
@@ -95,7 +95,7 @@ No contexto educacional, comentários são utilizados para descrever em linguage
 ## Imprimindo variáveis
 
 ```
-#include<bits/stdc++.h>
+#include<stdio.h>
 
 int main(){
 
