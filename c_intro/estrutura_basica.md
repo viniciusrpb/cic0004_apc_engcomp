@@ -102,12 +102,13 @@ No contexto educacional, comentários são utilizados para descrever em linguage
 int main(){
 
     /*Declaracao de variaveis explicita*/
-    int a,b;
+    int a,b,s;
 
     a = 5;
     b = 2;
+    s = a+b;
 
-    printf("Athletico Paranaense eh o melhor %d\n",a+b);
+    printf("A soma de %d mais %d eh %d\n",a,b,s);
 
     return 0;
 }
