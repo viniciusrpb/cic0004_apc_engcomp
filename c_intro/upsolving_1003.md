@@ -24,7 +24,7 @@ Mãos à obra!
 
 ### Implementação
 
-Primeiramente, colocamos a estrutura básica de um programa em linguagem C, considerando que faremos operações de ler dois números inteiros da entrada padrão e fazer a escrita do resultado da soma na saída padrão:
+Primeiramente, colocamos a estrutura básica de um programa em linguagem C, considerando que faremos operações de ler dois números inteiros da entrada padrão e fazer a escrita do resultado da soma na saída padrão. Assim, criamos a função principal e a diretiva para incluir a biblioteca ```stdio.h``` visando utilizar as funções de leitura (```scanf```) e escrita (```printf```):
 
 ```
 #include<stdio.h>
