@@ -16,4 +16,4 @@ CIC0004 - Algoritmos e Programação de Computadores - Turma 04
 
 # Código divisibilidade
 
-  1.1. [Código-fonte C: Informa Sim se um inteiro a é divisível por outro inteiro b. Caso contrário, informa Nao](divisibilidade.c)
+  1.1. [Código-fonte C: Informa Sim se um inteiro a é divisível por outro inteiro b. Caso contrário, informa Nao](divisivel.c)
