@@ -88,11 +88,13 @@ int main(){
 }
 ```
 
-Por fim, devemos imprimir a resposta **exatamente como é solicitado no enunciado (não faça nada diferente disso)**. O comando ```printf``` é então utilizado para imprimir informação na tela, em que temos que mostrar ```SOMA = ``` porque o enunciado do problema pede, para depois mostrar o valor de ```s```. Segue apenas o comando isolado:
+Por fim, devemos imprimir a resposta **exatamente como é solicitado no enunciado (não faça nada diferente disso)**. O comando ```printf``` é então utilizado para imprimir informação na tela, em que temos que mostrar primeiramente ```SOMA = ``` (**o enunciado do problema pede!!!**), para depois mostrar o valor de ```s```. Segue apenas o comando isolado:
 
 ```
 printf("SOMA = %d\n",s);
 ```
+
+Incluindo o comando acima no código-fonte, temos então:
 
 ### Código-fonte Final
 
