@@ -18,7 +18,7 @@ Uma soma entre dois números inteiros é descrita matematicamente como:
 s = a + b
 ```
 
-em que ```s``` armazena o resultado. Precisaremos então ler os valores de ```a``` e ```b``` da entrada, calcula ```s=a+b``` e depois imprimir o valor de ```s``` na tela.
+em que ```s``` armazena o resultado. Precisaremos então ler os valores de ```a``` e ```b``` da entrada, calcular ```s=a+b``` e depois imprimir o valor de ```s``` na tela.
 
 Mãos à obra!
 
