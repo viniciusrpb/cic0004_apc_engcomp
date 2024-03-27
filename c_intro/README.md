@@ -11,4 +11,4 @@ CIC0004 - Algoritmos e Programação de Computadores
 
 ### 2.2. Exercícios Resolvidos
 
-&nbsp;&nbsp;&nbsp;&nbsp; [2.2.1) Beecrowd 1003 - Soma Simples](upsolving_1003.md)
+&nbsp;&nbsp;&nbsp;&nbsp; [Beecrowd 1003 - Soma Simples](upsolving_1003.md)
