@@ -35,7 +35,7 @@ int main(){
 }
 ```
 
-Depois devemos declarar as variáveis que precisaremos para armazenar os operandos ```a``` e ```b```, e o resultado da operação da soma em ```s```. O código-fonte após essas alterações fica da seguinte maneira:
+Depois devemos declarar as variáveis que precisaremos para armazenar os operandos ```a``` e ```b```, e o resultado da operação da soma em ```s```. O código-fonte após essas inclusões fica da seguinte maneira:
 
 ```
 #include<stdio.h>
