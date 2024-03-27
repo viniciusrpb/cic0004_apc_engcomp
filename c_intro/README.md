@@ -7,6 +7,4 @@ CIC0004 - Algoritmos e Programação de Computadores
 
    2.1. [Estrutura Básica](estrutura_basica.md)
    
-   2.2. [Variáveis e Expressões Matemáticas](variaveis.md)
 
-   2.3. [Entrada e Saída de Dados](io.md)
