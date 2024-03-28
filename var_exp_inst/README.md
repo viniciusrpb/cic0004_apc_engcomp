@@ -1,4 +1,4 @@
-# 3. Variáveis, Expressões e Instruções 
+# 3. Algoritmos Computacionais Sequenciais
    
    3.1. [Variáveis e Expressões Matemáticas](variaveis.md)
 
