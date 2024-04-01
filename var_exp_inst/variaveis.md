@@ -34,9 +34,11 @@ a = b;
 
 #### Soma 
 
-Descrita nas seguintes formas:
+Classicamente, é descrita na seguinte forma: "resultado" = "operando 1" + "operando 2"
 
-- "variavel que recebe o resultado" = "primeira variavel" + "valor constante"
+Na Linguagem C, colocamos alguns exemplos de como realizar somas:
+
+**Exemplo (1):** Somar uma constante a uma variável e armazenar o resultado em outra variável:
 
 ```
 int a,b,soma;
@@ -47,7 +49,7 @@ b = 5;
 soma = a+4;
 ```
 
-- "variavel que recebe o resultado" = "primeira variavel" + "segunda variavel"
+**Exemplo (2):** Somar duas variáveis distintas e armazenar o resultado em outra variável:
 
 ```
 int a,b,soma;
@@ -57,13 +59,24 @@ b = 5;
 
 soma = a+b;
 ```
-- "variavel que recebe o resultado" = "primeira variavel" + "segunda variavel"
+
+**Exemplo (3):** Somar um valor constante a uma variável e armazenar o resultado nela mesma:
 
 ```
-int a,b,soma;
+int a;
 
 a = 3;
-b = 5;
 
-soma = a+b;
+a = a+3;   /* a+=3; */
 ```
+
+**Exemplo (4):** Aumentar **exatamente** em uma unidade o valor de uma variável inteira **(só funciona com variáveis inteiras)**:
+
+```
+int a;
+
+a = 3;
+
+a++;
+```
+
