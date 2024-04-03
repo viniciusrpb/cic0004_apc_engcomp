@@ -2,6 +2,33 @@
 
 ## 3.1. Variáveis
 
+Seguem as 
+
+- char
+
+- int
+
+- unsigned int
+
+- float
+
+- double
+
+- unsigned long int
+
+
+### Tabela resumo
+
+Tipo     | Tamanho na Memória  | Valor Mínimo | Valor Máximo | Descrição |
+--------- | ------------------ | ------------ | ------------ | --------- |
+char      |  1 byte            | 0            | 255          | Armazena um caractere (ver a tabela ASCII) |
+int            |  4 bytes           | -2 x 10^{-9} | 2 x 10^9     | Armazena um valor inteiro normal  |
+unsigned int   |  4 bytes           | 0 | 4 x 10^9     | Armazena um valor inteiro normal sem sinal  |
+float     |  4 bytes           | -2 x 10^{-9} | 2 x 10^9     | Para valores reais de precisão simples |
+long int  |  8 bytes           | -4 x 10^{-18} | 4 x 10^{18}  | Para valores inteiros longos |
+unsigned long int  |  8 bytes           | 0 | 10^{19}  | Para valores inteiros longos sem sinal |
+double    |  8 bytes           | 0 | 10^{19} | Para valores reais com precisão dupla
+
 
 ```
 #include<stdio.h>
