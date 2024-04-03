@@ -6,9 +6,11 @@ Definição: Uma variável é definida como uma abstração para uma posição (
 
 ## 3.2 Tipos de Dados
 
-Seguem as 
+### char
 
-- char: permite representar um caractere utilizando-se 1 byte na memória. Geralmente, é comum utilizarmos os caracteres definidos pelo padrão ASCII como mostra a [Tabela ASCII](https://www.ime.usp.br/~kellyrb/mac2166_2015/tabela_ascii.html). O programa abaixo exemplifica como uma variável do tipo ```char```, de nome ```var_char```, é declarada e um valor constante lhe é atribuído. As constantes ```char``` são sempre apresentadas entre aspas simples, como mostra o caractere ```'e'``` no código-fonte abaixo:
+Permite representar um caractere utilizando-se 1 byte na memória. Geralmente, é comum utilizarmos os caracteres definidos pelo padrão ASCII como mostra a [Tabela ASCII](https://www.ime.usp.br/~kellyrb/mac2166_2015/tabela_ascii.html).
+
+O código-fonte abaixo exemplifica como uma variável do tipo ```char```, de nome ```var_char```, é declarada e um valor constante lhe é atribuído. As constantes ```char``` são sempre apresentadas entre aspas simples, como mostra o caractere ```'e'``` no código-fonte abaixo:
 
 ```
 #include<stdio.h>
@@ -18,13 +20,13 @@ int main(){
 
     var_char = 'e';
 
-    printf("%c\n",var_char);
-
     return 0;
 }
 ```
 
-- int: permite representar um valor inteiro
+### int
+
+Permite representar um valor inteiro (negativo, zero ou positivo) em uma variável que ocupa 4 bytes na memória. Com isso, essa variável armazena exatamente valores entre o intervalo *[-32.768,32.767O]*, o que é aproximadamente *[-2 x 10<sup>-9</sup>,2 x 10<sup>9</sup>]*. O código-fonte seguinte mostra a declaração de uma variável do tipo ```int```, chamada ```var_int```, e o valor constante ```16``` lhe é atribuído:
 
 ```
 #include<stdio.h>
@@ -34,13 +36,34 @@ int main(){
 
     var_int = 16;
 
-    printf("%d\n",var_int);
+    return 0;
+}
+```
+
+Atenção, cuidado com o **overflow** que podem ocorrer em variáveis do tipo int após operações de leitura de dados ou aritméticas. Veja o exemplo abaixo:
+
+```
+#include<stdio.h>
+
+int main(){
+    int a,b,p;
+
+    a = 1000000000;
+    b = 2000000000;
+
+    p = a*b; /* opa! overflow bem aqui */
+
+    printf("%d\n",p);
 
     return 0;
 }
 ```
 
-- long int
+O que o código-fonte acima imprime na tela? Como vemos, ```a = 10<sup>9</sup>``` e ```b = 10<sup>9</sup>```, logo espera-se que ```p = 10<sup>18</sup>```. Peraí... veja que ```10<sup>18</sup>``` **NÃO PODE** ser representado em uma variável inteira, pois ```10<sup>18</sup>``` é bem maior do que o valor máximo aproximado ```2<sup>9</sup>``` que uma variável do tipo ```int``` suporta. Bom, precisamos de um tipo de dados que armazene mais informações.... (veja a seguir).
+
+### long int
+
+
 
 - float: permite representar um número real com até 7 dígitos de precisão, considerando a parte inteira e a parte fracionária. **A precisão se refere aos dígitos que informam o valor do número, isto é, excluindo zeros à esquerda e zeros à direita após a parte decimal**. Uma variável do tipo float tem capacidade de armazenamento de 4 bytes. 
 
