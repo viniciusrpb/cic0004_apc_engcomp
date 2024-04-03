@@ -2,6 +2,10 @@
 
 ## 3.1. Variáveis
 
+Definição: Uma variável é definida como uma abstração para uma posição (endereço) de memória.
+
+## 3.2 Tipos de Dados
+
 Seguem as 
 
 - char
@@ -10,24 +14,29 @@ Seguem as
 
 - unsigned int
 
-- float
+- float: permite representar um número com até 6 dígitos de precisão. A precisão se refere aos dígitos que informam o valor do número, isto é, excluindo zeros à esquerda e zeros à direita após a parte decimal.
 
-- double
+- double: permite até 12 casas decimais de precisão
 
 - unsigned long int
 
 
 ### Tabela resumo
 
-Tipo     | Tamanho na Memória  | Valor Mínimo | Valor Máximo | Descrição |
---------- | ------------------ | ------------ | ------------ | --------- |
-char      |  1 byte            | 0            | 255          | Armazena um caractere (ver a tabela ASCII) |
-int            |  4 bytes           | -2 x 10^{-9} | 2 x 10^9     | Armazena um valor inteiro normal  |
-unsigned int   |  4 bytes           | 0 | 4 x 10^9     | Armazena um valor inteiro normal sem sinal  |
-float     |  4 bytes           | -2 x 10^{-9} | 2 x 10^9     | Para valores reais de precisão simples |
-long int  |  8 bytes           | -4 x 10^{-18} | 4 x 10^{18}  | Para valores inteiros longos |
-unsigned long int  |  8 bytes           | 0 | 10^{19}  | Para valores inteiros longos sem sinal |
-double    |  8 bytes           | 0 | 10^{19} | Para valores reais com precisão dupla
+Tipo               | Tamanho na Memória  | Valor Mínimo           | Valor Máximo                         | Descrição                                         |
+-----------------  | ------------------  | ---------------------- | ------------------------------------ | ------------------------------------------------- |
+char               |  1 byte             | 0                      | 255                                  | Armazena um caractere (ver a tabela ASCII)        |
+int                |  4 bytes            | -2 x 10<sup>-9</sup>   | 2 x 10<sup>9</sup>                   | Armazena um valor inteiro normal com sinal        |
+unsigned int       |  4 bytes            | 0                      | 4 x 10<sup>9</sup>                   | Armazena um valor inteiro normal sem sinal        |
+long int           |  8 bytes            | -4 x 10<sup>18</sup>   | 4 x 10<sup>18</sup>                  | Armazena um valor inteiro grande com sinal        |
+unsigned long int  |  8 bytes            | 0                      | 10<sup>19</sup>                      | Armazena um valor inteiro grande sem sinal        |          
+
+
+Tipo              | Tamanho na Memória  | Dígitos de Precisão (Inteira + Fracionária)                    |
+----------------- | ------------------  | -------------------------------------------------------------- |
+float             |  4 bytes            | 7                                                              |
+double            |  8 bytes            | 15                                                             |
+    
 
 
 ```
