@@ -8,20 +8,63 @@ Definição: Uma variável é definida como uma abstração para uma posição (
 
 Seguem as 
 
-- char
+- char: permite representar um caractere utilizando-se 1 byte na memória. Geralmente, é comum utilizarmos os caracteres definidos pelo padrão ASCII como mostra a [Tabela ASCII](https://www.ime.usp.br/~kellyrb/mac2166_2015/tabela_ascii.html). O programa abaixo exemplifica como uma variável do tipo ```char```, de nome ```var_char```, é declarada e um valor constante lhe é atribuído. As constantes ```char``` são sempre apresentadas entre aspas simples, como mostra o caractere ```'e'``` no código-fonte abaixo:
 
-- int
+```
+#include<stdio.h>
 
-- unsigned int
+int main(){
+    char var_char;
 
-- float: permite representar um número com até 6 dígitos de precisão. A precisão se refere aos dígitos que informam o valor do número, isto é, excluindo zeros à esquerda e zeros à direita após a parte decimal.
+    var_char = 'e';
 
-- double: permite até 12 casas decimais de precisão
+    printf("%c\n",var_char);
 
-- unsigned long int
+    return 0;
+}
+```
+
+- int: permite representar um valor inteiro
+
+```
+#include<stdio.h>
+
+int main(){
+    int var_int;
+
+    var_int = 16;
+
+    printf("%d\n",var_int);
+
+    return 0;
+}
+```
+
+- long int
+
+- float: permite representar um número real com até 7 dígitos de precisão, considerando a parte inteira e a parte fracionária. **A precisão se refere aos dígitos que informam o valor do número, isto é, excluindo zeros à esquerda e zeros à direita após a parte decimal**. Uma variável do tipo float tem capacidade de armazenamento de 4 bytes. 
+
+    Por exemplo, o número ```712,3546``` tem sete dígitos de precisão, em que 3 deles estão na parte inteira e 4 na parte fracionária. Quanto mais dígitos de precisão um número tem, mais detalhes ele pode representar com precisão.
+
+- double: permite representar um número real com até 15 dígitos de precisão, o que é aproximadamente o dobro de um valor real no tipo ```float```. Isso se deve ao fato da variável possuir capacidade de armazenamento de 8 bytes.
+
+**Observação importante:** evite o uso de variáveis do tipo *float* devido a sua baixa precisão que podem ocasionar em erros de cálculos. Ademais, nem todo valor real pode ser representado por variáveis *float*:
+
+```
+#include<stdio.h>
+
+int main(){
+    float f;
+
+    f = 561.0238495334;
+
+    printf("%.7f\n",f);
+    return 0;
+}
+```
 
 
-### Tabela resumo
+### Tabelas resumo
 
 Tipo               | Tamanho na Memória  | Valor Mínimo           | Valor Máximo                         | Descrição                                         |
 -----------------  | ------------------  | ---------------------- | ------------------------------------ | ------------------------------------------------- |
@@ -32,7 +75,7 @@ long int           |  8 bytes            | -4 x 10<sup>18</sup>   | 4 x 10<sup>1
 unsigned long int  |  8 bytes            | 0                      | 10<sup>19</sup>                      | Armazena um valor inteiro grande sem sinal        |          
 
 
-Tipo              | Tamanho na Memória  | Dígitos de Precisão (Inteira + Fracionária)                    |
+Tipo              | Tamanho na Memória  | Dígitos de Precisão (Partes Inteira + Fracionária)             |
 ----------------- | ------------------  | -------------------------------------------------------------- |
 float             |  4 bytes            | 7                                                              |
 double            |  8 bytes            | 15                                                             |
