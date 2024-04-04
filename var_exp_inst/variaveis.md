@@ -2,7 +2,22 @@
 
 ## 3.1. Variáveis
 
-Definição: Uma variável é definida como uma abstração para uma posição (endereço) de memória.
+Definição: Uma variável é definida como uma abstração para uma posição (endereço) de memória. É bem melhor para os programadores se referirem a um endereço de memória por nome de sua preferência do que por endereços diretos de memória. 
+
+Imagina se tivéssemos que nos referir diretamente aos endereços de memória para armazenar dados como mostra o código-fonte **inválido** (sim, o código-fonte abaixo está errado!) abaixo:
+
+```
+#include<stdio.h>
+
+int main(){
+
+    0x7fff9779d954 = 2;
+
+    return 0;
+}
+```
+
+Seria um **caos** completo. Teríamos que verificar se o endereço de memória está disponível e encontrar outros endereços alternativos em caso afirmativo. Isso ocorre porque o endereço de memória de cada variável muda a cada execução de um programa. 
 
 ## 3.2 Tipos de Dados
 
@@ -40,7 +55,9 @@ int main(){
 }
 ```
 
-Atenção, cuidado com o **overflow** que podem ocorrer em variáveis do tipo int após operações de leitura de dados ou aritméticas. Veja o exemplo abaixo:
+Podemos utilizar o modificador **unsigned** 
+
+Atenção, cuidado com o **overflow** que podem ocorrer em variáveis do tipo ```int``` após operações de leitura de dados ou aritméticas. Veja o exemplo abaixo:
 
 ```
 #include<stdio.h>
@@ -59,13 +76,27 @@ int main(){
 }
 ```
 
-O que o código-fonte acima imprime na tela? Como vemos, ```a = 10<sup>9</sup>``` e ```b = 10<sup>9</sup>```, logo espera-se que ```p = 10<sup>18</sup>```. Peraí... veja que ```10<sup>18</sup>``` **NÃO PODE** ser representado em uma variável inteira, pois ```10<sup>18</sup>``` é bem maior do que o valor máximo aproximado ```2<sup>9</sup>``` que uma variável do tipo ```int``` suporta. Bom, precisamos de um tipo de dados que armazene mais informações.... (veja a seguir).
+O que o código-fonte acima imprime na tela? Como vemos, ```a = 10<sup>9</sup>``` e ```b = 10<sup>9</sup>```, logo espera-se que ```p = 10<sup>18</sup>```. Peraí... veja que ```10<sup>18</sup>``` **NÃO PODE** ser representado por uma variável inteira, pois ```10<sup>18</sup>``` é bem maior do que o valor máximo aproximado ```2<sup>9</sup>``` que uma variável do tipo ```int``` suporta. Bom, precisamos de um tipo de dados que armazene mais informações.... (veja a seguir).
 
 ### long int
 
+Permite representar um valor inteiro (negativo, zero ou positivo) em uma variável que ocupa 4 bytes na memória. Com isso, essa variável armazena exatamente valores entre o intervalo *[-32.768,32.767O]*, o que é aproximadamente *[-2 x 10<sup>-9</sup>,2 x 10<sup>9</sup>]*. O código-fonte seguinte mostra a declaração de uma variável do tipo ```int```, chamada ```var_int```, e o valor constante ```16``` lhe é atribuído:
 
+```
+#include<stdio.h>
 
-- float: permite representar um número real com até 7 dígitos de precisão, considerando a parte inteira e a parte fracionária. **A precisão se refere aos dígitos que informam o valor do número, isto é, excluindo zeros à esquerda e zeros à direita após a parte decimal**. Uma variável do tipo float tem capacidade de armazenamento de 4 bytes. 
+int main(){
+    int var_int;
+
+    var_int = 16;
+
+    return 0;
+}
+```
+
+### float
+
+Permite representar um número real com até 7 dígitos de precisão, considerando a parte inteira e a parte fracionária. **A precisão se refere aos dígitos que informam o valor do número, isto é, excluindo zeros à esquerda e zeros à direita após a parte decimal**. Uma variável do tipo float tem capacidade de armazenamento de 4 bytes. 
 
     Por exemplo, o número ```712,3546``` tem sete dígitos de precisão, em que 3 deles estão na parte inteira e 4 na parte fracionária. Quanto mais dígitos de precisão um número tem, mais detalhes ele pode representar com precisão.
 
