@@ -76,7 +76,7 @@ int main(){
 }
 ```
 
-O que o código-fonte acima imprime na tela? Como vemos, ```a = 10<sup>9</sup>``` e ```b = 10<sup>9</sup>```, logo espera-se que ```p = 10<sup>18</sup>```. Peraí... veja que ```10<sup>18</sup>``` **NÃO PODE** ser representado por uma variável inteira, pois ```10<sup>18</sup>``` é bem maior do que o valor máximo aproximado ```2<sup>9</sup>``` que uma variável do tipo ```int``` suporta. Bom, precisamos de um tipo de dados que armazene mais informações.... (veja a seguir).
+O que o código-fonte acima imprime na tela? Como vemos, a = 10<sup>9</sup> e b = 10<sup>9</sup>, logo espera-se que p = 10<sup>18</sup>. Peraí... veja que 10<sup>18</sup> **NÃO PODE** ser representado por uma variável inteira, pois 10<sup>18</sup> é bem maior do que o valor máximo aproximado 2<sup>9</sup> que uma variável do tipo ```int``` suporta. Bom, precisamos de um tipo de dados que armazene mais informações.... (veja a seguir).
 
 ### long int
 
