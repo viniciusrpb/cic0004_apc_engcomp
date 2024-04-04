@@ -1,3 +1,9 @@
+# 3. Variáveis e Expressões
+
+## 3.3. Entrada e Saída de Dados
+
+
+
 ```
 #include<stdio.h>
 
