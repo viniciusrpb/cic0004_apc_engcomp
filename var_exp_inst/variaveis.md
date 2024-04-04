@@ -17,7 +17,7 @@ int main(){
 }
 ```
 
-Seria um **caos** completo. Teríamos que verificar se o endereço de memória está disponível e encontrar outros endereços alternativos em caso afirmativo. Isso ocorre porque o endereço de memória de cada variável muda a cada execução de um programa. 
+Repare que isso já ocorreu nos computadores antigos (veja [aqui sobre os computadores com arquitetura de memória explícita](https://pt.wikipedia.org/wiki/IBM_System/360)), mas hoje em dia isso é impensável considerando as linguagem de alto nível (a Linguagem C), em que temos programas de computadores mais complexos do que antigamente. Atualmente, os compiladores em conjunto com o sistema operacional assumem a responsabilidade de alocar o espaço de memória para as variáveis declaradas no programa. 
 
 ## 3.2 Tipos de Dados
 
