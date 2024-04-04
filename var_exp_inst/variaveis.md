@@ -1,4 +1,4 @@
-# 3. Variáveis, Expressões e Instruções
+# 3. Variáveis e Expressões
 
 ## 3.1. Variáveis
 
