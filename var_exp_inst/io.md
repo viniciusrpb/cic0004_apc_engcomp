@@ -45,7 +45,8 @@ scanf("%d:%d:%d",&horas,&minutos,&segundos);
 
 O ```&``` é um operador que retorna o endereço de uma variável na memória e para os tipos de dados apresentados acima, **sua presença é obrigatória** antes das variáveis. A função ```scanf()``` faz a leitura da entrada, converte os dados na sentença para as variáveis conforme as especificações nela contidas e os coloca nas porções de memória indicadas pelos endereços dessas variáveis. 
 
-Apenas a título de curiosidade, o código-fonte abaixo mostra como funciona o operador ```&```. Veja como ele retorna o operador 
+Apenas a título de curiosidade, o código-fonte abaixo mostra como funciona o operador ```&```. Veja como esse operador retorna o endereço da variável, e como o endereço da variável muda a cada execução feita no programa associado a esse código-fonte. O endereço de memória é impresso em notação hexadecimal devido ao uso do especificador de formato ```%p```.
+
 ```
 #include<stdio.h>
 
@@ -137,9 +138,10 @@ int main(){
 int main(){
     int var_int;
 
-    var_int = 16;
+    printf("Digite um numero inteiro: ");
+    scanf("%d",&var_int);
 
-prin
+    printf("Valor inteiro informado: %d\n",var_int);
 
     return 0;
 }
