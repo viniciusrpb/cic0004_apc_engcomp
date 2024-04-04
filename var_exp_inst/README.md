@@ -6,4 +6,4 @@
 
 ## Exercícios Resolvidos
 
-   3.3. [Beecrowd 2413 - Busca na Internet](https://www.beecrowd.com.br/judge/en/problems/view/2413) [Solução](beecrowd_2413.c)
+   3.3. [Beecrowd 2413 - Busca na Internet](https://www.beecrowd.com.br/judge/en/problems/view/2413) [[Solução](beecrowd_2413.c)]
