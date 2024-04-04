@@ -166,16 +166,16 @@ int main(){
 ### Modificadores unsigned
 
 
-Ao incluir o modificador ```unsigned``` antes das declarações de variáveis dos tipos ```int``` e ```long```, pode-se trabalhar com valores inteiros sem sinal, ou seja, apenas inteiros não-negativos. Nesse caso, não é possível se trabalhar com números negativos. Entretanto, como a capacidade de armazenamento nas variáveis ```unsigned``` não é aumentada, o tamanho da faixa de valores positivos com que se pode trabalhar é dobrada.
+Ao incluir o modificador ```unsigned``` antes das declarações de variáveis do tipo ```int```, pode-se trabalhar com valores inteiros sem sinal, ou seja, apenas inteiros não-negativos. Nesse caso, não é possível se trabalhar com números negativos. Entretanto, como a capacidade de armazenamento nas variáveis ```unsigned``` não é aumentada, o tamanho da faixa de valores positivos com que se pode trabalhar é dobrada.
 
-O código-fonte abaixo mostra a declaração de duas variáveis inteiras sem sinal dos tipos ```int``` e ```long```:
+O código-fonte abaixo mostra a declaração de duas variáveis inteiras sem sinal para os tipos ```int``` e ```long```:
 
 ```
 #include<stdio.h>
 
 int main(){
     unsigned int a;
-    unsigned long int b;
+    long unsigned int b;
 
     a = 5;
     b = a+1;
