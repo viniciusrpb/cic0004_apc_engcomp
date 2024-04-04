@@ -41,10 +41,27 @@ int horas, minutos, segundos;
 scanf("%d:%d:%d",&horas,&minutos,&segundos);
 ```
 
-
 **IMPORTANTE:** Cada argumento de ponteiro deve ser de um tipo apropriado para o valor retornado pela especificação de conversão correspondente.
 
-Se o número de especificações de conversão no formato exceder o número de argumentos de ponteiro, os resultados são indefinidos. Se o número de argumentos de ponteiro exceder o número de especificações de conversão, então os argumentos de ponteiro excedentes são avaliados, mas caso contrário são ignorados.
+O ```&``` é um operador que retorna o endereço de uma variável na memória e para os tipos de dados apresentados acima, **sua presença é obrigatória** antes das variáveis. A função ```scanf()``` faz a leitura da entrada, converte os dados na sentença para as variáveis conforme as especificações nela contidas e os coloca nas porções de memória indicadas pelos endereços dessas variáveis. 
+
+Apenas a título de curiosidade, o código-fonte abaixo mostra como funciona o operador ```&```. Veja como ele retorna o operador 
+```
+#include<stdio.h>
+
+int main(){
+    char var_char;
+
+    var_char = 'f';
+
+    printf("Valor armazenado em var_char = %c\n",var_char);
+    printf("Endereco na memoria de var_char = %p\n",&var_char);
+
+    return 0;
+}
+```
+
+A seguir, são apresentados exemplos de leitura de dados utilizando a função ```scanf()``` para os diferentes tipos de dados:
 
 ```
 #include<stdio.h>
@@ -127,6 +144,8 @@ prin
     return 0;
 }
 ```
+
+** CURIOSIDADE **
 
 ```
 #include<stdio.h>
