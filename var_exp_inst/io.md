@@ -1,8 +1,24 @@
 # 3. Variáveis e Expressões
 
+
+
+
+
 ## 3.3. Entrada e Saída de Dados
 
+### Especificadores dos Tipos de Dados
 
+Tipo               | Especificador  | 
+-----------------  | -----------    |
+char               |  %c            |
+int                |  %d            |
+unsigned int       |  %ud           |
+long int           |  %ld           |
+long unsigned int  |  %uld          |
+
+### scanf() Leitura de Dados
+
+### printf() Escrita de Dados
 
 ```
 #include<stdio.h>
