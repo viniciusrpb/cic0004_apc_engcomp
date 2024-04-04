@@ -14,7 +14,7 @@ char               |  %c            |
 int                |  %d            |
 unsigned int       |  %ud           |
 long int           |  %ld           |
-long unsigned int  |  %uld          |
+long unsigned int  |  %lud          |
 
 ### scanf() Leitura de Dados
 
