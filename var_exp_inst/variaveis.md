@@ -1,6 +1,6 @@
-# 3. Algoritmos Computacionais Sequenciais
+# 3.1. Variáveis e Tipos de Dados
 
-## 3.1. Variáveis e Tipos de Dados
+## O que é uma variável?
 
 Definição: Uma variável é definida como uma abstração para uma posição (endereço) de memória. É bem melhor para os programadores se referirem a um endereço de memória por nome de sua preferência do que por endereços diretos de memória. 
 
@@ -17,7 +17,19 @@ int main(){
 }
 ```
 
-Repare que isso já ocorreu nos computadores antigos (veja [aqui sobre os computadores com arquitetura de memória explícita](https://pt.wikipedia.org/wiki/IBM_System/360)), mas hoje em dia isso é impensável considerando as linguagem de alto nível (a Linguagem C), em que temos programas de computadores mais complexos do que antigamente. Atualmente, os compiladores em conjunto com o sistema operacional assumem a responsabilidade de alocar o espaço de memória para as variáveis declaradas no programa. 
+Repare que isso já ocorreu nos computadores antigos (veja [aqui sobre os computadores com arquitetura de memória explícita](https://pt.wikipedia.org/wiki/IBM_System/360)), mas hoje em dia isso é impensável considerando as linguagem de alto nível (a Linguagem C), em que temos programas de computadores mais complexos do que antigamente. Atualmente, os compiladores em conjunto com o sistema operacional assumem a responsabilidade de alocar o espaço de memória para as variáveis declaradas no programa.
+
+## Como nomear uma variável?
+
+Os nomes das variáveis podem ter vários caracteres, em que apenas os 31 primeiros caracteres são considerados. As regras são as seguintes para nomear uma variável:
+
+- o primeiro caractere tem que ser uma letra ou sublinhado ```_```;
+- o restante do nome da variável pode conter letras, dígitos e sublinhados;
+- palavras reservadas da linguagem C não podem ser utilizadas como nome de variáveis, como ```int```, ```while```, ```return```, ```main``` etc;
+- existe distinção entre letras maiúsculas e minúsculas na linguagem C. Logo as variáveis com os nomes "flag", "Flag" e "FLAG" são diferentes;
+- **dica:** coloque nome para as variáveis de acordo com seu papel ou funcionamento dentro do código-fonte.
+
+## Tipos de Dados
 
 ### char
 
@@ -53,8 +65,6 @@ int main(){
 }
 ```
 
-Podemos utilizar o modificador **unsigned** 
-
 Atenção, cuidado com o **overflow** que podem ocorrer em variáveis do tipo ```int``` após operações de leitura de dados ou aritméticas. Veja o exemplo abaixo:
 
 ```
@@ -74,40 +84,7 @@ int main(){
 }
 ```
 
-O que o código-fonte acima imprime na tela? Como vemos, a = 10<sup>9</sup> e b = 10<sup>9</sup>, logo espera-se que p = 10<sup>18</sup>. Peraí... veja que 10<sup>18</sup> **NÃO PODE** ser representado por uma variável inteira, pois 10<sup>18</sup> é bem maior do que o valor máximo aproximado 2<sup>9</sup> que uma variável do tipo ```int``` suporta. Bom, precisamos de um tipo de dados que armazene mais informações.... (veja a seguir).
-
-
-### long int (ou long long int)
-
-Permite representar um valor inteiro (negativo, zero ou positivo) em uma variável que ocupa 8 bytes na memória, indicando maior capacidade de guardar informações do que a variável ```int``` tradicional. Com 8 bytes, o valor inteiro a ser armazenado pode estar contido no intervalo aproximado *[-9 x 10<sup>18</sup>, 9 x 10<sup>18</sup>]*. O código-fonte seguinte mostra a declaração de uma variável do tipo ```long int```, chamada ```var_li``` recebendo o valor constante ```5000000000000000000```:
-
-```
-#include<stdio.h>
-
-int main(){
-    long int var_li;
-
-    var_li = 5000000000000000000;
-
-    return 0;
-}
-```
-
-Em alguns outros códigos-fontes e materiais, vocês podem encontrar o tipo ```long long int```. Esse tipo foi desenvolvido visando diferenciar as variáveis ```long``` das arquiteturas 32 bits e 64 bits de computadores, que coexistiam entre os anos de 2000 até 2010. Vale lembrar que nos computadores de arquitetura 32 bits, a variável ```long int``` utilizava 4 bytes e a variável ```int``` utilizava 2 bytes! Como os computadores atuais possuem arquitetura 64 bits, tanto ```long long int``` e ```long int``` irão utilizar 8 bytes para armazenar um inteiro "maior" na memória.
-
-O código-fonte abaixo ilustra a declaração de uma variável do tipo ```long long int``` e a atribuição de um valor inteiro grande para ela:
-
-```
-#include<stdio.h>
-
-int main(){
-    long long int var_lli;
-
-    var_lli = 5000000000000000000;
-
-    return 0;
-}
-```
+O que o código-fonte acima imprime na tela? Como vemos, a = 10<sup>9</sup> e b = 10<sup>9</sup>, logo espera-se que p = 10<sup>18</sup>. Peraí... veja que 10<sup>18</sup> **NÃO PODE** ser representado por uma variável inteira, pois 10<sup>18</sup> é bem maior do que o valor máximo aproximado 2<sup>9</sup> que uma variável do tipo ```int``` suporta. Bom, precisamos de um tipo de dados que armazene mais informações.... (veja na parte de modificadores).
 
 ### float
 
@@ -161,8 +138,42 @@ int main(){
 }
 ```
 
-### Modificadores unsigned
+## Modificadores
 
+Os modificadores são utilizados para variações dos tipos de dados nativamente existentes na linguagem C.
+
+### long (ou long long)
+
+Comumente utilizado em conjunto com o tipo ```long int```, gerando-se o tipo ```long int``` ou ```long long int```. Esse tipo permite representar um valor inteiro (negativo, zero ou positivo) em uma variável que ocupa 8 bytes na memória, indicando maior capacidade de guardar informações do que a variável ```int``` tradicional. Com 8 bytes, o valor inteiro a ser armazenado pode estar contido no intervalo aproximado *[-9 x 10<sup>18</sup>, 9 x 10<sup>18</sup>]*. O código-fonte seguinte mostra a declaração de uma variável do tipo ```long int```, chamada ```var_li``` recebendo o valor constante ```5000000000000000000```:
+
+```
+#include<stdio.h>
+
+int main(){
+    long int var_li;
+
+    var_li = 5000000000000000000;
+
+    return 0;
+}
+```
+
+Em alguns outros códigos-fontes e materiais, vocês podem encontrar o tipo ```long long int```. Esse tipo foi desenvolvido visando diferenciar as variáveis ```long``` das arquiteturas 32 bits e 64 bits de computadores, que coexistiam entre os anos de 2000 até 2010. Vale lembrar que nos computadores de arquitetura 32 bits, a variável ```long int``` utilizava 4 bytes e a variável ```int``` utilizava 2 bytes! Como os computadores atuais possuem arquitetura 64 bits, tanto ```long long int``` e ```long int``` irão utilizar 8 bytes para armazenar um inteiro "maior" na memória.
+
+O código-fonte abaixo ilustra a declaração de uma variável do tipo ```long long int``` e a atribuição de um valor inteiro grande para ela:
+
+```
+#include<stdio.h>
+
+int main(){
+    long long int var_lli;
+
+    var_lli = 5000000000000000000;
+
+    return 0;
+}
+```
+### unsigned
 
 Ao incluir o modificador ```unsigned``` antes das declarações de variáveis do tipo ```int```, pode-se trabalhar com valores inteiros sem sinal, ou seja, apenas inteiros não-negativos. Nesse caso, não é possível se trabalhar com números negativos. Entretanto, como a capacidade de armazenamento nas variáveis ```unsigned``` não é aumentada, o tamanho da faixa de valores positivos com que se pode trabalhar é dobrada.
 
@@ -183,7 +194,7 @@ int main(){
 ```
 
 
-### Tabelas resumo
+## Tabelas resumo
 
 Tipo               | Tamanho na Memória  | Valor Mínimo           | Valor Máximo                         | Descrição                                         |
 -----------------  | ------------------  | ---------------------- | ------------------------------------ | ------------------------------------------------- |
