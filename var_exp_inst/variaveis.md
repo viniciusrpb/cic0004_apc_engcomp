@@ -227,6 +227,20 @@ a = b;
 
 ### Operadores Matemáticos
 
+Em resumo, as operações matemáticas são descritas pela seguinte tabela:
+
+
+Operação          | Operador em Linguagem C  | Exemplo       |
+----------------- | -----------------------  | --------------|
+Soma              |  +                       | s = a + b;    |
+Subtração         |  -                       | s = a - b;    |
+Multiplicação     |  *                       | s = a * b;    |
+Divisão           |  /                       | s = a / b;    |
+Resto de Divisão  |  %                       | s = a % b;    |
+
+
+em que ```s```, ```a```, ```b``` são variáveis numéricas, isto é, inteiras ou reais. Idealmente, tente sempre fazer as operações em variáveis de mesmo tipo.
+
 #### Soma 
 
 Classicamente, é descrita na seguinte forma: "resultado" = "operando 1" + "operando 2"
@@ -275,3 +289,25 @@ a = 3;
 a++;
 ```
 
+#### Subtração
+
+
+**Exemplo (5):** Subtrair uma constante a uma variável e armazenar o resultado em outra variável:
+
+```
+int a,sub;
+
+a = 3;
+
+sub = a-2;
+```
+
+**Exemplo (6):** Subtrair uma constante a uma variável e armazenar o resultado em outra variável:
+
+```
+int a,sub;
+
+a = 3;
+
+sub = a-2;
+```
