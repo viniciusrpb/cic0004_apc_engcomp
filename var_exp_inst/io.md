@@ -1,4 +1,4 @@
-# 3. Variáveis e Expressões
+# 3. Algoritmos Computacionais Sequenciais
 
 ## 3.3. Entrada e Saída de Dados
 
