@@ -135,7 +135,7 @@ mul = a*b;
 
 #### Divisão
 
-**Exemplo (9):** Dividir uma variável por uma constante armazenar o resultado em outra variável:
+**Exemplo (9):** Dividir uma variável por uma constante e armazenar o resultado em outra variável:
 
 ```
 int a,div;
@@ -145,7 +145,7 @@ a = 4;
 div = a/2;
 ```
 
-**Exemplo (10):** Dividir uma variável por uma constante armazenar o resultado em outra variável:
+**Exemplo (10):** Dividir uma variável por uma segunda variável e armazenar o resultado em uma terceira variável:
 
 
 ```
@@ -166,3 +166,28 @@ a = 15;
 
 div = a/b;
 ```
+
+#### Resto de Divisão
+
+**Exemplo (11):** Pegar o resto da divisão de uma variável por uma constante e armazenar o resultado em outra variável:
+
+```
+int a,resto;
+
+a = 4;
+
+resto = a%2;
+```
+
+**Exemplo (12):** Pegar o resto da divisão de uma variável por outra variável e armazenar o resultado em uma terceira variável:
+
+
+```
+int a,b,resto;
+
+a = 12;
+b = 2;
+
+resto = a%b;
+```
+
