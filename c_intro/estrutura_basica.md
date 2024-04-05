@@ -1,5 +1,3 @@
-# 2. Primeiros Passos em Linguagem C
-
 # 2.1. Estrutura Básica
 
 ## O começo
