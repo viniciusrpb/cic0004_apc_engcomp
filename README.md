@@ -24,7 +24,7 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cron
 
 2. [Primeiros Passos em Linguagem C](c_intro/README.md)
 
-3. [Variáveis, Expressões e Instruções](var_exp_inst/README.md)
+3. [Algoritmos Computacionais Sequenciais](var_exp_inst/README.md)
 
 ## Referências
 
