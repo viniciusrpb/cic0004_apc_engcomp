@@ -1,6 +1,6 @@
-# 3. Variáveis e Expre
+# 3. Algoritmos Computacionais Sequenciais
 
-## 3.2. Expressões
+## 3.2. Expressões Matemáticas
 
 ### Atribuição
 
