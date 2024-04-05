@@ -291,7 +291,6 @@ a++;
 
 #### Subtração
 
-
 **Exemplo (5):** Subtrair uma constante a uma variável e armazenar o resultado em outra variável:
 
 ```
@@ -305,9 +304,67 @@ sub = a-2;
 **Exemplo (6):** Subtrair uma constante a uma variável e armazenar o resultado em outra variável:
 
 ```
-int a,sub;
+int a,b,sub;
+
+a = 3;
+b = 9;
+
+sub = b-a;
+```
+
+#### Multiplicação
+
+**Exemplo (7):** Multiplicar uma constante a uma variável e armazenar o resultado em outra variável:
+
+```
+int a,mul;
 
 a = 3;
 
-sub = a-2;
+mul = a*2;
+```
+
+**Exemplo (8):** Multiplicar uma constante a uma variável e armazenar o resultado em outra variável:
+
+```
+int a,b,mul;
+
+a = 3;
+b = 9;
+
+mul = a*b;
+```
+
+#### Divisão
+
+**Exemplo (7):** Dividir uma variável por uma constante armazenar o resultado em outra variável:
+
+```
+int a,div;
+
+a = 4;
+
+div = a/2;
+```
+
+**Exemplo (8):** Dividir uma variável por uma constante armazenar o resultado em outra variável:
+
+
+```
+int a,b,div;
+
+a = 12;
+b = 2;
+
+div = a/b;
+```
+
+Entretanto, observe no exemplo abaixo que se ```a``` não for divisível por ```2```, como as variáveis são inteiras, haverá apenas o armazenamento da parte inteira do quociente na variável ```div```.
+
+```
+int a,div;
+
+a = 15;
+
+div = a/b;
 ```
