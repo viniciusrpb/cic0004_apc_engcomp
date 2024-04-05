@@ -2,7 +2,7 @@
    
    3.1. [Variáveis e Tipos de Dados](variaveis.md)
 
-   3.2. [Expressões Matemáticas](variaveis.md)
+   3.2. [Expressões Matemáticas](expressoes.md)
 
    3.3. [Entrada e Saída de Dados](io.md)
 
