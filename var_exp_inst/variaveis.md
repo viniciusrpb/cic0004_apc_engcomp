@@ -1,4 +1,4 @@
-# 3. Variáveis e Expressões
+# 3. Algoritmos Computacionais Sequenciais
 
 ## 3.1. Variáveis e Tipos de Dados
 
