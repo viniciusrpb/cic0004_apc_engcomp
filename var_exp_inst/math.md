@@ -145,28 +145,69 @@ int main(){
 ```
 
 
+## Exponencial
 
+```exp(x)```: Retorna o valor de e elevado a potência x.
 
-floor(x): Retorna o maior número inteiro menor ou igual a x.
-round(x): 
-Funções Trigonométricas:
+```
+#include<stdio.h>
+#include<math.h>
 
+int main(){
+  double ans,x;
+
+  x = 6.4;
+
+  ans = exp(x);
+
+  printf("%lf\n",ans); /*imprime 601.845038*/
+
+  return 0;
+}
+```
+
+## Logaritmo
+
+log(x): Retorna o logaritmo natural de ```x```.
+
+```
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+  double ans,x;
+
+  x = 4.0;
+
+  ans = log(x);
+
+  printf("%lf\n",ans); /*imprime 1.386294*/
+
+  return 0;
+}
+```
+
+```log10(x)```: Retorna o logaritmo do número ```x``` na base 10.
+
+```
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+  double ans,x;
+
+  x = 4.0;
+
+  ans = log10(x);
+
+  printf("%lf\n",ans); /*imprime 0.602060*/
+
+  return 0;
+}
+```
+
+## Funções Trigonométricas
 sin(x), cos(x), tan(x): Retorna o seno, cosseno e tangente de x, onde x é em radianos.
-asin(x), acos(x), atan(x): Retorna o arco seno, arco cosseno e arco tangente de x, em radianos.
-Funções Exponenciais e Logarítmicas:
 
-exp(x): Retorna o valor de e elevado a potência x.
-log(x): Retorna o logaritmo natural de x.
-log10(x): Retorna o logaritmo de x na base 10.
-
-Funções de Valor Absoluto:
-
-fabs(x): Retorna o valor absoluto de x para números de ponto flutuante.
-
-Outras Funções Matemáticas:
-
-
-fmod(x, y): Retorna o resto da divisão de x por y.
-remainder(x, y): Retorna o valor do resto da divisão de x por y.
 
 
