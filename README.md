@@ -26,6 +26,8 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cron
 
 3. [Algoritmos Computacionais Sequenciais](var_exp_inst/README.md)
 
+4. [Estruturas Condicionais](condicionais/README.md)
+
 ## Referências
 
 - [Linguagem C Descomplicada](https://programacaodescomplicada.wordpress.com/indice/linguagem-c/)
