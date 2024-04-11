@@ -168,7 +168,7 @@ int main(){
 
 ## Logaritmo
 
-log(x): Retorna o logaritmo natural de ```x```.
+```log(x)```: Retorna o logaritmo natural de ```x```.
 
 ```
 #include<stdio.h>
@@ -207,7 +207,30 @@ int main(){
 ```
 
 ## Funções Trigonométricas
-sin(x), cos(x), tan(x): Retorna o seno, cosseno e tangente de x, onde x é em radianos.
 
+As funções ``sin(x)``, ``cos(x)``, ``tan(x)`` retornam respectivamente seno, cosseno e tangente de ```x```, em que ```x``` é um número em radianos.
 
+```log10(x)```: Retorna o logaritmo do número ```x``` na base 10.
+
+```
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    double ans,x;
+
+    x = 3.14159265;
+
+    ans = sin(x);
+    printf("%lf\n",ans); /*imprime 0.000000*/
+
+    ans = cos(x);
+    printf("%lf\n",ans); /*imprime -1.000000*/
+
+    ans = tan(x);
+    printf("%lf\n",ans); /*imprime -0.000000*/
+
+    return 0;
+}
+```
 
