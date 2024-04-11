@@ -11,3 +11,8 @@
 ## Exercícios Resolvidos
 
    3.5. [Beecrowd 2413 - Busca na Internet](https://www.beecrowd.com.br/judge/en/problems/view/2413) [[Solução](beecrowd_2413.c)]
+
+
+## Aula Prática (05/04/2024)
+
+   3.5. [Beecrowd 2413 - Busca na Internet](https://www.beecrowd.com.br/judge/en/problems/view/2413) [[Solução](beecrowd_2413.c)]
