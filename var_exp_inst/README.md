@@ -6,6 +6,8 @@
 
    3.3. [Entrada e Saída de Dados](io.md)
 
+   3.4. [Funções Matemáticas](math.md)
+
 ## Exercícios Resolvidos
 
    3.4. [Beecrowd 2413 - Busca na Internet](https://www.beecrowd.com.br/judge/en/problems/view/2413) [[Solução](beecrowd_2413.c)]
