@@ -87,26 +87,6 @@ int main(){
 }
 ```
 
-
-## Teto 
-
-```ceil(x)```: Retorna o menor número inteiro maior ou igual a x.
-
-```
-#include<stdio.h>
-#include<math.h>
-
-int main(){
-  int ans;
-
-  ans = ceil(6.54);
-
-  printf("ceil(%d\n",ans); /*retorna 7*/
-
-  return 0;
-}
-```
-
 ## Teto 
 
 ```ceil(x)```: Retorna o menor número inteiro maior ou igual a x.
