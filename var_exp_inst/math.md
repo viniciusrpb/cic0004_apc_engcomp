@@ -1,5 +1,7 @@
 # 3.4. Funções Matemáticas
 
+Pode-se fazer o uso de funções matemáticas na Linguagem C por meio da biblioteca ```math.h```, que deve ser incluída na parte superior do código-fonte como é mostrado abaixo:
+
 ```
 #include<stdio.h>
 #include<math.h>
