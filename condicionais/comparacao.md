@@ -16,7 +16,7 @@ Retorna verdadeiro se ```a``` for igual a ```b```, ou falso caso contrário. Bas
 Sintaxe da comparação:
 
 ```
-/*a == b*/
+a == b
 ```
 
 ### Diferente (!=)
@@ -26,7 +26,7 @@ Retorna verdadeiro se ```a``` for diferente de a ```b```, ou falso caso contrár
 Sintaxe da comparação:
 
 ```
-/*a != b*/
+a != b
 ```
 
 ### Maior (>)
@@ -36,7 +36,7 @@ Retorna verdadeiro se ```a``` for maior de que ```b```, ou falso caso contrário
 Sintaxe da comparação:
 
 ```
-/*a > b*/
+a > b
 ```
 
 ### Maior (>=)
@@ -46,7 +46,7 @@ Retorna verdadeiro se ```a``` for maior ou igual a ```b```, ou falso caso contr�
 Sintaxe da comparação:
 
 ```
-/*a >= b*/
+a >= b
 ```
 
 **Importante:** é errado digitar ```=>```, isso não existe.
@@ -59,7 +59,7 @@ Retorna verdadeiro se ```a``` for menor do que ```b```, ou falso caso contrário
 Sintaxe da comparação:
 
 ```
-/*a < b*/
+a < b
 ```
 
 ### Menor ou igual (<=)
@@ -69,7 +69,7 @@ Retorna verdadeiro se ```a``` for menor ou igual a ```b```, ou falso caso contr�
 Sintaxe da comparação:
 
 ```
-/*a <= b*/
+a <= b
 ```
 
 ## Operadores Lógicos para Múltiplas Comparações
@@ -107,23 +107,23 @@ A composição de múltiplos comparadores demanda o uso de operadores lógicos. 
 Verificar se um número inteiro ```x``` é não-negativo e ímpar:
 
  ```
-/*x >= 0 && (x % 2) != 0*/
+x >= 0 && (x % 2) != 0
 ```
 
 Verificar se o número inteiro ```x``` está contido no intervalo [a,b]:
 
  ```
-/*x >= a && x <= b*/
+x >= a && x <= b
 ```
 
 Verificar se o número inteiro ```x``` está contido no intervalo [a,b):
 
  ```
-/*x >= a && x < b*/
+x >= a && x < b
 ```
 
 Verificar se um número inteiro  ```x``` é múltiplo de 3 ou múltiplo de 7:
 
  ```
-/*x % 3 == 0 || x % 7 == 0*/
+x % 3 == 0 || x % 7 == 0
 ```
