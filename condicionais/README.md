@@ -18,4 +18,13 @@ Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **s
 
 4.4. [Beecrowd 2375 - Sedex](https://judge.beecrowd.com/pt/problems/view/2375) [[Solucão](beecrowd_2375.c)]
 
-4.5. [Beecrowd 1051 - Imposto de Renda](https://judge.beecrowd.com/pt/problems/view/2375) [[Solucão](beecrowd_1051.md)]
+4.6. [Beecrowd 1048 - Imposto de Renda](https://judge.beecrowd.com/pt/problems/view/1048) [[Solucão](beecrowd_1048.md)]
+
+4.5. [Beecrowd 1051 - Imposto de Renda](https://judge.beecrowd.com/pt/problems/view/1051) [[Solucão](beecrowd_1051.c)]
+
+4.7. [Beecrowd 2456 - Imposto de Renda](https://judge.beecrowd.com/pt/problems/view/2456) [[Solucão](beecrowd_2456.md)]
+
+4.8. [Beecrowd 2579 - Imposto de Renda](https://judge.beecrowd.com/pt/problems/view/2579) [[Solucão](beecrowd_2579.md)]
+
+4.9. [Beecrowd 3049 - Imposto de Renda](https://judge.beecrowd.com/pt/problems/view/3049) [[Solucão](beecrowd_3049.md)]
+
