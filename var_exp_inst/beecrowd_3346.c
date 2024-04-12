@@ -4,7 +4,7 @@ Departamento de Ciência da Computação
 CIC0004 - Algoritmos e Programação de Computadores
 Monitora Mayara C. Marinho
 
-Tópico: Flutuação do PIB
+Tópico: Algoritmos Sequenciais
 Objetivo: Solução do problema beecrowd 3346 - Flutuação do PIB (Leandro Zatesko, Federal University of Technology of Paraná)
           https://judge.beecrowd.com/pt/problems/view/3346
 

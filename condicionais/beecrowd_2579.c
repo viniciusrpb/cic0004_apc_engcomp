@@ -4,7 +4,7 @@ Departamento de Ciência da Computação
 CIC0004 - Algoritmos e Programação de Computadores
 Monitora Mayara C. Marinho
 
-Tópico: Nagol
+Tópico: Estruturas Condicionais
 Objetivo: Solução do problema beecrowd 2579 - Nagol (Dâmi Henrique, INATEL)
           https://judge.beecrowd.com/pt/problems/view/2579
 

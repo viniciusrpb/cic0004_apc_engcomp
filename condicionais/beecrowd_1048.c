@@ -4,7 +4,7 @@ Departamento de Ciência da Computação
 CIC0004 - Algoritmos e Programação de Computadores
 Monitora Mayara C. Marinho
 
-Tópico: Aumento de Salário
+Tópico: Estruturas Condicionais
 Objetivo: Solução do problema beecrowd 1048 - Aumento de Salário (Neilor Tonin)
           https://judge.beecrowd.com/pt/problems/view/1048
 

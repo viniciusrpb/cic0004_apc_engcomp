@@ -4,7 +4,7 @@ Departamento de Ciência da Computação
 CIC0004 - Algoritmos e Programação de Computadores
 Monitora Mayara C. Marinho
 
-Tópico: Idade em Dias
+Tópico: Algoritmos Sequenciais
 Objetivo: Solução do problema beecrowd 1020 - Idade em Dias (Neilor Tonin, URI)
           https://judge.beecrowd.com/pt/problems/view/1020
 

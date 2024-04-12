@@ -4,7 +4,7 @@ Departamento de Ciência da Computação
 CIC0004 - Algoritmos e Programação de Computadores
 Monitora Mayara C. Marinho
 
-Tópico: Tapetes
+Tópico: Algoritmos Sequenciais
 Objetivo: Solução do problema beecrowd 2472 - Tapetes (Por OBI - Olimpíada Brasileira de Informática 2014)
           https://judge.beecrowd.com/pt/problems/view/2472
 

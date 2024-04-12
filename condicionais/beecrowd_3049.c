@@ -4,7 +4,7 @@ Departamento de Ciência da Computação
 CIC0004 - Algoritmos e Programação de Computadores
 Monitora Mayara C. Marinho
 
-Tópico: Nota Cortada
+Tópico: Estruturas Condicionais
 Objetivo: Solução do problema beecrowd 3049 - Nota Cortada
           https://judge.beecrowd.com/pt/problems/view/3049
 

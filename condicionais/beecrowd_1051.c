@@ -4,7 +4,7 @@ Departamento de Ciência da Computação
 CIC0004 - Algoritmos e Programação de Computadores
 Monitora Mayara C. Marinho
 
-Tópico: Imposto de Renda
+Tópico: Estruturas Condicionais
 Objetivo: Solução do problema beecrowd 1051 - Imposto de Renda (Neilor Tonin)
           https://judge.beecrowd.com/pt/problems/view/1051
 
