@@ -83,6 +83,7 @@ A composição de múltiplos comparadores demanda o uso de operadores lógicos. 
  0 |   1    |
  1 |   0    |
  
+### Operador Lógico E (&&)
 
  A | B | A && B |
  --| --| ------ |
@@ -93,9 +94,36 @@ A composição de múltiplos comparadores demanda o uso de operadores lógicos. 
 
  ### Operador Lógico OU (||)
 
- A | B | A || B |
+ A | B | A II B |
  --| --| ------ |
  0 | 0 |   0    |
  0 | 1 |   1    |
  1 | 0 |   1    |
  1 | 1 |   1    |
+
+
+## Exemplos:
+
+Verificar se um número inteiro ```x``` é não-negativo e ímpar:
+
+ ```
+/*x >= 0 && (x % 2) != 0*/
+```
+
+Verificar se o número inteiro ```x``` está contido no intervalo [a,b]:
+
+ ```
+/*x >= a && x <= b*/
+```
+
+Verificar se o número inteiro ```x``` está contido no intervalo [a,b):
+
+ ```
+/*x >= a && x < b*/
+```
+
+Verificar se um número inteiro  ```x``` é múltiplo de 3 ou múltiplo de 7:
+
+ ```
+/*x % 3 == 0 || x % 7 == 0*/
+```
