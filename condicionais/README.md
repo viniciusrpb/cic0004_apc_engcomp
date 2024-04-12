@@ -14,9 +14,11 @@ Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **s
 
 4.3. [Estrutura Switch-Case](switchcase.md)
 
-# Exercícios Resolvidos
+## Exercícios Resolvidos
 
 4.4. [Beecrowd 2375 - Sedex](https://judge.beecrowd.com/pt/problems/view/2375) [[Solucão](beecrowd_2375.c)]
+
+## Aula Prática (12/04/2024)
 
 4.5. [Beecrowd 1048 - Aumento de Salário](https://judge.beecrowd.com/pt/problems/view/1048) [[Solucão](beecrowd_1048.c)]
 
