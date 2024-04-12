@@ -1,10 +1,12 @@
 # 4. Estruturas Condicionais
 
-4.1. [Operações de Comparação](comparacao.md)
+![Fluxograma if-else](../images/ifelse.png)
 
-4.2. [Estrutura If-Else](ifelse.md)
+4.2. [Operações de Comparação](comparacao.md)
 
-4.3. [Estrutura Switch-Case](switchcase.md)
+4.3. [Estrutura If-Else](ifelse.md)
+
+4.4. [Estrutura Switch-Case](switchcase.md)
 
 # Exercícios Resolvidos
 
