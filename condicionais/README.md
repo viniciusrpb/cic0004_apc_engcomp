@@ -4,7 +4,9 @@ Uma estrutura condicional em Linguagem C permite ao algoritmo computacional a to
 
 ![Fluxograma if-else](images/ifelse_flowchart.png)
 
-Na Linguagem C, existem dois tipos de estruturas condicionais: if-else e switch-case. Elas são detalhadas nas subseções seguintes após trabalharmos a criação de comparações para elaboração das condições.
+Observe na Figura acima que uma condição retorna sempre, ou um valor **verdadeiro**, ou um valor **falso**. A ideia é justamente elaborar um fluxo de comandos, expressões e instruções, para cada um desses casos, sendo o caso verdadeiro sempre obrigatório.
+
+Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **switch-case**. Elas são detalhadas nas subseções seguintes após trabalharmos a criação de comparações para elaboração das condições.
 
 4.1. [Operações de Comparação](comparacao.md)
 
