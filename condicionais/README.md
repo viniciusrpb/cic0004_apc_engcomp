@@ -1,18 +1,16 @@
 # 4. Estruturas Condicionais
 
-Uma estrutura condicional em Linguagem C permite a execução de um bloco de comandos, expressões e instruções quando uma condição especificada for verdadeira e, opcionalmente, um outro bloco de código distinto se a condição for falsa.
+Uma estrutura condicional em Linguagem C permite ao algoritmo computacional a tomada de decisões, isto é, a execução de comandos, expressões e instruções que satisfazem uma condição determinada. Especificamente, o algoritmo executa um bloco de comandos, expressões e instruções quando uma condição especificada for verdadeira e, opcionalmente, um outro bloco de código distinto se a condição for falsa.
 
 ![Fluxograma if-else](images/ifelse_flowchart.png)
 
-if: A estrutura if permite que você execute um bloco de código se uma condição for verdadeira. Você também pode adicionar else para executar um bloco de código alternativo se a condição for falsa. Aqui está um exemplo:
+Na Linguagem C, existem dois tipos de estruturas condicionais: if-else e switch-case. Elas são detalhadas nas subseções seguintes após trabalharmos a criação de comparações para elaboração das condições.
 
+4.1. [Operações de Comparação](comparacao.md)
 
+4.2. [Estrutura If-Else](ifelse.md)
 
-4.2. [Operações de Comparação](comparacao.md)
-
-4.3. [Estrutura If-Else](ifelse.md)
-
-4.4. [Estrutura Switch-Case](switchcase.md)
+4.3. [Estrutura Switch-Case](switchcase.md)
 
 # Exercícios Resolvidos
 
