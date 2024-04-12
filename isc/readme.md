@@ -1,9 +1,3 @@
-Universidade de Brasília (UnB)
-
-Departamento de Ciência da Computação (CIC)
-
-CIC0004 - Algoritmos e Programação de Computadores - Turma 04
-
 # 1. Introdução aos Sistemas Computacionais
 
    1.1. [Introdução aos Algoritmos](algoritmos.md)
