@@ -10,7 +10,7 @@ Objetivo: Solução do problema beecrowd 2579 - Nagol (Dâmi Henrique, INATEL)
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc beecrowd2579.c -o nagol
+gcc beecrowd_2579.c -o nagol
 ./nagol
 */
 

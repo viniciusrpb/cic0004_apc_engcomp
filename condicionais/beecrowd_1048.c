@@ -10,7 +10,7 @@ Objetivo: Solução do problema beecrowd 1048 - Aumento de Salário (Neilor Toni
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc beecrowd1048.c -o salario
+gcc beecrowd_1048.c -o salario
 ./salario
 */
 

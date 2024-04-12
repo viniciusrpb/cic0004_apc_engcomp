@@ -10,7 +10,7 @@ Objetivo: Solução do problema beecrowd 1051 - Imposto de Renda (Neilor Tonin)
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc beecrowd1051.c -o imposto
+gcc beecrowd_1051.c -o imposto
 ./imposto
 */
 

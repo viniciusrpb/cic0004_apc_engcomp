@@ -10,7 +10,7 @@ Objetivo: Solução do problema beecrowd 3049 - Nota Cortada
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc beecrowd3049.c -o nota_cortada
+gcc beecrowd_3049.c -o nota_cortada
 ./nota_cortada
 */
 

@@ -10,7 +10,7 @@ Objetivo: Solução do problema beecrowd 2456 - Cartas (OBI - Olimpíada Brasile
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc beecrowd2456.c -o cartas
+gcc beecrowd_2456.c -o cartas
 ./cartas
 */
 
