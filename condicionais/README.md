@@ -1,6 +1,6 @@
 # 4. Estruturas Condicionais
 
-![Fluxograma if-else](../images/ifelse.png)
+![Fluxograma if-else](/images/ifelse.png)
 
 4.2. [Operações de Comparação](comparacao.md)
 
