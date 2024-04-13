@@ -12,6 +12,8 @@
 
    3.5. [Beecrowd 2413 - Busca na Internet](https://www.beecrowd.com.br/judge/en/problems/view/2413) [[Solução](beecrowd_2413.c)]
 
+   3.6. [Beecrowd 2786 - Piso na Escola](https://www.beecrowd.com.br/judge/en/problems/view/2786) [[Solução](beecrowd_2786.c)]
+
 
 ## Aula Prática (05/04/2024)
 
@@ -21,8 +23,6 @@
 
    3.8. [Beecrowd 2377 - Pedágio](https://www.beecrowd.com.br/judge/en/problems/view/2377) [[Solução](beecrowd_2377.c)]
 
-   3.9. [Beecrowd 2413 - Busca na Internet](https://www.beecrowd.com.br/judge/en/problems/view/2413) [[Solução](beecrowd_2413.c)]
+   3.9. [Beecrowd 2472 - Tapetes](https://www.beecrowd.com.br/judge/en/problems/view/2472) [[Solução](beecrowd_2472.c)]
 
-   3.10. [Beecrowd 2472 - Tapetes](https://www.beecrowd.com.br/judge/en/problems/view/2472) [[Solução](beecrowd_2472.c)]
-
-   3.11. [Beecrowd 3346 - Flutuação do PIB](https://www.beecrowd.com.br/judge/en/problems/view/3346) [[Solução](beecrowd_3346.c)]
+   3.10. [Beecrowd 3346 - Flutuação do PIB](https://www.beecrowd.com.br/judge/en/problems/view/3346) [[Solução](beecrowd_3346.c)]
