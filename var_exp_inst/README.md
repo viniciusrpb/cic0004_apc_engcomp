@@ -17,12 +17,12 @@
 
 ## Aula Prática (05/04/2024)
 
-   3.6. [Beecrowd 1020 - Idade em Dias](https://www.beecrowd.com.br/judge/en/problems/view/1020) [[Solução](beecrowd_1020.c)]
+   3.7. [Beecrowd 1020 - Idade em Dias](https://www.beecrowd.com.br/judge/en/problems/view/1020) [[Solução](beecrowd_1020.c)]
 
-   3.7. [Beecrowd 2374 - Pneu](https://www.beecrowd.com.br/judge/en/problems/view/2374) [[Solução](beecrowd_2374.c)]
+   3.8. [Beecrowd 2374 - Pneu](https://www.beecrowd.com.br/judge/en/problems/view/2374) [[Solução](beecrowd_2374.c)]
 
-   3.8. [Beecrowd 2377 - Pedágio](https://www.beecrowd.com.br/judge/en/problems/view/2377) [[Solução](beecrowd_2377.c)]
+   3.9. [Beecrowd 2377 - Pedágio](https://www.beecrowd.com.br/judge/en/problems/view/2377) [[Solução](beecrowd_2377.c)]
 
-   3.9. [Beecrowd 2472 - Tapetes](https://www.beecrowd.com.br/judge/en/problems/view/2472) [[Solução](beecrowd_2472.c)]
+   3.10. [Beecrowd 2472 - Tapetes](https://www.beecrowd.com.br/judge/en/problems/view/2472) [[Solução](beecrowd_2472.c)]
 
-   3.10. [Beecrowd 3346 - Flutuação do PIB](https://www.beecrowd.com.br/judge/en/problems/view/3346) [[Solução](beecrowd_3346.c)]
+   3.11. [Beecrowd 3346 - Flutuação do PIB](https://www.beecrowd.com.br/judge/en/problems/view/3346) [[Solução](beecrowd_3346.c)]
