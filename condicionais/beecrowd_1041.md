@@ -32,96 +32,132 @@ Se colocarmos as regras acima como se fosse um fluxograma, teríamos então:
 
 ![Fluxograma](images/beecrowd_1041.png).
 
-### Implementação
+### Implementação com If-Else
 
-Primeiramente, colocamos a estrutura básica de um programa em linguagem C, considerando que faremos operações de ler dois números inteiros da entrada padrão e fazer a escrita do resultado da soma na saída padrão. Assim, criamos a função principal e a diretiva para incluir a biblioteca ```stdio.h``` visando utilizar as funções de leitura (```scanf```) e escrita (```printf```):
+Primeiramente, colocamos a estrutura básica de um programa em linguagem C, considerando que faremos operações de ler dois números reais da entrada padrão e imprimir a resposta para o problema. Assim, criamos a função principal e a diretiva para incluir a biblioteca ```stdio.h``` visando utilizar as funções de leitura (```scanf```) e escrita (```printf```). Depois devemos declarar as variáveis que precisaremos para armazenar os valores ```x``` e ```y```:
 
 ```
 #include<stdio.h>
 
 int main(){
+
+  double x,y;
+
+  scanf("%lf %lf",&x,&y);
+
+  
 
   return 0;
 }
 ```
 
-Depois devemos declarar as variáveis que precisaremos para armazenar os operandos ```a``` e ```b```, e o resultado da operação da soma em ```s```. O código-fonte após essas inclusões fica da seguinte maneira:
+Vamos modelar a primeira regra, isto é, se ```x``` é igual a zero e ```y``` é igual a zero. Se para dois valores ```x``` e ```y``` o resultado da comparação for verdadeiro, então deve-se imprimir que esse ponto está na origem:
 
 ```
 #include<stdio.h>
 
 int main(){
 
-  int a,b,s;
+  double x,y;
+
+  scanf("%lf %lf",&x,&y);
+
+  if(x == 0.0 && y == 0.0){
+    printf("Origem\n");
+  }
 
   return 0;
 }
 ```
 
-Agora devemos ler dois números inteiros da entrada padrão. Para isso, utilizamos a função ```scanf()```:
-
-```
-scanf("%d",&a);
-```
-
-em que ```%d``` indica que ```scanf``` fará a leitura de uma valor do tipo inteiro, em que o valor lido será armazenado no endereço de memória associado à variável ```a```. Faremos o mesmo para a variável ```b```. Logo:
+Agora temos que pensar na estratégia de construção da estrutura condicional. Caso a condição retorne verdadeiro, o ideal e imprimir a mensagem e encerrar o programa. Para esse propósito, implementamos a bloco else:
 
 ```
 #include<stdio.h>
 
 int main(){
 
-  int a,b,s;
+    double x,y;
 
-  scanf("%d",&a);
-  scanf("%d",&b);
+    scanf("%lf %lf",&x,&y);
 
-  return 0;
+    if(x == 0.0 && y == 0.0){
+        printf("Origem\n");
+    }else{
+    
+    }
+
+    return 0;
 }
 ```
 
-Depois disso, calculamos a soma entre ```a``` e  ```b```, armazenando o resultado na variável  ```s```:
+A ideia então é no bloco else incluir as demais regras que foram mapeadas para cobrir todas as respostas possíveis. Seguindo-se então com a implementação da segunda regra dentro do bloco ```else```, vamos incluir um novo bloco if-else, resultando em:
 
 ```
 #include<stdio.h>
 
 int main(){
 
-  int a,b,s;
+    double x,y;
 
-  scanf("%d",&a);
-  scanf("%d",&b);
+    scanf("%lf %lf",&x,&y);
 
-  s = a + b;
+    if(x == 0.0 && y == 0.0){
+        printf("Origem\n");
+    }else{
+        if(x != 0.0 && y == 0.0){
+            printf("Eixo Y\n");
+        }else{
+            
+        }
+    }
 
-  return 0;
+    return 0;
 }
 ```
 
-Por fim, devemos imprimir a resposta **exatamente como é solicitado no enunciado (não faça nada diferente disso)**. O comando ```printf``` é então utilizado para imprimir informação na tela, em que temos que mostrar primeiramente ```SOMA = ``` (**o enunciado do problema pede!!!**), para depois mostrar o valor de ```s```. Segue apenas o comando isolado:
+E seguimos com a construção proposta acima para as demais regras, garantido-se que assim que uma das condições seja satisfeita, o programa seja encerrado, evitando-se comparações desnecessárias.
 
-```
-printf("SOMA = %d\n",s);
-```
+**IMPORTANTE**: seja cuidadoso e capriche na organização da indentação das estruturas if-else aninhadas (uma dentro da outra) para facilitar a interpretação do código-fonte.
 
-Incluindo o comando acima no código-fonte, temos então:
 
-### Código-fonte Final
+#### Código-fonte Final
 
 ```
 #include<stdio.h>
 
 int main(){
 
-  int a,b,s;
+    double x,y;
 
-  scanf("%d",&a);
-  scanf("%d",&b);
+    scanf("%lf %lf",&x,&y);
 
-  s = a + b;
+    if(x == 0.0 && y == 0.0){
+        printf("Origem\n");
+    }else{
+        if(x != 0.0 && y == 0.0){
+            printf("Eixo Y\n");
+        }else{
+            if(x == 0.0 && y != 0.0){
+                printf("Eixo X\n");
+            }else{
+                if(x > 0.0 && y > 0.0){
+                    printf("Q1\n");
+                }else{
+                    if(x < 0.0 && y > 0.0){
+                        printf("Q2\n");
+                    }else{
+                        if(x < 0.0 && y < 0.0){
+                            printf("Q3\n");
+                        }else{
+                            printf("Q4\n");
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-  printf("SOMA = %d\n",s);
-
-  return 0;
+    return 0;
 }
 ```
