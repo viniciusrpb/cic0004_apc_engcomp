@@ -19,8 +19,8 @@ Primeiramente, vamos ler a entrada, que são dois valores de ponto flutuante ```
 A resolução desse problema vai envolver tomada de decisão: temos que verificar onde o ponto *(x,y)* se encontra no plano cartesiano. Vamos mapear cada caso:
 
 - Se ```x``` é igual a zero e ```y``` é igual a zero, então esse ponto está na origem!
-- Caso contrário, se ```x``` é diferente de zero e ```y``` é igual a zero, então esse ponto está no Eixo Y;
-- Caso contrário, se ```x``` é igual a zero e ```y``` é diferente de zero, então esse ponto está no Eixo X;
+- Caso contrário, se ```x``` é diferente de zero e ```y``` é igual a zero, então esse ponto está no Eixo X;
+- Caso contrário, se ```x``` é igual a zero e ```y``` é diferente de zero, então esse ponto está no Eixo Y;
 - Caso contrário, se ```x``` é maior do que zero e ```y``` é maior do que zero, então esse ponto está no Quadrante 1 (Q1);
 - Caso contrário, se ```x``` é menor do que zero e ```y``` é maior do que zero, então esse ponto está no Quadrante 2 (Q2);
 - Caso contrário, se ```x``` é menor do que zero e ```y``` é menor do que zero, então esse ponto está no Quadrante 3 (Q3);
@@ -106,7 +106,7 @@ int main(){
         printf("Origem\n");
     }else{
         if(x != 0.0 && y == 0.0){
-            printf("Eixo Y\n");
+            printf("Eixo X\n");
         }else{
             
         }
@@ -136,10 +136,10 @@ int main(){
         printf("Origem\n");
     }else{
         if(x != 0.0 && y == 0.0){
-            printf("Eixo Y\n");
+            printf("Eixo X\n");
         }else{
             if(x == 0.0 && y != 0.0){
-                printf("Eixo X\n");
+                printf("Eixo Y\n");
             }else{
                 if(x > 0.0 && y > 0.0){
                     printf("Q1\n");
