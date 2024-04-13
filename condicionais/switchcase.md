@@ -5,7 +5,7 @@
 
 int main() {
     int a,b,ans;
-    char op = '+';
+    char op;
 
     scanf("%d %c %d",&a,&op,&b);
 
