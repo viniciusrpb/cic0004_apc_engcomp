@@ -28,6 +28,8 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cron
 
 4. [Estruturas Condicionais](condicionais/README.md)
 
+5. [Estruturas de Repetição](repeticao/README.md)
+
 ## Referências
 
 - [Linguagem C Descomplicada](https://programacaodescomplicada.wordpress.com/indice/linguagem-c/)
