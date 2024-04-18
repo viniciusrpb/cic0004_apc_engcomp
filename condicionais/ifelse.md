@@ -14,11 +14,43 @@ if(COMPARACAO){
 
 Vale lembrar que o bloco **else** é opcional, significando que se a condição do ```if``` for falsa e não houver um bloco ```else```, o programa segue o seu fluxo natural, executando a linha de código após o bloco if-else.
 
-**IMPORTANTE:** coloque indentação (a famosa tecla TAB) dentro 
+**IMPORTANTE:** coloque indentação (a famosa tecla TAB) dentro dos comandos associados a cada bloco.
+
+## Otimizando Estruturaas If-Else
+
+No início, é comum colocar várias condicionais If como se segue:
+
+```
+int a;
+
+scanf("%d",&a);
+
+if(a % 2 == 0){
+    printf("Numero par\n");
+}
+
+if(a % 2 != 0){
+    printf("Numero impar\n");
+}
+```
+
+Observe que no caso específico acima, se um número inteiro ```a``` é par, não há como ele ser ímpar. Mas no trecho de código-fonte acima, a comparação do segundo comando if é **desnecessariamente** executada quando o número ```a``` for par. Como a definição de número par ou ímpar é mutuamente exclusiva, você pode usar o bloco else como se segue:
+
+```
+int a;
+
+scanf("%d",&a);
+
+if(a % 2 == 0){
+    printf("Numero par\n");
+}else{
+    printf("Numero impar\n");
+}
+```
 
 ## Estrutura If-Else aninhada
 
-Em algumas situações, temos que elaborar um algoritmo em que apenas um dentre diversos blocos de código devem ser executados sob determinadas condições.
+Em algumas situações, temos que elaborar um algoritmo em que apenas um, dentre diversos blocos de código, deve ser executado ao satisfazer determinada condição.
 
 Por exemplo, suponha um programa que determina a menção final (de acordo com a Universidade de Brasília) de um discente a partir de sua média final. Considere que a média final é fornecida por um número real com um dígito de precisão na parte fracionária. A Tabela a seguir descreve como é feito o cálculo da menção a partir da média final:
 
