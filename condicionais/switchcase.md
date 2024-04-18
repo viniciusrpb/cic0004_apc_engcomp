@@ -51,6 +51,7 @@ int main() {
                 ans = a / b;
             }else{
                 printf("ERRO: b deve ser diferente de zero\n");
+                ans = 0;
             }
             break;
         default:
