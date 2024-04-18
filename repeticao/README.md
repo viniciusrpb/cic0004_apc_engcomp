@@ -22,7 +22,7 @@ Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **s
 
 5.5. [Beecrowd 1072 - Intervalo 2](https://judge.beecrowd.com/pt/problems/view/1072) [[Solucão](beecrowd_1072.c)]
 
-5.6. [Beecrowd 3302 - Cartas](https://judge.beecrowd.com/pt/problems/view/3302) [[Solucão](beecrowd_3302.c)]
+5.6. [Beecrowd 3302 - Resposta Certa](https://judge.beecrowd.com/pt/problems/view/3302) [[Solucão](beecrowd_3302.c)]
 
 5.7. [Beecrowd 3339 - Carina](https://judge.beecrowd.com/pt/problems/view/3339) [[Solucão](beecrowd_3339.c)]
 
