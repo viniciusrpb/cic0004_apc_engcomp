@@ -34,7 +34,7 @@ if(a % 2 != 0){
 }
 ```
 
-Observe que no caso específico acima, se um número inteiro ```a``` é par, não há como ele ser ímpar. Mas no trecho de código-fonte acima, a comparação do segundo comando if é **desnecessariamente** executada quando o número ```a``` for par. Como a definição de número par ou ímpar é mutuamente exclusiva, você pode usar o bloco else como se segue:
+Observe que no caso específico acima, se um número inteiro ```a``` é par, não há como ele ser ímpar. Mas no trecho de código-fonte acima, a comparação do segundo comando ```if``` é **desnecessariamente** executada quando o número ```a``` for par. Como a definição de número par ou ímpar é mutuamente exclusiva, você pode usar o bloco ```else``` como se segue:
 
 ```
 int a;
@@ -62,67 +62,94 @@ Média Final (MF) | Menção Final |
 7.0 <= MF <= 8.9 | MS      |
 9.0 <= MF <= 10.0 | SS     |
 
-Observe que temos vários intervalos a serem considerados e que cada intervalo está associado a uma menção. Isso significa que temos que tratar 
+Observe que temos vários intervalos a serem considerados e que cada intervalo está associado a uma menção. Isso significa que temos que elaborar um bloco de código específico para cada intervalo da tabela. Como resultado, temos que colocar blocos ```if-else``` dentro de outros blocos ```if-else```, caracterizando o bloco **if-else aninhado**.
 
 ```
 #include <stdio.h>
 
 int main() {
-    double media_final,frequencia;
+    double media_final;
 
-    scanf("%lf %lf", &media_final);
+    scanf("%lf", &media_final);
 
-    if(frequencia >= 0.75){
-
-        if (media_final >= 9.00) {
-            printf("SS\n");
+    if (media_final >= 0.0 && media_final <= 2.9) {
+        printf("II\n");
+    } else {
+        if (media_final >= 3.0 && media_final <= 4.9) {
+            printf("MI\n");
         } else {
-            if (nota >= 7.00) {
-                printf("MS\n");
+            if (media_final >= 5.0 && media_final <= 6.9) {
+                printf("MM\n");
             } else {
-                if (nota >= 5.00) {
-                    printf("MM\n");
+                if (media_final >= 7.0 && media_final <= 8.9) {
+                    printf("MS\n");
                 } else {
-                    if (nota >= 3.00) {
-                         printf("MI\n");
-                    } else {
-                         printf("II\n");
-                    }
-    } else {
-        printf("SR\n");
+                    printf("SS\n");
+                }
+            }
+        }
     }
 
     return 0;
 }
 ```
 
-
+Uma versão com comparações reduzidas é apresentada a seguir:
 
 ```
 #include <stdio.h>
 
 int main() {
-    int nota;
+    double media_final;
 
-    printf("Digite a nota do aluno: ");
-    scanf("%d", &nota);
+    scanf("%lf", &media_final);
 
-    if (nota >= 0 && nota <= 100) {
-        if (nota >= 90) {
-            printf("A\n");
-        } else if (nota >= 80) {
-            printf("B\n");
-        } else if (nota >= 70) {
-            printf("C\n");
-        } else if (nota >= 60) {
-            printf("D\n");
-        } else {
-            printf("F\n");
-        }
+    if (media_final >= 9.00) {
+        printf("SS\n");
     } else {
-        printf("Nota inválida\n");
+        if (media_final >= 7.00) {
+            printf("MS\n");
+        } else {
+            if (media_final >= 5.00) {
+                printf("MM\n");
+            } else {
+                if (media_final >= 3.00) {
+                    printf("MI\n");
+                } else {
+                    printf("II\n");
+                }
+            }
+        }
     }
 
     return 0;
 }
 ```
+
+Uma versão do código acima utilizando uma simplificação conhecida como ```else-if``` em estruturas condicionais ```if-else``` aninhadas é apresentada a seguir:
+
+```
+#include <stdio.h>
+
+int main() {
+    double media_final;
+
+    scanf("%lf", &media_final);
+
+    if (media_final >= 9.00) {
+        printf("SS\n");
+    } else if (media_final >= 7.00) {
+        printf("MS\n");
+    } else if (media_final >= 5.00) {
+        printf("MM\n");
+    } else if (media_final >= 3.00) {
+        printf("MI\n");
+    } else {
+        printf("II\n");
+    }
+
+    return 0;
+}
+```
+
+**DESAFIO:** Como exercício, altere algum dos últimos três códigos-fontes para incluir o caso em que o discente recebe a menção SR, isto é, quando a frequência do discente em relação ao total de aulas ministradas é menor do que 75%. Repare que independemente da média final do discente, se não houve cumprimento da frequẽncia mínima de 75%, o discente é reprovado por faltas, independentemente da sua média final. Considere que a frequência é lida juntamente com a media final (separada por espaço em branco) como um número real contendo um único dígito de precisão na parte fracionária.
