@@ -18,9 +18,11 @@ Vale lembrar que o bloco **else** é opcional, significando que se a condição 
 
 ## Otimizando Estruturas If-Else
 
-No início, é comum colocar várias condicionais If como se segue:
+No início, é comum colocar várias condicionais If como é mostrado no trecho de código-fonte a seguir:
 
 ```
+/* ... */
+
 int a;
 
 scanf("%d",&a);
@@ -32,11 +34,15 @@ if(a % 2 == 0){
 if(a % 2 != 0){
     printf("Numero impar\n");
 }
+
+/* ... */
 ```
 
-Observe que no caso específico acima, se um número inteiro ```a``` é par, não há como ele ser ímpar. Mas no trecho de código-fonte acima, a comparação do segundo comando ```if``` é **desnecessariamente** executada quando o número ```a``` for par. Como a definição de número par ou ímpar é mutuamente exclusiva, você pode usar o bloco ```else``` como se segue:
+Observe que no caso específico acima, se um número inteiro ```a``` é par, não há como ele ser ímpar. Mas no trecho de código-fonte acima, a comparação do segundo comando ```if``` é **desnecessariamente** executada quando o número ```a``` for par. Como a definição de número par ou ímpar é mutuamente exclusiva, você pode usar o bloco ```else``` como mostrado abaixo:
 
 ```
+/* ... */
+
 int a;
 
 scanf("%d",&a);
@@ -46,6 +52,8 @@ if(a % 2 == 0){
 }else{
     printf("Numero impar\n");
 }
+
+/* ... */
 ```
 
 ## Estrutura If-Else aninhada
@@ -62,7 +70,46 @@ Média Final (MF) | Menção Final |
 7.0 <= MF <= 8.9 | MS      |
 9.0 <= MF <= 10.0 | SS     |
 
-Observe que temos vários intervalos a serem considerados e que cada intervalo está associado a uma menção. Isso significa que temos que elaborar um bloco de código específico para cada intervalo da tabela. Como resultado, temos que colocar blocos ```if-else``` dentro de outros blocos ```if-else```, caracterizando o bloco **if-else aninhado**.
+Observe que temos vários intervalos a serem considerados e que cada intervalo está associado a uma menção. Isso significa que temos que elaborar um bloco de código específico para cada intervalo da tabela. Uma solução **ineficiente** e que você **deve evitar fazer** é elaborar vários blocos **if** separadamente como mostra o código-fonte abaixo:
+
+```
+/* Atencao: Codigo-fonte INEFICIENTE!!! Veja solucao correta mais abaixo!!! */
+#include <stdio.h>
+
+int main() {
+    double media_final;
+
+    scanf("%lf", &media_final);
+
+    if (media_final >= 0.0 && media_final <= 2.9) {
+        printf("II\n");
+    }
+
+    if (media_final >= 3.0 && media_final <= 4.9) {
+        printf("MI\n");
+    }
+
+    if (media_final >= 5.0 && media_final <= 6.9) {
+        printf("MM\n");
+    }
+
+    if (media_final >= 7.0 && media_final <= 8.9) {
+        printf("MS\n");
+    }
+
+    if (media_final >= 9.0 && media_final <= 10.0) {
+        printf("SS\n");
+    }
+
+    return 0;
+}
+```
+
+O motivo da ineficiência do código-fonte acima é que todos os blocos ```if``` serão sucessivamente verificados de maneira desnecessária. Por exemplo, suponha que o valor colocado na entrada para a variável ```media_final``` seja ```1.5```. 
+
+
+
+Como resultado, temos que colocar blocos ```if-else``` dentro de outros blocos ```if-else```, caracterizando o bloco **if-else aninhado**.
 
 ```
 #include <stdio.h>
