@@ -1,6 +1,8 @@
 # 5. Estruturas de Repetição
 
-Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **switch-case**. Elas são detalhadas nas subseções seguintes após trabalharmos a criação de comparações para elaboração das condições.
+Uma estrutura de repetição permite que blocos de comandos, expressões e instruções (ou, simplesmente, bloco de código) sejam executados repetidas vezes enquanto uma condição for verdadeira.
+
+
 
 5.1. [Laço While](while.md)
 
