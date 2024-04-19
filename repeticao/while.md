@@ -55,7 +55,7 @@ O Laço While é mais indicado do que os demais tipos de laço em Linguagem C qu
 
 ## Exemplo 1
 
-Leia um número inteiro ```n``` e imprima a quantidade de vezes e determine a quantidade de bits iguais a 1 que a representação binária de ```n``` possui. Por exemplo, o número inteiro 21 é denotado pelo número 10101 no sistema binário. Existem 3 bits iguais a 1 nesse número.
+Leia um número inteiro positivo ```n``` e imprima a quantidade de vezes e determine a quantidade de bits iguais a 1 que a representação binária de ```n``` possui. Por exemplo, o número inteiro 21 é denotado pelo número 10101 no sistema binário. Existem 3 bits iguais a 1 nesse número.
 
 Vamos utilizar a ideia do tão conhecido algoritmo "Sucessivas Divisões" para converter um número inteiro na base decimal para seu correspondente na base binária. 
 
