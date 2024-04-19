@@ -16,7 +16,7 @@ Vale lembrar que o bloco **else** é opcional, significando que se a condição 
 
 **IMPORTANTE:** coloque indentação (a famosa tecla TAB) dentro dos comandos associados a cada bloco.
 
-## Otimizando Estruturaas If-Else
+## Otimizando Estruturas If-Else
 
 No início, é comum colocar várias condicionais If como se segue:
 
