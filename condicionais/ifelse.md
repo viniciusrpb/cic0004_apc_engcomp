@@ -110,7 +110,7 @@ O motivo da ineficiência do código-fonte acima é que todos os blocos ```if```
 
 Vamos reescrever a estrutura acima como blocos if-else como mostra a figura a seguir:
 
-[!If-Else aninhado](nestedifelse.png)
+![If-Else aninhado](nestedifelse.png)
 
 Como resultado, temos que colocar blocos ```if-else``` dentro de outros blocos ```if-else```, caracterizando o bloco **if-else aninhado**.
 
@@ -146,7 +146,7 @@ int main() {
 
 Uma versão com comparações reduzidas é apresentada a seguir, em que aproveitamos:
 
-(!)[If-Else aninhado](nested_ifelse2.png)
+![If-Else aninhado](nested_ifelse2.png)
 
 Segue o código-fonte
 
