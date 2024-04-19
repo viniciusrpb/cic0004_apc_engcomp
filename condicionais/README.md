@@ -8,7 +8,7 @@ Observe na Figura acima que uma condição retorna sempre, ou um valor **verdade
 
 Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **switch-case**. Elas são detalhadas nas subseções seguintes após trabalharmos a criação de comparações para elaboração das condições.
 
-4.1. [Operações de Comparação](comparacao.md)
+4.1. [Expressões de Comparação](comparacao.md)
 
 4.2. [Estrutura If-Else](ifelse.md)
 
