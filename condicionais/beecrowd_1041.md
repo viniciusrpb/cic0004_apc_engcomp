@@ -120,7 +120,6 @@ E seguimos com a construção proposta acima para as demais regras, garantido-se
 
 **IMPORTANTE**: seja cuidadoso e capriche na organização da indentação das estruturas if-else aninhadas (uma dentro da outra) para facilitar a interpretação do código-fonte.
 
-
 #### Código-fonte Final
 
 ```
@@ -156,6 +155,37 @@ int main(){
                 }
             }
         }
+    }
+
+    return 0;
+}
+```
+
+O seguinte código-fonte simplifica o código apresentado anteriormente ao utilizar a estrutura **if-else-if**: 
+
+```
+#include<stdio.h>
+
+int main(){
+
+    double x,y;
+
+    scanf("%lf %lf",&x,&y);
+
+    if(x == 0.0 && y == 0.0){
+        printf("Origem\n");
+    } else if(x != 0.0 && y == 0.0){
+        printf("Eixo X\n");
+    } else if(x == 0.0 && y != 0.0){
+        printf("Eixo Y\n");
+    } else if(x > 0.0 && y > 0.0){
+        printf("Q1\n");
+    } else if(x < 0.0 && y > 0.0){
+        printf("Q2\n");
+    } else if(x < 0.0 && y < 0.0){
+        printf("Q3\n");
+    } else {
+        printf("Q4\n");
     }
 
     return 0;
