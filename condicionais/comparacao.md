@@ -1,6 +1,6 @@
-# 4.1. Operadores de Comparação
+# 4.1. Expressões de Comparação
 
-Os operadores de comparação são expressões comparativas que retornam um valor verdade (Booleano): **Verdadeiro** ou **Falso**. Como não existem tipos específicos **bool** na Linguagem C, variáveis inteiras são utilizadas para armazenar e representar seguindo a convenção:
+Em Linguagem C, uma condição é formulada por meio de uma única comparação ou por uma expressão de comparações (contendo uma combinação de várias comparações). As expressões de comparação sempre retornam um valor verdade (Booleano): **Verdadeiro** ou **Falso**. Como não existem tipos específicos **bool** na Linguagem C, variáveis inteiras são utilizadas para armazenar e representar seguindo a convenção:
 
 - Verdadeiro: valor inteiro diferente de zero
 - Falso: valor inteiro igual a zero
