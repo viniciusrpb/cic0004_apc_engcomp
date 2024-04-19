@@ -180,7 +180,31 @@ int main() {
 }
 ```
 
-Uma versão do código acima utilizando uma extensão das estruturas condicionais ```if-else```, denominada como **if-else-if**, é apresentada abaixo:
+**DESAFIO:** Como exercício, altere algum dos últimos três códigos-fontes para incluir o caso em que o discente recebe a menção SR, isto é, quando a frequência do discente em relação ao total de aulas ministradas é menor do que 75%. Repare que independemente da média final do discente, se não houve cumprimento da frequẽncia mínima de 75%, o discente é reprovado por faltas, independentemente da sua média final. Considere que a frequência é lida juntamente com a media final (separada por espaço em branco) como um número real contendo um único dígito de precisão na parte fracionária.
+
+## Extensão de If-Else para If-Else-If
+
+Para quem já entendeu e se acostumou com a estrutura if-else clássica, existe uma estrutura estendida denominada **if-else-if**, cuja sintaxe é apresentada a seguir:
+
+```
+if (COMPARAÇÃO 1){
+    /* expressões e comandos caso COMPARAÇÃO 1 seja verdadeira */
+} else if (COMPARAÇÃO 2){
+    /* expressões e comandos caso COMPARAÇÃO 2 seja verdadeira */
+}
+.
+.
+.
+ else if (COMPARAÇÃO n){
+    /* expressões e comandos caso COMPARAÇÃO n seja verdadeira */
+} else {
+    /* expressões e comandos caso TODAS as COMPARAÇÕES acima tenham sido falsas */
+}
+```
+
+O fluxo de execução da estrutura funciona como em uma estrutura if-else aninhada. A *COMPARAÇÃO 1* é a primeira a ser avaliada e caso seja verdadeira, os comandos e expressões do seu escopo são executados e ao finalizar, o algoritmo sai do bloco if-else-if, indo para a primeira linha após o bloco e seguindo o fluxo normal do código-fonte. Caso *COMPARAÇÃO 1* seja falsa, a *COMPARAÇÃO 2* é então verificada e o processo se repete. Caso todas as expressões de comparação sejam falsas, o bloco ```else``` será executado por padrão (default) que, por sinal, é opcional.
+
+Em relação ao exemplo apresentado na seção anterior, uma versão do código-fonte da seção anterior utilizando ```if-else-if``` é mostrada a seguir: 
 
 ```
 #include <stdio.h>
@@ -214,4 +238,4 @@ As seguintes vantagens podem ser observadas agora com o uso do ```else-if```:
 - Existem menos chaves;
 - Código-fonte menos verboso (menos caracteres na tela).
   
-**DESAFIO:** Como exercício, altere algum dos últimos três códigos-fontes para incluir o caso em que o discente recebe a menção SR, isto é, quando a frequência do discente em relação ao total de aulas ministradas é menor do que 75%. Repare que independemente da média final do discente, se não houve cumprimento da frequẽncia mínima de 75%, o discente é reprovado por faltas, independentemente da sua média final. Considere que a frequência é lida juntamente com a media final (separada por espaço em branco) como um número real contendo um único dígito de precisão na parte fracionária.
+
