@@ -180,7 +180,7 @@ int main() {
 }
 ```
 
-Uma versão do código acima utilizando uma simplificação conhecida como ```else-if``` em estruturas condicionais ```if-else``` aninhadas é apresentada abaixo:
+Uma versão do código acima utilizando uma extensão das estruturas condicionais ```if-else```, denominada como **if-else-if**, é apresentada abaixo:
 
 ```
 #include <stdio.h>
