@@ -2,7 +2,7 @@
 
 Uma estrutura de repetição permite que blocos de comandos, expressões e instruções (ou, simplesmente, bloco de código) sejam executados repetidas vezes enquanto uma condição for verdadeira.
 
-
+A Linguagem C contempla as seguintes estruturas de repetição:
 
 5.1. [Laço While](while.md)
 
