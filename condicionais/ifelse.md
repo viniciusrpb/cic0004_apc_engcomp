@@ -60,7 +60,7 @@ if(a % 2 == 0){
 
 Em algumas situações, temos que elaborar um algoritmo em que apenas um, dentre diversos blocos de código, deve ser executado ao satisfazer determinada condição.
 
-Por exemplo, suponha um programa que determina a menção final (de acordo com a Universidade de Brasília) de um discente a partir de sua média final. Considere que a média final é fornecida por um número real com um dígito de precisão na parte fracionária. A Tabela a seguir descreve como é feito o cálculo da menção a partir da média final:
+Por exemplo, suponha um programa que determina a menção final (de acordo com a Universidade de Brasília) de um discente a partir de sua média final. Considere que a média final é fornecida por um número real com um dígito de precisão na parte fracionária, cujo valor fornecido pela entrada é obrigatoriamente dado por 0.0 <= MF <= 10.0. A Tabela a seguir descreve como é feito o cálculo da menção a partir da média final:
 
 Média Final (MF) | Menção Final |
 ---------------  | ------- |
@@ -70,10 +70,11 @@ Média Final (MF) | Menção Final |
 7.0 <= MF <= 8.9 | MS      |
 9.0 <= MF <= 10.0 | SS     |
 
-Observe que temos vários intervalos a serem considerados e que cada intervalo está associado a uma menção. Isso significa que temos que elaborar um bloco de código específico para cada intervalo da tabela. Uma solução **ineficiente** e que você **deve evitar fazer** é elaborar vários blocos **if** separadamente como mostra o código-fonte abaixo:
+Observe que temos vários intervalos a serem considerados e que cada intervalo está associado a uma menção. Isso significa que temos que elaborar um bloco de código específico para cada intervalo da tabela. Uma solução **ineficiente** e que você **deve evitar fazer** é elaborar vários blocos **if** separadamente como mostra o código-fonte abaixo (apesar do código-fonte funcionar):
 
 ```
-/* Atencao: Codigo-fonte INEFICIENTE!!! Veja solucao correta mais abaixo!!! */
+/* ATENCAO: Codigo-fonte INEFICIENTE!!! Veja solucao correta mais APROPRIADA abaixo!!! */
+
 #include <stdio.h>
 
 int main() {
@@ -105,9 +106,11 @@ int main() {
 }
 ```
 
-O motivo da ineficiência do código-fonte acima é que todos os blocos ```if``` serão sucessivamente verificados de maneira desnecessária. Por exemplo, suponha que o valor colocado na entrada para a variável ```media_final``` seja ```1.5```. 
+O motivo da ineficiência do código-fonte acima é que todos os blocos ```if``` serão sucessivamente verificados de maneira desnecessária. Por exemplo, suponha que o valor colocado na entrada para a variável ```media_final``` seja ```1.5```.  O primeiro bloco ```if``` é executado, pois a comparação ```media_final >= 0.0 && media_final <= 2.9``` vai retornar verdadeiro. Entretanto, pode-se ver que as demais condições terão suas respectivas comparações retornando falso, pois sabe-se que de acordo com a natureza do problema sendo resolvindo, a média final (```media_final```) vai pertencer a apenas um dos intervalos, e consequentemente, apenas um dos blocos ```if``` será de fato executado.
 
+Vamos reescrever a estrutura acima como blocos if-else como mostra a figura a seguir:
 
+[!If-Else aninhado](nestedifelse.png)
 
 Como resultado, temos que colocar blocos ```if-else``` dentro de outros blocos ```if-else```, caracterizando o bloco **if-else aninhado**.
 
@@ -141,7 +144,11 @@ int main() {
 }
 ```
 
-Uma versão com comparações reduzidas é apresentada a seguir:
+Uma versão com comparações reduzidas é apresentada a seguir, em que aproveitamos:
+
+[!If-Else aninhado](nestedifelse_2.png)
+
+Segue o código-fonte
 
 ```
 #include <stdio.h>
@@ -151,19 +158,19 @@ int main() {
 
     scanf("%lf", &media_final);
 
-    if (media_final >= 9.00) {
-        printf("SS\n");
+    if (media_final <= 2.9) {
+        printf("II\n");
     } else {
-        if (media_final >= 7.00) {
-            printf("MS\n");
+        if (media_final <= 4.9) {
+            printf("MI\n");
         } else {
-            if (media_final >= 5.00) {
+            if (media_final <= 6.9) {
                 printf("MM\n");
             } else {
-                if (media_final >= 3.00) {
-                    printf("MI\n");
+                if (media_final <= 8.9) {
+                    printf("MS\n");
                 } else {
-                    printf("II\n");
+                    printf("SS\n");
                 }
             }
         }
@@ -173,7 +180,7 @@ int main() {
 }
 ```
 
-Uma versão do código acima utilizando uma simplificação conhecida como ```else-if``` em estruturas condicionais ```if-else``` aninhadas é apresentada a seguir:
+Uma versão do código acima utilizando uma simplificação conhecida como ```else-if``` em estruturas condicionais ```if-else``` aninhadas é apresentada abaixo:
 
 ```
 #include <stdio.h>
@@ -183,20 +190,28 @@ int main() {
 
     scanf("%lf", &media_final);
 
-    if (media_final >= 9.00) {
-        printf("SS\n");
-    } else if (media_final >= 7.00) {
-        printf("MS\n");
-    } else if (media_final >= 5.00) {
-        printf("MM\n");
-    } else if (media_final >= 3.00) {
-        printf("MI\n");
-    } else {
+    if (media_final <= 2.9) {
         printf("II\n");
+    } else if (media_final <= 4.9) {
+        printf("MI\n");
+    } else if (media_final <= 6.9) {
+        printf("MM\n");
+    } else if (media_final <= 8.9) {
+        printf("MS\n");
+    } else {
+        printf("SS\n");
     }
 
     return 0;
 }
 ```
 
+**IMPORTANTE:** o certo é colocar ```else if``` com espaço em branco separado entre as palavras ```else``` e ```if```. É incorreto colocar ```elif``` (esse comando é do Python) e ```elseif```.
+
+As seguintes vantagens podem ser observadas agora com o uso do ```else-if```:
+
+- Não existe mais aquele efeito cascata para a direita do código-fonte na indentação;
+- Existem menos chaves;
+- Código-fonte menos verboso (menos caracteres na tela).
+  
 **DESAFIO:** Como exercício, altere algum dos últimos três códigos-fontes para incluir o caso em que o discente recebe a menção SR, isto é, quando a frequência do discente em relação ao total de aulas ministradas é menor do que 75%. Repare que independemente da média final do discente, se não houve cumprimento da frequẽncia mínima de 75%, o discente é reprovado por faltas, independentemente da sua média final. Considere que a frequência é lida juntamente com a media final (separada por espaço em branco) como um número real contendo um único dígito de precisão na parte fracionária.
