@@ -38,20 +38,80 @@ int main() {
     
     while (i <= n) { /* Condicao de permanencia no while: enquanto o valor i for menor ou igual a n */
         printf("Digite o inteiro %d: ",i);
-        scanf("%d",&a);
-        printf("%d\n", a); // Imprime o valor de i
-        i = i+1; // Atualiza i para o próximo número
+        scanf("%d",&a);  // Le o valor de a
+        printf("%d\n", a); // Imprime o valor de a lido
+        i = i+1; // Contabiliza que uma iteracao foi finalizada
     }
     
     return 0;
 }
 ```
 
-**IMPORTANTE:** cuidado com o **LOOP INFINITO**!!! Trata-se da situação em que o código-fonte fica "preso" dentro da estrutura da repetição devido à condição de permanência na estrutura de repetição sempre retornar verdadeiro.
+**IMPORTANTE:** cuidado com o **LOOP INFINITO**!!! Trata-se da situação em que o código-fonte fica "preso" dentro da estrutura da repetição devido à condição de permanência na estrutura de repetição sempre retornar verdadeiro. Isso ocorre quando uma expressão de comparação é mal-formulada, nunca alcançando um resultado falso que faz interromper o laço.
 
 ## Quando Utilizar?
 
 O Laço While é mais indicado do que os demais tipos de laço em Linguagem C quando você estiver elaborando um algoritmo e tiver que executar blocos de comandos repetidas vezes, mas não se sabe de antemão a quantidade de iterações a serem efetuadas. Em outras palavras, pode ser mais fácil utilizar o laço while quando temos que executar uma quantidade indefinida, mas finita, de iterações.
+
+## Exemplo 1
+
+Leia um número inteiro ```n``` e imprima a quantidade de vezes e determine a quantidade de bits iguais a 1 que a representação binária de ```n``` possui. Por exemplo, o número inteiro 21 é denotado pelo número 10101 no sistema binário. Existem 3 bits iguais a 1 nesse número.
+
+Vamos utilizar a ideia do tão conhecido algoritmo "Sucessivas Divisões" para converter um número inteiro na base decimal para seu correspondente na base binária. 
+
+```
+#include <stdio.h>
+
+int main() {
+    int n,i,a,n_bits_1;
+
+    scanf("%d",&n);
+
+    /*incializa a variavel que armazena a quantidade de bits iguais a 1 no numero n*/
+    n_bits_1 = 0; 
+    
+    while (n > 0) { /* Enquanto o inteiro n for maior do que zero */
+        n_bits_1 = n_bits_1 + (n%2);  /*aqui soma-se 0 ou 1 a variavel n_bits_1 */
+        n = n/2;    /*atualiza o valor de n*/
+    }
+
+    printf("%d\n",n_bits_1);
+    
+    return 0;
+}
+```
+
+Analisando o algoritmo acima, pode-se verificar que não é possível estimar a quantidade de iterações a serem executadas em um primeiro momento. Isso significa que vamos executando as iterações enquanto a condição ajustada para este problema em específico for verdadeira. 
+
+
+## Exemplo 2 (contagem)
+
+Leia ```n``` números inteiros separados por espaço e imprima a soma entre eles.
+
+```
+#include <stdio.h>
+
+int main() {
+    int n,i,a;
+    long long int soma;
+
+    scanf("%d",&n);
+
+    /* Inicia a variavel contadora */
+    i = 1;
+    soma = 0; /*variavel que acumula o valor da soma dos n inteiros a serem lidos*/
+    
+    while (i <= n) { /* Condicao de permanencia no while: enquanto o valor i for menor ou igual a n */
+        scanf("%d",&a);
+        soma = soma + a; /* somar o valor de a ao valor somado dos n-1 inteiros anteriores */
+        i = i+1; // Atualiza i para o próximo número
+    }
+
+    printf("%lld\n",soma);
+    
+    return 0;
+}
+```
 
 ## Ler Dados da Entrada até Fim de Arquivo (EOF)
 
@@ -76,7 +136,5 @@ int main() {
 }
 ```
 
-## Exemplos
 
-Leia um número inteiro ```n``` e imprima a quantidade de vezes 
 
