@@ -3,14 +3,14 @@
 A estrutura if-else permite controlar o fluxo mais básicas e fundamentais, isto é, a execução de diferentes blocos de comandos, expressões e instruções caso uma condição descrita por uma comparação seja verdadeira ou não.
 
 ```
-if(COMPARACAO){
-  /* comandos executados caso COMPARACAO retorne um valor verdadeiro */
+if(CONDICAO){
+  /* comandos executados caso CONDICAO retorne um valor verdadeiro */
 }else{
- /* comandos executados caso COMPARACAO retorne um valor falso */
+ /* comandos executados caso CONDICAO retorne um valor falso */
 }
 ```
 
-```COMPARACAO``` é uma expressão que permite avaliar uma condição. Exemplos de comparação podem ser encontrados [aqui](comparacao.md). Se ```COMPARACAO``` for verdadeira, **apenas** o bloco de código dentro do ```if``` (também chamado de **escopo** do ```if```) é executado. Caso contrário, **apenas** o bloco de código dentro do ```else``` é executado.
+```CONDICAO``` é uma expressão que permite avaliar uma condição, sendo descrita por uma comparação ou combinação de comparações. Exemplos de expressões de comparação podem ser encontrados [aqui](comparacao.md). Se ```CONDICAO``` for verdadeira, **apenas** o bloco de código dentro do ```if``` (também chamado de **escopo** do ```if```) é executado. Caso contrário, **apenas** o bloco de código dentro do ```else``` é executado.
 
 Vale lembrar que o bloco **else** é opcional, significando que se a condição do ```if``` for falsa e não houver um bloco ```else```, o programa segue o seu fluxo natural, executando a linha de código após o bloco if-else.
 
@@ -36,7 +36,7 @@ if(a % 2 != 0){
 /* ... */
 ```
 
-Observe que no caso específico acima, se um número inteiro ```a``` é par, não há como ele ser ímpar. Mas no trecho de código-fonte acima, a comparação do segundo comando ```if``` é **desnecessariamente** executada quando o número ```a``` for par. Como a definição de número par ou ímpar é mutuamente exclusiva, você pode usar o bloco ```else``` como mostrado abaixo:
+Observe que no caso específico acima, se um número inteiro ```a``` é par, não há como ele ser ímpar. Mas no trecho de código-fonte acima, a condição do segundo comando ```if``` é **desnecessariamente** executada quando o número ```a``` for par. Como a definição de número par ou ímpar é mutuamente exclusiva, você pode usar o bloco ```else``` como mostrado abaixo:
 
 ```
 /* ... */
@@ -104,7 +104,7 @@ int main() {
 }
 ```
 
-O motivo da ineficiência do código-fonte acima é que todos os blocos ```if``` serão sucessivamente verificados de maneira desnecessária. Por exemplo, suponha que o valor colocado na entrada para a variável ```media_final``` seja ```1.5```.  O primeiro bloco ```if``` é executado, pois a comparação ```media_final >= 0.0 && media_final <= 2.9``` vai retornar verdadeiro. Entretanto, pode-se ver que as demais condições terão suas respectivas comparações retornando falso, pois sabe-se que de acordo com a natureza do problema sendo resolvindo, a média final (```media_final```) vai pertencer a apenas um dos intervalos, e consequentemente, apenas um dos blocos ```if``` será de fato executado.
+O motivo da ineficiência do código-fonte acima é que todos os blocos ```if``` serão sucessivamente verificados de maneira desnecessária. Por exemplo, suponha que o valor colocado na entrada para a variável ```media_final``` seja ```1.5```.  O primeiro bloco ```if``` é executado, pois a condição ```media_final >= 0.0 && media_final <= 2.9``` vai retornar verdadeiro. Entretanto, pode-se ver que as demais condições retornando falso, pois sabe-se que de acordo com a natureza do problema sendo resolvindo, a média final (```media_final```) vai pertencer a apenas um dos intervalos, e consequentemente, apenas um dos blocos ```if``` será de fato executado.
 
 Vamos reescrever a estrutura acima como blocos if-else como mostra a figura a seguir:
 
@@ -142,7 +142,7 @@ int main() {
 }
 ```
 
-Uma versão do código-fonte acima é reescrita reduzindo-se as comparações das condições e apresentada na sequência. A ideia é aproveitarmos a estrutura do if-else e a ordem com que executamos as comparações no bloco if-else completo para trabalhar quando o valor da variável **não ultrapassa** o limite superior do intervalo. Por exemplo, se ```media_final``` é igual a ```3.7```, então sabemos que ```media_final``` é maior do que ```2.9```. Tirando proveito da ordem com que executamos as comparações (*observe que são crescentes em relação ao limite superior de cada intervalo*), a primeira comparação no primeiro ```if``` retorna falso e apenas o bloco ```else``` é então executado. No escopo do bloco ```else```, já existe um outro bloco if-else interno, então fazendo-se a comparação ```media_final <= 4.9```, verifica-se que ela é verdadeira e como resultado, "MI" é gerada na saída e o algoritmo é encerrado, pois o bloco ```else``` não será executado.
+Uma versão do código-fonte acima é reescrita reduzindo-se as comparações das condições e apresentada na sequência. A ideia é aproveitarmos a estrutura do if-else e a ordem com que executamos as condições no bloco if-else completo para trabalhar quando o valor da variável **não ultrapassa** o limite superior do intervalo. Por exemplo, se ```media_final``` é igual a ```3.7```, então sabemos que ```media_final``` é maior do que ```2.9```. Tirando proveito da ordem com que executamos as condições (*observe que as comparações são crescentes em relação ao limite superior de cada intervalo*), a primeira comparação no primeiro ```if``` retorna falso e apenas o bloco ```else``` é então executado. No escopo do bloco ```else```, já existe um outro bloco if-else interno, então fazendo-se a comparação ```media_final <= 4.9```, verifica-se que ela é verdadeira e como resultado, "MI" é gerada na saída e o algoritmo é encerrado, pois o bloco ```else``` não será executado.
 
 ![If-Else aninhado](nested_ifelse2.png)
 
@@ -185,22 +185,22 @@ int main() {
 Para quem já entendeu e se acostumou com a estrutura if-else clássica, existe uma estrutura estendida denominada **if-else-if**, cuja sintaxe é apresentada a seguir:
 
 ```
-if (COMPARAÇÃO 1){
-    /* expressões e comandos caso COMPARAÇÃO 1 seja verdadeira */
-} else if (COMPARAÇÃO 2){
-    /* expressões e comandos caso COMPARAÇÃO 2 seja verdadeira */
+if (CONDIÇÃO 1){
+    /* expressões e comandos caso CONDIÇÃO 1 seja verdadeira */
+} else if (CONDIÇÃO 2){
+    /* expressões e comandos caso CONDIÇÃO 2 seja verdadeira */
 }
 .
 .
 .
- else if (COMPARAÇÃO n){
-    /* expressões e comandos caso COMPARAÇÃO n seja verdadeira */
+ else if (CONDIÇÃO n){
+    /* expressões e comandos caso CONDIÇÃO n seja verdadeira */
 } else {
-    /* expressões e comandos caso TODAS as COMPARAÇÕES acima tenham sido falsas */
+    /* expressões e comandos caso TODAS as CONDIÇÕES acima tenham sido falsas */
 }
 ```
 
-O fluxo de execução da estrutura funciona como em uma estrutura if-else aninhada. A *COMPARAÇÃO 1* é a primeira a ser avaliada e caso seja verdadeira, os comandos e expressões do seu escopo são executados e ao finalizar, o algoritmo sai do bloco if-else-if, indo para a primeira linha após o bloco e seguindo o fluxo normal do código-fonte. Caso *COMPARAÇÃO 1* seja falsa, a *COMPARAÇÃO 2* é então verificada e o processo se repete. Caso todas as expressões de comparação sejam falsas, o bloco ```else``` será executado por padrão (default) que, por sinal, é opcional.
+O fluxo de execução da estrutura funciona como em uma estrutura if-else aninhada. A *CONDIÇÃO 1* é a primeira a ser avaliada e caso seja verdadeira, os comandos e expressões do seu escopo são executados e ao finalizar, o algoritmo sai do bloco if-else-if, indo para a primeira linha após o bloco e seguindo o fluxo normal do código-fonte. Caso *CONDIÇÃO 1* seja falsa, a *CONDIÇÃO 2* é então verificada e o processo se repete. Caso todas as condições sejam falsas, o bloco ```else``` será executado por padrão (default) que, por sinal, é opcional.
 
 Em relação ao exemplo apresentado na seção anterior, uma versão do código-fonte da seção anterior utilizando ```if-else-if``` é mostrada a seguir: 
 
