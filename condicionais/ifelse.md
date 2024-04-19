@@ -144,7 +144,7 @@ int main() {
 }
 ```
 
-Uma versão com comparações reduzidas é apresentada a seguir, em que aproveitamos:
+Uma versão do código-fonte acima é reescrita reduzindo-se as comparações das condições e apresentada na sequência. A ideia é aproveitarmos a estrutura do if-else e a ordem com que executamos as comparações no bloco if-else completo para trabalhar quando o valor da variável **não ultrapassa** o limite superior do intervalo. Por exemplo, se ```media_final``` é igual a ```3.7```, então sabemos que ```media_final``` é maior do que ```2.9```. Tirando proveito da ordem com que executamos as comparações (*observe que são crescentes em relação ao limite superior de cada intervalo*), a primeira comparação no primeiro ```if``` retorna falso e apenas o bloco ```else``` é então executado. No escopo do bloco ```else```, já existe um outro bloco if-else interno, então fazendo-se a comparação ```media_final <= 4.9```, verifica-se que ela é verdadeira e como resultado, "MI" é gerada na saída e o algoritmo é encerrado, pois o bloco ```else``` não será executado.
 
 ![If-Else aninhado](nested_ifelse2.png)
 
