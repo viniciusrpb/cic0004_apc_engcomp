@@ -2,10 +2,10 @@
 
 ## Estrutura Básica
 
-A estrutura de repetição while é usada para repetir um bloco de código enquanto uma condição for verdadeira. Uma descrição é descrita por uma [expressão de comparação](../condicionais/comparacao.md) da mesma maneira que nas estruturas if-else. A sintaxe básica é a seguinte:
+A estrutura de repetição while é usada para repetir um bloco de código enquanto uma condição for verdadeira. Uma condição é descrita por uma [expressão de comparação](../condicionais/comparacao.md) da mesma maneira que nas estruturas ```if-else```. A sintaxe básica é a seguinte:
 
 ```
-while (COMPARAÇÃO) {
+while (CONDIÇÃO) {
     /*comando 1*/
     /*comando 2*/
 }
@@ -13,8 +13,8 @@ while (COMPARAÇÃO) {
 
 A ordem de execução do laço ```while``` é como se segue:
 
-1) Avalia-se a COMPARAÇÃO, que é a condição de permanência dentro da estrutura de repetição;
-2) Se o resultado de COMPARAÇÃO for verdadeiro, o bloco de código dentro do ```while``` (chamado de **escopo** do laço while) é executado por completo. Cada passada completa por todos os comandos e expressões dentro do escopo do laço while é denominada **iteração**. Após a execução de todos os comandos e expressões (a finalização da iteração), o fluxo do algoritmo volta para a avaliação da condição, isto é, para o Passo 1. Assim, será verificado se uma nova iteração será executada ou não;
+1) Avalia-se a CONDIÇÃO, que é a condição de permanência dentro da estrutura de repetição;
+2) Se o resultado de CONDIÇÃO for verdadeiro, o bloco de código dentro do ```while``` (chamado de **escopo** do laço while) é executado por completo. Cada passada completa por todos os comandos e expressões dentro do escopo do laço while é denominada **iteração**. Após a execução de todos os comandos e expressões (a finalização da iteração), o fluxo do algoritmo volta para a avaliação da condição, isto é, para o Passo 1. Assim, será verificado se uma nova iteração será executada ou não;
 3) Se a condição for falsa, o bloco de código dentro do ```while``` não será executado e o algoritmo retoma seu fluxo natural, isto é, na primeira linha imediatamente após o laço ```while```.
 
 A condição da estrutura ```while``` é geralmente elaborada visando contar a quantidade de iterações ou aguardar um estado esperado de variáveis do algoritmo.
@@ -47,7 +47,7 @@ int main() {
 }
 ```
 
-**IMPORTANTE:** cuidado com o **LOOP INFINITO**!!! Trata-se da situação em que o código-fonte fica "preso" dentro da estrutura da repetição devido à condição de permanência na estrutura de repetição sempre retornar verdadeiro. Isso ocorre quando uma expressão de comparação é mal-formulada, nunca alcançando um resultado falso que faz interromper o laço.
+**IMPORTANTE:** cuidado com o **LOOP INFINITO**!!! Trata-se da situação em que o código-fonte fica "preso" dentro da estrutura da repetição devido à condição de permanência na estrutura de repetição sempre retornar verdadeiro. Isso ocorre quando uma expressão de comparação é mal formulada, nunca alcançando um resultado falso que faz interromper o laço.
 
 ## Quando Utilizar?
 
