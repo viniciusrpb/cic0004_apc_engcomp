@@ -146,7 +146,7 @@ int main() {
 
 Uma versão com comparações reduzidas é apresentada a seguir, em que aproveitamos:
 
-[!If-Else aninhado](nestedifelse_2.png)
+(!)[If-Else aninhado](nested_ifelse2.png)
 
 Segue o código-fonte
 
