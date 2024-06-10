@@ -136,32 +136,3 @@ int main(){
     return 0;
 }
 ```
-
-
-```
-#include<stdio.h>
-#define MAX_N 1000
-
-int main(){
-    int i,n;
-
-    int arr[MAX_N];
-
-    scanf("%d",&n);
-
-    for(i = 0; i < n; i++){
-        scanf("%d",&arr[i]);
-    }
-    
-    for(i = 0; i < n; i++){
-        printf("arr[%d] = %d\n",i,arr[i]);
-    }
-
-    return 0;
-}
-```
-
-
-
-
-
