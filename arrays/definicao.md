@@ -149,6 +149,30 @@ int main(){
 }
 ```
 
+```
+#include<stdio.h>
+#define MAX_N 1000
+
+int main(){
+    int i,n;
+
+    int arr[MAX_N];
+
+    scanf("%d",&n);
+
+    for(i = 0; i < n; i++){
+        scanf("%d",&arr[i]);
+    }
+    // for para iterar sobre cada posicao do vetor
+    for(i = 0; i < n; i++){
+        printf("arr[%d] = %d\n",i,arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
 
 
 
