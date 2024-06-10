@@ -2,7 +2,7 @@
 
 Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permite armazenar e acessar um conjunto de elementos de mesmo tipo usando um índice, representado por um valor inteiro.
 
-![teste](arrays/arrays.png)
+![Representação gráfica de um array](images/arrays.png)
 
 6.1. [Definição](definicao.md)
 
