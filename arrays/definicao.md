@@ -8,29 +8,46 @@ Um vetor é uma estrutura de dados em que cada elemento estará associado com um
 
 Com essa estrutura de dados, é possível ter acesso rápido e sequencial dos dados.
 
+**Jargão:** vetores são também conhecidos como *arrays* no mundo da programação.
+
 ## Declaração de Vetores
 
-Para declarar um vetor em C, deve-se especificar o tipo de dado dos elementos e o tamanho **máximo** do vetor. O trecho de código-fonte a seguir exemplifica a declaração de uma variável vetor capaz de armazenar até 10 valores inteiros:
+Para declarar um vetor em C, deve-se especificar o tipo de dado dos elementos e o tamanho **máximo** do vetor no seguinte formato:
 
 ```
-int vi[10];
+tipo_de_dados nome_da_variavel[TAMANHO_MAX_DO_VETOR];
+```
+
+em que:
+
+- ```tipo_de_dados```: é um dos tipos ```int```, ```float```, ```double```, ```long long int```, ```char```, ou algum outro tipo definido pelo usuário;
+- ```nome_da_variavel```: é o nome da variável, criado nos mesmos moldes das variáveis tradicionais;
+- ```TAMANHO_MAX_DO_VETOR```: é um número inteiro indicando o tamanho máximo de elementos que o vetor pode armazenar. Não é um problema utilizar menos elementos do que o tamanho declarado para a sua capacidade máxima.
+
+O trecho de código-fonte a seguir exemplifica a declaração de uma variável vetor capaz de armazenar até 10 valores inteiros:
+
+```
+int arr[10];
 ```
 
 O exemplo a seguir mostra a declaração de vetores para outros tipos de dados:
 
 ```
-double vd[5];
-char vc[15];
+double arrd[5];
+long long int arr[15];
 ```
+
+### Alocação Estática de Memória (Detalhe Técnico)
+
+O tipo de declaração acima aloca o espaço em memória para ser utilizado no armazenamento dos elementos nos vetores em tempo de compilação, isto é, no momento em que o compilador GCC analisa o código-fonte e gera o arquivo executável associado. Essa abordagem é conhecida como **alocação estática de memória**. Por isso, alguns materiais denotam esses tipos de vetores como **vetores estáticos**.
 
 ## Inicialização de Vetores
 
-Você pode inicializar um vetor ao declará-lo:
+Você pode inicializar um vetor contendo alguns elementos ao declará-lo da seguinte maneira:
 
 ```
-int vi[5] = {1, 2, 3, 4, 5};
+int arr[5] = {1, 2, 3, 4, 5};
 ```
-
 
 ```
 int numeros[5] = {1, 2};
@@ -58,6 +75,7 @@ for (int i = 0; i < 5; i++) {
     printf("%d ", numeros[i]);
 }
 ```
+
 ```
 #include<stdio.h>
 
@@ -82,7 +100,6 @@ int main(){
     return 0;
 }
 ```
-
 
 ```
 #include<stdio.h>
