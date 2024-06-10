@@ -16,13 +16,13 @@ Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permi
 
 ## Exercícios Resolvidos
 
-6.1. [Beecrowd 2328 - Chocolate](https://www.beecrowd.com.br/judge/en/problems/view/2328) [[Solução](iteracao/beecrowd_2328.py)]
+6.1. [Beecrowd 2328 - Chocolate](https://www.beecrowd.com.br/judge/en/problems/view/2328) [[Solução](upsolving/beecrowd_2328.c)]
  
-6.2. [Beecrowd 2807 - Iccanobif](https://www.beecrowd.com.br/judge/en/problems/view/2807) [[Solução](listas/beecrowd_2807.py)]
+6.2. [Beecrowd 2807 - Iccanobif](https://www.beecrowd.com.br/judge/en/problems/view/2807) [[Solução](upsolving/beecrowd_2807.c)]
    
-6.3. [Beecrowd 1259 - Even or Odd](https://www.beecrowd.com.br/judge/en/problems/view/1259) [[Solução](listas/beecrowd_1259.py)]
+6.3. [Beecrowd 1259 - Even or Odd](https://www.beecrowd.com.br/judge/en/problems/view/1259) [[Solução](upsolving/beecrowd_1259.c)]
    
-6.4. [Beecrowd 1375 - Pole Position](https://www.beecrowd.com.br/judge/en/problems/view/1375) [[Solução](listas/beecrowd_1375.py)]
+6.4. [Beecrowd 1375 - Pole Position](https://www.beecrowd.com.br/judge/en/problems/view/1375) [[Solução](upsolving/beecrowd_1375.c)]
 
 
 ## Aula Prática
