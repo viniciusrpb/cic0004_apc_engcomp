@@ -55,3 +55,40 @@ int main(){
     return 0;
 }
 ```
+
+## Buscar um elemento no vetor
+
+```
+#include<stdio.h>
+#define MAX_N 1000
+
+int main(){
+    int i,n, chave,idx;
+    int arr[MAX_N];
+
+    scanf("%d",&n);
+
+    for(i = 0; i < n; i++){
+        scanf("%d",&arr[i]);
+    }
+
+    scanf("%d",&chave);
+
+    idx = -1;
+    for(i = 0; i < n; i++){
+        if(arr[i] == chave){
+            idx = i;
+            break;
+        }
+    }
+
+    if(idx >= 0){
+        printf("Elemento %d encontrado no indice %d\n",chave,idx);
+    }
+    else{
+        printf("Elemento %d nao foi encontrado\n",chave);
+    }
+
+    return 0;
+}
+```
