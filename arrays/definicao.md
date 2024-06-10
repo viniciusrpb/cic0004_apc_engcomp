@@ -46,81 +46,72 @@ O tipo de declaração acima aloca o espaço em memória para ser utilizado no a
 Você pode inicializar um vetor contendo alguns elementos ao declará-lo da seguinte maneira:
 
 ```
-int arr[5] = {1, 2, 3, 4, 5};
+int arr[5] = {8,-4,0,2,7};
 ```
 
-```
-int numeros[5] = {1, 2};
-```
+## Acessando Elementos de Vetores
 
-Você também pode omitir o tamanho do vetor ao inicializá-lo, e o compilador determinará o tamanho automaticamente:
+Como falado anteriormente, os elementos do vetor são acessados usando índices. No exemplo abaixo, o elemento armazenado no índice ```0``` do vetor é acessado:
 
 ```
-int numeros[] = {1, 2, 3, 4, 5};
+int idx;
+int arr[5] = {8,-4,0,2,7};
+idx = 0;
+printf("arr[%d] = %d\n",idx,arr[idx]);
 ```
 
-## Acessando Elementros de Vetores
-
-Como falado anteriormente, os elementos do vetor são acessados usando índices, **sempre** começando de 0:
-
-```
-int primeiro = numeros[0]; 
-numeros[2] = 10;
-```
-
-Você pode iterar sobre os elementos de um vetor usando loops, como for:
-
-```
-for (int i = 0; i < 5; i++) {
-    printf("%d ", numeros[i]);
-}
-```
+Acontece que à medida em que a quantidade de elementos armazenados no vetor aumenta, torna-se mais difícil acessar individualmente cada índice do vetor para inicializá-lo ou imprimir seus valores. Veja como o código-fonte a seguir fica ruim esteticamente:
 
 ```
 #include<stdio.h>
 
 int main(){
-    int i,n;
-    int vi[5]; // armazena no max. 5 valores inteiros
+    int i;
+    int arr[5];
 
-    n = 5;
+    arr[0] = 3;
+    arr[1] = 5;
+    arr[2] = 0;
+    arr[3] = -2;
+    arr[4] = 7;
 
-    vi[0] = 3;
-    vi[1] = 5;
-    vi[2] = 0;
-    vi[3] = -2;
-    vi[4] = 7;
-
-    // for para iterar sobre cada posicao do vetor
-    for(i = 0; i < n; i++){
-        printf("vi[%d] = %d\n",i,vi[i]);
-    }
-    printf("\n");
+    printf("arr[%d] = %d\n",0,arr[0]);
+    printf("arr[%d] = %d\n",1,arr[1]);
+    printf("arr[%d] = %d\n",2,arr[2]);
+    printf("arr[%d] = %d\n",3,arr[3]);
+    printf("arr[%d] = %d\n",4,arr[4]);
 
     return 0;
 }
 ```
 
+Para generalizar operações de leitura, escrita, consulta e alteração em vetores, o laço **for** é uma excelente opção:
+
 ```
 #include<stdio.h>
 
 int main(){
-    int i,n;
+    int i;
+    int arr[5] = {8,-4,0,2,7};
 
-    n = 5;
-    // inicializar um vetor
-    // colocando os inteiros logo na declaracao
-    int arr[5] = {3,5,0,-2,7};
-
-    // for para iterar sobre cada posicao do vetor
-    for(i = 0; i < n; i++){
+    for(i = 0; i < 5; i++){
         printf("arr[%d] = %d\n",i,arr[i]);
     }
-    printf("\n");
 
     return 0;
 }
 ```
+
+## Leitura de n valores da entrada
+
+Uma das operações mais comuns ao se resolver problemas é ler ```n``` valores da entrada e armazená-los em um vetor. Para isso, faremos as seguintes operações:
+
+- Para deixar o código-fonte mais elegante, utilizaremos um comando ```define``` para d
+
+```define MAX_N 1000```
+
+- Criaremos uma variável **n** para denotar a quantidade de valores inteiros que, de fato, serão lidos da entrada. Observe que ```n <= MAX_N```;
+- Utilizaremos a função ```scanf``` para ler um valor inteiro da entrada e armazenar em uma posição do vetor. Como temos que ler ```n``` valores inteiros da entrada, devemos repetir essa operação de leitura **n** vezes. Vamos usar uma estrutura de repetição para esse propósito.
 
 ```
 #include<stdio.h>
@@ -136,11 +127,35 @@ int main(){
     for(i = 0; i < n; i++){
         scanf("%d",&arr[i]);
     }
-    // for para iterar sobre cada posicao do vetor
+    
     for(i = 0; i < n; i++){
         printf("arr[%d] = %d\n",i,arr[i]);
     }
     printf("\n");
+
+    return 0;
+}
+```
+
+
+```
+#include<stdio.h>
+#define MAX_N 1000
+
+int main(){
+    int i,n;
+
+    int arr[MAX_N];
+
+    scanf("%d",&n);
+
+    for(i = 0; i < n; i++){
+        scanf("%d",&arr[i]);
+    }
+    
+    for(i = 0; i < n; i++){
+        printf("arr[%d] = %d\n",i,arr[i]);
+    }
 
     return 0;
 }
