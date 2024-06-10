@@ -4,6 +4,9 @@ Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permi
 
 ![Representação gráfica de um array](images/arrays.png)
 
+- Os índices sempre começam do número inteiro zero!
+- Deve-se utilizar vetores quando é necessários que os dados da entrada sejam acessados mais de uma vez em todo o código-fonte.
+  
 6.1. [Princípios Básicos](definicao.md)
 
 6.2. [Tarefas com Vetores](operacoes.md)
