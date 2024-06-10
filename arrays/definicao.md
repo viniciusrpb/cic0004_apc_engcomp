@@ -4,6 +4,8 @@
 
 Um vetor é uma estrutura de dados em que cada elemento estará associado com uma posição, ou índice, como mostra a figura abaixo:
 
+![arrays](images/arrays2.png)
+
 Isso fornece acesso rápido e sequencial dos dados;
 
 
