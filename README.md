@@ -13,7 +13,7 @@ Vinícius R. P. Borges
 
 ## Cronograma Previsto de Aulas
 
-Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas.pdf) para acessar o cronograma previsto de aulas da Turma 04.
+Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas_v2.pdf) para acessar o cronograma previsto de aulas da Turma 04.
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Última atualização: 09 de junho de 2024* (pós-paralisação)
 
