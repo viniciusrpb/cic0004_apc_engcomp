@@ -102,3 +102,54 @@ for (int i = 0; i < 5; i++) {
     printf("%d ", numeros[i]);
 }
 ```
+```
+#include<stdio.h>
+
+int main(){
+    int i,n;
+    int vi[5]; // armazena no max. 5 valores inteiros
+
+    n = 5;
+
+    vi[0] = 3;
+    vi[1] = 5;
+    vi[2] = 0;
+    vi[3] = -2;
+    vi[4] = 7;
+
+    // for para iterar sobre cada posicao do vetor
+    for(i = 0; i < n; i++){
+        printf("vi[%d] = %d\n",i,vi[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+
+```
+#include<stdio.h>
+
+int main(){
+    int i,n;
+
+    n = 5;
+    // inicializar um vetor
+    // colocando os inteiros logo na declaracao
+    int arr[5] = {3,5,0,-2,7};
+
+    // for para iterar sobre cada posicao do vetor
+    for(i = 0; i < n; i++){
+        printf("arr[%d] = %d\n",i,arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+
+
+
+
