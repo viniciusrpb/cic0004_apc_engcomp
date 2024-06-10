@@ -1,4 +1,5 @@
-Vetores (ou arrays) são uma estrutura de dados fundamental na linguagem de programação C. Eles permitem armazenar e acessar um conjunto de elementos de mesmo tipo usando um índice. Aqui está uma explicação detalhada sobre vetores em C, cobrindo a declaração, inicialização, acesso, iteração e operações comuns.
+# 6.1. Definição
+
 
 Declaração de Vetores
 Para declarar um vetor em C, você precisa especificar o tipo de dado dos elementos e o tamanho do vetor. Por exemplo:
