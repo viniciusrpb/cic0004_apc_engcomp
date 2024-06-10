@@ -6,7 +6,9 @@ Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permi
 
 6.1. [Definição](definicao.md)
 
-6.2. [Ponteiros](ponteiros.md)
+6.2. [Tarefas com Vetores](operacoes.md)
+
+6.3. [Ponteiros e Alocação Dinâmica de Memória](ponteiros.md)
 
 
 ## Exercícios Resolvidos
