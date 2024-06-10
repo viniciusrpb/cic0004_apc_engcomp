@@ -1,4 +1,4 @@
-# 6.1. Definição
+# 6.1. Princípios Básicos
 
 ## Representação de Vetores
 
@@ -132,6 +132,31 @@ int main(){
         printf("arr[%d] = %d\n",i,arr[i]);
     }
     printf("\n");
+
+    return 0;
+}
+```
+
+## Observações
+
+### Acessar índice indevido
+
+É importante observar que o acesso de um elemento por meio de um **índice inválido** em relação ao tamanho do vetor **não** resulta em erro de compilação. Isso ocorre porque a função do compilador é de encontrar possíveis erros de sintaxe no código-fonte e o uso de um índice indevido não configura um tipo de erro como esse.
+
+Compile o código-fonte a seguir e veja o que ocorre:
+
+```
+#include<stdio.h>
+#define MAX_N 10
+
+int main(){
+    int i,idx;
+
+    int arr[MAX_N];
+    idx = 14;
+    arr[idx] = 6;
+
+    printf("arr[%d] = %d\n",idx,arr[idx]);
 
     return 0;
 }
