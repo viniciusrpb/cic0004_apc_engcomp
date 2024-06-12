@@ -30,24 +30,34 @@ int main(){
 }
 ```
 
-Depois devemos declarar as variáveis que precisaremos para armazenar os operandos ```a``` e ```b```, e o resultado da operação da soma em ```s```. O código-fonte após essas inclusões fica da seguinte maneira:
+O primeiro ponto é que a entrada do problema contém vários casos de testes. Apesar do problema não indicar quando a entrada termina, podemos inferir que é em fim de arquivo (End Of File - EOF). Como a primeira variável a ser lida em cada caso de teste é o inteiro ```n```, utilizamos um laço ```while```, pois que a quantidade de casos de teste é imprevisível:
 
 ```
 #include<stdio.h>
 
 int main(){
 
-  int a,b,s;
+  int n;
+
+  while(scanf("%d",&n)!=EOF){
+      
+  }
 
   return 0;
 }
 ```
 
-Agora devemos ler dois números inteiros da entrada padrão. Para isso, utilizamos a função ```scanf()```:
+Vamos ler os dados de entrada para **cada caso de teste**. Cada caso de teste contém na primeira linha um inteiro **n**, seguido de **n** linhas contendo um número inteiro e um caractere, respectivamente. O inteiro representa um tamanho de bota e o caractere representa um par (E - esquerdo ou D - direito). DeclaramosVamos utilizar o laço **for** para isso:
 
 ```
-scanf("%d",&a);
+int i, num, par;
+
+for(i = 0; i < n; i++){
+    scanf("%d %c",&num,&par);
+}
 ```
+
+**ATENÇÃO:** muito cuidado ao ler inteiros e caracteres em uma mesma entrada.
 
 em que ```%d``` indica que ```scanf``` fará a leitura de uma valor do tipo inteiro, em que o valor lido será armazenado no endereço de memória associado à variável ```a```. Faremos o mesmo para a variável ```b```. Logo:
 
