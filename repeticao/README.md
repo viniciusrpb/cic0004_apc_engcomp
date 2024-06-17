@@ -32,6 +32,19 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 5.9. [Beecrowd 3214 - Refrigerante](https://judge.beecrowd.com/pt/problems/view/3214) [[Solucão](beecrowd_3214.c)]
 
+## Aula Prática (07/06/2024)
+
+5.10. [Beecrowd 2247 - Cofrinhos da Vó Vitória](https://judge.beecrowd.com/pt/problems/view/2247) [[Solucão](beecrowd_2247.c)]
+
+5.11. [Beecrowd 2862 - Inseto!](https://judge.beecrowd.com/pt/problems/view/2862) [[Solucão](beecrowd_2862.c)]
+
+5.12. [Beecrowd 3076 - Exercício de História](https://judge.beecrowd.com/pt/problems/view/3076) [[Solucão](beecrowd_3076.c)]
+
+5.13. [Beecrowd 3084 - Relógio Antigo](https://judge.beecrowd.com/pt/problems/view/3084) [[Solucão](beecrowd_3084.c)]
+
+5.14. [Beecrowd 2463 - Corredor](https://judge.beecrowd.com/pt/problems/view/2463) [[Solucão](beecrowd_2463.c)]
+
+
 
 
 
