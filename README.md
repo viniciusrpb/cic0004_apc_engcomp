@@ -34,6 +34,10 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 7. [Ponteiros e Alocação Dinâmica](ponteiros/README.md)
 
+## Simulados
+
+1. [Simulado da Prova 1](simulados/simulado1.md)
+
 ## Referências
 
 - [Linguagem C Descomplicada](https://programacaodescomplicada.wordpress.com/indice/linguagem-c/)
