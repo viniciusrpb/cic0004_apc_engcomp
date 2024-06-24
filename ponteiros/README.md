@@ -64,7 +64,26 @@ tem-se um ponteiro para inteiro, pois esse ponteiro armazena o endereço de mem�
 double *pd;
 ```
 
-que armazena o endereço de uma variável real de precisão dupla.
+que armazena o endereço de uma variável real de precisão dupla. Veja no código-fonte a seguir que as próprias variáveis ponteiro possuem endereços como qualquer outra variável, mas no caso dos ponteiros, ocupa-se ```8``` bytes na memória cada, para qualquer tipo de ponteiro:
+
+```
+#include<stdio.h>
+
+int main(){
+
+    int n;
+    char c;
+    int *p;   // ponteiro para inteiro
+    char *pc; // ponteiro para char
+
+    printf("Endereco de n: %p\n",&n);
+    printf("Endereco de c: %p\n",&c);
+    printf("Endereco de *p: %p\n",&p);
+    printf("Endereco de *pc: %p\n",&pc);
+
+    return 0;
+}
+```
 
 ## Atribuição de Endereços
 
@@ -82,97 +101,6 @@ Assim, o ponteiro ```p``` contém o endereço de memória da variável ```num```
 ## Acessando Indireto de Valor
 
 Para acessar o valor armazenado no endereço de memória apontado por um ponteiro, deve-se utilizar o operador indireto ```*```:
-
-```
-Copy code
-int num = 10;
-int *ptr = &num;
-
-printf("Valor de num: %d\n", num);        // Imprime 10
-printf("Valor apontado por ptr: %d\n", *ptr); // Também imprime 10
-
-
-Aqui, *ptr retorna o valor de num.
-
-Ponteiros e Arrays
-Em C, o nome de um array é um ponteiro para o primeiro elemento do array. Por exemplo:
-
-c
-Copy code
-int arr[5] = {1, 2, 3, 4, 5};
-int *ptr = arr;
-
-printf("Primeiro elemento: %d\n", *ptr); // Imprime 1
-Você pode usar aritmética de ponteiros para acessar outros elementos do array:
-
-c
-Copy code
-printf("Segundo elemento: %d\n", *(ptr + 1)); // Imprime 2
-Ponteiros e Alocação Dinâmica de Memória
-Os ponteiros são essenciais para a alocação dinâmica de memória em C. Funções como malloc, calloc, realloc e free são usadas para gerenciar memória em tempo de execução.
-
-c
-Copy code
-int *ptr;
-ptr = (int *)malloc(5 * sizeof(int)); // Aloca memória para 5 inteiros
-
-if (ptr == NULL) {
-    printf("Falha na alocação de memória\n");
-    return 1;
-}
-
-// Usando a memória alocada
-for (int i = 0; i < 5; i++) {
-    ptr[i] = i + 1;
-}
-
-for (int i = 0; i < 5; i++) {
-    printf("%d ", ptr[i]);
-}
-
-// Liberando a memória alocada
-free(ptr);
-Ponteiros para Ponteiros
-Em C, você pode ter ponteiros que apontam para outros ponteiros. Isso é útil para criar arrays de ponteiros ou manipular strings de forma mais flexível.
-
-c
-Copy code
-int num = 10;
-int *ptr = &num;
-int **pptr = &ptr;
-
-printf("Valor de num: %d\n", num);
-printf("Valor apontado por ptr: %d\n", *ptr);
-printf("Valor apontado por pptr: %d\n", **pptr);
-Conclusão
-Ponteiros são uma parte poderosa e essencial da linguagem C, permitindo um controle mais granular da memória e a criação de estruturas de dados complexas. No entanto, é importante usá-los com cuidado para evitar erros comuns, como a desreferência de ponteiros nulos ou o uso de ponteiros não inicializados.
-
-## Definição
-
-## Operador &
-
-```
-#include<stdio.h>
-
-int main(){
-
-    int n;
-    char c;
-    int *p;  // ponteiro para inteiro
-    char *pc; // ponteiro para char
-
-    scanf("%d",&n);
-
-    printf("Endereco de n: %p\n",&n);
-    printf("Endereco de c: %p\n",&c);
-    printf("Endereco de *p: %p\n",&p);
-    printf("Endereco de *pc: %p\n",&pc);
-
-    return 0;
-}
-```
-
-## Operador Indireto (*)
 
 ```
 #include<stdio.h>
