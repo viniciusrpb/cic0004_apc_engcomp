@@ -2,7 +2,7 @@
 
 8.1. [Tabela ASCII](https://www.ime.usp.br/~pf/algoritmos/apend/ascii.html)
 
-8.2. [Biblioteca String.h](stringh.md)
+8.2. [Biblioteca String.h](https://petbcc.ufscar.br/string/)
 
 
 # Exercícios Resolvidos
