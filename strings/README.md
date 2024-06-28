@@ -7,13 +7,13 @@
 
 # Exercícios Resolvidos
 
-8.3. [Beecrowd 2866 - Cryptotext](https://www.beecrowd.com.br/judge/en/problems/view/2866) [[Solução](strings/upsolving/beecrowd_2866.c)]
+8.3. [Beecrowd 2866 - Cryptotext](https://www.beecrowd.com.br/judge/en/problems/view/2866) [[Solução](upsolving/beecrowd_2866.c)]
    
-8.4. [Beecrowd 1253 - Caesar Cipher](https://www.beecrowd.com.br/judge/en/problems/view/1253) [[Solução](strings/upsolving/beecrowd_1253.c)] [[Solução](strings/beecrowd_1253_2.py)]
+8.4. [Beecrowd 1253 - Caesar Cipher](https://www.beecrowd.com.br/judge/en/problems/view/1253) [[Solução](upsolving/beecrowd_1253.c)] [[Solução](strings/beecrowd_1253_2.py)]
 
-8.5. [Beecrowd 1024 - Criptografia](https://www.beecrowd.com.br/judge/pt/problems/view/1024) [[Solução](strings/upsolving/beecrowd_1024.c)]
+8.5. [Beecrowd 1024 - Criptografia](https://www.beecrowd.com.br/judge/pt/problems/view/1024) [[Solução](upsolving/beecrowd_1024.c)]
 
-8.6. [Beecrowd 1607 - Avance as Letras](https://www.beecrowd.com.br/judge/en/problems/view/1607) [[Solução](strings/upsolving/beecrowd_1607.c)]
+8.6. [Beecrowd 1607 - Avance as Letras](https://www.beecrowd.com.br/judge/en/problems/view/1607) [[Solução](upsolving/beecrowd_1607.c)]
 
 
 # Aula Prática
