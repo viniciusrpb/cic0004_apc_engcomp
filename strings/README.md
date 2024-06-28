@@ -7,7 +7,7 @@
 
 # Exercícios Resolvidos
 
-8.3. [Beecrowd 2866 - Cryptotext](https://www.beecrowd.com.br/judge/en/problems/view/2866) [[Solução](strings/beecrowd_2866.c)]
+8.3. [Beecrowd 2866 - Cryptotext](https://www.beecrowd.com.br/judge/en/problems/view/2866) [[Solução](strings/upsolving/beecrowd_2866.c)]
    
 8.4. [Beecrowd 1253 - Caesar Cipher](https://www.beecrowd.com.br/judge/en/problems/view/1253) [[Solução](strings/beecrowd_1253.c)] [[Solução](strings/beecrowd_1253_2.py)]
 
