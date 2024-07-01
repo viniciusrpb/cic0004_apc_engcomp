@@ -19,3 +19,5 @@
 # Aula Prática
 
 8.3. [Beecrowd 1272 - Hidden Message](https://www.beecrowd.com.br/judge/en/problems/view/1272) [[Solução](upsolving/beecrowd_1272.c)]
+
+8.4. [Beecrowd 1234 - Dancing Sentence](https://www.beecrowd.com.br/judge/en/problems/view/1234) [[Solução](upsolving/beecrowd_1234.c)]
