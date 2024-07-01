@@ -17,3 +17,5 @@
 
 
 # Aula Prática
+
+8.3. [Beecrowd 1272 - Hidden Message](https://www.beecrowd.com.br/judge/en/problems/view/1272) [[Solução](upsolving/beecrowd_1272.c)]
