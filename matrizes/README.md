@@ -1,5 +1,49 @@
 # 9. Matrizes
 
+```
+#include<stdio.h>
+#define MAX_N 100
+#define MAX_M 100
+
+int main(){
+    int i,j,n,m;
+    // declara matriz 100 x 100
+    int matriz[MAX_N][MAX_M];
+
+    scanf("%d %d",&n,&m);
+
+    // leitura de n linhas
+    for(i = 0; i < n; i++){
+        // para cada linha,
+        // ler m valores inteiros = colunas!
+        for(j = 0; j < m; j++){
+            scanf("%d",&matriz[i][j]);
+        }
+    }
+    printf("\nMatriz\n");
+    // imprimir a matriz
+    for(i = 0; i < n; i++){
+        for(j = 0; j < m-1; j++){
+            printf("%d ",matriz[i][j]);
+        }
+        printf("%d\n",matriz[i][m-1]);
+    }
+
+
+    printf("\nDetalhado\n");
+    // imprimir a matriz
+    for(i = 0; i < n; i++){
+        for(j = 0; j < m; j++){
+            printf("matriz[%d][%d] <- %d\n",i,j,matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+
 ## 9.1. Exercícios Resolvidos
 
    9.1. [Beecrowd 1184 - Line in Array](https://www.beecrowd.com.br/judge/en/problems/view/1181) [[Solução](listas/beecrowd_1181.c)]
