@@ -75,6 +75,6 @@ int main(){
 
    9.2.1. [Beecrowd 1478 - Square Matrix II](https://judge.beecrowd.com/en/problems/view/1478) [[Solução](upsolving/beecrowd_1478.c)]
 
-   9.2.2. [Beecrowd 4735 - Campo Minado 2D](https://judge.beecrowd.com/en/custom-problems/view/4735) [[Solução](upsolving/beecrowd_4735.c)]
+   9.2.2. [Beecrowd 4735 - Campo Minado 2D](https://judge.beecrowd.com/en/custom-problems/view/4735) [[Solução Incompleta](upsolving/beecrowd_4735.c)]
 
    9.2.3. [Beecrowd 1383 - Sudoku](https://www.beecrowd.com.br/judge/pt/problems/view/1383) [[Solução](upsolving/beecrowd_1383.c)]
