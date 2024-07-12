@@ -1,5 +1,8 @@
 # 9. Matrizes
 
+![Uma Simples Matriz](images/matriz_basic.png)
+
+
 ```
 #include<stdio.h>
 #define MAX_N 100
