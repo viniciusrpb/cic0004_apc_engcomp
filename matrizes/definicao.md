@@ -94,6 +94,8 @@ O trecho de código-fonte que faz isso é apresentado abaixo:
 
 ## Leitura de uma Matriz na Entrada Padrão
 
+Nos juízes online, será comum termos que ler da entrada padrão uma matriz de ```n``` linhas por ```m``` colunas, sendo que o valor de ```n``` é no máximo ```N```, enquanto que o valor de ```m``` é no máximo ```M```. Para isso, vamos definir os rótulos MAX_N e MAX_M para expressarem as quantidades máximas de linhas e colunas que a matriz pode ter, dependendo do problema.
+
 ```
 #include<stdio.h>
 #define MAX_N 100
@@ -136,3 +138,40 @@ int main(){
     return 0;
 }
 ```
+
+## Escrita (Impressão) de uma Matriz na Entrada Padrão
+
+Também nos juízes online, algumas vezes devemos imprimir uma matriz na saída padrão. Considerando que temos uma matriz ```n``` x ```m```, devemos percorrer a matriz como explicado anteriormente e imprimir cada elemento, em que a formatação deve consistir do inteiro correspondente ao elemento seguido de um espaço branco. Devemos fazer isso com exceção dos elementos que estão na última coluna, em que após o inteiro correspondente à essa celula, devemos colocar o caractere ```'\n'```.
+
+```
+#include<stdio.h>
+#define MAX_N 100
+#define MAX_M 100
+
+int main(){
+    int i,j,n,m;
+    // declara matriz 100 x 100
+    int matriz[MAX_N][MAX_M];
+
+    scanf("%d %d",&n,&m);
+
+    /* leitura da matriz da entrada padrao*/
+    for(i = 0; i < n; i++){
+        for(j = 0; j < m; j++){
+            scanf("%d",&matriz[i][j]);
+        }
+    }
+
+    printf("\nMatriz\n");
+
+    for(i = 0; i < n; i++){
+        for(j = 0; j < m-1; j++){
+            printf("%d ",matriz[i][j]);
+        }
+        printf("%d\n",matriz[i][m-1]);
+    }
+
+    return 0;
+}
+```
+
