@@ -36,7 +36,7 @@ resultando na seguinte matriz:
 
 ## Percorrendo uma matriz
 
-<img src="images/matriz_percorre.png"  width="60%" height="60%">
+<img src="images/matriz_percorre.png"  width="80%" height="80%">
 
 ## Leitura de uma Matriz na Entrada Padrão
 ```
