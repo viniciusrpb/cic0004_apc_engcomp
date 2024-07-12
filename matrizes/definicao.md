@@ -34,11 +34,66 @@ resultando na seguinte matriz:
 
 <img src="images/matrizes_basic.png"  width="30%" height="30%">
 
+## Declaração Genérica
+
+```
+#include<stdio.h>
+#define MAX_N 100
+#define MAX_M 100
+
+int main(){
+    int i,j,n,m;
+
+    // declara matriz 100 x 100
+    int matriz[MAX_N][MAX_M];
+
+    return 0;
+}
+```
+
+## Acessando Elementos (Células)
+
+O trecho de código-fonte abaixo mostra como acessar uma posição específica de uma matriz. No exemplo, estamos acessando a célula que está na linha de índice 2 e a coluna de índice 1 da matriz, atribuindo o resultado na variável inteira ```elemento```:
+
+```
+int elemento;
+int matriz[3][3] = {7,3,1,9,11,-4,0,1,4};
+
+elemento = matriz[2][1];
+```
+
+Já no trecho de código-fonte abaixo, estamos atribuindo o valor ```6``` para a célula da matriz que está no índice de linha 1 e no índice de coluna 1:
+
+```
+int matriz[2][2] = {0,1,2,3};
+
+matriz[1][1] = 6;
+
+printf("%d\n",matriz[1][1]);
+```
+
 ## Percorrendo uma matriz
+
+Para percorrer célula por célula de uma matriz, precisaremos de um laço ```for``` para iterarmos sobre as linhas da matriz e um outro laço **interno** ``for`` para iterar sobre as colunas. Com isso, podemos dizer que *"para cada linha, acessamos o elemento que está em cada coluna"* da matriz. Veja a ilustração desse processo na imagem abaixo:
 
 <img src="images/matriz_percorre.png"  width="80%" height="80%">
 
+O trecho de código-fonte que faz isso é apresentado abaixo:
+
+```
+    /* ... */
+    int i,j,n,m,elemento;
+
+    for(i = 0; i < n; i++){
+        for(j = 0; j < m; j++){
+            elemento = matriz[i][j]; // pega o elemento da matriz
+        }
+    }
+    /*...*/
+```
+
 ## Leitura de uma Matriz na Entrada Padrão
+
 ```
 #include<stdio.h>
 #define MAX_N 100
