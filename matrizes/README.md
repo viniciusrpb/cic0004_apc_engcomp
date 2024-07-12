@@ -8,7 +8,8 @@ Da mesma maneira do que nos vetores, os índices nas matrizes começam no inteir
 
 Outros tipos de matrizes podem apresentar várias dimensões, como é o caso de uma imagem colorida representada pelo modelo de cor RGB (Red-Green-Blue). Nesse caso, cada posição ```a[i][j]``` terá uma profundidade ```3```, associada a cada um dos canais de cores.
 
-![Uma Imagem Colorida](images/rgb_image.png)<br>
+<img src="images/rgb_image.png" width="30%" height="30%">
+
 Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339435251
 
 # Outline
