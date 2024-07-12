@@ -17,50 +17,9 @@ Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339
 
 [9.2. Padding de Matrizes](padding.md)
 
-[9.3. Alocação Dinâmica de Matrizes](alocacao_dinamica.md)
+[9.3. Vetores de Strings](vetores_strings.md)
 
-```
-#include<stdio.h>
-#define MAX_N 100
-#define MAX_M 100
-
-int main(){
-    int i,j,n,m;
-    // declara matriz 100 x 100
-    int matriz[MAX_N][MAX_M];
-
-    scanf("%d %d",&n,&m);
-
-    // leitura de n linhas
-    for(i = 0; i < n; i++){
-        // para cada linha,
-        // ler m valores inteiros = colunas!
-        for(j = 0; j < m; j++){
-            scanf("%d",&matriz[i][j]);
-        }
-    }
-    printf("\nMatriz\n");
-    // imprimir a matriz
-    for(i = 0; i < n; i++){
-        for(j = 0; j < m-1; j++){
-            printf("%d ",matriz[i][j]);
-        }
-        printf("%d\n",matriz[i][m-1]);
-    }
-
-
-    printf("\nDetalhado\n");
-    // imprimir a matriz
-    for(i = 0; i < n; i++){
-        for(j = 0; j < m; j++){
-            printf("matriz[%d][%d] <- %d\n",i,j,matriz[i][j]);
-        }
-        printf("\n");
-    }
-
-    return 0;
-}
-```
+[9.4. Alocação Dinâmica de Matrizes](alocacao_dinamica.md)
 
 ```
 #include<stdio.h>
