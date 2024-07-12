@@ -78,6 +78,8 @@ Para percorrer célula por célula de uma matriz, precisaremos de um laço ```fo
 
 <img src="images/matriz_percorre.png"  width="80%" height="80%">
 
+Observe que estamos utilizando duas variáveis inteiras ```i``` e ```j``` para marcar os índices da linha e da coluna, respectivamente. Esses índices variam durante as iterações dos laçõs ```for``` aninhados e sempre estão no domínio da matriz.
+
 O trecho de código-fonte que faz isso é apresentado abaixo:
 
 ```
@@ -94,7 +96,11 @@ O trecho de código-fonte que faz isso é apresentado abaixo:
 
 ## Leitura de uma Matriz na Entrada Padrão
 
-Nos juízes online, será comum termos que ler da entrada padrão uma matriz de ```n``` linhas por ```m``` colunas, sendo que o valor de ```n``` é no máximo ```N```, enquanto que o valor de ```m``` é no máximo ```M```. Para isso, vamos definir os rótulos MAX_N e MAX_M para expressarem as quantidades máximas de linhas e colunas que a matriz pode ter, dependendo do problema.
+Nos juízes online, será comum termos que ler da entrada padrão uma matriz de ```n``` linhas por ```m``` colunas, sendo que o valor de ```n``` é no máximo ```N```, enquanto que o valor de ```m``` é no máximo ```M```. Para isso, vamos definir os rótulos MAX_N e MAX_M para expressarem as quantidades máximas de linhas e colunas que a matriz podem ter, o que depende do problema (pegue essa informação na seção de "Entrada" do problema).
+
+Primeiramente, lemos os valores inteiros ```n``` e ```m```. Depois teremos que percorrer a matriz como explicado na seção anterior, só que para cada posição ```[i][j]```, iremos utilizar a função ```scanf``` para ler um inteiro da entrada e armazená-lo na célula correspondente da matriz.
+
+O código-fonte abaixo descreve esse processo:
 
 ```
 #include<stdio.h>
@@ -103,36 +109,17 @@ Nos juízes online, será comum termos que ler da entrada padrão uma matriz de 
 
 int main(){
     int i,j,n,m;
-    // declara matriz 100 x 100
+    /*declara matriz 100 x 100*/
     int matriz[MAX_N][MAX_M];
 
     scanf("%d %d",&n,&m);
 
-    // leitura de n linhas
+    /* leitura da matriz da entrada padrao*/
     for(i = 0; i < n; i++){
-        // para cada linha,
-        // ler m valores inteiros = colunas!
+        /* para cada linha, ler m valores inteiros, ou seja, m colunas */
         for(j = 0; j < m; j++){
             scanf("%d",&matriz[i][j]);
         }
-    }
-    printf("\nMatriz\n");
-    // imprimir a matriz
-    for(i = 0; i < n; i++){
-        for(j = 0; j < m-1; j++){
-            printf("%d ",matriz[i][j]);
-        }
-        printf("%d\n",matriz[i][m-1]);
-    }
-
-
-    printf("\nDetalhado\n");
-    // imprimir a matriz
-    for(i = 0; i < n; i++){
-        for(j = 0; j < m; j++){
-            printf("matriz[%d][%d] <- %d\n",i,j,matriz[i][j]);
-        }
-        printf("\n");
     }
 
     return 0;
@@ -150,7 +137,6 @@ Também nos juízes online, algumas vezes devemos imprimir uma matriz na saída 
 
 int main(){
     int i,j,n,m;
-    // declara matriz 100 x 100
     int matriz[MAX_N][MAX_M];
 
     scanf("%d %d",&n,&m);
