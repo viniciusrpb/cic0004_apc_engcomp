@@ -2,7 +2,7 @@
 
 Uma matriz é um vetor (array) multidimensional, geralmente empregado no armazenamento de dados em forma de tabela. A representação mais simples de uma matriz é por um array bidimensional, isto é, uma estrutura contendo ```N``` linhas por ```M``` colunas como mostra a figura abaixo:
 
-<img src="images/matrizes_basic.png"  width="600" height="300">
+<img src="images/matrizes_basic.png" width="60%" height="60%">
 
 Da mesma maneira do que nos vetores, os índices nas matrizes começam no inteiro ```0```. Assim, cada posição ```a[i][j]``` (ou célula) da matriz é acessada considerado os índices de linha ```i (0 <= i < N)``` e de coluna ```j (0 <= j < M)```.
 
