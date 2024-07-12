@@ -1,9 +1,5 @@
 # 9.1. Fundamentos de Matrizes
 
-Para declarar uma matriz em C, você precisa especificar o tipo de dado e as dimensões da matriz. Por exemplo, para declarar uma matriz de inteiros com 3 linhas e 4 colunas, você faria:
-
-![Uma Simples Matriz](images/matrizes_ilustrativo.png)
-
 ## Declaração de uma Matriz
 
 Para declarar uma matriz em Linguagem C, você precisa especificar o tipo de dados e as dimensões da matriz como se segue:
@@ -36,7 +32,7 @@ int matriz[3][4] = {
 
 resultando na seguinte matriz:
 
-<img src="images/matrizes_basic.md"  width="30%" height="30%">
+<img src="images/matrizes_basic.png"  width="30%" height="30%">
 
 ```
 #include<stdio.h>
