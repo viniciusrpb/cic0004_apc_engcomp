@@ -21,38 +21,11 @@ Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339
 
 [9.4. Alocação Dinâmica de Matrizes](alocacao_dinamica.md)
 
-```
-#include<stdio.h>
-#define MAX_N 100
-#define MAX_M 100
 
-int main(){
-    int i,j,n,m;
-    // armazena ateh MAX_N strings
-    // cada strings contendo ateh MAX_M caracteres
-    char vetor_str[MAX_N][MAX_M+1];
-    // ler n linhas da entrada
-    scanf("%d",&n);
-    getchar(); // tchau \n
+## Exercícios Resolvidos
 
-    for(i = 0; i < n;i++){
-        scanf("%s",vetor_str[i]);
-        getchar(); // tchau \n
-    }
+[Beecrowd 1478 - Square Matrix II](https://judge.beecrowd.com/en/problems/view/1478) [[Solução](upsolving/beecrowd_1478.c)]
 
-    for(i = 0; i < n; i++){
-        // imprime a string na linha i
-        printf("%s\n",vetor_str[i]);
-    }
+[Beecrowd 4735 - Campo Minado 2D](https://judge.beecrowd.com/en/custom-problems/view/4735) [[Solução Incompleta](upsolving/beecrowd_4735.c)]
 
-    return 0;
-}
-```
-
-## 9.2. Exercícios Resolvidos
-
-   9.2.1. [Beecrowd 1478 - Square Matrix II](https://judge.beecrowd.com/en/problems/view/1478) [[Solução](upsolving/beecrowd_1478.c)]
-
-   9.2.2. [Beecrowd 4735 - Campo Minado 2D](https://judge.beecrowd.com/en/custom-problems/view/4735) [[Solução Incompleta](upsolving/beecrowd_4735.c)]
-
-   9.2.3. [Beecrowd 1383 - Sudoku](https://www.beecrowd.com.br/judge/pt/problems/view/1383) [[Solução](upsolving/beecrowd_1383.c)]
+[Beecrowd 1383 - Sudoku](https://www.beecrowd.com.br/judge/pt/problems/view/1383) [[Solução](upsolving/beecrowd_1383.c)]
