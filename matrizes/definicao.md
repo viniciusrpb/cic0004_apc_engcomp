@@ -34,6 +34,11 @@ resultando na seguinte matriz:
 
 <img src="images/matrizes_basic.png"  width="30%" height="30%">
 
+## Percorrendo uma matriz
+
+<img src="images/matriz_percorre.png"  width="30%" height="30%">
+
+## Leitura de uma Matriz na Entrada Padrão
 ```
 #include<stdio.h>
 #define MAX_N 100
