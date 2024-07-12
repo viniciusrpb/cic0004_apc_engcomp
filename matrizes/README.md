@@ -1,6 +1,6 @@
 # 9. Matrizes
 
-![Uma Simples Matriz](images/matriz_basic.png)
+![Uma Simples Matriz](images/matrizes_basic.png)
 
 
 ```
