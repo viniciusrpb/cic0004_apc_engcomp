@@ -4,7 +4,7 @@
 
 Suponha a seguinte matriz de inteiros 3x3 original:
 
-<img src="images/matriz_3x3.png" width="40%" height="40%">
+<img src="images/matriz_3x3.png" width="30%" height="30%">
 
 Fazendo-se o *padding* de tamanho 1 na matriz acima, isto é, adicionando-se uma linha de zeros no topo da matriz, uma outra linha de zeros na parte de baixo da matriz, uma coluna de zeros na borda esquerda e outra coluna de zeros na borda direita resulta em:
 
