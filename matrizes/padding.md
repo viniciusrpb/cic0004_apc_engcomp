@@ -56,7 +56,7 @@ O uso do *padding* também permite que possamos analisar as células vizinhas em
 
 <img src="images/connectivity.png" width="50%" height="50%">
 
-Observe no exemplo abaixo em que analisamos todas as células vizinhas em relação a uma célula central na posição  **[i][j]**. Para isso, utilizamos duas variáveis inteiras adicionais ```k``` e ```l``` para controlarem o percorrimento das linhas e colunas apenas na vizinhança:
+Observe no exemplo abaixo em que analisamos todas as células vizinhas em relação a uma célula central na posição  **[i][j]** (célula na cor vermelha). Para isso, utilizamos duas variáveis inteiras adicionais ```k``` e ```l``` para controlarem o percorrimento das linhas e colunas apenas na vizinhança (células em verde):
 
 <img src="images/neighborhood.png" width="40%" height="40%">
 
