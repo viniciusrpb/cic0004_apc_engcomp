@@ -2,10 +2,13 @@
 
 *Padding* é uma técnica que adiciona bordas extras de uma matriz, aumentando-se as dimensões da matriz original ao adicionar linhas e colunas extras, normalmente preenchidas com zeros, valores constantes ou replicações dos valores da borda da matriz original.
 
-A imagem abaixo ilustra o resultado do *padding* em uma matriz 3x3:
+Suponha a seguinte matriz de inteiros 3x3 original:
+
+<img src="images/matriz_3x3.png" width="40%" height="40%">
+
+Fazendo-se o *padding* de tamanho 1 na matriz acima, isto é, adicionando-se uma linha de zeros no topo da matriz, uma outra linha de zeros na parte de baixo da matriz, uma coluna de zeros na borda esquerda e outra coluna de zeros na borda direita resulta em:
 
 <img src="images/matrizes_padding.png" width="40%" height="40%">
-
 
 ## 9.3.1. Como fazer o Padding
 
