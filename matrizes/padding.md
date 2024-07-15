@@ -52,39 +52,33 @@ for(i = 1; i <= n; i++){
 
 ## 9.3.2. Análise de Vizinhança
 
-O uso do *padding* também permite que possamos analisar as células vizinhas em relação a uma célula "central" na posição genérica **[i][j]** sem nos preocuparmos em verificar se estamos ultrapassando os limites válidos da matriz original. Define-se uma célula vizinha (ou adjacente) a uma célula na posição **[i][j]** como uma célula que possui fronteira na vertical, na horizontal e, às vezes, na diagonal.
+O uso do *padding* também permite que possamos analisar as células vizinhas em relação a uma célula "central" na posição genérica **[i][j]** sem nos preocuparmos em verificar se estamos ultrapassando os limites válidos da matriz original. Define-se uma célula vizinha (ou adjacente) a uma célula na posição **[i][j]** como uma célula que possui fronteiras apenas na vertical e na horizontal (também chamada de vizinhança com conectividade 4) e, às vezes, na diagonal (vizinhança com conectividade 8).
 
-<img src="images/connectivity.png" width="40%" height="40%">
+<img src="images/connectivity.png" width="50%" height="50%">
 
-Observe no exemplo abaixo em que analisamos as células vizinhas na diag
+Observe no exemplo abaixo em que analisamos todas as células vizinhas em relação a uma célula central na posição  **[i][j]**. Para isso, utilizamos duas variáveis inteiras adicionais ```k``` e ```l``` para controlarem o percorrimento das linhas e colunas apenas na vizinhança:
 
 <img src="images/neighborhood.png" width="40%" height="40%">
 
+Por exemplo, podemos somar todos os valores da vizinhança para cada posição **[i][j]** da matriz. O processo é apresentado no código-fonte abaixo:
+
 ```
-#include<stdio.h>
-#define MAX_N 100
-#define MAX_M 100
+/* ... */
+for(i = 1; i <= n; i++){
+    for(j = 1; j <= m; j++){
 
-int main(){
+        soma = 0;
 
-    int n,m,i,j;
-    int matriz[MAX_N+2][MAX_M+2];
-
-    scanf("%d %d",&n,&m);
-
-    for(i = 0; i < n+2; i++){
-        for(j = 0; j < m+2; j++){
-            matriz[i][j] = 0;
+        for(k = i-1; k <= i+1; k++){
+            for(l = j-1; l <= j+1; l++){
+                soma += matriz[k][l];
+            }
         }
-    }
 
-    for(i = 1; i <= n; i++){
-        for(j = 1; j <= m; j++){
-            scanf("%d",&matriz[i][j]);
-        }
+        printf("%d ");
     }
-  
-    return 0;
+    printf("\n");
 }
+/* ... */
 ```
 
