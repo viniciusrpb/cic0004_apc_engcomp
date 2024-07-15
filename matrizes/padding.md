@@ -10,9 +10,11 @@ Fazendo-se o *padding* de tamanho 1 na matriz acima, isto é, adicionando-se uma
 
 <img src="images/matrizes_padding.png" width="40%" height="40%">
 
+Observe que o domínio da matriz 3x3 é agora válido nos índices de linha e de coluna no intervalo fechado ```[1,3]```, pois as linhas e as colunas nos índices 0 e 4 correspondem às bordas extras que não fazem parte da matriz original. Veja que as células válidas da matriz tiveram seus índices atualizados na figura.
+
 ## 9.3.1. Como fazer o Padding
 
-
+Para fazer o padding na matriz, basta adicionar mais duas linhas e duas colunas no momento de definir as dimensões da matriz como se segue:
 
 ```
 #include<stdio.h>
@@ -22,7 +24,7 @@ Fazendo-se o *padding* de tamanho 1 na matriz acima, isto é, adicionando-se uma
 int main(){
 
     int n,m,i,j;
-    int matriz[MAX_N+2][MAX_M+2];
+    int matriz[MAX_N+2][MAX_M+2];    // +2 adiciona mais duas linhas e duas colunas
 
     scanf("%d %d",&n,&m);
 
@@ -31,20 +33,30 @@ int main(){
             matriz[i][j] = 0;
         }
     }
-
-    for(i = 1; i <= n; i++){
-        for(j = 1; j <= m; j++){
-            scanf("%d",&matriz[i][j]);
-        }
-    }
   
     return 0;
 }
 ```
 
-## Análise de Vizinhança
+Para percorrer a matriz com *padding* nas posições válidas, começamos sempre dos índices ```1``` nas linhas e nas colunas (veja ```i = 1``` e ```j = 1```), indo até ```i <= n``` e ```j <= m``` como mostra o trecho de código-fonte abaixo:
 
-Padding permite que os filtros (ou kernels) possam ser aplicados a todos os pixels da imagem original, incluindo os pixels na borda. Sem padding, a análise de vizinhança não é possível para os pixels na borda, pois não há pixels adicionais para completar a vizinhança necessária para a operação.
+```
+/* ... */
+for(i = 1; i <= n; i++){
+    for(j = 1; j <= m; j++){
+        scanf("%d",&matriz[i][j]);
+    }
+}
+/* ... */
+```
+
+## 9.3.2. Análise de Vizinhança
+
+O uso do *padding* também permite que possamos analisar as células vizinhas em relação a uma célula "central" na posição genérica **[i][j]** sem nos preocuparmos em verificar se estamos ultrapassando os limites válidos da matriz original. Define-se uma célula vizinha (ou adjacente) a uma célula na posição **[i][j]** como uma célula que possui fronteira na vertical, na horizontal e, às vezes, na diagonal.
+
+<img src="images/connectivity.png" width="40%" height="40%">
+
+Observe no exemplo abaixo em que analisamos as células vizinhas na diag
 
 <img src="images/neighborhood.png" width="40%" height="40%">
 
