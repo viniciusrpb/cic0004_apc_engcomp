@@ -1,4 +1,4 @@
-# 9.3. Padding de Matrizes
+# 9.2. Padding de Matrizes
 
 *Padding* é uma técnica que adiciona bordas extras de uma matriz, aumentando-se as dimensões da matriz original ao adicionar linhas e colunas extras, normalmente preenchidas com zeros, valores constantes ou replicações dos valores da borda da matriz original.
 
@@ -12,7 +12,7 @@ Fazendo-se o *padding* de tamanho 1 na matriz acima, isto é, adicionando-se uma
 
 Observe que o domínio da matriz 3x3 é agora válido nos índices de linha e de coluna no intervalo fechado ```[1,3]```, pois as linhas e as colunas nos índices 0 e 4 correspondem às bordas extras que não fazem parte da matriz original. Veja que as células válidas da matriz tiveram seus índices atualizados na figura.
 
-## 9.3.1. Como fazer o Padding
+## 9.2.1. Como fazer o Padding
 
 Para fazer o padding na matriz, basta adicionar mais duas linhas e duas colunas no momento de definir as dimensões da matriz como se segue:
 
@@ -50,7 +50,7 @@ for(i = 1; i <= n; i++){
 /* ... */
 ```
 
-## 9.3.2. Análise de Vizinhança
+## 9.2.2. Análise de Vizinhança
 
 O uso do *padding* também permite que possamos analisar as células vizinhas em relação a uma célula "central" na posição genérica **[i][j]** sem nos preocuparmos em verificar se estamos ultrapassando os limites válidos da matriz original. Define-se uma célula vizinha (ou adjacente) a uma célula na posição **[i][j]** como uma célula que possui fronteiras apenas na vertical e na horizontal (também chamada de vizinhança com conectividade 4) e, às vezes, na diagonal (vizinhança com conectividade 8).
 
