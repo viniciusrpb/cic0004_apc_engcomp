@@ -1,5 +1,9 @@
 # 9.3. Vetores de Strings 
 
+
+<img src="images/vetor_strings.png" width="30%" height="30%">
+
+
 ```
 #include<stdio.h>
 #define MAX_N 100
