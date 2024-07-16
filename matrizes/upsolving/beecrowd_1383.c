@@ -29,7 +29,7 @@ int main(){
                 histograma[k] = 0;
             }
 
-            // contabilizar os numeros de cada linha do sudoku no histograma
+            // contabilizar os numeros de cada coluna do sudoku no histograma
             for(j = 0; j < 9; j++){
                 num = sudoku[i][j];
                 histograma[num]++;
@@ -44,8 +44,28 @@ int main(){
             }
         }
 
-        /*FALTA ANALISAR SE EXISTEM NUMEROS
-         REPETIDOS NAS COLUNAS DO SUDOKU*/
+        // para cada coluna do sudoku
+        for(j = 0; j < 9; j++){
+
+            // zerar o histograma
+            for(k = 1; k <= 9; k++){
+                histograma[k] = 0;
+            }
+
+            // contabilizar os numeros de cada linha do sudoku no histograma
+            for(i = 0; i < 9; i++){
+                num = sudoku[i][j];
+                histograma[num]++;
+            }
+
+            // verifica se faltou algum numero ou
+            // se num aparece mais do que 1 vez
+            for(k = 1; k <= 9; k++){
+                if(histograma[k] != 1){
+                    lascou = 1; // sudoku invalido
+                }
+            }
+        }
 
         for(i = 1; i < 9; i=i+3){
             for(j = 1; j < 9; j=j+3){
