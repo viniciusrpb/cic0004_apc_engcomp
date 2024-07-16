@@ -1,6 +1,6 @@
 # 9.4. Alocação Dinâmica de Matrizes
 
-<img src="images/matrizes_dinamica_p1.png" width="50%" height="50%">
+<img src="images/matrizes_dinamica_p1.png" width="60%" height="60%">
 
 
 ```
@@ -35,4 +35,4 @@ int main(){
 }
 ```
 
-<img src="images/matrizes_dinamica_p2.png" width="50%" height="50%">
+<img src="images/matrizes_dinamica_p2.png" width="80%" height="80%">
