@@ -38,9 +38,18 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 9. [Matrizes](matrizes/README.md)
 
+10. [Funções](funcoes/README.md)
+
+11. [Estruturas Heterogêneas (Registros)](structs/README.md)
+
+12. [Recursividade](recursividade/README.md)
+
 ## Simulados
 
 1. [Simulado da Prova 1](simulados/simulado_prova1.md)
+
+2. [Simulado da Prova 2](simulados/simulado_prova2.md)
+
 
 ## Referências
 
