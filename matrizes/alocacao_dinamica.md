@@ -1,5 +1,8 @@
 # 9.4. Alocação Dinâmica de Matrizes
 
+<img src="images/matrizes_dinamica_p1.png" width="50%" height="50%">
+
+
 ```
 #include<stdio.h>
 #include<stdlib.h>
@@ -31,3 +34,5 @@ int main(){
     return 0;
 }
 ```
+
+<img src="images/matrizes_dinamica_p2.png" width="50%" height="50%">
