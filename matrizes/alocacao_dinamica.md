@@ -25,6 +25,8 @@ free(matriz);
 
 Por fim,
 
+<img src="images/matrizes_dinamica_p3.png" width="80%" height="80%">
+
 ```
 /* ... */
 matriz = (int **) malloc (sizeof(int)*n);
@@ -41,8 +43,12 @@ free(matriz);
 /* ... */
 ```
 
+
+
+
 ## 9.4.2. Código-fonte completo
 
+<img src="images/matrizes_dinamica_p4.png" width="80%" height="80%">
 
 ```
 #include<stdio.h>
@@ -76,4 +82,4 @@ int main(){
 }
 ```
 
-<img src="images/matrizes_dinamica_p3.png" width="80%" height="80%">
+
