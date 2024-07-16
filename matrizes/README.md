@@ -39,4 +39,4 @@ Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339
 
 [Beecrowd 1652 - Deli Deli](https://judge.beecrowd.com/en/problems/view/1652) [[Solução](upsolving/beecrowd_1652.c)]
 
-[Beecrowd 2552 - CheeseBreadSweeper](https://judge.beecrowd.com/en/problems/view/2552) [Solução](upsolving/beecrowd_2552.c)]
+[Beecrowd 2552 - CheeseBreadSweeper](https://judge.beecrowd.com/en/problems/view/2552) [[Solução](upsolving/beecrowd_2552.c)]
