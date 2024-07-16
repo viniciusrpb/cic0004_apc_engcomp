@@ -1,6 +1,47 @@
 # 9.4. Alocação Dinâmica de Matrizes
 
+Lembre-se de incluir a biblioteca ```stdlib.h``` para uso das funções ```malloc()``` e ```free()```, além do operador ```sizeof```.
+
+```
+int n,m;
+int **matriz;
+
+n=4;
+m=4;
+```
+
+Já vamos colocar o comando ```free()```:
+
 <img src="images/matrizes_dinamica_p1.png" width="60%" height="60%">
+
+
+```
+/* ... */
+matriz = (int **) malloc (sizeof(int)*n);
+
+free(matriz);
+/* ... */
+```
+
+Por fim,
+
+```
+/* ... */
+matriz = (int **) malloc (sizeof(int)*n);
+
+for(i = 0; i < n; i++){
+    matriz[i] = (int *) malloc (sizeof(int)*m);
+}
+
+for(i = 0; i < n; i++){
+    free(matriz[i]);
+}
+
+free(matriz);
+/* ... */
+```
+
+## 9.4.2. Código-fonte completo
 
 
 ```
@@ -9,14 +50,14 @@
 
 int main(){
     int n,m;
-    double **matriz;
+    int **matriz;
 
     scanf("%d %d",&n,&m);
 
-    matriz = (int **) malloc (sizeof(double)*n);
+    matriz = (int **) malloc (sizeof(int)*n);
 
     for(i = 0; i < n; i++){
-        matriz[i] = (int *) malloc (sizeof(double)*m);
+        matriz[i] = (int *) malloc (sizeof(int)*m);
     }
 
     for(i = 0; i < n; i++){
