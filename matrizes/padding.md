@@ -82,3 +82,8 @@ for(i = 1; i <= n; i++){
 /* ... */
 ```
 
+## 9.2.3. Exercícios Resolvidos
+
+
+[Beecrowd 4735 - Campo Minado 2D](https://judge.beecrowd.com/en/custom-problems/view/4735) [[Resolução](upsolving/beecrowd_4735.md)]
+
