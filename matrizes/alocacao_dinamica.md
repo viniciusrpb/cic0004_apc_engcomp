@@ -35,4 +35,4 @@ int main(){
 }
 ```
 
-<img src="images/matrizes_dinamica_p2.png" width="80%" height="80%">
+<img src="images/matrizes_dinamica_p2.png" width="100%" height="100%">
