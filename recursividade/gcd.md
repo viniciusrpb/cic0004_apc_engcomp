@@ -121,7 +121,7 @@ gcd(a,b) = a,  se b=0
 gcd(a,b) = gcd(b, a % b)
 ```
 
-## Código-fonte (Python3)
+## Código-fonte
 
 ```
 #include<stdio.h>
@@ -156,6 +156,6 @@ int main(){
 ## Extra: Mìnimo Múltiplo Comum (Least Common Multiple - LCM)
 
 ```
-def lcm(a,b):
-    return (a*b)//gcd(a,b)
+int lcm(int a, int b):
+    return (a*b)/gcd(a,b);
 ```
