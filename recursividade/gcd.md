@@ -124,12 +124,33 @@ gcd(a,b) = gcd(b, a % b)
 ## Código-fonte (Python3)
 
 ```
-def gcd(a,b):
-    if b == 0:
-        return a
-    return gcd(b,a%b)
+#include<stdio.h>
 
-print(gcd(84,16))
+int gcd(int a, int b){
+    if(b == 0){
+        return a;
+    }
+    //int l = a/b; //pega a div int entre a e b
+    // gcd(a,b) = gcd(a-l*b,b) = gcd(a%b,b)
+    //a%b > b, gcd (a%b,b) = gcd(b,a%b)
+
+    return gcd(b,a%b);
+}
+```
+
+```
+
+int main(){
+    int a,b,mdc;
+
+    scanf("%d %d",&a,&b);
+
+    mdc = gcd(a,b);
+
+    printf("MDC(%d,%d) = %d\n",a,b,mdc);
+
+    return 0;
+}
 ```
 
 ## Extra: Mìnimo Múltiplo Comum (Least Common Multiple - LCM)
