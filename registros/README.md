@@ -1,6 +1,8 @@
 # 12. Estruturas Heterogêneas (Registros)
 
+<img src="images/estruturas.png" width="30%" height="30%">
 
+Um registro (ou estrutura, ou *struct*) é um conjunto de variáveis agrupadas sob um único nome, permitindo o armazenamento de diferentes tipos de dados em uma única amostra (objeto, instância, ou entidade). Um registro facilita a organização e a manipulação de dados complexos, proporcionando uma maneira eficiente de agrupar dados relacionados.
 
 ```
 #include<stdio.h>
