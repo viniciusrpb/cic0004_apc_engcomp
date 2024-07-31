@@ -40,9 +40,10 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 10. [Funções](funcoes/README.md)
 
-11. [Estruturas Heterogêneas (Registros)](structs/README.md)
+11. [Recursividade](recursividade/recursividade.md)
 
-12. [Recursividade](recursividade/README.md)
+12. [Estruturas Heterogêneas (Registros)](structs/README.md)
+ 
 
 ## Simulados
 
