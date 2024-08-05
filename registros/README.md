@@ -9,3 +9,9 @@ Um registro (ou estrutura, ou *struct*) é um conjunto de variáveis agrupadas s
 [12.1. Criando Estruturas](definicao.md)
 
 [12.2. Estruturas por Alocação Dinâmica](dynamic_structs.md)
+
+## Exercícios Resolvidos
+
+[Beecrowd 2312 - Quadro de Medalhas](https://judge.beecrowd.com/en/problems/view/2312) [Solução](upsolving/beecrowd_2312.c)
+
+[Beecrowd 1255 - Letter Frequency](https://judge.beecrowd.com/en/problems/view/1255) [Solução](upsolving/beecrowd_1255.c)
