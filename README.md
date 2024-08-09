@@ -43,6 +43,8 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 11. [Recursividade](recursividade/recursividade.md)
 
 12. [Estruturas Heterogêneas (Registros)](registros/README.md)
+
+13. [Linguagem Python](python/README.md)
  
 
 ## Simulados
