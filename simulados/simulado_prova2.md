@@ -2,10 +2,10 @@
 
 ## Simulado Prova 2 (17/06/2024)
 
-1.1. [Beecrowd 2424 - Tira-teima](https://www.beecrowd.com.br/judge/pt/problems/view/2424) [[Solução](codes/beecrowd_2424.c)]
+1.1. [Beecrowd 2189 - Kermesse](https://www.beecrowd.com.br/judge/pt/problems/view/2189) [[Solução](codes/beecrowd_2189.c)]
    
-1.2. [Beecrowd 2679 - Sucessor Par](https://www.beecrowd.com.br/judge/pt/problems/view/2679) [[Solução](codes/beecrowd_2679.c)]
+1.2. [Beecrowd 2253 - Passwords Validator](https://www.beecrowd.com.br/judge/pt/problems/view/2253) [[Solução](codes/beecrowd_2253.c)]
 
-1.3. [Beecrowd 2428 - Capital](https://www.beecrowd.com.br/judge/pt/problems/view/2428) [[Solução](codes/beecrowd_2428.c)]
+1.3. [Beecrowd 2968 - Hour for a Run](https://www.beecrowd.com.br/judge/pt/problems/view/2968) [[Solução](codes/beecrowd_2968.c)]
 
-1.4. [Beecrowd 2441 - Janela](https://www.beecrowd.com.br/judge/pt/problems/view/2441) [[Solução](codes/beecrowd_2441.c)]
+1.4. [Beecrowd 3050 - Distância Entre Amigos](https://www.beecrowd.com.br/judge/pt/problems/view/3050) [[Solução](codes/beecrowd_3050.c)]
