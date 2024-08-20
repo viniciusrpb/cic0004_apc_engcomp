@@ -11,32 +11,40 @@ int main(){
         for(i = 0; i < n; i++){
             scanf("%d",&wave[i]);
         }
-        
-        ans = 0;
+
+        // completa o loop no vetor para tratar os casos de borda
         wave[n] = wave[0];
         wave[n+1] = wave[1];
+        
+        // atualiza a quantidade de elementos do vetor, desconsiderando o segundo
         n++;
         
         if(wave[0] > wave[1]){
+            // padrao decrescente da onda
             padrao = 0;
         }else{
+            // padrao crescente da onda
             padrao = 1;
         }
-        
-        //printf("padrao: %d\n",padrao);
+
+        ans = 0;
         
         for(i = 1; i < n; i++){
+            // sinal da onda eh crescente
             if(wave[i+1] > wave[i]){
+                // mas o padrao anterior era decrescente, detecta-se pico
                 if(padrao == 0){
-                    //printf("pico: %d\n",i);
                     ans++;
+                    // muda o padrao para crescente
                     padrao = 1;
                 }
             }else{
+                // sinal da onda eh decrescente
                 if(wave[i+1] < wave[i]){
+                    // mas o padrao anterior era crescente, detecta-se pico
                     if(padrao == 1){
-                        //printf("pico: %d\n",i);
                         ans++;
+                        // muda o padrao para crescente
                         padrao = 0;
                     }
                 }
