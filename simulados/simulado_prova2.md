@@ -1,6 +1,6 @@
 # Simulados
 
-## Simulado Prova 2 (17/06/2024)
+## Simulado Prova 2 (17/07/2024)
 
 1.1. [Beecrowd 2189 - Kermesse](https://www.beecrowd.com.br/judge/pt/problems/view/2189) [[Solução](codes/beecrowd_2189.c)]
    
