@@ -53,6 +53,8 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 2. [Simulado da Prova 2](simulados/simulado_prova2.md)
 
+3. [Simulado da Prova 3](simulados/simulado_prova3.md)
+
 
 ## Referências
 
