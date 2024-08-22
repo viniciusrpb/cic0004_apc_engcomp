@@ -1,6 +1,6 @@
 # Simulados
 
-## Simulado Prova 3 (19/08/2024)
+## Simulado Prova 3
 
 3.1. [Beecrowd 1089 - Musical Loop](https://www.beecrowd.com.br/judge/pt/problems/view/1089) [[Solução](codes/beecrowd_1089.c)]
    
