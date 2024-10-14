@@ -28,6 +28,8 @@ Clique [aqui](cic0004_t04_20241_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 4. [Estruturas Condicionais](condicionais/README.md)
 
+<!--
+
 5. [Estruturas de Repetição](repeticao/README.md)
 
 6. [Estruturas Homogêneas Unidimensionais: Vetores](arrays/README.md)
