@@ -191,3 +191,67 @@ b = 2;
 resto = a%b;
 ```
 
+## 3.3. Ordem de Precedência dos Operadores Matemáticos
+
+A ordem de precedência define a sequência em que os operadores são avaliados em uma expressão matemática. Conhecer essa ordem garante que as expressões matemáticas sejam calculadas corretamente. Abaixo, uma lista dos principais operadores e sua respectiva precedência (do maior para o menor):
+
+## 3.3.1. Operadores de Parênteses `( )`
+Os parênteses têm a maior precedência. Qualquer operação dentro de parênteses será resolvida primeiro. Caso existam parênteses aninhados, a avaliação começa pelo parêntese mais interno.
+
+**Exemplo:**
+```plaintext
+(3 + 2) * (7 - 5) = 5 * 2 = 10
+```
+
+## 3.3.2. Expoentes `^` ou `**`
+Os operadores de potência vêm após os parênteses. Eles indicam que um número será elevado a uma determinada potência.
+
+**Exemplo:**
+```plaintext
+2 ^ 3 = 8 ou 2 ** 3 = 8
+```
+
+## 3.3.3. Multiplicação `*` e Divisão `/`
+A multiplicação e a divisão possuem a mesma precedência e são avaliadas da esquerda para a direita. Elas são executadas após os expoentes.
+
+**Exemplo:**
+```plaintext
+4 * 3 / 2 = 12 / 2 = 6
+```
+
+## 3.3.4. Adição `+` e Subtração `-`
+A adição e a subtração também possuem a mesma precedência, sendo executadas da esquerda para a direita. São os operadores de menor precedência na hierarquia.
+
+**Exemplo:**
+```plaintext
+5 + 3 - 2 = 8 - 2 = 6
+```
+
+## Tabela Resumida da Ordem de Precedência
+
+| Precedência | Operador        | Descrição                   |
+|-------------|------------------|-----------------------------|
+| 1           | `( )`           | Parênteses                  |
+| 2           | `^` ou `**`     | Potência                    |
+| 3           | `*` e `/`       | Multiplicação e Divisão     |
+| 4           | `+` e `-`       | Adição e Subtração          |
+
+### Observações
+
+- **Associatividade**: Alguns operadores, como a multiplicação e a divisão, têm associatividade da esquerda para a direita. Isso significa que são avaliados na ordem em que aparecem da esquerda para a direita quando têm a mesma precedência.
+- **Uso de Parênteses**: Sempre que possível, use parênteses para evitar ambiguidades e tornar as expressões mais claras.
+
+### Exemplos de Expressões Completas
+
+1. **Exemplo sem parênteses:**
+   ```plaintext
+   3 + 4 * 2 ^ 2 = 3 + 4 * 4 = 3 + 16 = 19
+   ```
+
+2. **Exemplo com parênteses para alterar a precedência:**
+   ```plaintext
+   (3 + 4) * 2 ^ 2 = 7 * 4 = 28
+   ```
+
+Seguir a ordem de precedência garante que expressões matemáticas sejam avaliadas corretamente e de maneira previsível.
+
