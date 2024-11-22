@@ -35,7 +35,7 @@ Se não houverem erros, o arquivo executável do programa poderá ser executado 
 #include<math.h>
 
 int main(){
-  int x,y;
+  int ans,x,y;
 
   x = 3;
   y = 4;
