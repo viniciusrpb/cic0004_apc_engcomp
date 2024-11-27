@@ -21,7 +21,7 @@ Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **s
 4.5. [Beecrowd 1041 - Coordenadas de um Ponto](https://judge.beecrowd.com/pt/problems/view/1041) [[Resolucão](beecrowd_1041.md)]
 
 
-## Aula Prática (12/04/2024)
+## Aula Prática (22/11/2024)
 
 4.7. [Beecrowd 1048 - Aumento de Salário](https://judge.beecrowd.com/pt/problems/view/1048) [[Solucão](beecrowd_1048.c)]
 
