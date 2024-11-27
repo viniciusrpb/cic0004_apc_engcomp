@@ -1,15 +1,74 @@
 # 10. Funções
 
-```
-tipo nome_da_funcao( [lista de parametros] ){
+Uma **função** (sub-algoritmo) é um bloco de código que realiza uma tarefa específica e pode ser reutilizado em diferentes partes de um programa.
 
-    return ALGO;
+Usar funções em códigos na linguagem C é uma prática essencial para tornar o desenvolvimento mais organizado, eficiente e compreensível. Aqui estão alguns dos principais benefícios:
+
+## Porque usar Funções?
+
+Usar funções em códigos na linguagem C é uma prática importante para tornar o desenvolvimento mais organizado, eficiente e compreensível.
+
+1. Modularidade: as funções permitem dividir um programa grande em partes menores e mais gerenciáveis. Cada função pode ser projetada para realizar uma tarefa específica, tornando o código mais fácil de entender e manter.
+2. Reutilização de Código: uma função pode ser chamada várias vezes em diferentes partes do programa, evitando a repetição de código. Isso reduz o trabalho de escrita e possíveis erros, além de facilitar futuras alterações.
+3. Leitura e Manutenção: programas estruturados em funções são mais fáceis de ler porque as tarefas são separadas de forma lógica. Atualizações e correções podem ser feitas em funções individuais sem afetar o restante do programa.
+4. Testabilidade: funções isoladas podem ser testadas individualmente, o que facilita a identificação de problemas. Isso melhora a confiabilidade do código, já que cada parte é validada separadamente.
+5. Abstração: Ao usar funções, você pode esconder os detalhes de implementação e focar no que elas fazem, em vez de como fazem. Isso simplifica o raciocínio sobre o programa, especialmente em projetos mais complexos.
+
+## Estrutura de uma Função
+
+Em linguagem C, temos funções que retornam valores e que não retornam valores.
+
+### Função com Retorno
+
+- Tipo de retorno: Define o tipo do valor que a função devolve ao ser chamada (por exemplo, int, float, void).
+- Nome: Identifica a função e permite chamá-la pelo nome.
+- Parâmetros (opcional): Valores que podem ser passados para a função, para que ela os utilize em sua lógica.
+- Corpo: O bloco de código entre {} que implementa o comportamento da função.
+
+```
+tipo nome_da_funcao( tipo2 var2, tipo3  var3, ... ){
+    tipo var;
+
+    /* ... faz alguma coisa ... */
+
+    return var;
 }
 ```
 
+**Exemplo:** uma função que determina o sucessor de um número:
 
+```
+int sucessor(int a){
+    int s;
+    s = a+1;
+    return s;
+}
+```
 
+**Exemplo 2:** uma função que determina a soma de dois inteiros:
 
+```
+int soma(int x, int y){
+    int s;
+    s = x+y;
+    return s;
+}
+```
+
+### Função sem Retorno
+
+- Tipo de retorno é sempre void.
+- Nome: Identifica a função e permite chamá-la pelo nome.
+- Parâmetros (opcional): Valores que podem ser passados para a função, para que ela os utilize em sua lógica.
+- Corpo: O bloco de código entre {} que implementa o comportamento da função.
+
+```
+void nome_da_funcao( tipo2 var2, tipo3  var3, ... ){
+    /* ... faz alguma coisa ... */
+}
+```
+
+## Chamada da Função
 
 ```
 #include<stdio.h>
@@ -58,53 +117,11 @@ int f(int x){
 }
 ```
 
+Repare que:
 
-```
-#include<stdio.h>
-#include<string.h>
+- Separação de responsabilidades: Cada função cuida de um cálculo específico.
+- Reutilização: As funções podem ser chamadas quantas vezes forem necessárias.
+- Legibilidade: O main fica limpo, descrevendo o fluxo principal do programa sem detalhes desnecessários.
 
-#define MAX_N 100
-// funcao retorna um valor inteiro
-
-int strcmp_athletico(char str1[MAX_N+1], char str2[MAX_N+1]){
-
-    int i;
-
-    for(i = 0; str1[i]!='\0' && str2[i]!='\0'; i++){
-        if(str1[i] != str2[i]){
-            if(str1[i] > str2[i]){
-                return 1;
-            }else{
-                return -1;
-            }
-        }
-    }
-
-    if(str1[i] == '\0' && str2[i] == '\0'){
-        return 0; // strings iguais
-    }else{
-        if(str2[i] == '\0'){
-            return 1; // str1 > str2
-        }else{
-            return -1; // str1 < str2
-        }
-    }
-}
-
-int main(){
-    char str1[MAX_N+1],str2[MAX_N+1];
-    int ans,cap;
-
-    scanf("%s %s",str1,str2);
-
-    ans = strcmp(str1,str2);
-
-    cap = strcmp_athletico(str1,str2);
-
-    printf("strcmp String.h: %d\n",ans);
-    printf("strcmp Furacao: %d\n",cap);
-
-    return 0;
-}
-```
+Portanto, funções beneficiam o desenvolvimento de códigos-fontes mais robustos e fáceis de ler e expandir, especialmente em projetos maiores.
 
