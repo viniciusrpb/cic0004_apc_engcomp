@@ -28,6 +28,8 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 4. [Estruturas Condicionais](condicionais/README.md)
 
+5. [Funções](funcoes/README.md)
+
 <!--
 
 5. [Estruturas de Repetição](repeticao/README.md)
@@ -40,7 +42,7 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 9. [Matrizes](matrizes/README.md)
 
-10. [Funções](funcoes/README.md)
+
 
 11. [Recursividade](recursividade/recursividade.md)
 
