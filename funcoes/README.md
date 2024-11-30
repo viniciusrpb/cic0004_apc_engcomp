@@ -2,6 +2,8 @@
 
 Uma **função** (sub-algoritmo) é um bloco de código que realiza uma tarefa específica e pode ser reutilizado em diferentes partes de um programa.
 
+![Exemplo de funções](images/funcoes.png)
+
 Usar funções em códigos na linguagem C é uma prática importante para tornar o desenvolvimento mais organizado, eficiente e compreensível.
 
 - Modularidade: as funções permitem dividir um programa grande em partes menores e mais gerenciáveis. Cada função pode ser projetada para realizar uma tarefa específica, tornando o código mais fácil de entender e manter.
