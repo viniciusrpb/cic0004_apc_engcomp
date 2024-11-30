@@ -6,15 +6,17 @@ Uma **função** (sub-algoritmo) é um bloco de código que realiza uma tarefa e
 
 Usar funções em códigos na linguagem C é uma prática importante para tornar o desenvolvimento mais organizado, eficiente e compreensível.
 
-5.1. [Estrutura de uma Função](estrutura.md)
+5.1. [Por que usar funções?](justificativa.md)
 
-5.2. [Exemplos](exemplos.md)
+5.2. [Estrutura de uma Função](estrutura.md)
+
+5.3. [Exemplos](exemplos.md)
 
 ## Exercícios Resolvidos
 
-5.3. [Beecrowd 2409 - Colchão](https://judge.beecrowd.com/pt/problems/view/2409) [[Resolucão](beecrowd_2409.md)] [[Solucão](beecrowd_2409.c)] 
+5.4. [Beecrowd 2409 - Colchão](https://judge.beecrowd.com/pt/problems/view/2409) [[Resolucão](beecrowd_2409.md)] [[Solucão](beecrowd_2409.c)] 
 
-5.4. [Beecrowd 2462 - Voo](https://judge.beecrowd.com/pt/problems/view/2462) [[Resolucão](beecrowd_2462.md)] [[Solucão](beecrowd_2462.c)] 
+5.5. [Beecrowd 2462 - Voo](https://judge.beecrowd.com/pt/problems/view/2462) [[Resolucão](beecrowd_2462.md)] [[Solucão](beecrowd_2462.c)] 
 
 ## Aula Prática (29/11/2024)
 
