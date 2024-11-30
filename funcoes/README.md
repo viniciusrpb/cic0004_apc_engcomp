@@ -10,13 +10,15 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 5.2. [Estrutura de uma Função](estrutura.md)
 
-5.3. [Exemplos](exemplos.md)
+5.3. [Variáveis e Escopo](escopo.md)
+
+5.4. [Exemplos](exemplos.md)
 
 ## Exercícios Resolvidos
 
-5.4. [Beecrowd 2409 - Colchão](https://judge.beecrowd.com/pt/problems/view/2409) [[Resolucão](beecrowd_2409.md)] [[Solucão](beecrowd_2409.c)] 
+5.5. [Beecrowd 2409 - Colchão](https://judge.beecrowd.com/pt/problems/view/2409) [[Resolucão](beecrowd_2409.md)] [[Solucão](beecrowd_2409.c)] 
 
-5.5. [Beecrowd 2462 - Voo](https://judge.beecrowd.com/pt/problems/view/2462) [[Resolucão](beecrowd_2462.md)] [[Solucão](beecrowd_2462.c)] 
+5.6. [Beecrowd 2462 - Voo](https://judge.beecrowd.com/pt/problems/view/2462) [[Resolucão](beecrowd_2462.md)] [[Solucão](beecrowd_2462.c)] 
 
 ## Aula Prática (29/11/2024)
 
