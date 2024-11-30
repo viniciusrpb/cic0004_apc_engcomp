@@ -30,9 +30,10 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 5. [Funções](funcoes/README.md)
 
+6. [Estruturas de Repetição](repeticao/README.md)
+
 <!--
 
-5. [Estruturas de Repetição](repeticao/README.md)
 
 6. [Estruturas Homogêneas Unidimensionais: Vetores](arrays/README.md)
 
