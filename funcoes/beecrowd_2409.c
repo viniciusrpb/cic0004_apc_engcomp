@@ -1,21 +1,41 @@
+/*
+Universidade de Brasília
+Departamento de Ciência da Computação
+CIC0004 - Algoritmos e Programação de Computadores
+Autor: Vinicius R. P. Borges
+
+Tópico: Estruturas Condicionais
+Objetivo: Solução do problema beecrowd 2409 - Colchão
+          https://judge.beecrowd.com/pt/problems/view/2409
+
+Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
+
+gcc beecrowd_2409.c -o colchao
+./colchao
+*/
+
 #include<stdio.h>
 
 int min(int a, int b){
+    int menor;
     if(a < b){
-        return a;
+        menor = a;
     }
     else{
-        return b;
+        menor = b;
     }
+    return menor;
 }
 
 int max(int a, int b){
+    int maior;
     if(a > b){
-        return a;
+        maior = a;
     }
     else{
-        return b;
+        maior = b;
     }
+    return maior;
 }
 
 int main(){
