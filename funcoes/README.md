@@ -22,4 +22,10 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 ## Aula Prática (29/11/2024)
 
-- [Beecrowd xxxx - Yyyyy](https://judge.beecrowd.com/pt/problems/view/xxxx) [[Solucão](beecrowd_xxxx.c)] 
+- [Beecrowd 2454 - Fliper](https://judge.beecrowd.com/pt/problems/view/2454) [[Solucão](beecrowd_2454.c)]
+
+- [Beecrowd 3154 - Alice no País do Jogo da Velha](https://judge.beecrowd.com/pt/problems/view/3145) [[Solucão](beecrowd_3145.c)]
+
+- [Beecrowd 1893 - Fases da Lua](https://judge.beecrowd.com/pt/problems/view/1893) [[Solucão](beecrowd_1893.c)]
+ 
+- [Beecrowd 2313 - Qual Triângulo](https://judge.beecrowd.com/pt/problems/view/2313) [[Solucão](beecrowd_2313.c)] 
