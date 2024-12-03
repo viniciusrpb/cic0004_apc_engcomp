@@ -18,7 +18,7 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 4.5. [Beecrowd 1041 - Coordenadas de um Ponto](https://judge.beecrowd.com/pt/problems/view/1041) [[Solucão](beecrowd_1041.md)]
 -->
 
-## Aula Prática (19/04/2024)
+## Aula Prática 1 (06/12/2024)
 
 5.4. [Beecrowd 1071 - Soma de Impares Consecutivos I](https://judge.beecrowd.com/pt/problems/view/1071) [[Solucão](beecrowd_1071.c)]
 
@@ -32,7 +32,7 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 5.9. [Beecrowd 3214 - Refrigerante](https://judge.beecrowd.com/pt/problems/view/3214) [[Solucão](beecrowd_3214.c)]
 
-## Aula Prática (07/06/2024)
+## Aula Prática 2 (20/12/2024)
 
 5.10. [Beecrowd 2247 - Cofrinhos da Vó Vitória](https://judge.beecrowd.com/pt/problems/view/2247) [[Solucão](beecrowd_2247.c)]
 
