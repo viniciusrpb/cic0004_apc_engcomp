@@ -11,12 +11,11 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 5.3. [Laço For](for.md)
 
 
-<!--## Exercícios Resolvidos
+## Exercícios Resolvidos
 
-4.4. [Beecrowd 2375 - Sedex](https://judge.beecrowd.com/pt/problems/view/2375) [[Solucão](beecrowd_2375.md)]
+5.4. (While) [Beecrowd 1247 - Coast Guard](https://judge.beecrowd.com/pt/problems/view/1071) [[Solucão](beecrowd_1071.c)]
 
-4.5. [Beecrowd 1041 - Coordenadas de um Ponto](https://judge.beecrowd.com/pt/problems/view/1041) [[Solucão](beecrowd_1041.md)]
--->
+5.5. (While) [Beecrowd 3214 - Refrigerante](https://judge.beecrowd.com/pt/problems/view/3214) [[Solucão](beecrowd_3214.c)]
 
 ## Aula Prática 1 (06/12/2024)
 
