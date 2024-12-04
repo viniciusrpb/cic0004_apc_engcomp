@@ -117,7 +117,7 @@ int main() {
 
 Uma situação comum nos juízes online é ter que realizar a leitura de **vários casos de teste em uma única entrada** até o final do arquivo (**E**ND **O**F **F**ILE) - EOF. Esse é um caso típico em que não sabemos quantos casos de teste existem na entrada, então o laço ```while``` é mais indicado para essa situação.
 
-Se você topar com um problema ou exercício em que os dados da entrada tem que ser lidos até encontramos fim de arquivo (EOF), teremos que utilizar o valor de retorno da função ```scanf()```. **SIM, a função scanf() retorna um valor inteiro** indicando o número de valores da entrada formatada que foram convertidos e atribuídos às variáveis especificadas com sucesso. Se nenhum item for atribuído, ```scanf()``` retorna 0. Agora, se ```scanf()``` não conseguir ler nada da entrada, o valor retornado é ```-1```, que é equivalente aos três caracteres EOF.
+Se você topar com um problema ou exercício em que os dados da entrada tem que ser lidos até encontramos fim de arquivo (EOF), teremos que utilizar o valor de retorno da função ```scanf()```. **SIM, a função scanf() retorna um valor inteiro** indicando o número de valores da entrada formatada que foram convertidos e atribuídos às variáveis especificadas com sucesso. Se nenhum item for atribuído, ```scanf()``` retorna 0. Agora, se ```scanf()``` não conseguir ler nada da entrada, o valor retornado é ```-1```, que é equivalente aos três caracteres EOF (EOF é uma palavra reservada - não pode ser utilizada em nomes de variáveis e nomes de funções).
 
 O código-fonte abaixo descreve a situação em que números inteiros são sucessivamente lidos da entrada e impressos na tela até que não exista mais nenhum número fornecido na entrada padrão:
 
@@ -128,6 +128,26 @@ int main() {
 
     int n,r;
 
+    r = scanf("%d",&n);
+
+    while (r != -1) {   /* while (scanf("%d",&n) != -1) { */
+        printf("Inteiro lido = %d\n",n);
+        r = scanf("%d",&n);
+    }
+    
+    return 0;
+}
+```
+
+outra possibilidade é fazer:
+
+```
+#include <stdio.h>
+
+int main() {
+
+    int n;
+
     while (scanf("%d",&n) != EOF) {   /* while (scanf("%d",&n) != -1) { */
         printf("Inteiro lido = %d\n",n);
     }
@@ -136,5 +156,5 @@ int main() {
 }
 ```
 
-
+EOF é uma palavra reservad
 
