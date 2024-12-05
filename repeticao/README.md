@@ -29,7 +29,6 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 5.8. [Beecrowd 3068 - Meteoros](https://judge.beecrowd.com/pt/problems/view/3068) [[Solucão](beecrowd_3068.c)]
 
-5.9. [Beecrowd 3214 - Refrigerante](https://judge.beecrowd.com/pt/problems/view/3214) [[Solucão](beecrowd_3214.c)]
 
 ## Aula Prática 2 (20/12/2024)
 
