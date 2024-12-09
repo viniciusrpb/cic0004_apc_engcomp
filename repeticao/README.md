@@ -17,6 +17,9 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 5.5. (While) [Beecrowd 3214 - Refrigerante](https://judge.beecrowd.com/pt/problems/view/3214) [[Solucão](beecrowd_3214.c)]
 
+5.6. (While) [Beecrowd 2297 - Bafo](https://judge.beecrowd.com/en/problems/view/2297) [[Solucão](beecrowd_2297.c)]
+
+
 ## Aula Prática 1 (06/12/2024)
 
 5.4. [Beecrowd 1071 - Soma de Impares Consecutivos I](https://judge.beecrowd.com/pt/problems/view/1071) [[Solucão](beecrowd_1071.c)]
