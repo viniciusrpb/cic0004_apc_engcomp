@@ -18,7 +18,7 @@ gcc beecrowd_2568.c -o acoes
 
 int main(){
     
-    int ans,dia,dia_inicial,valor,variacao,f;
+    int ans,dia,dia_inicial,dia_final,valor,variacao,f;
     
     scanf("%d %d %d %d",&dia_inicial,&valor,&variacao,&f);
     
