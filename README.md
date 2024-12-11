@@ -32,6 +32,10 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 6. [Estruturas de Repetição](repeticao/README.md)
 
+## Simulados
+
+1. [Simulado da Prova 1](simulados/simulado_prova1.md)
+
 <!--
 
 
@@ -52,9 +56,7 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 13. [Linguagem Python](python/README.md)
  
 
-## Simulados
 
-1. [Simulado da Prova 1](simulados/simulado_prova1.md)
 
 2. [Simulado da Prova 2](simulados/simulado_prova2.md)
 
