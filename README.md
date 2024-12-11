@@ -64,6 +64,10 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 ## Referências
 
 - [Linguagem C Descomplicada](https://programacaodescomplicada.wordpress.com/indice/linguagem-c/)
+
+## Simulados
+
+- **(11/12/2024)** [Simulado Prova 1](simulados/README.md)
    
 <!--  
 2. Variáveis, expressões e instruções
@@ -179,9 +183,6 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
    
     10.5. [Notebook Python: Funções Lambda e Ordenação de Dicionários](dicionarios/apc_lambda_dicionarios.ipynb)
    
-## Simulados
-
-- **(18/10/2023)** [Simulado Prova 1](simulados/README.md)
 
 - **(14-16/10/2023)** [Simulado Prova 2](simulados/README.md)
  
