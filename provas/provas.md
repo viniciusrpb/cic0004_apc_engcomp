@@ -4,7 +4,7 @@
 
 A. [Cachorro Quente](A.pdf) [[Solução](hotdog.c)]
 
-B. [Gatos](B.pdf) [[Solução](gatos.c)]
+B. [Casa dos Gatos](B.pdf) [[Solução](gatos.c)]
 
 C. [Aritmética Modular](C.pdf) [[Solução](aritmod.c)]
 
