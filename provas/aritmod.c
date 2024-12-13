@@ -17,9 +17,15 @@ int main(){
     
     scanf("%d %d %d",&a,&b,&m);
     
+    // calcula a subtracao: A - B
     sub = a-b;
+    
+    // verifica se A-B eh multipo de M
     if(sub%m == 0){
+        
+        // Se sim, pega o divisor
         div = sub/m;
+        
         printf("Sim\n%d\n",div);
         
     }
