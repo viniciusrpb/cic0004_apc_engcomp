@@ -34,7 +34,11 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 ## Simulados
 
-1. [Simulado da Prova 1](simulados/simulado_prova1.md)
+[Simulado da Prova 1](simulados/simulado_prova1.md)
+
+## Provas
+
+[Prova 1](provas/provas.md)
 
 <!--
 
