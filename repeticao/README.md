@@ -15,7 +15,7 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 5.4. (While) [Beecrowd 1585 - Making Kites](https://judge.beecrowd.com/en/problems/view/1585) [[Solucão](beecrowd_1585.c)]
 
-5.5. (While) [Beecrowd 1247 - Coast Guard](https://judge.beecrowd.com/pt/problems/view/1071) [[Solucão](beecrowd_1071.c)]
+5.5. (While) [Beecrowd 1247 - Coast Guard](https://judge.beecrowd.com/pt/problems/view/1071) [[Solucão](beecrowd_1247.c)]
 
 5.6. (While) [Beecrowd 3214 - Refrigerante](https://judge.beecrowd.com/pt/problems/view/3214) [[Solucão](beecrowd_3214.c)]
 
