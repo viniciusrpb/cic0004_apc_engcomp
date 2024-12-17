@@ -82,7 +82,7 @@ Caso o valor de volta seja negativo, faça depois ```volta = 1440 + volta```
 tempo de viagem = (ida+volta)/2
 ```
 
-e se tempo de viagem > 720 (720 é a quantidade de minutos para representar 12 horas), então>
+e se tempo de viagem >= 720 (720 é a quantidade de minutos para representar 12 horas), então:
 
 ```
 tempo de viagem = 720 - tempo de viagem
@@ -92,6 +92,17 @@ tempo de viagem = 720 - tempo de viagem
 
 Para calcular o fuso horário, basta pegar o valor inteiro da viagem de ida e subtrair do tempo de viagem. Divida esse valor por 60 para pegar o fuso horário em horas.
 
+```
+fuso = (ida - tempo de viagem)/60
+```
+
+Para garantir que o fuso horário fique no intervalo fechado [-12,12], se fuso > 12, faça então:
+
+```
+fuso = fuso - 24
+```
+
+Suponha que o fuso originalmente calculado seja 18 horas. Com a operação de verificação acima, o fuso horário no intervalo correto será ```-6``` horas.
 
 ## Solução em Linguagem C - Código-fonte
 
