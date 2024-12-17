@@ -19,13 +19,13 @@ int main(){
     ida = cB - pA;
     
     if(ida < 0){
-        ida=1440-pA+cB;
+        ida=1440+ida;
     }
     
     volta = cA - pB;
     
     if(volta < 0){
-        volta=1440-pB+cA;
+        volta=1440+volta;
     }
     
     tempo_final = (ida+volta)/2;
