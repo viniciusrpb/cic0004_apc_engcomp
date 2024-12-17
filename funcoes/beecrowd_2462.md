@@ -1,5 +1,21 @@
 # Resolução Beecrowd 2462
 
+## Entrada
+
+```10:00 22:00 10:00 18:00```
+
+A entrada pode ser lida da seguinte forma:
+
+```
+scanf("%d:%d %d:%d %d:%d %d:%d",&hpA,&mpA,&hcB,&mcB,&hpB,&mpB,&hcA,&mcA);
+```
+
+em que 
+
+- hpA: variável inteira das horas de saída da cidade A;
+- mpA: variável ,&hcB,&mcB,&hpB,&mpB,&hcA,&mcA
+
+##
 Para resolver o problema, é necessário calcular dois valores para os voos entre as cidades A e B: a duração real do voo (em minutos) e a diferença entre os fusos horários das cidades A e B (em horas). Seguem os passos para a resolução:
 
 1. Interpretar os horários fornecidos
