@@ -1,8 +1,30 @@
-# Resolução Beecrowd 2462
+# Resolução Beecrowd 2462 - Voo
 
-## Entrada
+## O que o problema pede?
 
-```10:00 22:00 10:00 18:00```
+São descritas duas viagens (ida e volta) entre duas cidades A e B. Para a viagem de ida, fornece-se o horário hpA:mpA de partida da cidade A e o horário de chegada na cidade B hcB:mcB. Já na viagem de volta, o voo sai às hpB:mbB e chega à cidade A às hcA:mcA. O voo pode passar por diferentes fusos horários.
+
+Você deve construir um algoritmo que determine o menor tempo possível de viagem entre as cidades A e B, como também a diferença de fuso horário entre essas cidades. 
+
+## Raciocínio
+
+Há duas situações para se considerar em cada viagem:
+
+1) O horário de chegada é maior (em valor) do que o horário de partida. Por exemplo:
+
+O voo sai da cidade A às 13:30 e chega na cidade B às 22:30
+
+2) O horário de chegada é menor (em valor) do que o horário de chegada. Por exemplo:
+
+O voo sai da cidade A às 22:15 e chega na cidade B às 03:30 
+
+## Analisando Exemplos
+
+Seja o voo de ida saindo da cidade A às 13:30 e chegando na cidade B às 22:30. Já o voo de volta saindo às 08:15 e chegando 15:15.
+
+Pode-se verificar que a viagem de ida dura **09 horas e 00 minutos**. Já a viagem de volta dura **07 horas e 00 minutos**.
+
+Por isso, o tempo médio de viagem é (9+7)/2 = 08 horas.
 
 A entrada pode ser lida da seguinte forma:
 
@@ -16,39 +38,3 @@ em que
 - mpA: variável ,&hcB,&mcB,&hpB,&mpB,&hcA,&mcA
 
 ##
-Para resolver o problema, é necessário calcular dois valores para os voos entre as cidades A e B: a duração real do voo (em minutos) e a diferença entre os fusos horários das cidades A e B (em horas). Seguem os passos para a resolução:
-
-1. Interpretar os horários fornecidos
-A entrada tem 4 valores:
-
-pA: Horário de partida de A para B (hora local de A).
-cB: Horário de chegada de A para B (hora local de B).
-pB: Horário de partida de B para A (hora local de B).
-cA: Horário de chegada de B para A (hora local de A).
-Os horários estão no formato hh:mm e representam o ciclo de 24 horas.
-
-2. Converter os horários em minutos absolutos
-Converta os horários no formato hh:mm para minutos desde o início do dia para facilitar os cálculos:
-
-Fórmula: total_minutos = hh * 60 + mm.
-3. Calcular a duração real do voo
-A duração do voo é a média das durações calculadas para os dois voos:
-
-Duração A → B: (cB_local - pA_local) ± fuso_B_A
-Duração B → A: (cA_local - pB_local) ± fuso_A_B
-Como os voos são simétricos (ida e volta têm a mesma duração), basta calcular a duração usando a diferença entre os horários considerando os fusos.
-
-4. Determinar a diferença de fusos horários
-A diferença de fusos horários entre B e A pode ser determinada diretamente comparando os deslocamentos temporais observados nos voos:
-Para o voo A → B: (cB - pA) - duração real.
-Para o voo B → A: (cA - pB) - duração real.
-A diferença de fusos horários será consistente entre esses cálculos e precisa ser normalizada para o intervalo de -12 a 12 horas.
-
-5. Imprimir a saída
-A saída consiste em dois valores:
-
-Duração do voo em minutos (valor médio calculado).
-Diferença de fusos horários em horas (B - A).
-Observações:
-Leve em consideração os casos em que o horário de chegada pode estar no dia seguinte. Para isso, use aritmética modular (% 1440) para ajustar os cálculos.
-Se a diferença entre horários for negativa, significa que o tempo ultrapassou a meia-noite. Ajuste somando 1440 minutos (24 horas).
