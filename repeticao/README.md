@@ -4,11 +4,13 @@ Uma estrutura de repetição permite que blocos de comandos, expressões e instr
 
 A Linguagem C contempla as seguintes estruturas de repetição:
 
-5.1. [Laço While](while.md)
+5.1. [Fundamentos de Operadores](operadores.md)
 
-5.2. [Laço Do-While](dowhile.md)
+5.2. [Laço While](while.md)
 
-5.3. [Laço For](for.md)
+5.3. [Laço Do-While](dowhile.md)
+
+5.4. [Laço For](for.md)
 
 
 ## Exercícios Resolvidos
