@@ -21,11 +21,11 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 5.6. (While) [Beecrowd 3214 - Refrigerante](https://judge.beecrowd.com/pt/problems/view/3214) [[Solucão](beecrowd_3214.c)]
 
-5.7. (While) [Beecrowd 2297 - Bafo](https://judge.beecrowd.com/en/problems/view/2297) [[Solucão](beecrowd_2297.c)]
+5.7. (While-For) [Beecrowd 2297 - Bafo](https://judge.beecrowd.com/en/problems/view/2297) [[Solucão While](beecrowd_2297.c)] [[Solucão For](beecrowd_2297_for.c)]
 
-5.8. (For) [Beecrowd xxxx - yy](https://judge.beecrowd.com/en/problems/view/aaaa) [[Solucão](beecrowd_aaaa.c)]
+5.8. (For) [Beecrowd 3058 - Supermercado](https://judge.beecrowd.com/en/problems/view/3058) [[Solução](upsolving/beecrowd_3058.c)]
 
-5.9. (For) [Beecrowd xxxx - yy](https://judge.beecrowd.com/en/problems/view/bbbb) [[Solucão](beecrowd_bbbb.c)]
+5.9. (For) [Beecrowd 1366 - Sticks Game](https://judge.beecrowd.com/en/problems/view/1366) [[Solucão](beecrowd_1366.c)]
 
 ## Aula Prática 1 (06/12/2024)
 
