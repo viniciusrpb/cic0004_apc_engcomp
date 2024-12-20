@@ -39,16 +39,20 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 5.15. [Beecrowd 2247 - Cofrinhos da Vó Vitória](https://judge.beecrowd.com/pt/problems/view/2247) [[Solucão](beecrowd_2247.c)]
 
-<!--
 ## Aula Prática 2 (20/12/2024)
+<--
+5.16. [Beecrowd 1071 - Soma de Impares Consecutivos I](https://judge.beecrowd.com/pt/problems/view/1071) [[Solucão](beecrowd_1071.c)]
 
-5.4. [Beecrowd 1071 - Soma de Impares Consecutivos I](https://judge.beecrowd.com/pt/problems/view/1071) [[Solucão](beecrowd_1071.c)]
+5.17. [Beecrowd 1072 - Intervalo 2](https://judge.beecrowd.com/pt/problems/view/1072) [[Solucão](beecrowd_1072.c)]
 
-5.5. [Beecrowd 1072 - Intervalo 2](https://judge.beecrowd.com/pt/problems/view/1072) [[Solucão](beecrowd_1072.c)]
+5.18. [Beecrowd 1329 - Head or Tail](https://judge.beecrowd.com/pt/problems/view/1329) [[Solucão](beecrowd_1329.c)]
 
-5.6. [Beecrowd 3302 - Resposta Certa](https://judge.beecrowd.com/pt/problems/view/3302) [[Solucão](beecrowd_3302.c)]
+5.19. [Beecrowd 3432 - Intercepting Information](https://judge.beecrowd.com/pt/problems/view/3432) [[Solucão](beecrowd_3432.c)]
 
-5.7. [Beecrowd 3339 - Carina](https://judge.beecrowd.com/pt/problems/view/3339) [[Solucão](beecrowd_3339.c)]
+5.20. [Beecrowd 3068 - Meteoros](https://judge.beecrowd.com/pt/problems/view/3068) [[Solucão](beecrowd_3068.c)]
 
-5.8. [Beecrowd 3068 - Meteoros](https://judge.beecrowd.com/pt/problems/view/3068) [[Solucão](beecrowd_3068.c)] -->
+5.21. [Beecrowd 1366 - Sticks Game](https://judge.beecrowd.com/pt/problems/view/1366) [[Solucão](beecrowd_1366.c)]
+
+5.22. [Beecrowd 3445 - Daily Trips](https://judge.beecrowd.com/pt/problems/view/3445) [[Solucão](beecrowd_3445.c)]
+-->
 
