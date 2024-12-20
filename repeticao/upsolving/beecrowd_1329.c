@@ -22,8 +22,7 @@ void solve_test_case(int n){
     mary = 0;
     john = 0;
     
-    for(i = 0; i < n;i++)
-    {
+    for(i = 0; i < n;i++){
         scanf("%d",&coin);
         if(!coin){
             mary++;
