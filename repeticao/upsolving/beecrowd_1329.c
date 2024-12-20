@@ -23,8 +23,8 @@ void solve_test_case(int n){
     john = 0;
     
     for(i = 0; i < n;i++){
-        scanf("%d",&coin);
-        if(!coin){
+        scanf("%d",&ri);
+        if(ri == 0){
             mary++;
         }
         else{
