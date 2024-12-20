@@ -6,7 +6,7 @@ Prof. Dr. Vinícius R. P. Borges
 
 Tópico: Estruturas de Repeticao
 Objetivo: Solução do problema beecrowd 1329 - Head or Tail (Maratona SBC de Programação 2004)
-          https://www.beecrowd.com.br/judge/pt/problems/view/2413
+          https://www.beecrowd.com.br/judge/pt/problems/view/1329
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
