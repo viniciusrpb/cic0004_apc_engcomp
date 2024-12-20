@@ -40,7 +40,8 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 5.15. [Beecrowd 2247 - Cofrinhos da Vó Vitória](https://judge.beecrowd.com/pt/problems/view/2247) [[Solucão](beecrowd_2247.c)]
 
 ## Aula Prática 2 (20/12/2024)
-<--
+
+<!--
 5.16. [Beecrowd 1071 - Soma de Impares Consecutivos I](https://judge.beecrowd.com/pt/problems/view/1071) [[Solucão](beecrowd_1071.c)]
 
 5.17. [Beecrowd 1072 - Intervalo 2](https://judge.beecrowd.com/pt/problems/view/1072) [[Solucão](beecrowd_1072.c)]
