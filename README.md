@@ -32,6 +32,8 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 6. [Estruturas de Repetição](repeticao/README.md)
 
+7. [Estruturas Homogêneas Unidimensionais: Vetores](arrays/README.md)
+
 ## Simulados
 
 [Simulado da Prova 1](simulados/simulado_prova1.md)
@@ -41,9 +43,6 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 [Prova 1](provas/provas.md)
 
 <!--
-
-
-6. [Estruturas Homogêneas Unidimensionais: Vetores](arrays/README.md)
 
 7. [Ponteiros e Alocação Dinâmica](ponteiros/README.md)
 
