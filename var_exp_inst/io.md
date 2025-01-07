@@ -8,13 +8,13 @@ Todas as operações de leitura e escrita de dados se baseiam na Entrada e Saíd
 
 Nas funções ```printf``` e ```scanf``` utilizaremos os seguintes especificadores de conversão para cada um dos tipos de dados estudados:
 
-Tipo               | Especificador  | 
------------------  | -----------    |
-char               |  %c            |
-int                |  %d            |
-unsigned int       |  %ud           |
-long int           |  %ld           |
-long unsigned int  |  %lud          |
+Tipo                    | Especificador  | 
+----------------------- | -----------    |
+char                    |  %c            |
+int                     |  %d            |
+unsigned int            |  %ud           |
+long long int           |  %lld          |
+long long unsigned int  |  %llud         |
 
 
 ### scanf() Leitura de Dados
