@@ -12,7 +12,7 @@
 
    3.5. [Beecrowd 2413 - Busca na Internet](https://www.beecrowd.com.br/judge/en/problems/view/2413) [[Solução](beecrowd_2413.c)]
 
-   3.6. [Beecrowd 2786 - Piso na Escola](https://www.beecrowd.com.br/judge/en/problems/view/2786) [[Solução](beecrowd_2786.c)]
+   3.6. [Beecrowd 2786 - Piso da Escola](https://www.beecrowd.com.br/judge/en/problems/view/2786) [[Solução](beecrowd_2786.c)]
 
 
 ## Aula Prática (05/04/2024)
