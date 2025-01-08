@@ -15,15 +15,16 @@ Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permi
 
 
 ## Exercícios Resolvidos
-   
-6.3. [Beecrowd 1318 - Fake Tickets](https://judge.beecrowd.com/pt/problems/view/1318) [[Solução](upsolving/beecrowd_1318.c)]
 
-6.4. [Beecrowd 1375 - Pole Position](https://judge.beecrowd.com/pt/problems/view/1375) [[Solução](upsolving/beecrowd_1375.c)]
+6.3. [Beecrowd 1245 - Lost Boots](https://judge.beecrowd.com/pt/problems/view/1245) [[Resolução](upsolving/beecrowd_1245.md)] [[Solução](upsolving/beecrowd_1245.c)]
 
-6.5. [Beecrowd 1245 - Lost Boots](https://judge.beecrowd.com/pt/problems/view/1245) [[Solução](upsolving/beecrowd_1245.md)]
+6.4. [Beecrowd 1318 - Fake Tickets](https://judge.beecrowd.com/pt/problems/view/1318) [[Solução](upsolving/beecrowd_1318.c)]
+
+6.5. [Beecrowd 1375 - Pole Position](https://judge.beecrowd.com/pt/problems/view/1375) [[Solução](upsolving/beecrowd_1375.c)]
 
 6.6. [Beecrowd 1410 - He is Offside!](https://judge.beecrowd.com/pt/problems/view/1410) [[Solução](upsolving/beecrowd_1410.c)]
-   
+
+
 ## Aula Prática (10/01/2025)
 
 <!-- 6.6. [Beecrowd 3089 - Christmas Gifts](https://judge.beecrowd.com/en/problems/view/3089) [[Solução](upsolving/beecrowd_3089.c)] -->
