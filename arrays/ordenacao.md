@@ -5,9 +5,7 @@ O laço externo (i) percorre cada elemento do vetor. O laço interno (j) compara
 
 
 ```
-#define MAX_N 1000
-
-void ordena(int v[MAX_N], int n){
+void ordena(int v[1000], int n){
 
     int i,j,aux;
 
