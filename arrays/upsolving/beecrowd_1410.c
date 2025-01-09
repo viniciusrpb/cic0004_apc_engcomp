@@ -1,7 +1,23 @@
+/*
+Universidade de Brasília
+Departamento de Ciência da Computação
+CIC0004 - Algoritmos e Programação de Computadores
+Vinicius R. P. Borges
+
+Tópico: Vetores
+Objetivo: Solução do problema beecrowd 1410 - He is Offside
+          https://judge.beecrowd.com/pt/problems/view/1410
+
+Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
+
+gcc beecrowd_1410.c -o impedimento
+./impedimento
+*/
+
 #include<stdio.h>
 #define MAX_N 11
 
-void sort2(int v[MAX_N], int n){
+void ordena(int v[MAX_N], int n){
 
     int i,j,aux;
 
@@ -29,8 +45,8 @@ char solve(int a, int d){
         scanf("%d",&defensores[i]);
     }
     
-    sort2(atacantes,a);
-    sort2(defensores,d);
+    ordena(atacantes,a);
+    ordena(defensores,d);
     
     for(i = 0; i < a; i++){
         num = 0;
