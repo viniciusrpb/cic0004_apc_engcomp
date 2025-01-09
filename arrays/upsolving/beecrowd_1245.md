@@ -12,38 +12,31 @@ Estruturas de repetição, vetores.
 
 ### Raciocínio
 
-The Boots and Shoes supplies division of the Army purchased a large number of pairs of boots of various sizes for his soldiers. However, a failure of the packaging factory contracted, not all supplied boxes containing a pair of boots correct, with two boots of the same size, one for each foot. The sergeant told the recruits withdraw all boots all the boxes to repack them, this time correctly.
+Para resolver o problema de formação de pares de botas, podemos usar uma abordagem com um vetor de contagem para armazenar a quantidade de botas do pé esquerdo (E) e do pé direito (D) para cada tamanho. Depois disso, percorremos a entrada, contamos as botas e seus pares (esquerdo ou direito) para que, ao final, somamos os pares possíveis.
 
-When the sergeant discovered that you knew programming, he asked with the usual kindness you write a program that, given a list containing the description of each boot delivered, determines how many pairs of boots could be formed in total.
-
+Primeiramente, precisamos
+Inicializar os contadores: Criar dois vetores de tamanho suficiente (por exemplo, de 30 a 60) para armazenar o número de botas esquerdas e direitas de cada tamanho.
+Processar a entrada: Para cada bota, atualizar os contadores correspondentes.
+Calcular os pares: Para cada tamanho, o número de pares possíveis será o mínimo entre os contadores esquerdo e direito para aquele tamanho.
+Imprimir o resultado.
 
 ### Implementação
-
-Primeiramente, colocamos a estrutura básica de um programa em linguagem C:
-
-```
-#include<stdio.h>
-
-int main(){
-
-  return 0;
-}
-```
 
 O primeiro ponto é que a entrada do problema contém vários casos de testes. Apesar do problema não indicar quando a entrada termina, podemos inferir que é em fim de arquivo (End Of File - EOF). Como a primeira variável a ser lida em cada caso de teste é o inteiro ```n```, utilizamos um laço ```while```, pois que a quantidade de casos de teste é imprevisível:
 
 ```
 #include<stdio.h>
 
-int main(){
-
-  int n;
-
-  while(scanf("%d",&n)!=EOF){
-      
-  }
-
-  return 0;
+int main() {
+ 
+    int n,ans;
+    
+    while(scanf("%d",&n)!=EOF){
+        ans = solve(n);
+        printf("%d\n",ans);
+    }
+ 
+    return 0;
 }
 ```
 
@@ -54,6 +47,51 @@ int i, num, par;
 
 for(i = 0; i < n; i++){
     scanf("%d %c",&num,&par);
+}
+```
+
+```
+int solve(int n){
+    int i,num,ans,pares;
+    char par;
+    int botas_esq[MAX_M+1];
+    int botas_dir[MAX_M+1];
+    
+    /*inicia todas as posicoes com zero*/
+    for(i = 0; i <= MAX_M; i++){
+        botas_esq[i] = 0;
+        botas_dir[i] = 0;
+    }
+    
+    for(i = 0; i < n; i++){
+        scanf("%d %c\n",&num,&par);
+        if(par == 'E'){
+            botas_esq[num]++;
+        }
+        else{
+            botas_dir[num]++;
+        }
+    }
+    
+    pares = 0;
+    for(i = 30; i <= 60; i++){
+        pares += min(botas_esq[i],botas_dir[i]);
+    }
+    return pares;
+}
+```
+
+```
+#include <stdio.h>
+#define MAX_M 60
+
+int min(int a, int b){
+    if(a < b){
+        return a;
+    }
+    else{
+        return b;
+    }
 }
 ```
 
@@ -103,20 +141,4 @@ Incluindo o comando acima no código-fonte, temos então:
 
 ### Código-fonte Final
 
-```
-#include<stdio.h>
-
-int main(){
-
-  int a,b,s;
-
-  scanf("%d",&a);
-  scanf("%d",&b);
-
-  s = a + b;
-
-  printf("SOMA = %d\n",s);
-
-  return 0;
-}
-```
+Clique [aqui].
