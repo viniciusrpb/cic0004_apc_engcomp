@@ -9,7 +9,7 @@ Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permi
   
 7.1. [Princípios Básicos](definicao.md)
 
-7.2. [Tarefas com Vetores](operacoes.md)
+7.2. [Operações Básicas e Busca em Vetores](operacoes.md)
 
 7.3. [Ordenação](ordenacao.md)
 
