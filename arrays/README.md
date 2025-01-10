@@ -35,7 +35,7 @@ Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permi
 
 7.9. [Beecrowd 1961 - Jumping Frog](https://judge.beecrowd.com/pt/problems/view/1961) [[Solução](upsolving/beecrowd_1961.c)]
 
-7.10. [Beecrowd 2807 - Iccanobif](https://judge.beecrowd.com/pt/problems/view/1961) [[Solução](upsolving/beecrowd_2807.c)]
+7.10. [Beecrowd 2807 - Iccanobif](https://judge.beecrowd.com/pt/problems/view/2807) [[Solução](upsolving/beecrowd_2807.c)]
 
 7.11. [Beecrowd 1548 - Fila da Cantina](https://judge.beecrowd.com/pt/problems/view/1548) [[Solução](upsolving/beecrowd_1548.c)]
 
