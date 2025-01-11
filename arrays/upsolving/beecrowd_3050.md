@@ -6,18 +6,15 @@ Clique [aqui](https://judge.beecrowd.com/pt/problems/view/3050)
 
 ## Ideia
 
-A distância entre dois apartamentos \(A\) e \(B\) é definida como:
+Seja o vetor ```P``` contendo a quantidade de andares de todos os prédios descritos na entrada do problema.
 
-\[ a + p + b \]
+Não sabemos em quais prédios e quais andares (apartamentos) os dois amigos A e B estão. Para maximizar a distância entre eles, o correto é assumir que eles estarão nos últimos andares de cada prédio.
 
-onde:
+Sabe-se que a distância entre dois prédios ```i``` e ```j``` é definida como:
 
-- \(a\) é o número de andares que \(A\) desce até o térreo.
-- \(p\) é o número de prédios entre \(A\) e \(B\).
-- \(b\) é o número de andares que \(B\) sobe até o apartamento.
+```P[i] + (j-i) + P[j]```
 
-Para dois prédios nas posições \(i\) e \(j\), a distância (D) pode ser definida como:
+Veja que \(j - i\) e se refere à distância horizontal entre os prédios \(i\) e \(j\).
 
-\[\text{D} = A[i] + p + B[j] \]
-
-Veja que \(p = j - i\) e se refere à distância horizontal entre os prédios \(i\) e \(j\).
+1- Assuma que a distância máxima entre dois colegas A e B, a resposta para o problema, seja ```max_dist```.
+        Fazemos então ```max_dist = P[0] + +P[1]```
