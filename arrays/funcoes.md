@@ -39,7 +39,7 @@ Quando trabalhamos com vetores, passamos o endereço da variável, permitindo qu
 ```
 #include <stdio.h>
 
-void leiaVetor(int a[], int n) {
+void leiaVetor(int a[100], int n) {
     int i;
     for(i = 0; i < n; i++){
         scanf("%d",&a[i]);
