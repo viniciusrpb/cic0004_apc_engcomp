@@ -36,6 +36,8 @@ Observe que os valores armazenados nas variáveis ```n``` e ```m``` são copiado
 
 Quando trabalhamos com vetores, passamos o endereço da variável, permitindo que a função modifique diretamente o valor original. Isso significa que, na Linguagem C, os vetores são passados por referência (o endereço inicial do vetor é enviado), permitindo modificar diretamente seus valores.
 
+No exemplo abaixo, veja que na função ```main```, o vetor de inteiros ```v``` com *100* posições é declarado e é passado como argumento para a função ```leiaVetor``` juntamente com um segundo argumento ```n```, que é a quantidade exata de elementos que esse vetor irá possuir. Após a declaração do vetor ```v```, sabe-se que ele está "vazio", sem nenhum elemento. A leitura dos ```n``` elementos desse vetor ocorrerá no interior da função ```leiaVetor```, que será referenciado pela variável ```a```, também um vetor de inteiros. Após a leitura dos ```n``` inteiros, a função é encerrada. Seguindo na função ```main```, haverá a impressão dos ```n``` valores desse vetor. Repare que o vetor ```v``` manteve os valores inteiros lidos dentro da função ```leiaVetor```. 
+
 ```
 #include <stdio.h>
 
@@ -48,6 +50,8 @@ void leiaVetor(int a[100], int n) {
 
 int main() {
     int i,n,v[100];
+
+    scanf("%d",&n);
 
     leiaVetor(v,n);
 
