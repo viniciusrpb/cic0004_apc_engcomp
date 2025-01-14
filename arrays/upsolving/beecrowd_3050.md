@@ -17,6 +17,7 @@ Sabe-se que a distância entre dois prédios ```i``` e ```j``` é definida como:
 Veja que \(j - i\) e se refere à distância horizontal entre os prédios \(i\) e \(j\).
 
 1- Assuma que a distância máxima entre dois colegas A e B - resposta para o problema - seja ```max_dist```. Como condição inicial, determinamos inicialmente que esses amigos possam estar nos prédios de índice ```i = 0``` e ```j = 1```.
-- Fazemos então ```max_dist = P[0] + P[1] + 1```. Assim, no primeiro exemplo de teste, se ```P[0] = 2``` e ```P[1] = 3```, então ```max_dist = 2 + 3 + 1 = 6```.
+- Fazemos então ```max_dist = P[0] + P[1] + 1```.
+- Assim, no primeiro exemplo de teste, se ```P[0] = 2``` e ```P[1] = 3```, então ```max_dist = 2 + 3 + 1 = 6```.
 
 2- 
