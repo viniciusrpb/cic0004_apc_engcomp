@@ -103,7 +103,12 @@ Em juízes online, como o Beecrowd, verifique nos limites das entradas do proble
 Outra possibilidade é utilizar a função ```fgets```
 
 ```
+char str[101];
+
 fgets(str, sizeof(str), stdin);
 ```
 
 Ela garante que não mais do que o tamanho do vetor seja lido. Além isso, ela inclui o caractere de nova linha (```\n```) na string, a menos que a linha lida seja maior que o espaço disponível.
+
+```sizeof``` é um operador que retorna a quantidade de bytes necessárias para representar todo o espaço de memória demandado pela variável ```str```. No caso será *101* posições vezes 1 byte = 101 bytes. ```stdin``` é a abreviação de *standard input* - entrada padrão.
+
