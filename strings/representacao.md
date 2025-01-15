@@ -53,7 +53,7 @@ int main(){
 
 O operador ```&``` (retorna o endereço de uma variável) não é necessário no ```scanf``` ao usar o especificador ```%s``` porque o nome de um vetor de qualquer tipo já é, por si só, uma referência para o seu primeiro elemento (que está na primeira posição).
 
-É importante salientar que ```scanf``` com o especificador ```%s``` não lê espaços em branco. Caso você digite "Athletico Paranaense" e apertar ENTER, aparecerá na saída:
+É importante salientar que ```scanf``` com o especificador ```%s``` não lê espaços em branco. Caso você digite *"Athletico Paranaense"* e apertar *ENTER*, aparecerá na saída:
 
 ```String lida: Athletico```
 
