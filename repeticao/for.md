@@ -1,5 +1,20 @@
 # Laço For
 
+## Definição
+
+É uma estrutura de repetição do tipo **contada** que executa um bloco de código-fonte múltiplas vezes, geralmente com um contador controlando o número de repetições. A sintaxe básica do ```for``` é:
+
+```
+for (inicialização; condição de permanência no laço; evolução) {
+    // Bloco de código-fonte a ser repetido
+}
+```
+
+As principais parte do ```for``` são:
+
+- Inicialização: colocar um valor inicial para a variável responsável pela contagem (variável contadora) necessários para controlar a quantidade de iterações ou passos a serem executados pelo laço. Vale ressaltar que a inicialização é executada apenas uma vez, no início do laço;
+- Condição de permanência no laço: trata-se de uma comparação como ocorre na estrutura if-else que verifica se a repetição deve continuar. Enquanto a condição for verdadeira, o laço continuará executando.
+- Evolução: atualização da variável de controle a cada iteração após a finalização da execução de todo o bloco do código-fonte no escopo do laço for.
 
 ## Exemplos
 
