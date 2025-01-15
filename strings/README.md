@@ -6,7 +6,7 @@ Strings são sequências de caracteres terminadas por um caractere especial: o n
 
 8.2. [Tabela ASCII](https://www.ime.usp.br/~pf/algoritmos/apend/ascii.html)
 
-8.3, [Biblioteca String.h](https://petbcc.ufscar.br/string/)
+8.3. [Biblioteca String.h](https://petbcc.ufscar.br/string/)
 
 
 # Exercícios Resolvidos
