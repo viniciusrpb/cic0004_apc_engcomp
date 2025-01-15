@@ -22,8 +22,8 @@ Strings são sequências de caracteres terminadas por um caractere especial: o n
 <!-- 8.6. [Beecrowd 1607 - Avance as Letras](https://www.beecrowd.com.br/judge/en/problems/view/1607) [[Solução](upsolving/beecrowd_1607.c)] -->
 
 
-# Aula Prática
-
+# Aula Prática (17/01/2025)
+<!--
 8.3. [Beecrowd 1272 - Hidden Message](https://www.beecrowd.com.br/judge/en/problems/view/1272) [[Solução](upsolving/beecrowd_1272.c)]
 
 8.4. [Beecrowd 1234 - Dancing Sentence](https://www.beecrowd.com.br/judge/en/problems/view/1234) [[Solução](upsolving/beecrowd_1234.c)] [[Solução Alternativa](beecrowd_1234.c)]
@@ -38,4 +38,4 @@ Strings são sequências de caracteres terminadas por um caractere especial: o n
 
 8.9. [Beecrowd 2167 - Falha do Motor](https://www.beecrowd.com.br/judge/en/problems/view/2167) [[Solução](beecrowd_2167.c)]
 
-8.10. [Beecrowd 2311 - Saltos Ornamentais](https://www.beecrowd.com.br/judge/en/problems/view/2311) [[Solução](beecrowd_2311.c)]
+8.10. [Beecrowd 2311 - Saltos Ornamentais](https://www.beecrowd.com.br/judge/en/problems/view/2311) [[Solução](beecrowd_2311.c)]-->
