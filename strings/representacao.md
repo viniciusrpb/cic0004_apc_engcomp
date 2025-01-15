@@ -57,8 +57,7 @@ O operador ```&``` (retorna o endereço de uma variável) não é necessário no
 
 ```String lida: Athletico```
 
-enquanto que a parte remanescente ```Paranaense``` permanecerá no Buffer de Entrada e Saída aguardando ser lida por um outro comando ```scanf```.
-
+A parte remanescente ```Paranaense``` permanecerá no Buffer de Entrada e Saída aguardando ser lida por um outro comando ```scanf```.
 
 ### scanf para ler até \n
 
