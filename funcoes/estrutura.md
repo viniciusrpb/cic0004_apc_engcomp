@@ -4,20 +4,22 @@ Em linguagem C, temos funções que retornam valores e que não retornam valores
 
 ## Função com Retorno
 
-- Tipo de retorno: Define o tipo do valor que a função devolve ao ser chamada (por exemplo, int, float, void).
-- Nome: Identifica a função e permite chamá-la pelo nome.
-- Parâmetros (opcional): Valores que podem ser passados para a função, para que ela os utilize em sua lógica.
-- Corpo: O bloco de código entre {} que implementa o comportamento da função.
+Uma função com retorno possui a seguinte estrutura:
 
 ```
-tipo nome_da_funcao( tipo2 var2, tipo3  var3, ... ){
+tipo nome_da_funcao(tipo1 var1, tipo2 var2, ... ){
     tipo var;
 
-    /* ... faz alguma coisa ... */
+    /* ... comandos, expressões e instruções da função ... */
 
     return var;
 }
 ```
+
+- ```tipo``` se refere ao tipo de retorno, que define o tipo do valor que a função devolve ao ser chamada (por exemplo, int, float, void);
+- ```nome_da_funcao``` identifica a função e permite chamá-la pelo nome no decorrer do código-fonte;
+- Parâmetros (opcional): Valores que podem ser passados para a função, no formato ```tipo nome_da_variavel``` e separadas por vírgula, para que ela os utilize em seus comandos, expressões e instruções;
+- Corpo: O bloco de código-fonte entre abre-chaves e fecha-chaves descreve as operações e os passos efetuados pela função.
 
 **Exemplo:** uma função que determina o sucessor de um número:
 
@@ -36,19 +38,6 @@ int soma(int x, int y){
     int s;
     s = x+y;
     return s;
-}
-```
-
-## Função sem Retorno
-
-- Tipo de retorno é sempre void.
-- Nome: Identifica a função e permite chamá-la pelo nome.
-- Parâmetros (opcional): Valores que podem ser passados para a função, para que ela os utilize em sua lógica.
-- Corpo: O bloco de código entre {} que implementa o comportamento da função.
-
-```
-void nome_da_funcao( tipo2 var2, tipo3  var3, ... ){
-    /* ... faz alguma coisa ... */
 }
 ```
 
@@ -108,3 +97,46 @@ Repare que:
 - Legibilidade: O main fica limpo, descrevendo o fluxo principal do programa sem detalhes desnecessários.
 
 Portanto, funções beneficiam o desenvolvimento de códigos-fontes mais robustos e fáceis de ler e expandir, especialmente em projetos maiores.
+
+## Passagem por Valor
+
+
+
+## Função sem Retorno
+
+Quando se necessita criar uma função que não retorna nenhum valor, pode-se defini-la como sendo do tipo **void**. A estrutura de uma função do tipo **void** é a seguinte:
+
+```
+void nome_da_funcao( tipo2 var2, tipo3  var3, ... ){
+    /* ... faz alguma coisa ... */
+}
+```
+
+- Uma função sem retorno deve ser definida sempre como sendo o "tipo" **void**.
+- ```nome_da_funcao``` identifica a função e permite chamá-la pelo nome no decorrer do código-fonte.
+- Parâmetros (opcional): valores que podem ser passados para a função, para que ela os utilize em seu código-fonte.
+- Corpo: O bloco de código-fonte entre abre-chaves e fecha-chaves que implementa os comandos, operações e instruções da função.
+
+Então não é necessário colocar o comando ```return```? Exatamente. Em funções **void**, não é necessário colocar o comando ```return```. Em alguns tipos de funções, utiliza-se o ```return ;``` sem explicitar um valor de retorno.
+
+Suponha que queiramos criar uma função que imprime dois valores inteiros *a* e *b*. Podemos então elaborar o seguinte código-fonte:
+
+```
+#include<stdio.h>
+
+void imprimeSoma(int a, int b){
+    printf("Soma: %d\n",a+b);
+}
+
+int main(){
+    int x,y;
+
+    scanf("%d %d",&x,&y);
+
+    imprimeSoma(x,y);
+
+    return 0;
+}
+```
+
+Veja que como o objetivo da função ```imprimeSoma``` é apenas imprimir, não é necessário retornar nenhum valor para a função ```main```, onde ocorre a chamada.
