@@ -16,6 +16,30 @@ As principais parte do ```for``` são:
 - Condição de permanência no laço: trata-se de uma comparação como ocorre na estrutura if-else que verifica se a repetição deve continuar. Enquanto a condição for verdadeira, o laço continuará executando.
 - Evolução: atualização da variável de controle a cada iteração após a finalização da execução de todo o bloco do código-fonte no escopo do laço for.
 
+Observe o exemplo abaixo:
+
+```
+#include <stdio.h>
+
+int main() {
+    int i;
+    for (i = 1; i <= 5; i++) {
+        printf("i = %d\n", i);
+    }
+    return 0;
+}
+```
+
+Veja que o programa acima executa **exatamente** 5 iterações (5 passadas no bloco de código do laço for), gerando a seguinte saída:
+
+```
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+```
+
 ## Exemplos
 
 ### Encontrar o menor dentre N elementos lidos da entrada
