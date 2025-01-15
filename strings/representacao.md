@@ -76,7 +76,7 @@ getchar();
 
 *Obs.:* nas versões mais antigas da Linguagem C, era comum se usar ```scanf("%[^\n]s", str);```, mas atualmente o caractere constante ```s``` não é mais necessário, sendo ignorado pelos compiladores mais modernos, como o GCC.
 
-**Evite o estouro do Buffer de I/O:**: execute o código-fonte abaixo e veja o que acontece.
+**Evite o estouro do Buffer de I/O**: execute o código-fonte abaixo e veja o que acontece.
 
 ```
 #include <stdio.h>
