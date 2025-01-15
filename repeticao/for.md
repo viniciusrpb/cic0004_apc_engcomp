@@ -40,6 +40,14 @@ i = 4
 i = 5
 ```
 
+O passo-a-passo do Laço For no código-fonte acima é o seguinte:
+
+1) Inicialização: ```i = 1;``` é executado.
+2) Verificação da condição: ```i <= 5``` é avaliado. Se for verdadeiro, deve-se permanecer no laço.
+3) Execução do bloco de código: ```printf("i = %d\n", i);``` é executado.
+4) Incremento: ```i++``` é executado.
+5) Retorna ao passo 2 e repete o processo até que a condição seja falsa.
+
 ## Exemplos
 
 ### Encontrar o menor dentre N elementos lidos da entrada
