@@ -1,4 +1,4 @@
-# Laço While
+# 6.2. Laço While
 
 ## Estrutura Básica
 
