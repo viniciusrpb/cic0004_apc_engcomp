@@ -156,5 +156,5 @@ int main() {
 }
 ```
 
-EOF é uma palavra reservad
+**Importante:**: EOF é uma palavra reservada! Não se pode utilizá-la para servir como nome de variáveis e funções.
 
