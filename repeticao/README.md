@@ -2,6 +2,8 @@
 
 Uma estrutura de repetição permite que blocos de comandos, expressões e instruções (ou, simplesmente, bloco de código) sejam executados repetidas vezes enquanto uma condição for verdadeira.
 
+![Estrutura de repetição](images/laco.png)
+
 A Linguagem C contempla as seguintes estruturas de repetição:
 
 6.1. [Fundamentos de Operadores](operadores.md)
