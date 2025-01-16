@@ -162,24 +162,25 @@ Ao executar o código-fonte acima, obtemos a seguinte resposta se digitarmos ```
 3
 ```
 
-Ops! Não era para imprimir 4, que é o sucessor natural de 3? Pois é...
+Ops! Não era para imprimir 4, que é o sucessor natural de 3? Pois é... veja os gráficos a seguir:
 
+Quando o programa começa a rodar, as variáveis têm seus espaços na memória alocados:
 
 ![Exemplo de funções](images/passagem_valor_01.png)
 
+Depois, o comando ```scanf("%d",&a);``` espera que o usuário digite algum valor inteiro. Suponha que o usuário digite 3. Esse valor será armazenado na variável ```a```:
 
 ![Exemplo de funções](images/passagem_valor_02.png)
 
+Em seguida, existe a chamada da função ```sucessor(a);```. O valor armazenado em ```a``` é copiado para a variável ```x``` da função ```sucessor```, denotando uma **passagem por valor**, já que essa variáveis são inteiras:
 
 ![Exemplo de funções](images/passagem_valor_03.png)
 
+No interior da função ```sucessor```, ocorre então a operação ```x = x+1;```, resultando no valor 4:
 
 ![Exemplo de funções](images/passagem_valor_04.png)
 
+Quando a função ```sucessor``` termina, todas as operações feitas em seu interior são perdidas, incluindo o valor da variável ```x```. Repare que o valor da variável ```a``` está inalterado.
 
 ![Exemplo de funções](images/passagem_valor_05.png)
-
-
-
-
 
