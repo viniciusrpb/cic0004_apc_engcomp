@@ -50,6 +50,28 @@ O passo-a-passo do Laço For no código-fonte acima é o seguinte:
 
 ## Exemplos
 
+### Contar números de N até 1, reduzindo de 2 em 2:
+
+```
+int i,n;
+
+scanf("%d",&n);
+
+for(i = n; i >= 1; i=i-2){
+    printf("i = %d\n",i);
+}
+```
+
+Para ```n=10```, o programa executa **exatamente** 5 iterações, gerando a seguinte saída:
+
+```
+i = 10
+i = 8
+i = 6
+i = 4
+i = 2
+```
+
 ### Encontrar o menor dentre N elementos lidos da entrada
 
 ```
