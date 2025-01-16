@@ -1,4 +1,4 @@
-# 6.1. Princípios Básicos
+# 7.1. Princípios Básicos
 
 ## Representação de Vetores
 
