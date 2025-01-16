@@ -138,6 +138,8 @@ O mesmo vale para o pré-decremento. Recomenda-se fazer alguns exercícios abaix
 
 ## Atribuição Composta
 
+A atribuição composta é uma forma de simplificar operações que combinam um operador aritmético ou lógico com uma atribuição. Em vez de escrever a operação completa, você pode usar operadores compostos, que tornam o código mais compacto e legível. A tabela abaixo sumariza os operadores aritméticos:
+
 | Operador | Significado              | Equivalente em expressão  |
 |----------|--------------------------|---------------------------|
 | `+=`     | Soma e atribui           | `x += y` → `x = x + y`    |
