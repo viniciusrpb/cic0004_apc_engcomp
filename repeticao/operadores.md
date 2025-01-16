@@ -156,7 +156,7 @@ O que o código-fonte abaixo gera como saída?
 
 int main(){
 
-    int i,x;
+    int i;
     
     i = 3;
     if(i++ > 3){
@@ -177,7 +177,7 @@ e esse código-fonte aqui?
 
 int main(){
 
-    int i,x;
+    int i;
     
     i = 3;
     if(++i > 3){
