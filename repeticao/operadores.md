@@ -1,11 +1,16 @@
-# 1. Operadores
+# 1. Operadores de Incremento e Decremento
+
+**Atenção:** incremento apenas vale para operadores de soma e decremento apenas para operador de subtração. Não existe operação similar para operadores de multiplicação e divisão.
 
 ## Incremento
 
-Os operadores de incremento (++) e decremento (--) são usados para aumentar ou diminuir o valor de uma variável em 1 unidade.
+O operador de incremento (++) são usados para aumentar o valor de uma variável em 1 unidade. Isso significa que:
 
-Incremento (++): Adiciona 1 ao valor da variável.
+```i = i + 1```
 
+é uma operação equivalente a ```i++```.
+
+Veja no código-fonte abaixo:
 
 ```
 int i;
@@ -37,40 +42,41 @@ printf("%d\n",i);
 
 ## Decremento
 
-Decremento (--): Subtrai 1 do valor da variável.
+Já o operador decremento (--) subtrai o valor da variável em uma unidade. Portanto,
 
-```
-int i;
+```i = i - 1```
 
-i = 1;
-i=i-1;
-printf("%d\n",i);
-```
+é uma operação equivalente a ```i--```.
 
-2. Tipos de Incremento e Decremento
+## Tipos de Incremento e Decremento
+
 Os operadores ++ e -- podem ser usados de duas maneiras diferentes:
 
-2.1. Pós-Incremento (i++) e Pós-Decremento (i--)
-O operador incrementa/decrementa o valor depois de a variável ser usada na expressão.
-O valor original da variável é usado antes da alteração.
-Exemplo:
-c
+### Pós-Incremento (i++) e Pós-Decremento (i--)
 
+O operador incrementa/decrementa o valor depois de a variável ser usada na expressão. Enquanto isso, o valor original da variável é usado antes da alteração.
+
+```
 int i = 5;
 int x = i++;  // x = 5, depois i passa a ser 6
 int y = i--;  // y = 6, depois i passa a ser 5
-2.2. Pré-Incremento (++i) e Pré-Decremento (--i)
+```
+
+### Pré-Incremento (++i) e Pré-Decremento (--i)
+
 O operador incrementa/decrementa o valor antes de a variável ser usada na expressão.
 O valor atualizado da variável é usado imediatamente.
-Exemplo:
-c
-Copy code
+
+```
 int i = 5;
 int x = ++i;  // i passa a ser 6, depois x = 6
 int y = --i;  // i passa a ser 5, depois y = 5
-
-
-**Atenção:** incremento apenas vale para operadores de soma e decremento apenas para operador de subtração. Não existe operação similar para operadores de multiplicação e divisão.
+```
 
 ## Atribuição Composta
+
+## Exercícios
+
+
+
 
