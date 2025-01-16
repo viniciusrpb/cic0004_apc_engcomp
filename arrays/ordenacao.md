@@ -1,8 +1,6 @@
-# 6.3. Ordenação
+# 7.4. Ordenação
 
-## 6.3.1 Definição
-
-## 6.3.2. Ideia
+## Ideia
 
 O laço externo (relacionado com a variável ```i```) percorre cada elemento do vetor. É nessa posição que o i-ésimo menor elemento será encontrado. O laço interno (relacionado com a variável ```j```) compara o elemento ```v[i]``` (na posição i) com todos os elementos após ele (j>i), isto é, ```v[i+1],v[i+2],...,v[n-1]```. Sempre que o elemento ```v[i]``` for maior que ```v[j]```, os dois elementos são trocados. No final, o vetor estará ordenado em ordem crescente.
 
@@ -23,7 +21,7 @@ void ordena(int v[1000], int n){
 }
 ```
 
-# Código-fonte Completo (com Entrada)
+## Código-fonte Completo (com Entrada)
 
 ```
 #include<stdio.h>
