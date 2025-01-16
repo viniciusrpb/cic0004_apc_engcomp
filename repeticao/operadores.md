@@ -138,8 +138,58 @@ O mesmo vale para o pré-decremento. Recomenda-se fazer alguns exercícios abaix
 
 ## Atribuição Composta
 
+| Operador | Significado              | Equivalente em expressão  |
+|----------|--------------------------|---------------------------|
+| `+=`     | Soma e atribui           | `x += y` → `x = x + y`    |
+| `-=`     | Subtrai e atribui        | `x -= y` → `x = x - y`    |
+| `*=`     | Multiplica e atribui     | `x *= y` → `x = x * y`    |
+| `/=`     | Divide e atribui         | `x /= y` → `x = x / y`    |
+| `%=`     | Calcula o módulo e atribui | `x %= y` → `x = x % y` |
+
+
 ## Exercícios
 
+O que o código-fonte abaixo gera como saída?
 
+```
+#include<stdio.h>
+
+int main(){
+
+    int i,x;
+    
+    i = 3;
+    if(i++ > 3){
+        printf("A\n");
+    }
+    else{
+        printf("B\n");
+    }
+    return 0;
+}
+```
+
+e esse código-fonte aqui?
+**Resposta**: ```B```.
+
+```
+#include<stdio.h>
+
+int main(){
+
+    int i,x;
+    
+    i = 3;
+    if(++i > 3){
+        printf("A\n");
+    }
+    else{
+        printf("B\n");
+    }
+    return 0;
+}
+```
+
+**Resposta**: ```A```.
 
 
