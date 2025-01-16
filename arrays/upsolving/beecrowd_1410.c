@@ -45,7 +45,6 @@ char solve(int a, int d){
         scanf("%d",&defensores[i]);
     }
     
-    ordena(atacantes,a);
     ordena(defensores,d);
     
     for(i = 0; i < a; i++){
