@@ -70,8 +70,10 @@ printf("i = %d\n",i);
 
 A saída é:
 
- ```x = 5
- i = 6```
+```
+x = 5
+i = 6
+```
 
 pois na operação ```x = i++;```, a ordem das operações é:
 
@@ -92,24 +94,47 @@ printf("i = %d\n",i);
 
 A saída é:
 
- ```x = 5
- i = 4```.
+```
+x = 5
+i = 4
+```
 
 pois na operação ```x = i--;```, a ordem das operações é:
 
 1) ```x``` recebe o valor de ```i```, ou seja, ```x = i``` => ```x = 5```
 2) Executa-se então ```i=i-1```. Logo ```i = 5 - 1 = 4```.
 
+
 ### Pré-Incremento (++i) e Pré-Decremento (--i)
 
-O operador incrementa/decrementa o valor antes de a variável ser usada na expressão.
-O valor atualizado da variável é usado imediatamente.
+Por sua vez, no Pré-Incremento e no Pré-Decremento, o operador incrementa/decrementa o valor da variávle correspondente antes de ela seja utilizada na expressão. Isso significa que o valor atualizado da variável é utilizado imediatamente na expressão/operação correspondente.
+
+No trecho de código-fonte a seguir:
 
 ```
-int i = 5;
-int x = ++i;  // i passa a ser 6, depois x = 6
-int y = --i;  // i passa a ser 5, depois y = 5
+int i,x,y;
+
+i = 5;
+x = ++i;
+
+printf("x = %d\n",x);
+printf("i = %d\n",i);
 ```
+
+A saída é:
+
+```
+x = 6
+i = 6
+```
+
+pois na operação ```x = ++i;```, a ordem das operações é:
+
+1) Executa-se ```i=i+1```. Logo ```i = 5 + 1 = 6```
+2) Em seguida, ```x``` recebe o valor de ```i```, ou seja, ```x = i``` => ```x = 6```. 
+
+
+O mesmo vale para o pré-decremento. Recomenda-se fazer alguns exercícios abaixo para fixação do conteúdo.
 
 ## Atribuição Composta
 
