@@ -1,4 +1,4 @@
-# 1. Operadores de Incremento e Decremento
+# 6.1. Operadores de Incremento e Decremento
 
 **Atenção:** incremento apenas vale para operadores de soma e decremento apenas para operador de subtração. Não existe operação similar para operadores de multiplicação e divisão.
 
