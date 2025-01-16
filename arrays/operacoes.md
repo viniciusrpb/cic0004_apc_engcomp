@@ -1,4 +1,4 @@
-# 6.2. Tarefas com Vetores
+# 7.2. Tarefas com Vetores
 
 ## Somar os n elementos de um vetor
 
