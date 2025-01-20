@@ -12,8 +12,6 @@ Outros tipos de matrizes podem apresentar várias dimensões, como é o caso de 
 
 Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339435251
 
-# Outline
-
 [9.1. Fundamentos de Matrizes](definicao.md)
 
 [9.2. Padding de Matrizes](padding.md)
@@ -23,7 +21,7 @@ Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339
 [9.4. Alocação Dinâmica de Matrizes](alocacao_dinamica.md)
 
 
-## Exercícios Resolvidos
+# Exercícios Resolvidos
 
 [Beecrowd 1478 - Square Matrix II](https://judge.beecrowd.com/en/problems/view/1478) [[Solução](upsolving/beecrowd_1478.c)]
 
@@ -31,7 +29,8 @@ Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339
 
 [Beecrowd 1383 - Sudoku](https://www.beecrowd.com.br/judge/pt/problems/view/1383) [[Solução](upsolving/beecrowd_1383.c)]
 
-## Aula Prática (12/07/2024)
+<!--
+# Aula Prática (12/07/2024)
 
 [Beecrowd 1186 - Abaixo da Diagonal Secundária](https://judge.beecrowd.com/en/problems/view/1186) [[Solução](upsolving/beecrowd_1186.c)]
 
@@ -39,4 +38,4 @@ Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339
 
 [Beecrowd 1652 - Deli Deli](https://judge.beecrowd.com/en/problems/view/1652) [[Solução](upsolving/beecrowd_1652.c)]
 
-[Beecrowd 2552 - CheeseBreadSweeper](https://judge.beecrowd.com/en/problems/view/2552) [[Solução](upsolving/beecrowd_2552.c)]
+[Beecrowd 2552 - CheeseBreadSweeper](https://judge.beecrowd.com/en/problems/view/2552) [[Solução](upsolving/beecrowd_2552.c)]-->
