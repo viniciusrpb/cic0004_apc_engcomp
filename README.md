@@ -36,6 +36,8 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 8. [Strings](strings/README.md)
 
+9. [Matrizes](matrizes/README.md)
+
 ## Simulados
 
 [Simulado da Prova 1](simulados/simulado_prova1.md)
@@ -50,7 +52,7 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 8. [Strings](strings/README.md)
 
-9. [Matrizes](matrizes/README.md)
+
 
 
 
