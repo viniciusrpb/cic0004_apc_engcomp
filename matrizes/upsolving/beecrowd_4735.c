@@ -2,51 +2,46 @@
 #define MAX_N 100
 #define MAX_M 100
 
+#include<stdio.h>
+
 int main(){
-    int i,j,n,m,k,l,soma;
-    char celula;
-    // matriz +2 eh por conta do padding
-    // de zeros nas bordas
-    int campo[MAX_N+2][MAX_M+2];
+    int x,y,i,j,n,m,bombas;
+
+    char campo[102][102];
 
     scanf("%d %d",&n,&m);
-    getchar(); // livrar do \n
+    getchar(); // me livrar do \n
 
-    for(i = 0; i < n+2; i++){
+    for(i = 0; i < n+2;i++){
         for(j = 0; j < m+2; j++){
-            campo[i][j] = 0;
+            campo[i][j] = '.';
         }
     }
 
-    for(i = 1; i <= n; i++){
+    for(i = 1; i <= n;i++){
         for(j = 1; j <= m; j++){
-            scanf("%c",&celula);
-            // celula eh uma bomba?
-            if(celula == '*'){
-                // se sim, inclui no campo
-                campo[i][j] = 1;
-                // 1 eh posicao com bomba
-                // 0 eh area livre
-            }
+            scanf("%c",&campo[i][j]);
         }
-        getchar();
+        getchar(); // me livrar do \n
     }
 
-    for(i = 1; i <= n; i++){
+    for(i = 1; i <= n;i++){
         for(j = 1; j <= m; j++){
-            // nao tem bomba em (i,j)?
-            if(campo[i][j] == 0){
-                // caminhar pela vizinhanca
-                // do quadrado em (i,j)
-                soma = 0;
-                for(k = i-1; k <= i+1; k++){
-                    for(l = j-1; l <= j+1;l++){
-                        soma = soma + campo[k][l];
-                        // soma += campo[k][l]
+            // se a posicao [i][j] nao for bomba
+            if(campo[i][j] == '.'){
+                // analisa a vizinhanca de [i][j]
+                bombas = 0;
+
+                for(x = i-1; x <= i+1; x++){
+                    for(y = j-1; y <= j+1; y++){
+                        if(campo[x][y] == '*'){
+                            bombas++;
+                        }
                     }
                 }
-                printf("%d",soma);
-            }else{
+                printf("%d",bombas);
+            }
+            else{
                 printf("*");
             }
         }
@@ -55,3 +50,4 @@ int main(){
 
     return 0;
 }
+
