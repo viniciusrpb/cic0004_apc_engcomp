@@ -1,102 +1,96 @@
 #include<stdio.h>
 
-int main(){
-    int n,i,j,k,l,num,teste,lascou;
+void zeraHistograma(int histograma[10]){
+    int i;
+    for(i = 1; i <= 9; i++){
+        histograma[i] = 0;
+    }
+}
+
+int ehValido(int histograma[10]){
+    int i;
+    for(i = 1; i <= 9; i++){
+        // procura pelo histograma invalido
+        if(histograma[i] != 1){
+            return 0;
+        }
+    }
+    return 1; // histograma valido
+}
+
+int solve(){
+    int i,j,x,y,num;
     int sudoku[9][9];
-    int histograma[10]; //ind 0 eh esquecido
+    int histograma[10];
 
-    scanf("%d",&n);
+    for(i = 0; i < 9; i++){
+        for(j = 0; j < 9; j++){
+            scanf("%d",&sudoku[i][j]);
+        }
+    }
 
+    // para cada linha
+    for(i = 0; i < 9; i++){
+        zeraHistograma(histograma);
+        // passa por cada coluna
+        for(j = 0; j < 9; j++){
+            num = sudoku[i][j];
+            histograma[num]++;
+        }
+        if(ehValido(histograma) == 0){
+            return 0;//
+        }
+    }
+
+    // para cada coluna
+    for(j = 0; j < 9; j++){
+        zeraHistograma(histograma);
+        // passa por cada linha
+        for(i = 0; i < 9; i++){
+            num = sudoku[i][j];
+            histograma[num]++;
+        }
+        if(ehValido(histograma) == 0){
+            return 0;// histograma invalido
+        }
+    }
+
+    for(i = 0; i < 9; i = i+3){
+        for(j = 0; j < 9; j=j+3){
+
+            zeraHistograma(histograma);
+            //p/ cada linha do quadrante
+            for(x = i; x < i+3; x++){
+                for(y = j; y < j+3; y++){
+                    num = sudoku[x][y];
+                    histograma[num]++;
+                }
+            }
+
+            if(ehValido(histograma) == 0){
+                return 0;
+            }
+        }
+    }
+    return 1;
+}
+
+int main(){
+    int t,teste,ans;
+
+    scanf("%d",&t);
     teste = 1;
 
-    while(n > 0){
-
-        for(i = 0; i < 9; i++){
-            for(j = 0; j < 9; j++){
-                scanf("%d",&sudoku[i][j]);
-            }
-        }
-
-        // assume que o sudoku estah correto
-        lascou = 0;
-
-        // restricao 1
-        // para cada linha do sudoku
-        for(i = 0; i < 9; i++){
-
-            // zerar o histograma
-            for(k = 1; k <= 9; k++){
-                histograma[k] = 0;
-            }
-
-            // contabilizar os numeros de cada coluna do sudoku no histograma
-            for(j = 0; j < 9; j++){
-                num = sudoku[i][j];
-                histograma[num]++;
-            }
-
-            // verifica se faltou algum numero ou
-            // se num aparece mais do que 1 vez
-            for(k = 1; k <= 9; k++){
-                if(histograma[k] != 1){
-                    lascou = 1; // sudoku invalido
-                }
-            }
-        }
-
-        // para cada coluna do sudoku
-        for(j = 0; j < 9; j++){
-
-            // zerar o histograma
-            for(k = 1; k <= 9; k++){
-                histograma[k] = 0;
-            }
-
-            // contabilizar os numeros de cada linha do sudoku no histograma
-            for(i = 0; i < 9; i++){
-                num = sudoku[i][j];
-                histograma[num]++;
-            }
-
-            // verifica se faltou algum numero ou
-            // se num aparece mais do que 1 vez
-            for(k = 1; k <= 9; k++){
-                if(histograma[k] != 1){
-                    lascou = 1; // sudoku invalido
-                }
-            }
-        }
-
-        for(i = 1; i < 9; i=i+3){
-            for(j = 1; j < 9; j=j+3){
-
-                for(k = 1; k <= 9; k++){
-                    histograma[k] = 0;
-                }
-
-                for(k = i-1; k <= i+1; k++){
-                    for(l = j-1; l <= j+1; l++){
-                        num = sudoku[k][l];
-                        histograma[num]++;
-                    }
-                }
-
-                for(k = 1; k <= 9; k++){
-                    if(histograma[k] != 1){
-                        lascou = 1; // sudoku invalido
-                    }
-                }
-
-            }
-        }
+    while(t > 0){
+        ans = solve();
         printf("Instancia %d\n",teste);
-        if(lascou == 1){
-            printf("NAO\n\n");
-        }else{
+        if(ans == 1){
             printf("SIM\n\n");
         }
-
-        n--; // n = n-1
+        else{
+            printf("NAO\n\n");
+        }
+        t--;
         teste++;
     }
     return 0;
