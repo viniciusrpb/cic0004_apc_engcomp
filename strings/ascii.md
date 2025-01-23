@@ -1,6 +1,6 @@
 # Tabela ASCII
 
-A Tabela *American Standard Code for Information Interchange* (ASCII) é um padrão que define um conjunto de códigos numéricos usados para representar caracteres em computadores e dispositivos digitais. Cada número na tabela ASCII corresponde a um caractere específico, como letras, números, símbolos ou comandos de controle.
+A Tabela *American Standard Code for Information Interchange* (ASCII) é um padrão que define um conjunto de códigos numéricos usados para representar caracteres em computadores e dispositivos digitais. Cada número na tabela ASCII corresponde a um caractere específico, como letras, números, símbolos ou comandos de controle (teclas de setas, Alts, etc).
 
 Em resumo:
 
