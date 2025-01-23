@@ -70,3 +70,48 @@ int main() {
 - Modificação de valores: Como o vetor é passado por referência, qualquer alteração feita na função é refletida no vetor original.
 
 ## Exemplos
+
+O código-fonte a seguir realiza uma soma acumulada no próprio vetor de entrada, isto é, transforma os números de um vetor onde cada elemento representa a soma de todos os elementos anteriores até aquela posição, incluindo o próprio.
+
+Matematicamente, seja um vetor ```a``` contendo os ```n``` elementos ```a[0], a[1], ..., a[n-1]```. Podemos definir a soma acumulada como:
+
+```a[i] = a[i-1] + a[i]``` para *i = 1,...,n-1*.
+
+Podemos então elaborar o seguinte código-fonte:
+
+```
+#include <stdio.h>
+
+void somaAcumulada(long long int a[5], int n) {
+    int i;
+    for(i = 1; i < n; i++){
+        a[i] = a[i]+a[i-1];
+    }
+}
+
+void imprimeVetor(long long int a[5], int n) {
+    int i;
+    for(i = 0; i < n-1; i++){
+        printf("%lld ",a[i]);
+    }
+    printf("%lld\n",a[n-1]);
+}
+
+int main() {
+    long long int v[5] = {4,1,10,3,2};
+
+    somaAcumulada(v,5);
+
+    imprimeVetor(v,5);
+
+    return 0;
+}
+```
+
+O código-fonte acima imprime:
+
+```
+4 5 15 18 20
+```
+
+**Homework**: se eu quisesse guardar a soma acumulada do vetor ```a``` em outro vetor? 
