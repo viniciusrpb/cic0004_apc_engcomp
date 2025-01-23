@@ -43,4 +43,4 @@ str[4] => z
 
 Mas o que ocorre?
 
-<img src="images/strings2.png" alt="Percorrendo uma string" width="70%">
+<img src="images/strings2.png" alt="Percorrendo uma string">
