@@ -19,7 +19,7 @@ Strings são sequências de caracteres terminadas por um caractere especial: o n
 
 8.6. [Beecrowd 1168 - LED](https://judge.beecrowd.com/en/problems/view/1168) [[Solução](upsolving/beecrowd_1168.c)]
 
-8.7. [Beecrowd 1024 - Criptografia](https://www.beecrowd.com.br/judge/pt/problems/view/1024) [Resolução](upsolving/beecrowd_1024.md) [[Solução](upsolving/beecrowd_1024.c)]
+8.7. [Beecrowd 1024 - Criptografia](https://www.beecrowd.com.br/judge/pt/problems/view/1024) [[Resolução](upsolving/beecrowd_1024.md)] [[Solução](upsolving/beecrowd_1024.c)]
 
 # Aula Prática (17/01/2025)
 
