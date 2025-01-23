@@ -3,12 +3,13 @@
 ## Percorrer uma String
 
 Para se percorrer uma string até o último caractere válido (não é o caractere nulo ```'\0'```), deve-se fazer como nos vetores:
-1- Declare uma variável inteira para corresponder a cada índice da string. Vamos chamar essa variável de ```i```;
-2- Comece com ```i=0```;
-3- Verifique se ```str[i] != \0```. Caso essa condição seja falsa, finalizamos o percorrimento da string. Caso contrário, vá para o passo 4.
-4- Se chegou aqui, é porque você está acessando uma posição que contém um caractere da string. Vamos imprimir ele apenas para vê-lo.
-5- Incremente a variável ```i```, isto é, faça ```i++```.
-6- Volte ao passo 3.
+
+1- Declare uma variável inteira para corresponder a cada índice da string. Vamos chamar essa variável de ```i```;<br>
+2- Comece com ```i=0```;<br>
+3- Verifique se ```str[i] != \0```. Caso essa condição seja falsa, finalizamos o percorrimento da string. Caso contrário, vá para o passo 4.<br>
+4- Se chegou aqui, é porque você está acessando uma posição que contém um caractere da string. Vamos imprimir ele apenas para vê-lo.<br>
+5- Incremente a variável ```i```, isto é, faça ```i++```.<br>
+6- Volte ao passo 3.<br>
 
 ```
 #include<stdio.h>
