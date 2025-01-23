@@ -165,3 +165,18 @@ int ehMaiusculo(char c){
     }
 }
 ```
+
+### Verifica se um caractere é um dígito numérico
+
+Nesse caso, devemos verificar se o código ASCII de um caractere ```c``` está no intervalo ```[48,57]```:
+
+```
+int ehDigitoNum(char c){
+    if(c >= 48 && c <= 57){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+```
