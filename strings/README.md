@@ -2,7 +2,7 @@
 
 Strings são sequências de caracteres terminadas por um caractere especial: o nulo (```\0```). Elas não são um tipo de dado nativo da linguagem como em linguagens mais modernas (ex.: Python ou Java). Em vez disso, strings em C são representadas como vetores de caracteres.
 
-![Representação gráfica de uma string](images/strings.png)
+<img src="images/strings.png" alt="Representação gráfica de uma string" width="70%">
 
 8.1. [Representando e Lendo Strings](representacao.md)
 
