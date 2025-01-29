@@ -12,6 +12,6 @@ Um registro (ou estrutura, ou *struct*) é um conjunto de variáveis agrupadas s
 
 ## Exercícios Resolvidos
 
-[Beecrowd 2312 - Quadro de Medalhas](https://judge.beecrowd.com/en/problems/view/2312) [Solução](upsolving/beecrowd_2312.c)
+[Beecrowd 2312 - Quadro de Medalhas](https://judge.beecrowd.com/en/problems/view/2312) [[Solução](upsolving/beecrowd_2312.c)]
 
-[Beecrowd 1251 - Tell me the Frequencies!](https://judge.beecrowd.com/en/problems/view/1251) [Solução](upsolving/beecrowd_1251.c)
+[Beecrowd 1251 - Tell me the Frequencies!](https://judge.beecrowd.com/en/problems/view/1251) [[Solução](upsolving/beecrowd_1251.c)]
