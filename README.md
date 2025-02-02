@@ -40,6 +40,8 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 10. [Estruturas Heterogêneas (Registros)](registros/README.md)
 
+11. [Recursividade](recursividade/recursividade.md)
+
 ## Simulados
 
 [Simulado da Prova 1](simulados/simulado_prova1.md)
@@ -60,7 +62,7 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 
 
-11. [Recursividade](recursividade/recursividade.md)
+
 
 
 
