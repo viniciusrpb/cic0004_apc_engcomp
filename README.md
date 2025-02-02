@@ -52,6 +52,8 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 [Prova 1](provas/provas.md)
 
+[Prova 2](provas/provas.md)
+
 <!--
 
 7. [Ponteiros e Alocação Dinâmica](ponteiros/README.md)
