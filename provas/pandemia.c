@@ -16,10 +16,10 @@ int main(){
     
     // enquanto a quantidade de dias nao ultrapassar P (como pede o problema)
     while(infectados < p){
-        // atualiza a nova quantidade de infectados para o dia atualiza
+        // atualiza a nova quantidade de infectados para o dia
         inf_dia = inf_dia*r;
         
-        // soma a quantidade de infectados com os dias anteriores
+        // atualiza soma a quantidade de infectados com os dias anteriores
         infectados += inf_dia;
         
         // passou-se um dia, acumula na resposta
