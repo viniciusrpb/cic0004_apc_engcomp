@@ -16,5 +16,5 @@
 
 11.6. [Beecrowd 2166 - Square Root of 2](upsolving/beecrowd_2166.c)
 
-11.7. [Beecrowd 2166 - Square Root of 2](upsolving/beecrowd_2166.c)
+11.7. [Beecrowd 1512 - Tiles](upsolving/beecrowd_1512.c)
 
