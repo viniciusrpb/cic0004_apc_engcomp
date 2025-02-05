@@ -1,69 +1,20 @@
 # 11. Recursividade
 
+**Recursividade** é uma técnica para resolução de problemas em programação em que uma função chama a si mesma dentro do seu escopo. Trata-se de uma estratégia para resolver um problema analisando-os como subproblemas e em várias etapas, criando-se um processo de repetição de chamadas da própria função dentro dela mesma.
 
-[Greatest Common Divisor](gcd.md)
+## Conteúdo
 
-```
-#include<stdio.h>
+11.2. [Fatorial](fatorial.md)
 
-void merge(int v[6], int temp[6], int l, int mid, int r){
-    int i,j,k;
-    i = l;
-    j = mid+1;
-    k = l;
-    while(i <= mid && j <= r){
-        if(v[i] < v[j]){
-            temp[k] = v[i];
-            i++;
-        }else{
-            temp[k] = v[j];
-            j++;
-        }
-        k++;
-    }
+11.3. [Fibonacci](fibonacci.md)
 
-    while(i <= mid){
-        temp[k] = v[i];
-        i++;
-        k++;
-    }
+11.4. [Greatest Common Divisor](gcd.md)
 
-    while(j <= r){
-        temp[k] = v[j];
-        j++;
-        k++;
-    }
+11.5. (Extra) [Merge Sort](mergesort.md)
 
-    for(i = l; i <= r; i++){
-        v[i] = temp[i];
-    }
+## Exercícios Resolvidos
 
-}
+11.6. [Beecrowd 2166 - Square Root of 2](upsolving/beecrowd_2166.c)
 
-void mergeSort(int v[6], int temp[6], int l, int r){
-    int mid;
-    printf("l=%d r=%d\n",l,r);
-    if(l < r){
-        mid = (l+r)/2;
-        mergeSort(v,temp,l,mid);
-        mergeSort(v,temp,mid+1,r);
-        merge(v,temp,l,mid,r);
-    }
-}
+11.7. [Beecrowd 2166 - Square Root of 2](upsolving/beecrowd_2166.c)
 
-int main(){
-    int i,n = 6;
-    int v[6] = {7,9,0,-3,5,2};
-    int temp[6];
-
-    mergeSort(v,temp,0,5);
-
-    for(i = 0; i < 6;i++){
-        printf("%d ",v[i]);
-    }
-    printf("\n");
-
-    return 0;
-}
-
-```
