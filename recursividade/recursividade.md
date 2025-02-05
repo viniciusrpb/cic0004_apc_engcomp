@@ -4,6 +4,8 @@
 
 ## Conteúdo
 
+11.1. [Estrutura](estrutura.md)
+
 11.2. [Fatorial](fatorial.md)
 
 11.3. [Fibonacci](fibonacci.md)
