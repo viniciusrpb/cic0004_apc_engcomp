@@ -16,7 +16,7 @@ A recursividade costuma deixar o código-fonte mais limpo e próximo da definiç
 
 ## Exercícios Resolvidos
 
-11.5. [Beecrowd 2166 - Square Root of 2](https://judge.beecrowd.com/en/problems/view/2166) [Solução](upsolving/beecrowd_2166.c)
+11.5. [Beecrowd 2166 - Square Root of 2](https://judge.beecrowd.com/en/problems/view/2166) [[Solução](upsolving/beecrowd_2166.c)]
 
-11.6. [Beecrowd 1512 - Tiles](https://judge.beecrowd.com/en/problems/view/1512) [Solução](upsolving/beecrowd_1512.c)
+11.6. [Beecrowd 1512 - Tiles](https://judge.beecrowd.com/en/problems/view/1512) [[Solução](upsolving/beecrowd_1512.c)]
 
