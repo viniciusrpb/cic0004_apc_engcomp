@@ -23,7 +23,42 @@ tipo funcao_recursiva(int n){
 
 Vamos ver alguns exemplos
 
+## Pilha de Chamadas de Funções
+
+Na linguagem C, as chamadas de funções, incluindo as recursivas, são controladas pela pilha de execução (*call stack*), que é uma estrutura de dados usada pelo Sistema Operacional e pelo GCC para gerenciar as chamadas e retornos de funções durante a execução do programa.
+
+
+
+## Stack Overflow
+
+Se o caso base não for definido (explicitamente ou implicitamente), ou ainda estiver incorretamente indefinido, o número de chamadas recursivas pode levar ao estouro de pilha (*Stack Overflow*), que é um erro em tempo de execução que aparece como uma mensagem do tipo *Segmentation Fault* e/ou *Runtime Error*.
+
+```
+#include<stdio.h>
+
+void f(int n){
+    if(n == 0){
+        return ;
+    }
+    printf("%d\n",n);
+    f(n-1);
+}
+
+int main(){
+
+    int n;
+
+    scanf("%d",&n);
+
+    f(n);
+
+    return 0;
+}
+```
+
+
 ## Exemplo: Contar de N até 1
+
 ```
 #include<stdio.h>
 
@@ -70,7 +105,4 @@ int main(){
     return 0;
 }
 ```
-
-## Fatorial
-
 
