@@ -35,6 +35,20 @@ Sejam dois números inteiros ```a``` e ```b```, em que ```a > b```. De acordo co
 
 em que ```p``` e ```q``` são números inteiros.
 
+Além disso, a divisão de Euclides afirma que, dados dois números inteiros  ```a``` e ```b```, com ```b > 0```, existem inteiros ```q``` e ```r``` tais que:
+
+```a = b + q.r```, para ```0 <= r < b```.
+
+Podemos reescrever 
+
+```r = a - b.q```
+
+e assim podemos provar que o ```gcd(a,b)``` = ```gcd(b,r)```.
+
+Isso ocorre porque tanto ```a``` quanto ```b``` podem ser expressos como combinações lineares (múltiplos inteiros) de seus divisores, e ```r``` é simplesmente uma dessas combinações. Assim, a sequência:
+
+```b, r, r',...``` reduz os números gradativamente, mantendo-se o mesmo gcd.
+
 Temos o ponto de partida para mostrar que todos os divisores de ```a``` e ```b``` também dividem ```a-b```. Logo, não estamos perdendo o maior divisor comum ao fazermos isso. Assim sendo, podemos calcular o máximo divisor comum (gcd) entre ```a``` e ```b``` (```gcd(a,b)```) como sendo igual ao gcd entre ```a-b``` e ```b```?
 
 Por exemplo, se ```a=84``` e ```b=16```, sabemos no exemplo acima que o ```gcd(84,16) = 4```. Como ficaria o GCD entre ```84-16=68``` e ```16```?
