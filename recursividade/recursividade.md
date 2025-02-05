@@ -2,6 +2,8 @@
 
 **Recursividade** é uma técnica para resolução de problemas em programação em que uma função chama a si mesma dentro do seu escopo. Trata-se de uma estratégia para resolver um problema analisando-os como subproblemas e em várias etapas, criando-se um processo de repetição de chamadas da própria função dentro dela mesma.
 
+A recursividade costuma deixar o código-fonte mais limpo e próximo da definição matemática do problema e torna a implementação mais fácil em problemas que envolvem recorrência, como fatoriais, algoritmos de ordenação e busca completa.
+
 ## Conteúdo
 
 11.1. [Estrutura](estrutura.md)
