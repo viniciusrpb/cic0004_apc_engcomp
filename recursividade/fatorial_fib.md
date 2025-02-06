@@ -21,13 +21,13 @@ fatorial(n) = n x fatorial(n-1), se n > 1
             = 1                , se n <= 1.
 ```
 
-O fatorial de ```0``` e ```1``` é sempre ```1```. Esse é o caso base.
+O fatorial de ```0``` (0!) e ```1``` (1!) é sempre ```1```. Esse é o caso base.
 
 ```
 #include<stdio.h>
 
 long long fatorial(long long n){
-    if(n == 1){
+    if(n <= 1){
         return 1;
     }
     return n*fatorial(n-1);
@@ -43,18 +43,8 @@ int main(){
 }
 ```
 
-**Cuidado:** o fatorial cresce extremamente rápido, o que pode causar estouro de memória (*overflow*). Por isso, sempre execute o fatorial para valores menores ou iguais a 40.
+**Cuidado:** o fatorial cresce extremamente rápido, o que pode causar estouro de memória (*overflow*). Por isso, sempre execute o fatorial para valores menores ou iguais a ```40```.
 
-Caso a função fatorial seja implementada em um problema de análise combinatória, pode ser necessário executar 0!. Assim, podemos estender a função fatorial para:
-
-```
-long long fatorial(long long n){
-    if(n <= 1){
-        return 1;
-    }
-    return n*fatorial(n-1);
-}
-```
 
 # Fibonacci
 
