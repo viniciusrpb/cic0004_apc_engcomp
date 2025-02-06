@@ -42,6 +42,8 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 11. [Recursividade](recursividade/recursividade.md)
 
+12. [Ponteiros e Alocação Dinâmica de Memória](ponteiros/README.md)
+
 ## Simulados
 
 [Simulado da Prova 1](simulados/simulado_prova1.md)
@@ -78,9 +80,6 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 3. [Simulado da Prova 3](simulados/simulado_prova3.md)
 
 
-## Referências
-
-- [Linguagem C Descomplicada](https://programacaodescomplicada.wordpress.com/indice/linguagem-c/)
 
 ## Simulados
 
