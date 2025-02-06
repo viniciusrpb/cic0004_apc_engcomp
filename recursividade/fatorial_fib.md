@@ -12,6 +12,8 @@ Se temos ```n=5```, então:
 5! = 5 x 4 x 3 x 2 x 1 = 120
 ```
 
+**IMPORTANTE:** Caso ocorra do **n ser igual a zero** (em problemas de análise combinatória, por exemplo), pode ser necessário 0! (zero fatorial), que, por convenção, ```0! = 1```.
+
 ## Função Fatorial
 
 A função fatorial é definida recursivamente da seguinte maneira:
@@ -21,7 +23,9 @@ fatorial(n) = n x fatorial(n-1), se n > 1
             = 1                , se n <= 1.
 ```
 
-O fatorial de ```0``` (0!) e ```1``` (1!) é sempre ```1```. Esse é o caso base.
+Lembrando que o fatorial de ```0``` (0!) e ```1``` (1!) é sempre ```1```. Esse é o caso base.
+
+
 
 ```
 #include<stdio.h>
