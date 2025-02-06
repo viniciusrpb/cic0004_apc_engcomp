@@ -10,7 +10,7 @@ A recursividade costuma deixar o código-fonte mais limpo e próximo da definiç
 
 11.1. [Estrutura](estrutura.md)
 
-11.2. [Fatorial & Fibonacci](fibonacci.md)
+11.2. [Fatorial & Fibonacci](fatorial_fib.md)
 
 11.3. [Greatest Common Divisor](gcd.md)
 
