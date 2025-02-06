@@ -1,4 +1,4 @@
-# 12. Estruturas Heterogêneas (Registros)
+# 10. Estruturas Heterogêneas (Registros)
 
 <img src="images/estruturas.png" width="80%" height="80%">
 
@@ -6,9 +6,9 @@ Um registro (ou estrutura, ou *struct*) é um conjunto de variáveis agrupadas s
 
 ## Tópicos
 
-[12.1. Criando Estruturas](definicao.md)
+[10.1. Criando Estruturas](definicao.md)
 
-[12.2. Estruturas por Alocação Dinâmica](dynamic_structs.md)
+[10.2. Estruturas por Alocação Dinâmica](dynamic_structs.md)
 
 ## Exercícios Resolvidos
 
