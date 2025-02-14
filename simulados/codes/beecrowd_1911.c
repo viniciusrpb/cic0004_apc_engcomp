@@ -26,7 +26,7 @@ struct aluno{
 // define o tipo "Aluno" como sendo igual a "struct aluno"
 typedef struct aluno Aluno;
 
-// funcao que verifica
+// funcao que verifica quantos caracteres sao distintos em duas assinaturas (duas strings) 
 int verificaAssinatura(char original[21], char aula[21]){
     int i,diff,n,m;
     
