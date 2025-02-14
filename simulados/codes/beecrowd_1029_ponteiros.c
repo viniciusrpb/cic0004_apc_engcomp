@@ -10,7 +10,7 @@ Objetivo: Solução do problema beecrowd 1029 - Fibonacci, How Many Calls?
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc beecrowd_1029.c -o fib
+gcc beecrowd_1029_ponteiros.c -o fib
 ./fib
 */
 
