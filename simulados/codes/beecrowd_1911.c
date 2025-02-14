@@ -1,13 +1,32 @@
+/*
+Universidade de Brasília
+Departamento de Ciência da Computação
+CIC0004 - Algoritmos e Programação de Computadores
+Autor: Vinicius R. P. Borges
+
+Tópico: Strings e Estruturas
+Objetivo: Solução do problema beecrowd 1911 - Help Girafales
+          https://judge.beecrowd.com/pt/problems/view/1911
+
+Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
+
+gcc beecrowd_1911.c -o help
+./help
+*/
+
 #include<stdio.h>
 #include<string.h>
 
+// define a estrutura do aluno
 struct aluno{
     char nome[21];
     char assinatura[21];
 };
 
+// define o tipo "Aluno" como sendo igual a "struct aluno"
 typedef struct aluno Aluno;
 
+// funcao que verifica
 int verificaAssinatura(char original[21], char aula[21]){
     int i,diff,n,m;
     
@@ -40,7 +59,8 @@ int main(){
     
     scanf("%d",&n);
     while(n!=0){
-    
+        
+        // Pega o nome do aluno e sua assinatura original
         for(i = 0; i < n; i++){
             getchar();
             scanf("%s %s",lista[i].nome,lista[i].assinatura);        
@@ -49,12 +69,20 @@ int main(){
         scanf("%d",&m);
         
         ans = 0;
-        
+
+        // Le m nomes da lista de presenca
         for(i = 0; i < m; i++){
+            // retira o caractere '\n' do buffer
             getchar();
+
+            // Leitura do nome do aluno e o nome assinado na aula
             scanf("%s %s",nome_aula,assinado_aula);
+
+            // 1- procura na lista de presenca pelo nome do aluno na aula
             for(j = 0; j < n; j++){
                 if(strcmp(nome_aula,lista[j].nome) == 0){
+                    
+                    // se achou o nome do aluno, vamos verificar se a assintura eh difere no minimo em um caractere
                     diff = verificaAssinatura(lista[j].assinatura, assinado_aula);
                     if(diff > 1){
                         ans++;
