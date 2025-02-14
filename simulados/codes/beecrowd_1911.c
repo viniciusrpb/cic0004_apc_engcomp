@@ -78,12 +78,16 @@ int main(){
             // Leitura do nome do aluno e o nome assinado na aula
             scanf("%s %s",nome_aula,assinado_aula);
 
-            // 1- procura na lista de presenca pelo nome do aluno na aula
+            // (1) procura na lista de presenca pelo nome do aluno na aula
             for(j = 0; j < n; j++){
+                      
+                // se o j-esimo aluno da lista e o nome do aluno na aula sendo consultado...
                 if(strcmp(nome_aula,lista[j].nome) == 0){
                     
-                    // se achou o nome do aluno, vamos verificar se a assintura eh difere no minimo em um caractere
+                    // vamos verificar se a assinatura difere no maximo em um caractere na lista oficial
                     diff = verificaAssinatura(lista[j].assinatura, assinado_aula);
+                          
+                    // se sim, assinatura eh falsa, contabilize na variavel "ans"
                     if(diff > 1){
                         ans++;
                     }
