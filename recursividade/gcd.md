@@ -167,10 +167,34 @@ int main(){
 }
 ```
 
-## Extra: Mìnimo Múltiplo Comum (Least Common Multiple - LCM)
+## Extra: Mínimo Múltiplo Comum (Least Common Multiple - LCM)
+
+O mínimo múltiplo comum (MMC) de dois ou mais números é o menor número inteiro positivo que é múltiplo de todos eles.
+
+Por exemplo, o LCM entre 2 e 3 é 6. Pois:
+
+- Múltiplos de 2: 2, 4, **6**, 8, 10, **12**, 14, 16, **18**, ...
+- 
+- Múltiplos de 3: 3, **6**, 9, **12**, 15, **18**, 21, 24, 27, ...
+
+Observe que **6**, **12** e **18** são múltiplos em comum entre 2 e 3, mas o menor múltiplo comum possível é o **6**.
+
+O LCM pode ser calculado a partir do GCD:
 
 ```
 int lcm(int a, int b){
     return (a*b)/gcd(a,b);
 }
 ```
+
+pois ```a*b``` é um valor que garantidamente representa um múltiplo entre ```a``` e ```b```.
+
+Por exemplo, para ```a=24``` e ```b=18```, o ```gcd(24,18)``` é ```6```, pois a fatoração em números primos de ```24``` e ```18``` resulta em:
+
+```24 = 2 x 2 x 2 x 3``` e ```18 = 2 x 3 x 3```
+
+A maior subsequência de fatores é ```2 x 3``` cujo produto é igual a ```6```. Logo, o ```gcd(24,18) = 6```. Assim, temos:
+
+```LCM(24,18) = (a * b) / gcd (a*b) = (24 * 18) / 6 = 432 / 6 = 72```.
+
+Logo, o produto ```a*b``` contém todos os fatores elevados com a soma dos expoentes para cada número. A divisão pelo GCD reduzi cada expoente somado de volta para o máximo dos dois em cada fator.
