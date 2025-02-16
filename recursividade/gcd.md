@@ -37,7 +37,7 @@ em que ```p``` e ```q``` são números inteiros.
 
 Além disso, a divisão de Euclides afirma que, dados dois números inteiros  ```a``` e ```b```, com ```b > 0```, existem inteiros ```q``` e ```r``` tais que:
 
-```a = b + q.r```, para ```0 <= r < b```.
+```a = b.q + r```, para ```0 <= r < b```.
 
 Podemos reescrever 
 
