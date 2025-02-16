@@ -170,6 +170,7 @@ int main(){
 ## Extra: Mìnimo Múltiplo Comum (Least Common Multiple - LCM)
 
 ```
-int lcm(int a, int b):
+int lcm(int a, int b){
     return (a*b)/gcd(a,b);
+}
 ```
