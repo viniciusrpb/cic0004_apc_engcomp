@@ -174,7 +174,7 @@ O mínimo múltiplo comum (MMC) de dois ou mais números é o menor número inte
 Por exemplo, o LCM entre 2 e 3 é 6. Pois:
 
 - Múltiplos de 2: 2, 4, **6**, 8, 10, **12**, 14, 16, **18**, ...
-- 
+  
 - Múltiplos de 3: 3, **6**, 9, **12**, 15, **18**, 21, 24, 27, ...
 
 Observe que **6**, **12** e **18** são múltiplos em comum entre 2 e 3, mas o menor múltiplo comum possível é o **6**.
