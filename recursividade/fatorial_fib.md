@@ -50,7 +50,27 @@ int main(){
 **Cuidado:** o fatorial cresce extremamente rápido, o que pode causar estouro de memória (*overflow*). Por isso, sempre execute o fatorial para valores menores ou iguais a ```40```.
 
 
-# Fibonacci
+## Fibonacci
+
+A sequência de Fibonacci é uma sequência numérica definida recursivamente da seguinte forma:
+
+```
+F(0)=0, para n = 0
+F(1)=1, para n = 1
+F(n)=F(n−1)+F(n−2), para n >= 2
+```
+
+Pode-se verificar que cada termo (a partir do segundo) é a soma dos dois anteriores.
+
+A sequência gerada é então igual a:
+
+```0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...```
+
+**Cuidado:** a sequência de Fibonacci cresce exponencialmente, o que significa que rapidamente atinge os limites de representação numérica dos tipos de dados. Assim, para o tipo ```int``` (32 bits), é possível calcular os primeiros 46 termos da sequência de Fibonacci sem nos preocuparmos com o *overflow*, enquanto que para o tipo ```long long``` (64 bits), podemos calcular os primeiros 92 termos da sequência antes do *overflow*.
+
+### Versão recursiva
+
+O código-fonte que calcula a função Fibonacci recursivamente é:
 
 ```
 #include<stdio.h>
@@ -70,6 +90,38 @@ int main(){
     scanf("%lld",&n);
 
     printf("%lld\n",fibonacci(n));
+
+    return 0;
+}
+```
+
+### Versão iterativa
+
+Observe que podemos calcular a sequência de Fibonacci até o seu 92o termo seu que tenhamos problemas de *overflow* nas variáveis *long long*. Por isso o vetor que armazena a resposta foi declarado com 92 posições.
+
+```
+#include<stdio.h>
+
+void fibonacci(int n, long long fib[92]){
+
+    int i;
+    fib[0] = 0;
+    fib[1] = 1;
+
+    for(i = 2; i <= n; i++){
+         fib[i] = fib[i-1]+fib[i-2];
+    }
+}
+
+int main(){
+    int n;
+    long long fib[92];
+
+    scanf("%d",&n);
+
+    fibonacci(n,v);
+
+    printf("%lld\n",fib[n]);
 
     return 0;
 }
