@@ -47,8 +47,37 @@ int main(){
 }
 ```
 
-**Cuidado:** o fatorial cresce extremamente rápido, o que pode causar estouro de memória (*overflow*). Por isso, sempre execute o fatorial para valores menores ou iguais a ```40```.
+**Cuidado:** o fatorial cresce extremamente rápido, o que pode causar estouro de memória (*overflow*). Por isso, sempre execute o fatorial para valores menores ou iguais a ```20```.
 
+### Versão iterativa
+
+```
+#include<stdio.h>
+
+void fatorial(int n, long long fat[20]){
+
+    int i;
+    fat[0] = 1;
+    fat[1] = 1;
+
+    for(i = 2; i <= n; i++){
+         fat[i] = i*fat[i-1];
+    }
+}
+
+int main(){
+    int n;
+    long long fat[20];
+
+    scanf("%d",&n);
+
+    fatorial(n,v);
+
+    printf("%lld\n",fat[n]);
+
+    return 0;
+}
+```
 
 ## Fibonacci
 
