@@ -20,3 +20,13 @@ B. [Pandemia](https://judge.beecrowd.com/en/custom-problems/view/5615) [[Soluç�
 C. [Fibonacci Coded](https://judge.beecrowd.com/en/custom-problems/view/5616) [[Solução](fibo_coded.c)]
 
 D. [String Pal](https://judge.beecrowd.com/en/custom-problems/view/5617) [[Solução](string_pal.c)]
+
+## Prova 3 (17/02/2025)
+
+A. [Frequência na Aula](3A.pdf) [[Solução](frequencia.c)]
+
+B. [Prefixo](3B.pdf) [[Solução](prefixo.c)]
+
+C. [Frações](3C.pdf) [[Solução com Recursividade](fracoes_rec.c)] [[Solução Iterativa](fracoes.c)]
+
+D. [Cidade Planejada](3D.pdf) [[Solução](cidade.c)]
