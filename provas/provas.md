@@ -1,15 +1,14 @@
 # Provas
 
-## Prova 1 (13/12/2024)
+## Prova 3 (17/02/2025)
 
-A. [Cachorro Quente](A.pdf) [[Solução](hotdog.c)]
+A. [Frequência na Aula](3A.pdf) [[Solução](frequencia.c)]
 
-B. [Casa dos Gatos](B.pdf) [[Solução](gatos.c)]
+B. [Prefixo](3B.pdf) [[Solução](prefixo.c)]
 
-C. [Aritmética Modular](C.pdf) [[Solução](aritmod.c)]
+C. [Frações](3C.pdf) [[Solução com Recursividade](fracoes_rec.c)] [[Solução Iterativa](fracoes.c)]
 
-D. [Contas a Pagar](D.pdf) [[Solução](contas.c)]
-
+D. [Cidade Planejada](3D.pdf) [[Solução](cidade.c)]
 
 ## Prova 2 (31/01/2025)
 
@@ -21,12 +20,12 @@ C. [Fibonacci Coded](https://judge.beecrowd.com/en/custom-problems/view/5616) [[
 
 D. [String Pal](https://judge.beecrowd.com/en/custom-problems/view/5617) [[Solução](string_pal.c)]
 
-## Prova 3 (17/02/2025)
+## Prova 1 (13/12/2024)
 
-A. [Frequência na Aula](3A.pdf) [[Solução](frequencia.c)]
+A. [Cachorro Quente](A.pdf) [[Solução](hotdog.c)]
 
-B. [Prefixo](3B.pdf) [[Solução](prefixo.c)]
+B. [Casa dos Gatos](B.pdf) [[Solução](gatos.c)]
 
-C. [Frações](3C.pdf) [[Solução com Recursividade](fracoes_rec.c)] [[Solução Iterativa](fracoes.c)]
+C. [Aritmética Modular](C.pdf) [[Solução](aritmod.c)]
 
-D. [Cidade Planejada](3D.pdf) [[Solução](cidade.c)]
+D. [Contas a Pagar](D.pdf) [[Solução](contas.c)]
