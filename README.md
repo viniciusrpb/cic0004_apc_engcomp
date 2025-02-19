@@ -60,6 +60,8 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 [Prova 3](provas/provas.md)
 
+[Prova de Reposição (Atestado Médico)](provas/provas.md)
+
 ## Aula Extra de Revisão (07/02/2025)
 
 Códigos: [[Vetores](extra/vetores.c)] [[Strings 1](extra/strings.c)] [[Matrizes](extra/matrizes.c)] [[Strings 2](extra/string_inverte.c)] [[Strings 3](extra/substr.c)]
