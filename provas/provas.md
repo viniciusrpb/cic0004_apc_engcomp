@@ -1,5 +1,15 @@
 # Provas
 
+## Prova de Reposição (Atestado Médico) (19/02/2025)
+
+A. [Irmãos Gêmeos](AA.pdf) [[Solução](irmaos_gemeos.c)]
+
+B. [Sufixos](BB.pdf) [[Solução](sufixos.c)]
+
+C. [Função de Átila](CC.pdf) [Solução](atila.c)]
+
+D. [As Ruas da Cidade](DD.pdf) [[Solução](ruas_cidade.c)]
+
 ## Prova 3 (17/02/2025)
 
 A. [Frequência na Aula](3A.pdf) [[Solução](frequencia.c)]
