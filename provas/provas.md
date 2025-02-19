@@ -4,9 +4,9 @@
 
 A. [Irmãos Gêmeos](AA.pdf) [[Solução](irmaos_gemeos.c)]
 
-B. [Sufixos](BB.pdf) [[Solução](sufixos.c)]
+B. [Função de Átila](BB.pdf) [[Solução](atila.c)]
 
-C. [Função de Átila](CC.pdf) [[Solução](atila.c)]
+C. [Sufixos](CC.pdf) [[Solução](sufixos.c)]
 
 D. [As Ruas da Cidade](DD.pdf) [[Solução](ruas_cidade.c)]
 
