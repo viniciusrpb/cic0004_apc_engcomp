@@ -43,7 +43,7 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 11. [Recursividade](recursividade/recursividade.md)
 
 12. [Ponteiros e Alocação Dinâmica de Memória](ponteiros/README.md)
-
+<!--
 ## Simulados
 
 [Simulado da Prova 1](simulados/simulado_prova1.md)
@@ -66,7 +66,7 @@ Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 Códigos: [[Vetores](extra/vetores.c)] [[Strings 1](extra/strings.c)] [[Matrizes](extra/matrizes.c)] [[Strings 2](extra/string_inverte.c)] [[Strings 3](extra/substr.c)]
 
-<!--
+
 
 7. [Ponteiros e Alocação Dinâmica](ponteiros/README.md)
 
