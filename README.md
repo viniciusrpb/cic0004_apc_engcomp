@@ -1,6 +1,6 @@
 # CIC0004 - Algoritmos e Programação de Computadores (APC)
 
-Códigos-fontes e material didático gerados na disciplina "CIC0004 - Algoritmos e Programação de Computadores", Turma 05, semestre 2024/2 do Departamento de Ciência da Computação da Universidade de Brasília.
+Códigos-fontes e material didático gerados na disciplina "CIC0004 - Algoritmos e Programação de Computadores", Turma 05, semestre 2025/1 do Departamento de Ciência da Computação da Universidade de Brasília.
 
 #### Atenção: disciplina ministrada em Linguagem C
 
@@ -13,9 +13,9 @@ Vinícius R. P. Borges
 
 ## Cronograma Previsto de Aulas
 
-Clique [aqui](cic0004_t05_20242_cronogramaPrevistoAulas_v2.pdf) para acessar o cronograma previsto de aulas da Turma 05.
+Clique [aqui](cic0004_t05_20251_cronogramaPrevistoAulas_v2.pdf) para acessar o cronograma previsto de aulas da Turma 05.
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Última atualização: 10 de novembro de 2024*
+&nbsp;&nbsp;&nbsp;&nbsp; *Última atualização: 03 de abril de 2025*
 
 
 ## Conteúdo Programático
