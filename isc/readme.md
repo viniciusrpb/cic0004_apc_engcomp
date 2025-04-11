@@ -6,7 +6,7 @@
 
    1.3. [Arquitetura de Computadores](oac.md)
    
-   1.4. [Sistemas Numéricos](cic0004_t04_sistemasnumericos.pdf)
+   1.4. [Sistemas Numéricos](cic0004_01_sistemasnumericos.pdf)
 
 # Código divisibilidade
 
