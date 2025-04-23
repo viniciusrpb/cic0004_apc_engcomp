@@ -184,7 +184,7 @@ O código-fonte abaixo mostra a declaração de duas variáveis inteiras sem sin
 
 int main(){
     unsigned int a;
-    long unsigned int b;
+    unsigned long long int b;
 
     a = 5;
     b = a+1;
@@ -196,13 +196,13 @@ int main(){
 
 ## Tabelas resumo
 
-Tipo               | Tamanho na Memória  | Valor Mínimo           | Valor Máximo                         | Descrição                                         |
------------------  | ------------------  | ---------------------- | ------------------------------------ | ------------------------------------------------- |
-char               |  1 byte             | 0                      | 255                                  | Armazena um caractere (ver a tabela ASCII)        |
-int                |  4 bytes            | -2 x 10<sup>-9</sup>   | 2 x 10<sup>9</sup>                   | Armazena um valor inteiro normal com sinal        |
-unsigned int       |  4 bytes            | 0                      | 4 x 10<sup>9</sup>                   | Armazena um valor inteiro normal sem sinal        |
-long int           |  8 bytes            | -9 x 10<sup>18</sup>   | 9 x 10<sup>18</sup>                  | Armazena um valor inteiro grande com sinal        |
-unsigned long int  |  8 bytes            | 0                      | 10<sup>19</sup>                      | Armazena um valor inteiro grande sem sinal        |          
+Tipo                    | Tamanho na Memória  | Valor Mínimo           | Valor Máximo                         | Descrição                                         |
+----------------------- | ------------------  | ---------------------- | ------------------------------------ | ------------------------------------------------- |
+char                    |  1 byte             | 0                      | 255                                  | Armazena um caractere (ver a tabela ASCII)        |
+int                     |  4 bytes            | -2 x 10<sup>-9</sup>   | 2 x 10<sup>9</sup>                   | Armazena um valor inteiro normal com sinal        |
+unsigned int            |  4 bytes            | 0                      | 4 x 10<sup>9</sup>                   | Armazena um valor inteiro normal sem sinal        |
+long long int           |  8 bytes            | -9 x 10<sup>18</sup>   | 9 x 10<sup>18</sup>                  | Armazena um valor inteiro grande com sinal        |
+unsigned long long int  |  8 bytes            | 0                      | 10<sup>19</sup>                      | Armazena um valor inteiro grande sem sinal        |          
 
 
 Tipo              | Tamanho na Memória  | Dígitos de Precisão (Partes Inteira + Fracionária)             |
