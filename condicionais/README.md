@@ -18,7 +18,7 @@ Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **s
 
 4.4. [Beecrowd 2375 - Sedex](https://judge.beecrowd.com/pt/problems/view/2375) [[Solucão](beecrowd_2375.md)]
 
-4.5. [Beecrowd 2342 - Overflow](https://judge.beecrowd.com/pt/problems/view/2342) [[Solucão](beecrowd_2342.c)]
+4.5. [Beecrowd 2342 - Overflow](https://judge.beecrowd.com/pt/problems/view/2342) [[Solucão](upsolving/beecrowd_2342.c)]
 
 4.6. [Beecrowd 1041 - Coordenadas de um Ponto](https://judge.beecrowd.com/pt/problems/view/1041) [[Resolucão](beecrowd_1041.md)]
 
