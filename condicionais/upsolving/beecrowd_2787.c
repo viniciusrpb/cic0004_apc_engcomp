@@ -2,22 +2,23 @@
 
 int main(){
     
-    int n,a,b,ans;
-    char op;
+    int l,c;
     
-    scanf("%d",&n);
-    scanf("%d %c %d",&a,&op,&b);
+    scanf("%d",&l);
+    scanf("%d",&c);
     
-    if(op == '+'){
-        ans = a+b;
+    if(l % 2 != 0){
+        if(c % 2 != 0){
+            printf("1\n");
+        } else {
+            printf("0\n");
+        } 
     } else {
-        ans = a*b;
-    }
-    
-    if(ans > n){
-        printf("OVERFLOW\n");
-    } else {
-        printf("OK\n");
+        if(c % 2 != 0){
+            printf("0\n");
+        } else {
+            printf("1\n");
+        } 
     } 
     
     return 0;
