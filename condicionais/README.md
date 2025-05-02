@@ -49,11 +49,11 @@ Na Linguagem C, existem dois tipos de estruturas condicionais: **if-else** e **s
 
 4.16. [Beecrowd 2344 - Notas das Provas](https://judge.beecrowd.com/pt/problems/view/2344) [[Solucão](beecrowd_2344.c)]
 
-4.17. [Beecrowd 2057 - Time Zone](https://judge.beecrowd.com/pt/problems/view/2057) [[Solucão](beecrowd_2057.c)]
+4.18. [Beecrowd 2057 - Time Zone](https://judge.beecrowd.com/pt/problems/view/2057) [[Solucão](beecrowd_2057.c)]
 
-4.17. [Beecrowd 2235 - Walking in Time](https://judge.beecrowd.com/pt/problems/view/2235) [[Solucão](beecrowd_2235.c)]
+4.19. [Beecrowd 2235 - Walking in Time](https://judge.beecrowd.com/pt/problems/view/2235) [[Solucão](beecrowd_2235.c)]
 
-4.18. [Beecrowd 2579 - Nagol](https://judge.beecrowd.com/pt/problems/view/2579) [[Solucão](beecrowd_2579.c)]
+4.20. [Beecrowd 2579 - Nagol](https://judge.beecrowd.com/pt/problems/view/2579) [[Solucão](beecrowd_2579.c)]
 
 
 
