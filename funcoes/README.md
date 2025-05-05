@@ -16,7 +16,7 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 ## Exercícios Resolvidos
 
-5.5. [Beecrowd 2313 - Qual Triângulo](https://judge.beecrowd.com/pt/problems/view/2313) [[Resolucão](beecrowd_2313.md)] [[Solucão](upsolving/beecrowd_2313.c)] 
+5.5. [Beecrowd 2313 - Qual Triângulo](https://judge.beecrowd.com/pt/problems/view/2313) [[Solucão sem Funções](upsolving/beecrowd_2313.c)] [[Solucão com Funções](upsolving/beecrowd_2313_2.c)] 
 
 5.6. [Beecrowd 2409 - Colchão](https://judge.beecrowd.com/pt/problems/view/2409) [[Resolucão](beecrowd_2409.md)] [[Solucão](beecrowd_2409.c)] 
 
