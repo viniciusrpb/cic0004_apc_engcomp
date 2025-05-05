@@ -16,9 +16,11 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 ## Exercícios Resolvidos
 
-5.5. [Beecrowd 2409 - Colchão](https://judge.beecrowd.com/pt/problems/view/2409) [[Resolucão](beecrowd_2409.md)] [[Solucão](beecrowd_2409.c)] 
+5.5. [Beecrowd 2313 - Qual Triângulo](https://judge.beecrowd.com/pt/problems/view/2313) [[Resolucão](beecrowd_2313.md)] [[Solucão](upsolving/beecrowd_2313.c)] 
 
-5.6. [Beecrowd 2462 - Voo](https://judge.beecrowd.com/pt/problems/view/2462) [[Resolucão](beecrowd_2462.md)] [[Solucão](beecrowd_2462.c)] 
+5.6. [Beecrowd 2409 - Colchão](https://judge.beecrowd.com/pt/problems/view/2409) [[Resolucão](beecrowd_2409.md)] [[Solucão](beecrowd_2409.c)] 
+
+5.7. [Beecrowd 2462 - Voo](https://judge.beecrowd.com/pt/problems/view/2462) [[Resolucão](beecrowd_2462.md)] [[Solucão](beecrowd_2462.c)] 
 
 ## Aula Prática (29/11/2024)
 
@@ -28,4 +30,4 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 - [Beecrowd 3454 - Alice no País do Jogo da Velha](https://judge.beecrowd.com/pt/problems/view/3454) [[Solucão](beecrowd_3454.c)]
  
-- [Beecrowd 2313 - Qual Triângulo](https://judge.beecrowd.com/pt/problems/view/2313) [[Solucão](beecrowd_2313.c)] 
+- [Beecrowd 1045 - Tipos de Triângulos](https://judge.beecrowd.com/pt/problems/view/1045) [[Solucão](beecrowd_1045.c)] 
