@@ -22,6 +22,7 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 5.7. [Beecrowd 2462 - Voo](https://judge.beecrowd.com/pt/problems/view/2462) [[Resolucão](beecrowd_2462.md)] [[Solucão](beecrowd_2462.c)] 
 
+<!--
 ## Aula Prática (29/11/2024)
 
 - [Beecrowd 2454 - Fliper](https://judge.beecrowd.com/pt/problems/view/2454) [[Solucão](beecrowd_2454.c)]
@@ -30,4 +31,4 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 - [Beecrowd 3454 - Alice no País do Jogo da Velha](https://judge.beecrowd.com/pt/problems/view/3454) [[Solucão](beecrowd_3454.c)]
  
-- [Beecrowd 1045 - Tipos de Triângulos](https://judge.beecrowd.com/pt/problems/view/1045) [[Solucão](beecrowd_1045.c)] 
+- [Beecrowd 1045 - Tipos de Triângulos](https://judge.beecrowd.com/pt/problems/view/1045) [[Solucão](beecrowd_1045.c)] -->
