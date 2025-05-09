@@ -22,13 +22,14 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 5.7. [Beecrowd 2462 - Voo](https://judge.beecrowd.com/pt/problems/view/2462) [[Resolucão](beecrowd_2462.md)] [[Solucão](beecrowd_2462.c)] 
 
-<!--
-## Aula Prática (29/11/2024)
+## Aula Prática (09/05/2025)
 
-- [Beecrowd 2454 - Fliper](https://judge.beecrowd.com/pt/problems/view/2454) [[Solucão](beecrowd_2454.c)]
+- [Beecrowd 1893 - Fases da Lua](https://judge.beecrowd.com/pt/problems/view/1893) [[Solucão](upsolving/beecrowd_1893.c)]
 
-- [Beecrowd 1893 - Fases da Lua](https://judge.beecrowd.com/pt/problems/view/1893) [[Solucão](beecrowd_1893.c)]
+- [Beecrowd 3454 - Alice no País do Jogo da Velha](https://judge.beecrowd.com/pt/problems/view/3454) [[Solucão](upsolving/beecrowd_3454.c)]
+  
+- [Beecrowd 1042 - Ordenação Simples](https://judge.beecrowd.com/pt/problems/view/2454) [[Solucão](upsolving/beecrowd_1042.c)]
+   
+- [Beecrowd 1045 - Tipos de Triângulos](https://judge.beecrowd.com/pt/problems/view/1045) [[Solucão](upsolving/beecrowd_1045.c)]
 
-- [Beecrowd 3454 - Alice no País do Jogo da Velha](https://judge.beecrowd.com/pt/problems/view/3454) [[Solucão](beecrowd_3454.c)]
- 
-- [Beecrowd 1045 - Tipos de Triângulos](https://judge.beecrowd.com/pt/problems/view/1045) [[Solucão](beecrowd_1045.c)] -->
+- [Beecrowd 2670 - Máquina de Café](https://judge.beecrowd.com/pt/problems/view/2670) [[Solucão](upsolving/beecrowd_2670.c)]
