@@ -24,9 +24,9 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 ## Aula Prática (09/05/2025)
 
-- [Beecrowd 1893 - Fases da Lua](https://judge.beecrowd.com/pt/problems/view/1893) [[Solucão](upsolving/beecrowd_1893.c)]
+- [Beecrowd 1893 - Fases da Lua](https://judge.beecrowd.com/pt/problems/view/1893) [[Solucão](beecrowd_1893.c)]
 
-- [Beecrowd 3454 - Alice no País do Jogo da Velha](https://judge.beecrowd.com/pt/problems/view/3454) [[Solucão](upsolving/beecrowd_3454.c)]
+- [Beecrowd 3454 - Alice no País do Jogo da Velha](https://judge.beecrowd.com/pt/problems/view/3454) [[Solucão](beecrowd_3454.c)]
   
 - [Beecrowd 1042 - Ordenação Simples](https://judge.beecrowd.com/pt/problems/view/2454) [[Solucão](upsolving/beecrowd_1042.c)]
    
