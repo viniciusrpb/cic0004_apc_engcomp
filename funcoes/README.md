@@ -28,7 +28,7 @@ Usar funções em códigos na linguagem C é uma prática importante para tornar
 
 - [Beecrowd 3454 - Alice no País do Jogo da Velha](https://judge.beecrowd.com/pt/problems/view/3454) [[Solucão](beecrowd_3454.c)]
   
-- [Beecrowd 1042 - Ordenação Simples](https://judge.beecrowd.com/pt/problems/view/2454) [[Solucão](upsolving/beecrowd_1042.c)]
+- [Beecrowd 1042 - Ordenação Simples](https://judge.beecrowd.com/pt/problems/view/1042) [[Solucão](upsolving/beecrowd_1042.c)]
    
 - [Beecrowd 1045 - Tipos de Triângulos](https://judge.beecrowd.com/pt/problems/view/1045) [[Solucão](upsolving/beecrowd_1045.c)]
 
