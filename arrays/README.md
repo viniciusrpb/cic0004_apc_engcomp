@@ -30,7 +30,7 @@ Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permi
 
 7.8. [Beecrowd 1410 - He is Offside!](https://judge.beecrowd.com/pt/problems/view/1410) [[Solução](upsolving/beecrowd_1410.c)]
 
-
+<!--
 ## Aula Prática (10/01/2025)
 
 7.9. [Beecrowd 1743 - Automated Checking Machine](https://judge.beecrowd.com/pt/problems/view/1743) [[Solução](upsolving/beecrowd_1743.c)]
