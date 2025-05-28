@@ -1,58 +1,44 @@
 #include<stdio.h>
-#define MAX_N 1000 //tudo que eh MAX_N eh a mesma coisa do que 1000
 
 void solve(int n){
-    int i,pos_largada;
-    int car[MAX_N];
-    int pos[MAX_N];
-    int grid[MAX_N];
-    int existe_grid;
+    int i,posicao_largada,grid_ok;
+    int car[1001],pos[1001],grid[1001];
+
+    for(i = 0; i < 1001; i++){
+        grid[i] = -1;
+    }
+
+    grid_ok = 1; // grid eh valido
 
     for(i = 0; i < n; i++){
         scanf("%d %d",&car[i],&pos[i]);
-        grid[i] = 0; // garante que o vetor nao tem lixo
-    }
-
-    existe_grid = 1; // assume que existe o grid
-
-    // recriar o grid de largada
-    // pega o carro na i-esima posicao da corrida atual
-    for(i = 0; i < n; i++){
-        pos_largada = i + pos[i];
-
-        // garante que pos_largada eh uma posicao valida
-        // no vetor, no grid de largada
-        if(pos_largada >= 0 && pos_largada < n && grid[pos_largada] == 0){
-            grid[pos_largada] = car[i];
-        }
-        else{
-            existe_grid = 0; // nao eh possivel recuperar o grid de largada
+        posicao_largada = i+pos[i];
+        if(posicao_largada >= 0 && posicao_largada < n && grid[posicao_largada] == -1){
+            grid[posicao_largada] = car[i];
+        } else {
+            grid_ok = 0;
         }
     }
 
-    if(existe_grid == 1){
+    if(grid_ok == 0){
+        printf("-1\n");
+    } else {
         for(i = 0; i < n-1; i++){
-            printf("%d ", grid[i]);
+            printf("%d ",grid[i]);
         }
         printf("%d\n",grid[n-1]);
     }
-    else{
-        printf("-1\n");
-    }
-
-
 }
 
 int main(){
     int n;
-
     scanf("%d",&n);
 
-    while(n != 0){
-
+    while(n!=0){
+        /*resolve um caso*/
         solve(n);
-
         scanf("%d",&n);
     }
+
     return 0;
 }
