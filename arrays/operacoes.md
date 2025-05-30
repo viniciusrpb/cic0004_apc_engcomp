@@ -1,5 +1,7 @@
 # 7.2. Tarefas com Vetores
 
+Listamos a seguir algumas tarefas comuns ao se trabalhar com vetores em linguagem C.
+
 ## Somar os n elementos de um vetor
 
 ```
@@ -20,6 +22,48 @@ int main(){
         soma = soma + arr[i];
     }
     printf("Soma = %d\n",soma);
+
+    return 0;
+}
+```
+
+## Cálculo do Desvio Padrão
+
+Esse código em C calcula o desvio padrão de um conjunto de números inteiros fornecidos pelo usuário. Vamos entender passo a passo:
+
+Pseudo-código:
+
+1- Lê um número n, que representa a quantidade de elementos que o usuário vai fornecer.<br>
+2- Lê n inteiros e armazena na amostra ```va``` (ou vetor ```va[]```).<br>
+3- Calcula a média dos valores.<br>
+4- Calcula o desvio padrão populacional dos valores.<br>
+5- Imprime o desvio padrão com duas casas decimais de precisão.<br>
+
+```
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n,i;
+    int va[1000];
+    double soma,media,std;
+
+    scanf("%d",&n);
+
+    soma = 0.0;
+    for(i = 0; i < n; i++){
+        scanf("%d",&va[i]);
+        soma = soma+va[i];
+    }
+    media = soma/n;
+
+    soma = 0.0; // reaproveitando a variavel
+    for(i = 0; i < n; i++){
+        soma = soma + (va[i]-media)*(va[i]-media);
+    }
+    std = sqrt((1.0/n) * soma);
+
+    printf("Desvio padrao: %.2lf\n",std);
 
     return 0;
 }
