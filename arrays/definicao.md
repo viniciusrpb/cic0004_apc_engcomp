@@ -132,6 +132,56 @@ int main(){
 }
 ```
 
+## O Problema do Lixo de Memória
+
+Começamos essa seção com uma pergunta: ao se declarar um vetor, quais são os valores iniciais em cada uma de suas posições? Se você pensou *"zero"*, você errou. A resposta é: **lixo de memória**!
+
+Veja o código-fonte abaixo:
+
+```
+#include<stdio.h>
+
+int main(){
+    int i;
+    int v[5];
+
+    for(i = 0; i < 5; i++){
+        printf("%d ",v[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+Ao executá-lo, você provavelmente verá uma resposta parecida como:
+
+```
+0 0 0 0 0
+```
+
+ou uma saída como essa:
+
+```
+-723563 -723563 -723563 -723563 -723563
+```
+
+Bom, o que ocorre é que o comportamento é **inesperado**! As posições de ```v``` **não** são automaticamente zeradas, fazendo com que elas contenham valores indefinidos, chamados popularmente de "lixo de memória", ou seja, resíduos que estavam naquela posição da memória antes da declaração.
+
+Se você realizar operações aritméticas no seu vetor sem ele possuir valores válidos, seu programa poderá apresentar comportamento indefinido devido a cálculos incorretos em cima dos valores desse lixo de memória. Para evitar o lixo de memória, sempre inicialize seu vetor com elementos neutros:
+
+```
+for(i = 0; i < 5; i++){
+    v[i] = 0;
+}
+```
+
+ou de maneira simplificada, no exato momento da declaração do vetor (e somente na declaração do vetor):
+
+```
+int v[5] = {0};
+```
+
 ## Observações
 
 ### Acessar índice indevido
