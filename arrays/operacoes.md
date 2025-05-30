@@ -56,37 +56,47 @@ int main(){
 }
 ```
 
-## Buscar um elemento no vetor
+## Busca Sequencial em Vetor
+
+Uma busca sequencial (ou busca linear) é um algoritmo simples que encontra um determinado valor em uma coleção de dados (como um vetor). A ideia desse algoritmo consiste em percorrer os elementos do vetor, um por um, do início ao fim, e em cada elemento acessado, verificar se ele é igual ao elemento que está sendo buscado.
+
+Seja um valor ```x``` a chave de busca e a coleção de elementos representada em um vetor ```v```(```v[0], v[1], ... , v[n-1]```), isto é, o elemento que estamos querendo encontrar no vetor. Faça:
+
+1- A cada passo ```i```, compara o valor atual ```v[i]``` com o valor procurado ```x```.
+2- Se encontrar (```v[i] == x``` retornar verdadeiro), retorna sua posição, isto é, o índice ```i```.
+3- Se chegar ao final do vetor sem encontrar ```x```, indica que o valor não está presente.
+
+A implementação em linguagem C está apresentada abaixo. Para um vetor ```v``` com capacidade máxima de 2000 elementos, e contendo ```n``` elementos, verificamos se ```x``` está ou não presente no vetor ```v```. Caso o elemento esteja presente, esta implementação sempre retorna a primeira ocorrência de ```x``` em ```v```.
 
 ```
 #include<stdio.h>
-#define MAX_N 1000
 
-int main(){
-    int i,n, chave,idx;
-    int arr[MAX_N];
+int busca(int v[2000], int n, int x){
+    int i;
 
-    scanf("%d",&n);
-
+    // percorre os elementos do vetor
     for(i = 0; i < n; i++){
-        scanf("%d",&arr[i]);
-    }
-
-    scanf("%d",&chave);
-
-    idx = -1;
-    for(i = 0; i < n; i++){
-        if(arr[i] == chave){
-            idx = i;
-            break;
+        if(v[i] == x){
+            return i;
         }
     }
+    return i;
+}
 
-    if(idx >= 0){
-        printf("Elemento %d encontrado no indice %d\n",chave,idx);
+int main(){
+    int i,n,x;
+    int v[2000];
+
+    scanf("%d %d",&n,&x);
+
+    for(i = 0; i < n; i++){
+        scanf("%d",&v[i]);
     }
-    else{
-        printf("Elemento %d nao foi encontrado\n",chave);
+
+    if(busca(v,n,x) == n){
+        printf("ERRO: Elemento %d nao estah no vetor\n",x);
+    } else {
+        printf("Sim, %d estah no vetor\n",x);
     }
 
     return 0;
