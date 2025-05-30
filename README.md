@@ -11,6 +11,8 @@ Vinícius R. P. Borges
 
 [Mayara C. Marinho](https://github.com/mayarachew)
 
+[Thaís Rocha](https://github.com/thaisengcomp)
+
 ## Cronograma Previsto de Aulas
 
 Clique [aqui](cic0004_t05_20251_cronogramaPrevistoAulas_v2.pdf) para acessar o cronograma previsto de aulas da Turma 05.
