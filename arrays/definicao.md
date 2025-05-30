@@ -106,21 +106,16 @@ int main(){
 
 Uma das operações mais comuns ao se resolver problemas é ler ```n``` valores da entrada e armazená-los em um vetor. Para isso, faremos as seguintes operações:
 
-- Para deixar o código-fonte mais elegante, utilizaremos um comando ```define``` para d
-
-```define MAX_N 1000```
-
-- Criaremos uma variável **n** para denotar a quantidade de valores inteiros que, de fato, serão lidos da entrada. Observe que ```n <= MAX_N```;
+- Criaremos uma variável **n** para denotar a quantidade de valores inteiros que, de fato, serão lidos da entrada. Observe que ```n <= 1000```;
 - Utilizaremos a função ```scanf``` para ler um valor inteiro da entrada e armazenar em uma posição do vetor. Como temos que ler ```n``` valores inteiros da entrada, devemos repetir essa operação de leitura **n** vezes. Vamos usar uma estrutura de repetição para esse propósito.
 
 ```
 #include<stdio.h>
-#define MAX_N 1000
 
 int main(){
     int i,n;
 
-    int arr[MAX_N];
+    int arr[1000];
 
     scanf("%d",&n);
 
@@ -147,12 +142,11 @@ Compile o código-fonte a seguir e veja o que ocorre:
 
 ```
 #include<stdio.h>
-#define MAX_N 10
 
 int main(){
     int i,idx;
 
-    int arr[MAX_N];
+    int arr[10];
     idx = 14;
     arr[idx] = 6;
 
