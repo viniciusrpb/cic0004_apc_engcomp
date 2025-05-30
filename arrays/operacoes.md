@@ -4,11 +4,10 @@
 
 ```
 #include<stdio.h>
-#define MAX_N 1000
 
 int main(){
     int i,n, soma;
-    int arr[MAX_N];
+    int arr[1000];
 
     scanf("%d",&n);
 
@@ -30,11 +29,10 @@ int main(){
 
 ```
 #include<stdio.h>
-#define MAX_N 1000
 
 int main(){
     int i,n, menor, idx_menor;
-    int arr[MAX_N];
+    int arr[1000];
 
     scanf("%d",&n);
 
