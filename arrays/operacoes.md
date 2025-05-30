@@ -62,9 +62,9 @@ Uma busca sequencial (ou busca linear) é um algoritmo simples que encontra um d
 
 Seja um valor ```x``` a chave de busca e a coleção de elementos representada em um vetor ```v```(```v[0], v[1], ... , v[n-1]```), isto é, o elemento que estamos querendo encontrar no vetor. Faça:
 
-1- A cada passo ```i```, compara o valor atual ```v[i]``` com o valor procurado ```x```.
-2- Se encontrar (```v[i] == x``` retornar verdadeiro), retorna sua posição, isto é, o índice ```i```.
-3- Se chegar ao final do vetor sem encontrar ```x```, indica que o valor não está presente.
+1- A cada passo ```i```, compara o valor atual ```v[i]``` com o valor procurado ```x```.<br>
+2- Se encontrar (```v[i] == x``` retornar verdadeiro), retorna sua posição, isto é, o índice ```i```.<br>
+3- Se chegar ao final do vetor sem encontrar ```x```, indica que o valor não está presente.<br>
 
 A implementação em linguagem C está apresentada abaixo. Para um vetor ```v``` com capacidade máxima de 2000 elementos, e contendo ```n``` elementos, verificamos se ```x``` está ou não presente no vetor ```v```. Caso o elemento esteja presente, esta implementação sempre retorna a primeira ocorrência de ```x``` em ```v```.
 
