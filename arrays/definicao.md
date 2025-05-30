@@ -160,7 +160,9 @@ Ao executá-lo, você provavelmente verá uma resposta parecida como:
 0 0 0 0 0
 ```
 
-ou uma saída como essa:
+Se você obteve a saída acima, é provável que você esteja rodando o código-fonte em um ambiente de desenvolvimento que aplica proteções de segurança ou inicialização automática de variáveis locais.
+
+Por outro lado, você pode obter uma saída como essa:
 
 ```
 -723563 -723563 -723563 -723563 -723563
@@ -168,7 +170,7 @@ ou uma saída como essa:
 
 Bom, o que ocorre é que o comportamento é **inesperado**! As posições de ```v``` **não** são automaticamente zeradas, fazendo com que elas contenham valores indefinidos, chamados popularmente de "lixo de memória", ou seja, resíduos que estavam naquela posição da memória antes da declaração.
 
-Se você realizar operações aritméticas no seu vetor sem ele possuir valores válidos, seu programa poderá apresentar comportamento indefinido devido a cálculos incorretos em cima dos valores desse lixo de memória. Para evitar o lixo de memória, sempre inicialize seu vetor com elementos neutros:
+Se você realizar operações aritméticas no seu vetor em que seus elementos são lixo de memória, seu programa poderá apresentar comportamento indefinido devido a cálculos incorretos em cima dos valores desse lixo de memória. Para evitar o lixo de memória, sempre inicialize seu vetor com elementos neutros:
 
 ```
 for(i = 0; i < 5; i++){
