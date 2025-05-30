@@ -27,11 +27,9 @@ int main(){
 }
 ```
 
-## Cálculo do Desvio Padrão
+## Cálculo do Desvio Padrão Populacional
 
-Esse código em C calcula o desvio padrão de um conjunto de números inteiros fornecidos pelo usuário. Vamos entender passo a passo:
-
-Pseudo-código:
+Esse código em C calcula o desvio padrão populacional de um conjunto de números inteiros fornecidos pelo usuário. De maneira geral, o pseudo-código pode ser descrito como:
 
 1- Lê um número n, que representa a quantidade de elementos que o usuário vai fornecer.<br>
 2- Lê n inteiros e armazena na amostra ```va``` (ou vetor ```va[]```).<br>
@@ -39,6 +37,12 @@ Pseudo-código:
 4- Calcula o desvio padrão populacional dos valores.<br>
 5- Imprime o desvio padrão com duas casas decimais de precisão.<br>
 
+A implementação em linguagem C ocorre como:
+
+- Declaramos um vetor de inteiros ```va``` com capacidade máxima de 1000 posições. O inteiro ```n``` representa o tamanho da população, isto é, a quantidade de números inteiros.
+- Temos também três variáveis do tipo double ```soma```, ```media``` e ```std``` que servem para somar valores, armazenar o valor da média dos elementos do vetor e armazenar o desvio padrão, respectivamente.
+- Repare que primeiro fazemos a leitura 
+  
 ```
 #include<stdio.h>
 #include<math.h>
