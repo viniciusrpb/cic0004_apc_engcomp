@@ -41,7 +41,9 @@ A implementação em linguagem C ocorre como:
 
 - Declaramos um vetor de inteiros ```va``` com capacidade máxima de 1000 posições. O inteiro ```n``` representa o tamanho da população, isto é, a quantidade de números inteiros.
 - Temos também três variáveis do tipo double ```soma```, ```media``` e ```std``` que servem para somar valores, armazenar o valor da média dos elementos do vetor e armazenar o desvio padrão, respectivamente.
-- Repare que primeiro fazemos a leitura 
+- Primeiro, devemos fazer a leitura dos inteiros que compõe o vetor. Repare que à medida em que fazemos a leitura dos elementos, vamos somando cada valor ```va[i]``` na variável ```soma```, de maneira cumulativa.
+- Com a ```soma``` obtida, calculados a média (variável ```media```).
+- Depois precisamos dos valores da entrada, que estão no vetor ```va```, para calcular o desvio padrão populacional. Isso mostra que o uso de **vetor** nesse problema é **obrigatório**, sendo então necessário armazenar os valores lidos da entrada na estrutura vetorial para uso posterior em outros momentos no código-fonte.
   
 ```
 #include<stdio.h>
