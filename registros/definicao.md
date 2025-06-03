@@ -99,7 +99,7 @@ int main(){
 
 ## Vetores & Registros
 
-Podemos utilizar a ```struct``` para armazenar vários conjuntos de informação por vez, utilizando os colchetes [] para declarar quantos conjuntos queremos:
+Podemos utilizar a ```struct``` para armazenar vários conjuntos de informação por vez, utilizando os colchetes [ ] para declarar quantos conjuntos queremos:
 
 ```
 #include<stdio.h>
@@ -125,7 +125,9 @@ void imprimeJogadores(Atleta jogs[30], int n){
 
 int main(){
     int i,n;
-    Atleta elenco[30]; //poderá armazenar 30 conjuntos de informações dos campos da estrutura (velocidade, altura do pulo e nome)
+    Atleta elenco[30];
+    /*poderá armazenar 30 conjuntos de informações dos campos
+    da estrutura (velocidade, altura do pulo e nome)*/
 
     scanf("%d",&n);
 
