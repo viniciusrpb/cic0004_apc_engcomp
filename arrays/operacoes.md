@@ -150,3 +150,43 @@ int main(){
     return 0;
 }
 ```
+
+## Verificar frequências de um determinado elemento (histograma)
+
+Um histograma mostra a frequência com que determinados tipos de dados aparecem:
+
+```
+#include <stdio.h>
+
+int main() {
+
+    int nota[12] = {6,7,8,5,6,6,7,8,9,10,5,6};
+    int freq[11] = {0}; // Iniciliza o vetor com todas as posições zeradas (vai de 0 a 10) 
+    int i;
+
+    for (i = 0; i < 12; i++) {
+        freq[nota[i]]++; /* uma unidade é adicionada à posição do vetor em que i é igual ao dado do vetor nota */
+    }
+
+    for (i = 0; i <= 10; i++) {
+        printf("Posicao do vetor: %d, frequencia da nota igual a posicao: %d\n", i, freq[i]);
+    }
+
+    return 0;
+}
+```
+
+Saída esperada do programa:
+```
+Posicao do vetor: 0, frequencia da nota igual a posicao: 0
+Posicao do vetor: 1, frequencia da nota igual a posicao: 0
+Posicao do vetor: 2, frequencia da nota igual a posicao: 0
+Posicao do vetor: 3, frequencia da nota igual a posicao: 0
+Posicao do vetor: 4, frequencia da nota igual a posicao: 0
+Posicao do vetor: 5, frequencia da nota igual a posicao: 2
+Posicao do vetor: 6, frequencia da nota igual a posicao: 4
+Posicao do vetor: 7, frequencia da nota igual a posicao: 2
+Posicao do vetor: 8, frequencia da nota igual a posicao: 2
+Posicao do vetor: 9, frequencia da nota igual a posicao: 1
+Posicao do vetor: 10, frequencia da nota igual a posicao: 1
+```
