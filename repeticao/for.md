@@ -10,7 +10,7 @@ for (inicialização; condição de permanência no laço; evolução) {
 }
 ```
 
-As principais parte do ```for``` são:
+As principais partes do ```for``` são:
 
 - Inicialização: colocar um valor inicial para a variável responsável pela contagem (variável contadora) necessários para controlar a quantidade de iterações ou passos a serem executados pelo laço. Vale ressaltar que a inicialização é executada apenas uma vez, no início do laço;
 - Condição de permanência no laço: trata-se de uma comparação como ocorre na estrutura if-else que verifica se a repetição deve continuar. Enquanto a condição for verdadeira, o laço continuará executando.
@@ -122,6 +122,42 @@ for(i = 0; i < n; i++){
 }
 ```
 
+## Formas de manipular a leitura do ```for```
 
+```
+#include <stdio.h>
+#define n 10
 
+int main () {
+
+    /* Em alguns compiladores, declarar uma variavel como o
+    tamanho do vetor causa erro de compilacao, por isso 
+    usamos o #define */
+
+    int i, vet[n] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+    //retorna o vetor na ordem declarada
+    for(i = 0; i < n; i++){
+        printf("%d ", vet[i]);
+    }
+
+    printf("\n");
+
+    //retorna o vetor de tras para frente
+    for(i = n-1; i >= 0; i--){
+        printf("%d ", vet[i]);
+    }
+
+    printf("\n");
+
+    //retorna a metade de vetor de tras para frente
+    for(i = n-1; i >= n/2; i--){
+        printf("%d ", vet[i]);
+    }
+
+    printf("\n");
+
+    return 0;
+}
+```
 
