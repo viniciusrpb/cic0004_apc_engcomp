@@ -12,13 +12,13 @@ Outros tipos de matrizes podem apresentar várias dimensões, como é o caso de 
 
 Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339435251
 
-[9.1. Fundamentos de Matrizes](definicao.md)
+9.1. [Fundamentos de Matrizes](definicao.md)
 
-[9.2. Padding de Matrizes](padding.md)
+9.2. [Padding de Matrizes](padding.md)
 
-[9.3. Vetores de Strings](vetores_strings.md)
+9.3. [Vetores de Strings](vetores_strings.md)
 
-[9.4. Alocação Dinâmica de Matrizes](alocacao_dinamica.md)
+9.4. [Alocação Dinâmica de Matrizes](alocacao_dinamica.md)
 
 
 # Exercícios Resolvidos
