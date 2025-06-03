@@ -16,6 +16,12 @@ Para declarar uma variável como sendo do tipo **struct nome_estrutura**, basta 
 struct nome_estrutura nome_variavel;
 ```
 
+Na leitura dos dados da ```struct```, devemos declarar como (exemplo):
+
+```
+scanf("%d", &nome_da_estrutura.campo_da_estrutura);
+```
+
 ## Exemplos
 
 ```
@@ -72,10 +78,29 @@ int main(){
 }
 ```
 
+Ou ainda, utilizando o ```typedef``` já na estrutura, como no exemplo:
+
+```
+#include<stdio.h>
+
+typedef struct{
+    int idade;
+    double altura;
+    char nome[101];
+}Atleta;
+
+int main(){
+    Atleta jogador;
+
+    return 0;
+}
+```
+
 
 ## Vetores & Registros
 
-```
+Podemos utilizar a ```struct``` para armazenar vários conjuntos de informação por vez, utilizando os colchetes [] para declarar quantos conjuntos queremos:
+
 ```
 #include<stdio.h>
 #include<string.h>
@@ -100,7 +125,7 @@ void imprimeJogadores(Atleta jogs[30], int n){
 
 int main(){
     int i,n;
-    Atleta elenco[30];
+    Atleta elenco[30]; //poderá armazenar 30 conjuntos de informações dos campos da estrutura (velocidade, altura do pulo e nome)
 
     scanf("%d",&n);
 
@@ -114,9 +139,11 @@ int main(){
         printf("Endereco nome: %p\n",elenco[i].nome);
     }
 
+    /* Note que a posição i deve vir antes do ponto,
+    pois se trata do i-ésimo "elenco" do tipo struct Atleta*/
+
     imprimeJogadores(elenco,n);
 
     return 0;
 }
 ```
-
