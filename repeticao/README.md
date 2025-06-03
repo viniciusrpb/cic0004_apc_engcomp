@@ -12,6 +12,8 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 6.3. [Laço For](for.md)
 
+6.4. [Laço Do-while](do-while.md)
+
 
 ## Exercícios Resolvidos
 
@@ -27,25 +29,27 @@ A Linguagem C contempla as seguintes estruturas de repetição:
 
 6.9. (For) [Beecrowd 1366 - Sticks Game](https://judge.beecrowd.com/en/problems/view/1366) [[Solucão](beecrowd_1366.c)]
 
+6.10. (Do-while) [Beecrowd 1131 - Grenais](https://judge.beecrowd.com/pt/problems/view/1131) [[Solução](beecrowd_1131.c)]
+
 ## Aula Prática 1 (23/05/2025)
 
-6.10. [Beecrowd 2862 - Inseto!](https://judge.beecrowd.com/pt/problems/view/2862) [[Solucão](beecrowd_2862.c)]
+6.11. [Beecrowd 2862 - Inseto!](https://judge.beecrowd.com/pt/problems/view/2862) [[Solucão](beecrowd_2862.c)]
 
-6.11. [Beecrowd 1387 - Og](https://judge.beecrowd.com/pt/problems/view/1387) [[Solucão](beecrowd_1387.c)]
+6.12. [Beecrowd 1387 - Og](https://judge.beecrowd.com/pt/problems/view/1387) [[Solucão](beecrowd_1387.c)]
 
-6.12. [Beecrowd 1397 - Game of The Greatest](https://judge.beecrowd.com/pt/problems/view/2568) [[Solucão](beecrowd_1397.c)]
+6.13. [Beecrowd 1397 - Game of The Greatest](https://judge.beecrowd.com/pt/problems/view/2568) [[Solucão](beecrowd_1397.c)]
 
-6.13. [Beecrowd 1103 - Alarm Clock](https://judge.beecrowd.com/pt/problems/view/3084) [[Solucão](beecrowd_1103.c)]
+6.14. [Beecrowd 1103 - Alarm Clock](https://judge.beecrowd.com/pt/problems/view/3084) [[Solucão](beecrowd_1103.c)]
 
-6.14. [Beecrowd 1091 - Division of Nlogonia](https://judge.beecrowd.com/pt/problems/view/2247) [[Solucão](beecrowd_1091.c)]
+6.15. [Beecrowd 1091 - Division of Nlogonia](https://judge.beecrowd.com/pt/problems/view/2247) [[Solucão](beecrowd_1091.c)]
 
-6.14. [Beecrowd 2247 - Cofrinhos da Vó Vitória](https://judge.beecrowd.com/pt/problems/view/2247) [[Solucão](beecrowd_2247.c)]
+6.16. [Beecrowd 2247 - Cofrinhos da Vó Vitória](https://judge.beecrowd.com/pt/problems/view/2247) [[Solucão](beecrowd_2247.c)]
 
 ## Aula Prática 2 (30/05/2025)
 
-6.15. [Beecrowd 1329 - Head or Tail](https://judge.beecrowd.com/pt/problems/view/1329) [[Solucão](upsolving/beecrowd_1329.c)]
+6.17. [Beecrowd 1329 - Head or Tail](https://judge.beecrowd.com/pt/problems/view/1329) [[Solucão](upsolving/beecrowd_1329.c)]
 
-6.16. [Beecrowd 3068 - Meteoros](https://judge.beecrowd.com/pt/problems/view/3068) [[Solucão](beecrowd_3068.c)]
+6.18. [Beecrowd 3068 - Meteoros](https://judge.beecrowd.com/pt/problems/view/3068) [[Solucão](beecrowd_3068.c)]
 
 <!--
 ## Aula Prática 2 (20/12/2024)
