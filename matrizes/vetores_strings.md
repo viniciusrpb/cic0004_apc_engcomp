@@ -57,3 +57,8 @@ int main(){
     return 0;
 }
 ```
+
+## Exercícios Resolvidos
+
+[Beecrowd 2381 - Lista de Chamada](https://judge.beecrowd.com/pt/problems/view/2381) [[Solução](upsolving/beecrowd_2381.c)]
+
