@@ -69,23 +69,45 @@ int main(){
   return 0;
 }
 ```
+## Valor absoluto (inteiros)
 
-## Valor absoluto
-
-```fabs(x)```: Retorna o valor absoluto do número ```x```.
+```abs(x)```: Retorna o valor absoluto do número ```x```.
 
 ```
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(){
-  int ans;
+int main () {
 
-  ans = fabs(-4);
+    int ans;
 
-  printf("%d\n",ans); /*imprime 4*/
+    ans = abs(-12);
 
-  return 0;
+    printf("%d\n", ans); //imprime 12
+
+    return 0;
+}
+```
+
+**IMPORTANTE:** apesar de ser uma função matemática, ```abs``` está contida na biblioteca ```stdlib.h``` e não na ```math.h```.
+
+## Valor absoluto (decimais)
+
+```fabs(x)```: Retorna o valor absoluto do número ```x```. Funciona com números de dupla pecisão e inteiros.
+
+```
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+
+    double ans;
+
+    ans = fabs(-12.75);
+
+    printf("%.2lf\n", ans); //imprime 12.75
+
+    return 0;
 }
 ```
 
@@ -110,7 +132,7 @@ int main(){
 
 ## Piso
 
-```floor(x)```: Retorna o menor número inteiro maior ou igual a ```x```.
+```floor(x)```: Retorna o menor número inteiro menor ou igual a ```x```.
 
 ```
 #include<stdio.h>
