@@ -10,7 +10,7 @@ Strings podem ser declaradas e inicializadas de várias maneiras:
 char str[10] = "Ola mundo";
 ```
 
-Aqui, o vetor ```str``` tem espaço para até 10 caracteres. A constante ```"Ola mundo"``` ocupa 11 posições: 10 caracteres + o caractere nulo ```\0```.
+Aqui, o vetor ```str``` tem espaço para até 10 caracteres. A constante ```"Ola mundo"``` ocupa 9 posições + o caractere nulo ```\0```.
 
 
 ### Vetor de caracteres
