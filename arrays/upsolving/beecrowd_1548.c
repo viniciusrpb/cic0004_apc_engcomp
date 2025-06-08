@@ -5,13 +5,13 @@ CIC0004 - Algoritmos e Programação de Computadores
 Vinicius R. P. Borges
 
 Tópico: Vetores
-Objetivo: Solução do problema beecrowd 1548 - Fila na Cantina
+Objetivo: Solução do problema beecrowd 1548 - Fila do Recreio
           https://judge.beecrowd.com/pt/problems/view/1548
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc beecrowd_1548.c -o cantina
-./cantina
+gcc beecrowd_1548.c -o recreio
+./recreio
 
 */
 
