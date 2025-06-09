@@ -235,5 +235,41 @@ As seguintes vantagens podem ser observadas agora com o uso do ```else-if```:
 - Não existe mais aquele efeito cascata para a direita do código-fonte na indentação;
 - Existem menos chaves;
 - Código-fonte menos verboso (menos caracteres na tela).
-  
 
+## If-Else com Operadores Ternários
+
+Operadores ternários são uma forma compacta de representar a estrutura if-else, utilizando três operadores: 
+
+```condicao ? comando_if_true : comando_if_false```
+
+onde ```condicao``` é a equivalência da verificação do ```if```, ```comando_if_true``` a tarefa a ser executada se ```condicao``` for verdadeira e ```comando_if_false``` se ```condicao``` for falsa (como o ```else```).
+
+Representando os operadores de forma equivalente com a estrutura propriamente dita, seria:
+
+
+```
+if(condicao)
+  comando_if_true;
+else
+  comando_if_false; //note que quando ha somente uma linha a ser executada, chaves sao dispensaveis
+```
+
+Alguns cuidados são necessários ao usar os operadores ternários, como:
++ os comandos devem ser apenas expressões simples, como uma escolha de sim ou não, e não comandos múltiplos;
++ o uso excessivo pode causar dificuldade na leitura do código, então use com segurança.
+
+Exemplo de um código simples:
+
+```
+#include <stdio.h>
+
+int main() {
+
+    int num = 5;
+
+    (num > 10) ? printf("%d eh maior que 10\n", num) : printf("%d eh menor ou igual a 10\n", num);
+    /* a expressao a ser retornada sera a segunda */
+
+    return 0;
+}
+```
