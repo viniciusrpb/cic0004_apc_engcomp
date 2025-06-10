@@ -44,3 +44,8 @@ str[4] => z
 Mas o que ocorre?
 
 <img src="images/strings2.png" alt="Percorrendo uma string">
+
+## Comparar Duas Strings
+
+## Verificar se uma String está Contida em outra String
+
