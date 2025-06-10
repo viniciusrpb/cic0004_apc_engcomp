@@ -1,37 +1,37 @@
 #include<stdio.h>
-#define MAX_N 10000
+#include<string.h>
+
+int ehMinusculo(char c){
+    if(c >= 97 && c <= 122){
+        return 1;
+    } else {
+        return 0;
+    }
+}
 
 int main(){
-    int c,i,n,ascii;
-    //string pode ter ateh 10000 caracteres + '\0'
-    char str[MAX_N+1];
+    
+    int i,n,t;
+    char mensagem[10001];
+    scanf("%d",&t);
 
-    scanf("%d\n",&c);
+    printf("Codigo ASCII %c = %d\n",'Z','Z');
 
-    while(c != 0){
-        // ler a string
-        scanf("%s",str);
-
-        // determina o comprimento da string
-        n = 0;
-        while(str[n]!='\0'){
-            n++;
-        }
-
+    while(t > 0){
+        getchar(); // tirar o '\n'
+        scanf("%s",mensagem);
+        
+        // strlen: retorna o tamanho da string desconsiderando o '\0'
+        n = strlen(mensagem);
+        
         for(i = n-1; i >= 0; i--){
-            //pega codigo ascii do carac s[i]
-            ascii = str[i];
-            // se o caractere str[i] eh minusculo
-            // 97 eh o codigo ascii do 'a'
-            // 122 eh o codigo ascii do 'z'
-            if(ascii >= 97 && ascii <= 122){
-                printf("%c",str[i]);
+            if(ehMinusculo(mensagem[i]) == 1){
+                printf("%c",mensagem[i]);
             }
         }
+        
         printf("\n");
-
-        c--;
+        t--;
     }
-
     return 0;
 }
