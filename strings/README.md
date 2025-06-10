@@ -40,6 +40,6 @@ Strings são sequências de caracteres terminadas por um caractere especial: o n
 # Aula Prática (17/01/2025)
  -->
 
-# Aula Prática (17/01/2025)
+# Aula Prática (06/06/2025)
 
 8.15. [Beecrowd 2453 - Língua do P](https://judge.beecrowd.com/pt/problems/view/2453) [[Solução](beecrowd_2453.c)]
