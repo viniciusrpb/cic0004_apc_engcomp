@@ -31,11 +31,12 @@ Strings são sequências de caracteres terminadas por um caractere especial: o n
 
 8.12. [Beecrowd 1235 - De dentro para fora](https://www.beecrowd.com.br/judge/en/problems/view/1235) [[Solução](beecrowd_1235.c)]
 
+<!--
 8.13. [Beecrowd 2167 - Falha do Motor](https://www.beecrowd.com.br/judge/en/problems/view/2167) [[Solução](beecrowd_2167.c)]
 
 8.14. [Beecrowd 2311 - Saltos Ornamentais](https://www.beecrowd.com.br/judge/en/problems/view/2311) [[Solução](beecrowd_2311.c)]
 
-<!--
+
 # Aula Prática (17/01/2025)
  -->
 
