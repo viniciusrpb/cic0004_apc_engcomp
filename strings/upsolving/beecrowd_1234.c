@@ -10,7 +10,7 @@ Objetivo: Solução do problema beecrowd 1234 - Dancing Sentence
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc beecrowd_1048.c -o dancante
+gcc beecrowd_1234.c -o dancante
 ./dancante
 */
 
