@@ -47,5 +47,27 @@ Mas o que ocorre?
 
 ## Comparar Duas Strings
 
+A comparação em Linguagem C é feita de maneira **lexicográfica**. Vamos implementar uma função que compara as duas strings ```str1``` e ```str2``` seguindo a convenção:
+
+- Retorna ```0``` se as strings são iguais.
+- Retorna ```< 0``` se ```str1``` é menor que ```str2``` (ordem lexicográfica).
+- Retorna ```> 0``` se ```str1``` é maior que ```str2```.
+
+### Péssima prática de programação
+
+Obs.: em linguagem C, duas strings não podem ser comparadas diretamente com os operadores ==, !=, <, >, como em outras linguagens de alto nível (como Python). Logo, é **errado** fazer como o código-fonte abaixo:
+
+```
+/* ... isso aqui eh errado */
+char a[3] = "abc";
+char b[3] = "abx";
+
+if (a == b) {
+    // isso nao funciona!!!
+}
+```
+
+ Outra possibilidade é utilizar a função ```strcmp()``` da biblioteca string.h. Veja mais detalhes [aqui](../stringh.md).
+
 ## Verificar se uma String está Contida em outra String
 
