@@ -21,7 +21,7 @@ Strings são sequências de caracteres terminadas por um caractere especial: o n
 
 8.9. [Beecrowd 1234 - Dancing Sentence](https://www.beecrowd.com.br/judge/en/problems/view/1234) [[Solução](upsolving/beecrowd_1234.c)] [[Solução Alternativa](beecrowd_1234.c)]
 
-8.10. [Beecrowd 1607 - Avance as Letras](https://www.beecrowd.com.br/judge/en/problems/view/1607) [[Solução](beecrowd_1607.c)]
+8.10. [Beecrowd 1607 - Avance as Letras](https://www.beecrowd.com.br/judge/en/problems/view/1607) [[Solução](upsolving/beecrowd_1607.c)]
 
 <!--
 
