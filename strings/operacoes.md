@@ -65,7 +65,73 @@ Exemplos:
 Vamos implementar uma função que realiza essa comparação.
 
 ```
-TODO
+#include<stdio.h>
+
+int min(int a, int b){
+    if(a < b){
+        return a;
+    } else {
+        return b;
+    }
+}
+
+int strlen_fake(char string[1001]){
+    int i;
+    i = 0;
+    while(string[i] != '\0'){
+        i++;
+    }
+    return i;
+}
+
+int strcmp_fake(char str1[1001], char str2[1001]){
+    int i,n,m;
+
+    n = strlen_fake(str1);
+    m = strlen_fake(str2);
+
+    for(i = 0; i < n && i < m; i++){
+        if(str1[i] > str2[i]){
+            return i+1;
+        } else {
+            if(str1[i] < str2[i]){
+                return -(i+1);
+            }
+        }
+    }
+
+    if(i == m && i == n){
+        return 0;
+    } else {
+        if(i == n){
+            return -(i+1);
+        } else {
+            return (i+1);
+        }
+    }
+}
+
+int main(){
+    char a[1001],b[1001];
+    int n,m,ans;
+
+    scanf("%s %s",a,b);
+
+    ans = strcmp_fake(a,b);
+
+    if(ans == 0){
+        printf("Strings sao iguais\n");
+    } else {
+        if(ans < 0){
+            printf("str1 < str2 em %d\n",ans+1);
+        } else {
+            printf("str1 > str2 em %d\n",ans-1);
+        }
+
+    }
+
+    return 0;
+}
 ```
 
 
