@@ -53,6 +53,18 @@ A comparação em Linguagem C é feita de maneira **lexicográfica**. Vamos impl
 - Retorna ```< 0``` se ```str1``` é menor que ```str2``` (ordem lexicográfica).
 - Retorna ```> 0``` se ```str1``` é maior que ```str2```.
 
+Exemplos:
+1) ```str1 = "abc"``` e ```str2 = "aB"``` . Nesse caso, ```str1 > str2```, pois na segunda posição, o código ASCII de ```b``` (em ```str1```) é 98, sendo então maior do que o código ASCII de ```B``` (em ```str2```), que é 66.
+2) ```str1 = "p46gbn"``` e ```str2 = "p46gbn"``` . Aqui temos que ```str1 = str2```, pois todos os seus caracteres das strings são iguais.
+3) ```str1 = "abcde"``` e ```str2 = "abcdef"``` . Vemos que ```str1 < str2```, pois ```str1``` e ```str2``` apresentam o mesmo prefixo "abcde", mas ```str2``` possui o caractere *f* ao final.
+
+Vamos implementar uma função que realiza essa comparação.
+
+```
+TODO
+```
+
+
 ### Péssima prática de programação
 
 Obs.: em linguagem C, duas strings não podem ser comparadas diretamente com os operadores ==, !=, <, >, como em outras linguagens de alto nível (como Python). Logo, é **errado** fazer como o código-fonte abaixo:
