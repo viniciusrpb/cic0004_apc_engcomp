@@ -15,13 +15,13 @@ Strings são sequências de caracteres terminadas por um caractere especial: o n
 
 # Exercícios Resolvidos em Aula
 
-8.5. [Beecrowd 2866 - Cryptotext](https://www.beecrowd.com.br/judge/en/problems/view/2866) [[Solução](upsolving/beecrowd_2866.c)]
+8.6. [Beecrowd 2866 - Cryptotext](https://www.beecrowd.com.br/judge/en/problems/view/2866) [[Solução](upsolving/beecrowd_2866.c)]
 
-8.8. [Beecrowd 1253 - Caesar Cipher](https://www.beecrowd.com.br/judge/en/problems/view/1253) [[Solução](upsolving/beecrowd_1253.c)]
+8.7. [Beecrowd 1253 - Caesar Cipher](https://www.beecrowd.com.br/judge/en/problems/view/1253) [[Solução](upsolving/beecrowd_1253.c)]
 
-8.9. [Beecrowd 1234 - Dancing Sentence](https://www.beecrowd.com.br/judge/en/problems/view/1234) [[Solução](upsolving/beecrowd_1234.c)] [[Solução Alternativa](beecrowd_1234.c)]
+8.8. [Beecrowd 1234 - Dancing Sentence](https://www.beecrowd.com.br/judge/en/problems/view/1234) [[Solução](upsolving/beecrowd_1234.c)] [[Solução Alternativa](beecrowd_1234.c)]
 
-8.10. [Beecrowd 1607 - Avance as Letras](https://www.beecrowd.com.br/judge/en/problems/view/1607) [[Solução](upsolving/beecrowd_1607.c)]
+8.9. [Beecrowd 1607 - Avance as Letras](https://www.beecrowd.com.br/judge/en/problems/view/1607) [[Solução](upsolving/beecrowd_1607.c)]
 
 <!--
 
