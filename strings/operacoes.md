@@ -47,7 +47,7 @@ Mas o que ocorre?
 
 ## Comparar Duas Strings
 
-A comparação em Linguagem C é feita de maneira **lexicográfica**. Vamos implementar uma função que compara as duas strings ```str1``` e ```str2``` seguindo a convenção:
+A comparação em Linguagem C é feita de maneira **lexicográfica**. Sejam duas strings ```str1``` e ```str2```. Na comparação lexicográfica, compara-se os códigos ASCII de cada caractere na Vamos implementar uma função que compara as duas strings ```str1``` e ```str2``` seguindo a convenção:
 
 - Retorna ```0``` se as strings são iguais.
 - Retorna ```< 0``` se ```str1``` é menor que ```str2``` (ordem lexicográfica).
@@ -57,6 +57,10 @@ Exemplos:
 1) ```str1 = "abc"``` e ```str2 = "aB"``` . Nesse caso, ```str1 > str2```, pois na segunda posição, o código ASCII de ```b``` (em ```str1```) é 98, sendo então maior do que o código ASCII de ```B``` (em ```str2```), que é 66.
 2) ```str1 = "p46gbn"``` e ```str2 = "p46gbn"``` . Aqui temos que ```str1 = str2```, pois todos os seus caracteres das strings são iguais.
 3) ```str1 = "abcde"``` e ```str2 = "abcdef"``` . Vemos que ```str1 < str2```, pois ```str1``` e ```str2``` apresentam o mesmo prefixo "abcde", mas ```str2``` possui o caractere *f* ao final.
+
+
+<img src="images/strcmp.png" alt="Percorrendo uma string">
+
 
 Vamos implementar uma função que realiza essa comparação.
 
