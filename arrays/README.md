@@ -17,14 +17,13 @@ Um vetor, também chamado de *array*, é um tipo de estrutura de dados que permi
 
 7.4. [Ordenação](ordenacao.md)
 
-<!--6.3. [Ponteiros e Alocação Dinâmica de Memória](ponteiros.md)-->
-
-
 ## Exercícios Resolvidos
 
-7.5. [Beecrowd 1245 - Lost Boots](https://judge.beecrowd.com/pt/problems/view/1245) [[Resolução](upsolving/beecrowd_1245.md)] [[Solução](upsolving/beecrowd_1245.c)]
+7.6. [Beecrowd 1318 - Fake Tickets](https://judge.beecrowd.com/pt/problems/view/1318) [[Resolução](upsolving/beecrowd_1318.md)] [[Solução](upsolving/beecrowd_1318.c)]
 
-7.6. [Beecrowd 1318 - Fake Tickets](https://judge.beecrowd.com/pt/problems/view/1318) [[Solução](upsolving/beecrowd_1318.c)]
+## Exercícios Resolvidos em Aula
+
+7.5. [Beecrowd 1245 - Lost Boots](https://judge.beecrowd.com/pt/problems/view/1245) [[Resolução](upsolving/beecrowd_1245.md)] [[Solução](upsolving/beecrowd_1245.c)]
 
 7.7. [Beecrowd 1375 - Pole Position](https://judge.beecrowd.com/pt/problems/view/1375) [[Solução](upsolving/beecrowd_1375.c)]
 
