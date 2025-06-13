@@ -49,9 +49,9 @@ Clique [aqui](cic0004_t05_20251_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 ## Simulados
 
 [Simulado da Prova 1](simulados/simulado_prova1.md)
-<!--
-[Simulado da Prova 2](simulados/simulado_prova2.md)
 
+[Simulado da Prova 2](simulados/simulado_prova2.md)
+<!--
 [Simulado da Prova 3](simulados/simulado_prova3.md)
 
 ## Provas
@@ -87,7 +87,7 @@ Códigos: [[Vetores](extra/vetores.c)] [[Strings 1](extra/strings.c)] [[Matrizes
 
 
 
-2. [Simulado da Prova 2](simulados/simulado_prova2.md)
+
 
 3. [Simulado da Prova 3](simulados/simulado_prova3.md)
 
