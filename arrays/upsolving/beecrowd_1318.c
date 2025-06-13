@@ -1,9 +1,8 @@
 #include<stdio.h>
-#define MAX_N 10000
 
 int solve(int n, int m){
     int i,t,falsos;
-    int tickets[MAX_N]; // histograma p/ fazer contagem
+    int tickets[10000];
 
     for(i = 0; i < n; i++){
         tickets[i] = 0;
@@ -17,12 +16,10 @@ int solve(int n, int m){
     falsos = 0;
 
     for(i = 0; i < n; i++){
-        //printf("%d ",tickets[i]);
         if(tickets[i] > 1){
             falsos++;
         }
     }
-    //printf("\n");
 
     return falsos;
 }
