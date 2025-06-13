@@ -161,6 +161,13 @@ O objetivo é verificar se uma string ```str1``` é substring de uma string ```s
 - A string "chuva" **não é** substring de "O sol está brilhando"
 - A string "123" é substring de "abc123def"
 
+Vamos criar uma função que verifica se ```str1``` está dentro de ```str2```. ```str1``` é a string que queremos encontrar em ```str2```. Por simplicidade, colocaremos o tamanho máximo das strings como sendo *1000*.
+
+```
+int strstr_fake(char str1[1001], char str2[1001])
+```
+
+A ideia é comparar sempre ```str1[0]``` com ```str2[i]```, para *i=0,1,2,...,m-1*, com ```m=strlen(str2)```. Caso seja ```str1[0] = str2[i]```, repetimos esse processo para```str1[1]``` e ```str2[i+1]```, ```str1[2]``` e ```str2[i+2]```, e assim por diante, enquanto ```i < m``` e ```j < n``` e ```str2[i+j] = str1[j]```. A variável ```j``` faz esse papel de caminhar pela ```str1``` enquanto ```str1[j] = str2[k]```, para *k=i,i+1,...,m-1* e *j=0,1,2,...,n-1*, para ```n=strlen(str2)```.
 
 ```
 #include<stdio.h>
