@@ -1,16 +1,14 @@
-# Exercícios Resolvidos
+# Beecrowd 1245 - Botas Perdidas
 
-## Beecrowd 1245 - Botas Perdidas
-
-### Enunciado
+## Enunciado
 
 Disponível [aqui](https://judge.beecrowd.com/pt/problems/view/1245).
 
-### Requisitos para Resolução do Problema
+## Requisitos para Resolução do Problema
 
 Estruturas de repetição, vetores.
 
-### Raciocínio
+## Raciocínio
 
 Para resolver o problema de formação de pares de botas, podemos usar uma abordagem com um vetor de contagem para armazenar a quantidade de botas do pé esquerdo (E) e do pé direito (D) para cada tamanho. Depois disso, percorremos a entrada, contamos as botas e seus pares (esquerdo ou direito) para que, ao final, somamos os pares possíveis.
 
@@ -20,7 +18,7 @@ Processar a entrada: Para cada bota, atualizar os contadores correspondentes.
 Calcular os pares: Para cada tamanho, o número de pares possíveis será o mínimo entre os contadores esquerdo e direito para aquele tamanho.
 Imprimir o resultado.
 
-### Implementação
+## Implementação
 
 O primeiro ponto é que a entrada do problema contém vários casos de testes. Apesar do problema não indicar quando a entrada termina, podemos inferir que é em fim de arquivo (End Of File - EOF). Como a primeira variável a ser lida em cada caso de teste é o inteiro ```n```, utilizamos um laço ```while```, pois que a quantidade de casos de teste é imprevisível:
 
