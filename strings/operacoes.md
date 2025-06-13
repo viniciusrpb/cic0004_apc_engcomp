@@ -149,7 +149,60 @@ if (a == b) {
 }
 ```
 
- Outra possibilidade é utilizar a função ```strcmp()``` da biblioteca string.h. Veja mais detalhes [aqui](../stringh.md).
+ Outra possibilidade é utilizar a função ```strcmp()``` da biblioteca string.h. Veja mais detalhes [aqui](stringh.md).
 
-## Verificar se uma String está Contida em outra String
+## Verificar se uma String é substring de outra String
 
+**Definição:** uma substring é uma sequência contínua de caracteres que está contida dentro de outra string.
+
+O objetivo é verificar se uma string ```str1``` é substring de uma string ```str2```, em que |str1| <= |str2| (|A| é a cardinalidade da string A, isto é, a quantidade de caracteres desconsiderando o caractere ```'\0'```).
+
+- A string "sol" é substring de "O sol está brilhando"
+- A string "chuva" **não é** substring de "O sol está brilhando"
+- A string "123" é substring de "abc123def"
+
+
+```
+#include<stdio.h>
+#include<string.h>
+
+int strstr_fake(char str1[1001], char str2[1001]){
+    int i,j,k,l,n,m;
+
+    n = strlen(str1);
+    m = strlen(str2);
+
+    for(i = 0; i < m; i++){
+        
+        j = 0;
+        k = i;
+        
+        while(j < n && k < m && str1[j] == str2[k]){
+            k++;
+            j++;
+        }
+        
+        if(j == n){
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main(){
+    char a[1001],b[1001];
+    int ans;
+
+    scanf("%s",a);
+    scanf("%s",b);
+
+    ans = strstr_fake(a, b);
+
+    if(ans < 0){
+        printf("Nao\n");
+    } else {
+        printf("Sim, a partir da posicao %d em str2.\n",ans);
+    }
+    return 0;
+}
+```
