@@ -57,6 +57,22 @@ Esse processo é ilustrado abaixo:
 
 ![Contagem dos tickets](figs/1318_conta.png)
 
+
+Finalmente, devemos contabilizar em uma variável (```falsos``` ) os tickets que possuem mais de uma cópia, como mostram as posições coloridas na imagem a seguir:
+
+![Histograma final](figs/1318_final.png)
+
+```
+falsos = 0;
+for(i = 0; i < n; i++){
+    if(tickets[i] > 1){
+        falsos++;
+    }
+}
+```
+
+## Código-fonte final
+
 ```
 #include<stdio.h>
 
