@@ -14,8 +14,15 @@ Devemos determinar quantos bilhetes falsos existem em um conjunto de bilhetes co
 
 Sabemos que:
 
-1) Os bilhetes possuem
+- Os tickets são enumerados por inteiros de *1* a *n*. Vamos nos referir ao identificador ```id_ticket``` como um inteiro que representa um ticket.
+- Vamos ter que contabilizar a ocorrência de cada ticket em um vetor, aqui chamado de ```tickets[]```
 
+O passo-a-passo para resolução do problema:
+
+1) Fazemos a leitura de ```n``` e ```m```. Precisaremos de utilizar ```n+1``` posições no vetor ```tickets```.
+2) Devemos inicializar todas as posições desse vetor com o valor zero, isto é, ```tickets[i] = 0```, para *i=1,...,n*.
+3) Fazemos a leitura dos *m* tickets recolhidos na festa. Para cada ticket recolhido, com identificador ```id_ticket```, contabilizamos ele no vetor ```tickets```.
+4) Ao final, devemos fazer uma última passada no vetor ```tickets```. Caso um ticket possua uma contagem maior do que 2, indica que ele contém cópias, ou seja, houve uma falsificação.
 
 ## Implementação
 
@@ -62,6 +69,8 @@ Finalmente, devemos contabilizar em uma variável (```falsos``` ) os tickets que
 
 ![Histograma final](figs/1318_final.png)
 
+o que pode ser feito de acordo com o trecho de código-fonte abaixo:
+
 ```
 falsos = 0;
 for(i = 0; i < n; i++){
@@ -70,6 +79,7 @@ for(i = 0; i < n; i++){
     }
 }
 ```
+
 
 ## Código-fonte final
 
