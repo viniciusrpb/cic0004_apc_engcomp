@@ -42,7 +42,7 @@ for(i = 1; i <= n; i++){
 
 Com isso, teremos o vetor dessa maneira:
 
-![Vetores inicializados](images/1318_init.png)
+![Vetores inicializados](figs/1318_init.png)
 
 Agora vamos ler a entrada dos *m* tickets coletados na festa
 
@@ -55,7 +55,7 @@ for(i = 0; i < m; i++){
 
 Esse processo é ilustrado abaixo:
 
-![Contagem dos tickets](images/1318_conta.png)
+![Contagem dos tickets](figs/1318_conta.png)
 
 ```
 #include<stdio.h>
