@@ -1,3 +1,19 @@
+/*
+Universidade de Brasília
+Departamento de Ciência da Computação
+CIC0004 - Algoritmos e Programação de Computadores
+Autor: Vinicius R. P. Borges
+
+Tópico: Strings
+Objetivo: Solução do problema beecrowd 2253 - Passwords Validator
+          https://judge.beecrowd.com/en/problems/view/2253
+
+Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
+
+gcc beecrowd_2253.c -o password
+./password
+*/
+
 #include<stdio.h>
 #include<string.h>
 
@@ -24,27 +40,31 @@ int ehDigitoNumerico(char c){
 
 int solve(char password[1001]){
 
-    int i,n,min,mai,num;
-    
+    int i,n,minusculos,maiusculos,numeros;
+
     n = strlen(password);
+
+    if(n < 6 || n > 32){
+        return 0;
+    }
     
-    min = 0;
-    mai = 0;
-    num = 0;
+    minusculos = 0;
+    maiusculos = 0;
+    numeros = 0;
     
     for(i = 0; i < n; i++){
         if(ehMinusculo(password[i]) == 1){
-            min++;
+            minusculos++;
         } else if(ehMaiusculo(password[i]) == 1){
-            mai++;
+            maiusculos++;
         } else if(ehDigitoNumerico(password[i]) == 1){
-            num++;
+            numeros++;
         } else {
             return 0;
         }
     }
     
-    if(i >= 6 && i <= 32 && min >= 1 && mai >= 1 && num >= 1){
+    if(minusculos >= 1 && maiusculos >= 1 && numeros >= 1){
         return 1;
     } else {
         return 0;
