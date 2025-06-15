@@ -46,10 +46,9 @@ int solve(char password[1001]){
     
     if(i >= 6 && i <= 32 && min >= 1 && mai >= 1 && num >= 1){
         return 1;
-    }else{
+    } else {
         return 0;
     }
-    
 }
 
 int main(){
