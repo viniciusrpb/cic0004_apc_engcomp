@@ -1,37 +1,67 @@
 #include<stdio.h>
-#define MAX_N 1000
+#include<string.h>
+
+int ehMinusculo(char c){
+    if(c >= 97 && c <= 122){
+        return 1;
+    }
+    return 0;
+}
+
+int ehMaiusculo(char c){
+    if(c >= 65 && c <= 90){
+        return 1;
+    }
+    return 0;
+}
+
+int ehDigitoNumerico(char c){
+    if(c >= 48 && c <= 57){
+        return 1;
+    }
+    return 0;
+}
+
+int solve(char password[1001]){
+
+    int i,n,min,mai,num;
+    
+    n = strlen(password);
+    
+    min = 0;
+    mai = 0;
+    num = 0;
+    
+    for(i = 0; i < n; i++){
+        if(ehMinusculo(password[i]) == 1){
+            min++;
+        } else if(ehMaiusculo(password[i]) == 1){
+            mai++;
+        } else if(ehDigitoNumerico(password[i]) == 1){
+            num++;
+        } else {
+            return 0;
+        }
+    }
+    
+    if(i >= 6 && i <= 32 && min >= 1 && mai >= 1 && num >= 1){
+        return 1;
+    }else{
+        return 0;
+    }
+    
+}
 
 int main(){
-    int i,ans,min,mai,valid,num;
-    char password[MAX_N+1];
-    int hist[26];
+    char password[1001];
 
     while(scanf("%[^\n]s",password)!=EOF){
+    
         getchar();
-        min = 0;
-        mai = 0;
-        num = 0;
-        valid = 1;
-        for(i = 0; password[i]!='\0'; i++){
-            if(password[i] >= 97 && password[i] <= 122){
-                min++;
-            }else{
-                if(password[i] >= 65 && password[i] <= 90){
-                    mai++;
-                }else{
-                    if(password[i] >= 48 && password[i] <= 57){
-                        num++;
-                    }else{
-                        valid = 0;
-                        break;
-                    }
-                }
-            }
-        }
-
-        if(i >= 6 && i <= 32 && min >= 1 && mai >= 1 && num >= 1 && valid){
+        
+        if(solve(password) == 1){
             printf("Senha valida.\n");
-        }else{
+        } else {
             printf("Senha invalida.\n");
         }
     }
