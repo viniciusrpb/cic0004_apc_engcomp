@@ -113,6 +113,10 @@ int main() {
 }
 ```
 
+## Comandos break e continue
+
+Oi, Thais!
+
 ## Ler Dados da Entrada até Fim de Arquivo (EOF)
 
 Uma situação comum nos juízes online é ter que realizar a leitura de **vários casos de teste em uma única entrada** até o final do arquivo (**E**ND **O**F **F**ILE) - EOF. Esse é um caso típico em que não sabemos quantos casos de teste existem na entrada, então o laço ```while``` é mais indicado para essa situação.
