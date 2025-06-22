@@ -115,7 +115,79 @@ int main() {
 
 ## Comandos break e continue
 
-Oi, Thais!
+### Break
+
+O comando ```break``` interrompe um laço, sendo ele ```for```, ```while``` ou ```do-while```, continuando a execução na linha imediata depois do laço que está sendo interrompido. Como deve ser testada alguma condição para que a execução do laço seja encerrada, o comando break deve estar sempre dentro de uma [**estrutura condicional**](https://github.com/viniciusrpb/cic0004_apc_engcomp/blob/main/condicionais/ifelse.md) if-else (quando em laço de repetição). Caso se esqueça de definir a condição para a interrupção, o bloco de código será encerrado sempre na primeira repetição do laço.
+
+Também pode ser utilizado na estrutura [switch-case](https://github.com/viniciusrpb/cic0004_apc_engcomp/blob/main/condicionais/switchcase.md).
+
+```
+#include <stdio.h>
+
+int main () {
+
+    int n;
+
+    printf("Digite um numero diferente de 0:\n");
+    scanf("%d", &n);
+
+    while(1){
+
+        /* declarar while(1) faz com que a condição sempre seja verdadeira 
+        e o laco sempre seja executado (laco infinito), pois 1 eh diferente de 0 */
+
+        if(n == 0){
+            break;
+        }
+
+        /* se o numero for igual a 0, todo o restante do laco é ignorado e
+        ele é interrompido */
+
+        printf("Voce digitou %d\n", n);
+        printf("Digite um numero diferente de 0:\n");
+        scanf("%d", &n);
+    }
+
+    return 0;
+}
+```
+
+### Continue
+
+O comando ```continue``` pula para a próxima repetição do laço (se houver), ignorando a linhas seguintes ao comando **ainda dentro da repetição atual**. Isso significa que também é necessário verificar uma condição, e nesse caso ```continue``` só é utilizada junto de if-else. É importante se atentar à ordem em que o comando aparece dentro da repetição, pois ignora o que vem depois; portanto, se colocar o comando como a última coisa a ser executada, será o mesmo que nada.
+
+Pode ser utilizado em todas as estruturas de repetição.
+
+```
+#include <stdio.h>
+
+int main () {
+
+    int n;
+
+    while(1){
+
+        /* declarar while(1) faz com que a condição sempre seja verdadeira 
+        e o laco sempre seja executado (laco infinito), pois 1 eh diferente de 0 */
+
+        printf("Digite um numero diferente de 5:\n");
+        scanf("%d", &n);
+
+        if(n == 5){
+            continue;
+        }
+
+        /* se o numero for igual a 5, o printf sera ignorado 
+        e o codigo pedira o proximo numero */
+
+        printf("Voce digitou %d\n", n);
+    }
+
+    return 0;
+}
+```
+
+**!!! IMPORTANTE:** A utilizacao do ```while(1)``` é funcional somente quando há um comando break, caso contrário o laço NUNCA será encerrado.
 
 ## Ler Dados da Entrada até Fim de Arquivo (EOF)
 
