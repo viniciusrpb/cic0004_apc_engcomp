@@ -161,3 +161,70 @@ int main () {
 }
 ```
 
+## Comandos break e continue dentro do laço ```for```
+
+Para saber detalhes sobre o funcionamento desses comandos, leia [comandos break e continue](https://github.com/viniciusrpb/cic0004_apc_engcomp/blob/main/repeticao/while.md).
+
+### Break
+
+```
+#include <stdio.h>
+
+int main () {
+
+    int i, soma = 0, n;
+
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++){
+
+        if(soma > 20){
+            break;
+        } 
+
+        soma += i;
+    
+        /* se em algum momento a soma dos numeros de i a n for maior que 20,
+        nao serao somados mais numeros e o laco sera interrompido */
+
+    }
+
+    printf("O resultado maximo da soma foi: %d\n", soma);
+    printf("O ultimo numero somado foi: %d\n", i-1);
+
+    return 0;
+}
+```
+
+### Continue 
+
+```
+#include<stdio.h>
+
+    int main(){
+
+        int i;
+
+        printf("Comando continue antes do printf:\n");
+
+        for(i = 1; i <= 10; i++){
+            if(i == 5){
+                continue;
+            }
+            printf("%d\n", i);
+        }
+
+        printf("Comando continue depois do printf:\n");
+
+        /* bloco de código ineficiente */
+
+        for(i = 1; i <= 10; i++){
+            printf("%d\n", i);
+            if(i == 5){
+                continue;
+            }
+        }
+
+        return 0;
+    }
+```
