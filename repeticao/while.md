@@ -152,6 +152,28 @@ int main () {
 }
 ```
 
+Perceba que esse código pode ser substuído pela seguinte lógica mantendo o mesmo funcionamento:
+
+```
+#include <stdio.h>
+
+int main () {
+
+    int n;
+
+    printf("Digite um numero diferente de 0:\n");
+    scanf("%d", &n);
+
+    while(n != 0){
+        printf("Voce digitou %d\n", n);
+        printf("Digite um numero diferente de 0:\n");
+        scanf("%d", &n);
+    }
+
+    return 0;
+}
+```
+
 **!!! IMPORTANTE:** A utilizacao do ```while(1)``` é funcional somente quando há um comando break, caso contrário o laço NUNCA será encerrado.
 
 ### Continue
