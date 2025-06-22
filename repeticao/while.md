@@ -117,7 +117,7 @@ int main() {
 
 ### Break
 
-O comando ```break``` interrompe um laço, sendo ele ```for```, ```while``` ou ```do-while```, continuando a execução na linha imediata depois do laço que está sendo interrompido. Como deve ser testada alguma condição para que a execução do laço seja encerrada, o comando break deve estar sempre dentro de uma [**estrutura condicional**](https://github.com/viniciusrpb/cic0004_apc_engcomp/blob/main/condicionais/ifelse.md) if-else (quando em laço de repetição). Caso se esqueça de definir a condição para a interrupção, o bloco de código será encerrado sempre na primeira repetição do laço.
+O comando ```break``` interrompe um laço, sendo ele ```for```, ```while``` ou ```do-while```, continuando a execução na linha imediata depois do laço que está sendo interrompido. Como deve ser testada alguma condição para que a execução do laço seja encerrada, o comando break deve estar sempre dentro de uma estrutura condicional [**if-else**](https://github.com/viniciusrpb/cic0004_apc_engcomp/blob/main/condicionais/ifelse.md) (quando em laço de repetição). Caso se esqueça de definir a condição para a interrupção, o bloco de código será encerrado sempre na primeira repetição do laço.
 
 Também pode ser utilizado na estrutura [switch-case](https://github.com/viniciusrpb/cic0004_apc_engcomp/blob/main/condicionais/switchcase.md).
 
@@ -152,9 +152,11 @@ int main () {
 }
 ```
 
+**!!! IMPORTANTE:** A utilizacao do ```while(1)``` é funcional somente quando há um comando break, caso contrário o laço NUNCA será encerrado.
+
 ### Continue
 
-O comando ```continue``` pula para a próxima repetição do laço (se houver), ignorando a linhas seguintes ao comando **ainda dentro da repetição atual**. Isso significa que também é necessário verificar uma condição, e nesse caso ```continue``` só é utilizada junto de if-else. É importante se atentar à ordem em que o comando aparece dentro da repetição, pois ignora o que vem depois; portanto, se colocar o comando como a última coisa a ser executada, será o mesmo que nada.
+O comando ```continue``` pula para a próxima repetição do laço (se houver), ignorando a linhas seguintes ao comando **ainda dentro da repetição atual**. Isso significa que também é necessário verificar uma condição, e nesse caso ```continue``` só é utilizada junto de if-else. É importante se atentar à ordem em que o comando aparece dentro da repetição, pois ignora o que vem depois; portanto, se colocado como o último comando a ser executado, se torna ineficiente.
 
 Pode ser utilizado em todas as estruturas de repetição.
 
@@ -163,12 +165,11 @@ Pode ser utilizado em todas as estruturas de repetição.
 
 int main () {
 
-    int n;
+    int n, i = 5;
 
-    while(1){
+    while(i > 0){
 
-        /* declarar while(1) faz com que a condição sempre seja verdadeira 
-        e o laco sempre seja executado (laco infinito), pois 1 eh diferente de 0 */
+        i--;
 
         printf("Digite um numero diferente de 5:\n");
         scanf("%d", &n);
@@ -187,7 +188,34 @@ int main () {
 }
 ```
 
-**!!! IMPORTANTE:** A utilizacao do ```while(1)``` é funcional somente quando há um comando break, caso contrário o laço NUNCA será encerrado.
+Exemplo de um ```continue``` ineficiente:
+
+```
+#include <stdio.h>
+
+int main () {
+
+    int n, i = 5;
+
+    while(i > 0){
+
+        i--;
+        /* como estamos usando um comando que pula para a proxima repeticao,
+        devemos ter cuidado com incrementos e decrementos. se colocarmos
+        depois do continue, o codigo pode nao apresentar o comportamento desejado */
+
+        printf("Digite um numero diferente de 5:\n");
+        scanf("%d", &n);
+        printf("Voce digitou %d\n", n);
+
+        if(n == 5){
+            continue;
+        }
+    }
+
+    return 0;
+}
+```
 
 ## Ler Dados da Entrada até Fim de Arquivo (EOF)
 
