@@ -12,13 +12,13 @@ D. [Medidor de Decibéis](2D.pdf) [[Solução](decibeis.c)]
 
 ## Prova 1 (19/05/2025)
 
-A. [2377 - Pedágio](https://judge.beecrowd.com/en/problems/view/2377) [[Solução](beecrowd_2377.c)]
+A. [Beecrowd 2377 - Pedágio](https://judge.beecrowd.com/en/problems/view/2377) [[Solução](beecrowd_2377.c)]
 
-B. [2424 - Tira-teima](https://judge.beecrowd.com/en/problems/view/2424) [[Solução](beecrowd_2424.c)]
+B. [Beecrowd 2424 - Tira-teima](https://judge.beecrowd.com/en/problems/view/2424) [[Solução](beecrowd_2424.c)]
 
-C. [2395 - Transporte de Contêineres](https://judge.beecrowd.com/en/problems/view/2395) [[Solução](beecrowd_2395.c)]
+C. [Beecrowd 2395 - Transporte de Contêineres](https://judge.beecrowd.com/en/problems/view/2395) [[Solução](beecrowd_2395.c)]
 
-D. [2437 - Contas a Pagar](https://judge.beecrowd.com/en/problems/view/2437) [[Solução](beecrowd_2437.c)]
+D. [Beecrowd 2437 - Contas a Pagar](https://judge.beecrowd.com/en/problems/view/2437) [[Solução](beecrowd_2437.c)]
 
 
 <!--
