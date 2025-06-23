@@ -2,13 +2,14 @@
 
 ## Prova 2 (18/06/2025)
 
-A. [Receita de Bolo](2A.pdf) [[Solução](receita.c)]
+A. [Receita de Bolo](2A.pdf) [[Solução](beecrowd_2423.c)]
 
-B. [Tacógrafo](2B.pdf) [[Solução](tacografo.c)]
+B. [Tacógrafo](2B.pdf) [[Solução](beecrowd_2388.c)]
 
-C. [Perguntas mais Frequentes](2C.pdf) [[Solução](faq.c)]
+C. [Perguntas mais Frequentes](2C.pdf) [[Solução](beecrowd_1553.c)]
 
 D. [Medidor de Decibéis](2D.pdf) [[Solução](decibeis.c)]
+
 
 ## Prova 1 (19/05/2025)
 
