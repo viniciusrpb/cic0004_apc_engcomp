@@ -7,9 +7,9 @@ int main(){
     scanf("%d %d",&x,&y);
     
     if(x >= 0 && x <= 432 && y >= 0 && y <= 468){
-        printf('dentro\n');
+        printf("dentro\n");
     } else {
-        printf('fora\n');
+        printf("fora\n");
     }
 
     return 0;
