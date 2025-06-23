@@ -1,7 +1,8 @@
 # Provas
 
 
-<!-## Prova 3 (17/02/2025)
+<!--
+## Prova 3 (17/02/2025)
 
 A. [Frequência na Aula](3A.pdf) [[Solução](frequencia.c)]
 
