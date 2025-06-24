@@ -190,3 +190,5 @@ Posicao do vetor: 8, frequencia da nota igual a posicao: 2
 Posicao do vetor: 9, frequencia da nota igual a posicao: 1
 Posicao do vetor: 10, frequencia da nota igual a posicao: 1
 ```
+
+**ATENÇÃO:** é muito importante que o histograma seja zerado na inicialização e a cada utilização, ou o vetor retornará resultados imprecisos.
