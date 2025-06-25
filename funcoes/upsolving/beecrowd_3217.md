@@ -29,46 +29,41 @@ Se ```H < L```, significa que choveu exatamente **H** milímetros. Caso contrár
 
 em que **F** é a quantidade de chuva que caiu (quase a resposta para o problema) em milímetros, **T1** é a duração em horas da chuva (fornecido no enunciado) e **x** é a vazão da chuva (mm/horas) na região do tubo.
 
-=> Preste atenção na variável x: ela não foi definida no enunciado, mas a criamos para fornecer um elo nas duas partes de resolução do problema.
+**Preste atenção na variável x**: ela não foi definida no enunciado, mas a criamos para fornecer um elo nas duas partes de resolução do problema.
 
-PARTE 1) Uma informação importante que temos é o nível da água (em milímetros) no tubo após a observação, isto é, após T2 horas. Esse nível é dado pela variável H. A partir de H, podemos determinar o nível da água no tubo logo após a chuva (após T1 horas).
+**PARTE 1)** Uma informação importante que temos é o nível da água (em milímetros) no tubo após a observação, isto é, após **T2** horas. Esse nível é dado pela variável **H**. A partir de H, podemos determinar o nível da água no tubo logo após a chuva (após **T1** horas).
 
-Bom, vejam que a quantidade de água que vazou do tubo pelo furo no período de T2 horas é dada por:
+Bom, veja que a quantidade de água que vazou do tubo pelo furo no período de **T2** horas é dada por:
 
-K*T2          (observem que esse valor é em milímetros)
+```K*T2```         (observe que esse valor é em milímetros)
 
-Logo, o nível da água H' logo após a chuva pode ser descrita como:
+Logo, o nível da água ```H'``` logo após a chuva pode ser descrita como:
 
-(1) H' = H + K*T2          (ou seja, o nível de água que restou no tubo somado à quantidade de água que vazou)
+(1) ```H' = H + K*T2```          (ou seja, o nível de água que restou no tubo somado à quantidade de água que vazou)
 
-PARTE 2) Podemos também determinar H' de outra forma: do início da chuva até T1 horas. Nesse caso, sabemos que obrigatoriamente o tubo irá encher L milímetros. A pergunta que fica agora:
+**PARTE 2)** Podemos também determinar ```H'``` de outra forma: do início da chuva até **T1** horas. Nesse caso, sabemos que obrigatoriamente o tubo irá encher **L** milímetros. A pergunta que fica agora: qual é a quantidade de água (em milímetros) que entrou e saiu do tubo após o nível da água aumentar no interior do tubo em relação à **L**? Essas entradas e saídas de água devem ser contabilizadas, pois é chuva que caiu!
 
-Qual é a quantidade de água (em milímetros) que entrou e saiu do tubo após o nível da água aumentar no interior do tubo em relação à L? Essas entradas e saídas de água devem ser contabilizadas, pois é chuva que caiu!
+O tempo gasto para encher **L** milímetros do tubo (sem alcançar o furo) é dado por:
 
-O tempo gasto para encher L milímetros do tubo (sem alcançar o furo) é dado por:
+```T0 = L/x```              (esse valor resultante **T0** é em horas!)
 
-T0 = L/x              (esse valor resultante T0 é em horas!)
+Temos que saber agora o nível de água no tubo que foi ganho entre **T0** e **T1**. A partir de agora, começa a sair água pelo furo, mas a chuva continua caindo. Nesse caso, a diferença entre essas vazões é dada por:
 
-Temos que saber agora o nível de água no tubo que foi ganho entre T0 e T1. A partir de agora, começa a sair água pelo furo, mas a chuva continua caindo. Nesse caso, a diferença entre essas vazões é dada por:
+```D = x - K```
 
-D = x - K
+o nível de água ganho após a água ultrapassar a marca do furo **L** é então:
 
-o nível de água ganho após a água ultrapassar a marca do furo L é então:
+```D*(T1 - T0)```
 
-D*(T1 - T0)
+Por fim, o nível de água **H'** no tubo logo após a chuva pode também ser calculado como:
 
-Por fim, o nível de água H' no tubo logo após a chuva pode também ser calculado como:
+(2) ```H' = L + D*(T1 - T0)```         (observe aqui a soma dos níveis até o furo e acima do furo!)
 
-(2) H' = L + D*(T1 - T0)           => observe aqui a soma dos níveis até o furo e acima do furo!
+Olha a situação agora: podemos igualar os dois H's para determinar o valor de **x**:
 
-Olha a situação agora: podemos igualar os dois H's para determinar o valor de x:
+```H' (1) = H' (2)```
 
-H' (1) = H' (2)
+```H + K*T2 = L + D*(T1 - T0)```
 
-H + K*T2 = L + D*(T1 - T0)
+ao desenvolver a fórmula acima, você chegará em uma equação de segundo grau, em que **x** é a variável incógnita. Determine **x** ao resolver a equação de segundo grau obtida para chegar às respostas **F1** e **F2** do problema.
 
-ao desenvolver a fórmula acima, você chegará em uma equação de segundo grau, em que x é a variável incógnita. Determine x ao resolver a equação de segundo grau obtida para chegar às respostas F1 e F2 do problema.
-
-Pessoal... essa é uma resolução mais direta e que está valendo, já que envolve a manipulação de funções polinomiais. Espero ter ajudado!
-
-Atenciosamente,
