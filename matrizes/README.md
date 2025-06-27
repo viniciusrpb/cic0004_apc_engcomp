@@ -29,13 +29,14 @@ Fonte: https://www.researchgate.net/figure/Color-image-and-RGB-matrices_fig1_339
 
 [Beecrowd 1383 - Sudoku](https://www.beecrowd.com.br/judge/pt/problems/view/1383) [[Solução](upsolving/beecrowd_1383.c)]
 
-<!--
-# Aula Prática (12/07/2024)
 
-[Beecrowd 1186 - Abaixo da Diagonal Secundária](https://judge.beecrowd.com/en/problems/view/1186) [[Solução](upsolving/beecrowd_1186.c)]
+# Aula Prática (27/06/2025)
 
 [Beecrowd 1435 - Matriz Quadrada I](https://judge.beecrowd.com/en/problems/view/1435) [[Solução](upsolving/beecrowd_1435.c)]
 
-[Beecrowd 1652 - Deli Deli](https://judge.beecrowd.com/en/problems/view/1652) [[Solução](upsolving/beecrowd_1652.c)]
+[Beecrowd 2552 - CheeseBreadSweeper](https://judge.beecrowd.com/en/problems/view/2552) [[Solução](upsolving/beecrowd_2552.c)]
 
-[Beecrowd 2552 - CheeseBreadSweeper](https://judge.beecrowd.com/en/problems/view/2552) [[Solução](upsolving/beecrowd_2552.c)]-->
+<!--
+[Beecrowd 1652 - Deli Deli](https://judge.beecrowd.com/en/problems/view/1652) [[Solução](upsolving/beecrowd_1652.c)]
+[Beecrowd 1186 - Abaixo da Diagonal Secundária](https://judge.beecrowd.com/en/problems/view/1186) [[Solução](upsolving/beecrowd_1186.c)]
+-->
