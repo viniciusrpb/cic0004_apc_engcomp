@@ -16,22 +16,22 @@ A recursividade costuma deixar o código-fonte mais limpo e próximo da definiç
 
 11.4. (Extra) [Merge Sort](mergesort.md)
 
-## Exercícios Resolvidos
+## Exercícios Resolvidos em Aula
 
 11.5. [Beecrowd 2166 - Square Root of 2](https://judge.beecrowd.com/en/problems/view/2166) [[Solução](upsolving/beecrowd_2166.c)]
 
 11.6. [Beecrowd 1512 - Tiles](https://judge.beecrowd.com/en/problems/view/1512) [[Resolução](upsolving/beecrowd_1512.md)] [[Solução](upsolving/beecrowd_1512.c)]
 
 <!--
-## Aula Prática (07/02/2025)
+## Aula Prática (04/07/2025)
 
-10.5. [Beecrowd 2381 - Call List](https://judge.beecrowd.com/en/problems/view/2381) [[Solução com struct](upsolving/beecrowd_2381.c)] [[Solução com Vetores de Strings](upsolving/beecrowd_2381_strings.c)]
+11.7. [Beecrowd 2469 - Grades](https://judge.beecrowd.com/en/problems/view/2469) [[Solução](upsolving/beecrowd_2469.c)]
 
-10.6. [Beecrowd 1553 - Frequent Asked Questions](https://judge.beecrowd.com/en/problems/view/1553) [[Solução](upsolving/beecrowd_1553.c)]
+11.8. [Beecrowd 1414 - World Cup](https://judge.beecrowd.com/en/problems/view/1414) [[Solução](upsolving/beecrowd_1414.c)]
 
-10.7. [Beecrowd 2469 - Grades](https://judge.beecrowd.com/en/problems/view/2469) [[Solução](upsolving/beecrowd_2469.c)]
+10.5. [Beecrowd 2161 - Square Root of 10](https://judge.beecrowd.com/en/problems/view/2161) [[Solução](upsolving/beecrowd_2161.c)]
 
-10.8. [Beecrowd 1414 - World Cup](https://judge.beecrowd.com/en/problems/view/1414) [[Solução](upsolving/beecrowd_1414.c)]
-
-10.9. [Beecrowd 1512 - Tiles](https://judge.beecrowd.com/en/problems/view/1512) [[Solução](upsolving/beecrowd_1512.c)]-->
+10.6. [Beecrowd 1630
+Stakes](https://judge.beecrowd.com/en/problems/view/1553) [[Solução](upsolving/beecrowd_1553.c)]
+-->
 
