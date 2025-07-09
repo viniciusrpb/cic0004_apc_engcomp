@@ -127,7 +127,76 @@ int main(){
 
 ## Aritmética de Ponteiros
 
+A aritmética de ponteiros em linguagem C permite manipular endereços de memória por meio de operações aritméticas diretamente nos endereços de memória. A ideia consiste em somar ou subtrair valores de um endereço, armazenado em uma variável ponteiro. Como resultado, pode-se mover esse ponteiro de acordo com o tamanho do tipo de dado ao qual ele aponta.
 
+No exemplo abaixo, temos um vetor ```v```, contendo 2 inteiros, em que ```v[0] = 4``` e ```v[1] = 2```. Pegamos um ponteiro ```pi``` para receber o endereço do 
+
+```
+#include<stdio.h>
+
+int main(){
+    int v[2] = {4,2};
+    int *pi;
+
+    pi = v; // pi aponta para v
+
+    printf("Endereco em pi: %p\n",pi);
+    printf("Conteúdo em pi: %d\n",*pi);
+    printf("Endereco em pi+1: %p\n",pi+1);
+    printf("Conteúdo em pi+1: %d\n",*(pi+1);
+
+    return 0;
+}
+```
+
+
+```
+#include<stdio.h>
+
+int main(){
+    char c[4] = "Alo";
+    char *pc;
+
+    pc = c; // pc aponta para c
+
+    printf("Endereco em pc: %p\n",pc);
+    printf("Conteudo em pc: %d\n",*pc);
+    printf("Endereco em pc+1: %p\n",pc+1);
+    printf("Conteudo em pc+1: %p\n",*(pc+1));
+
+    return 0;
+}
+```
+
+
+```
+#include<stdio.h>
+
+int main(){
+    int i;
+    char c;
+    double d;
+
+    int *pi;
+    char *pc;
+    double *pd;
+
+    pi = &i; // pi aponta para i
+    pc = &c; // pc aponta para c
+    pd = &d; // pd aponta para d
+
+    printf("Endereco em pi: %p\n",pi);
+    printf("Endereco em pi+1: %p\n",pi+1);
+
+    printf("\nEndereco em pc: %p\n",pc);
+    printf("Endereco em pc+1: %p\n",pc+1);
+
+
+    printf("\nEndereco em pd: %p\n",pd);
+    printf("Endereco em pd+1: %p\n",pd+1);
+    return 0;
+}
+```
 
 ## Ponteiros e Vetores
 
