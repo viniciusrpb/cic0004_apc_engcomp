@@ -18,5 +18,5 @@ Um ponteiro é uma variável que armazena o endereço de memória de outra vari�
 
 ## Exercícios Resolvidos em Aula
 
-12.6. [Beecrowd 1029 - Fibonacci, How Many Calls?](https://judge.beecrowd.com/en/problems/view/1029) [[Solução](beecrowd_1029.c)]
+12.6. [Beecrowd 1029 - Fibonacci, How Many Calls?](https://judge.beecrowd.com/en/problems/view/1029) [[Solução](upsolving/beecrowd_1029.c)]
 
