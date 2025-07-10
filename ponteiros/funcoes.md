@@ -10,7 +10,7 @@ Agora, se quisermos que a função modifique uma variável externa à ela, devem
 
 A primeira vez que estudamos passagem por referência ocorreu no Capítulo de vetores. Quando você passa um vetor como argumento de uma função, o que é realmente passado é o endereço do primeiro elemento do array, que é um ponteiro.
 
-Veja o exemplo de função abaixo:
+Veja o exemplo de função abaixo, que recebe um vetor de inteiros ```v``` e calcula em novo vetor, a soma cumulativa dos elementos de ```v``` e armazena-os nas respectivas posições de ```psum```:
 
 ```
 #include<stdio.h>
@@ -30,35 +30,26 @@ Repare que a função ```somaCumulativa```, em sua definição, recebe dois veto
 - ```v``` é um ponteiro para ```v[0]```<br>
 - ```psum``` é um ponteiro para ```psum[0]```
 
+A chamada da função ocorre como no trecho de código-fonte abaixo:
+
 ```
-#include<stdio.h>
+/* ... */
+int arr[5] = {6,3,5,8,2};
+int cumsum[5];
 
-void somaCumulativa(int v[5], int psum[5], int n){
-    int i;
-
-    psum[0] = v[0];
-    for(i = 1; i < n; i++){
-        psum[i] = psum[i-1]+v[i];
-    }
-}
-
-int main(){
-    int i;
-    int v[5] = {6,3,5,8,2};
-    int psum[5];
-
-    somaCumulativa(v, psum, 5);
-
-    printf("Soma cumulativa de v\n");
-    for(i = 0; i < 5; i++){
-        printf("%d ",psum[i]);
-    }
-
-    return 0;
-}
+somaCumulativa(arr, cumsum, 5);
+/* ... */
 ```
+
+Como resultado, na função ```somaCumulativa```, qualquer modificação feita no vetor ```psum``` será refletida diretamente na variável ```cumsum``` da função ```main```, pois ambas apontam para a mesma área de memória, isto é, ```psum``` é uma referência direta para ```cumsum```.
+
+## Passando Ponteiros
+
+No exemplo da função ```somaCumulativa```
 
 ## Função Swap
+
+
 
 ```
 #include<stdio.h>
