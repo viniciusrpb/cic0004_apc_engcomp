@@ -2,14 +2,12 @@
 Universidade de Brasília
 Departamento de Ciência da Computação
 CIC0004 - Algoritmos e Programação de Computadores
-Autor: Vinicius R. P. Borges (adaptado de Beecrowd 2410)
-
-https://judge.beecrowd.com/en/problems/view/2410
+Autor: Vinicius R. P. Borges
 
 Comandos no Terminal do Linux para compilar e executar o codigo-fonte:
 
-gcc frequencia.c -o freq
-./freq
+gcc pamonhas.c -o bin
+./bin
 */
 
 #include <stdio.h>
