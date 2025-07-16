@@ -1,5 +1,15 @@
 # Provas
 
+## Prova 3 (16/07/2025)
+
+A. [Pamonhas](3A_20251.pdf) [[Solução](pamonhas.c)]
+
+B. [Pelotão de Largada](3B_20251.pdf) [[Solução](pelotao_largada.c)]
+
+C. [Frequência na Aula](3C_20251.pdf) [[Solução](frequencia.c)]
+
+D. [Nova Avenida](https://olimpiada.ic.unicamp.br/pratique/ps/2016/f1/avenida/) [[Solução](nova_avenida.c)]
+
 ## Prova 2 (18/06/2025)
 
 A. [Receita de Bolo](2A.pdf) [[Solução](beecrowd_2423.c)]
