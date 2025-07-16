@@ -60,10 +60,12 @@ Clique [aqui](cic0004_t05_20251_cronogramaPrevistoAulas_v2.pdf) para acessar o c
 
 [Prova 2](provas/provas.md)
 
+[Prova 3](provas/provas.md)
+
 <!--
 [Simulado da Prova 3](simulados/simulado_prova3.md)
 
-[Prova 3](provas/provas.md)
+
 
 [Prova de Reposição (Atestado Médico)](provas/provas.md)
 
